@@ -1,0 +1,68 @@
+AVERAGED WAVE-PACKET VORTICITY BALANCE
+
+This is read-only postprocessing of the seven completed Unity matched pairs.
+The simulated velocity, initial vorticity, coherent current, and packet are
+retained. There is no new simulation or imposed two-dimensional assumption.
+
+With a transverse average over the entire periodic y direction, U=<u>, W=<w>,
+and Q=<q>, where q=curl_y(uL-us) is Eulerian vorticity and uL advects it:
+  B=U*Q_x+W*Q_z
+  A=<u*q_x+w*q_z>
+  E=A-B
+  Rbar=<omegaE_x*v_x+q*v_y+omegaE_z*v_z-v*q_y>
+  C=Rbar-E
+The ideal mean equation is Q_t+B=C. Products are formed before averaging
+when computing A and Rbar; products of the averaged velocities and vorticity
+gradients define B. Signed averages are taken BEFORE spatial squares or norms.
+Periodicity forces <v_y>=0 and mean in-plane incompressibility. It does not
+force C=0. E, Rbar and their net C are reported separately to retain cancellation.
+
+Two averages are distinguished. seed_N denotes the transverse mean within one
+realization. coherent denotes transverse AND equal-weight seven-seed averaging
+of primitive and product fields before forming B,E,C. There is no Bessel
+correction: these are finite-average identities, not population estimators.
+C_within_seed is the arithmetic average of the per-seed C fields. C_interseed
+is coherent C minus C_within_seed, and equals minus the interseed covariance
+Cov(U,Q_x)+Cov(W,Q_z). These fields are signed before regional norms.
+
+Dense y_averages.jld2 records provide native U,V,W at nominal 0.1-s intervals.
+At each 3-D snapshot time, three actual saved times are chosen to bracket it.
+A quadratic interpolant estimates Q_t at the exact snapshot time. Temporal
+strides 1 and 2 test approximately 0.1- and 0.2-s sampling. Packet Stokes fields
+are recomputed at each saved time. There is no extrapolation or endpoint
+derivative: the initial snapshot has temporal_stride=0 and no temporal ratios.
+Q_interpolation_error compares interpolated dense Q with exact snapshot mean Q.
+
+observed=Q_t+B measures the mean material vorticity tendency directly.
+unclosed=observed-C retains temporal/spatial diagnostic errors, interpolation
+effects and unresolved model/numerical tendencies. It is NOT a pure dissipation
+measurement and is NOT assumed small. The geometric closure C is obtained
+independently from the instantaneous 3-D snapshot terms.
+
+packet_minus_control denotes the difference of already formed packet and
+matched-control budgets. In particular delta B=Bpacket-Bcontrol, not advection
+formed from delta velocity and delta Q alone. The paired coherent result
+retains cross terms and avoids diluting the wave response with background Q.
+
+Native staggered interpolation, Float32-rounded stretched z faces, native
+continuity, and three-node diagnostic derivatives match the earlier full-field
+audit. Spatial stencil spacings 1 and 2 are compared on identical coverage.
+Regions: x=1..11 m; four vertical edge cells excluded; full interior, upper
+Stokes layer and PIV window. Local packet-age bins are before, leading, core,
+trailing, after and all. Actual cell thickness weights the spatial moments.
+No regional or temporal averaging is performed before taking the signed y
+and coherent means. Norms are RMS over the retained x,z cells of those means.
+
+Ratios include observed/(||Q_t||+||B||), C/(||Q_t||+||B||),
+unclosed/(||Q_t||+||B||+||C||), C/B and tau0*observed/Q. Compare absolute
+norms and the paired response as well; a large background Q can dilute a rate,
+and tiny advection can inflate an advection-normalized ratio. Undefined ratios
+remain blank. These two spatial/temporal stencils do not establish simulation
+convergence. Seven retained seeds do not support a significance or unbiased-
+population claim. No closed budget is asserted unless the measured terms agree.
+
+Source and campaign fingerprints are checked before/after reading. Native file
+sizes and mtimes are checked; metadata is hashed. Private 2-D diagnostic maps
+and per-seed tables remain on Unity. Only derived statistics, methods, figures
+and completion receipts are published. The original completed campaign remains
+unchanged.

@@ -1,0 +1,16 @@
+Averaged wave-packet vorticity report completed.
+Retained seeds: 1, 2, 3, 4, 6, 7, 8.
+Mean-field groups: 8352; ratios: 64512; undefined: 0.
+
+Qt + B = C in ideal CL, with B=U*Qx+W*Qz, E=mean(u*qx+w*qz)-B, C=Rbar-E. observed=Qt+B; unclosed=observed-C.
+Mean velocities and vorticity are formed from signed y averages; A and Rbar retain the y averages of their full-field products. Coherent primitives and signed product fields are averaged across the seven retained seeds before forming coherent B, E and C. This reporter uses those supplied coherent fields; it does not average seed norms, ratios or preformed seed B to create them. No Bessel correction is applied.
+Packet minus matched control is formed for each signed budget field, including B and C, before norms. B of a difference field is not substituted for the difference of B fields.
+
+The coherent result is this finite seven-seed mean, not an unbiased population or significance claim.
+unclosed is not pure dissipation: temporal/spatial diagnostic errors, interpolation differences and unresolved numerical terms can contribute.
+Observed mean material tendency can be small absolutely but large relative to tiny mean advection; compare both norms and denominators.
+A large background Q can dilute tau0*||observed||/||Q||; the paired response is retained separately.
+The advection/evolution normalizations use the current-following frame.
+The periodic y average makes mean_y(v_y) zero apart from numerical error; this does not make the original full flow two-dimensional.
+Zero-denominator ratios are undefined and blank in CSV. No numerical noise floor or pass/fail threshold is inferred.
+No time-dependent ratios are computed where temporal_stride=0.

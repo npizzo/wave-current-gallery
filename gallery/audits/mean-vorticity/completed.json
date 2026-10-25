@@ -1,0 +1,101 @@
+{
+  "completed": true,
+  "completed_at": "2026-10-25T20:09:37.933475+00:00",
+  "source_version": "51864ddbad85b7c8",
+  "source_sha256": {
+    "METHODS.txt": "793ae13dc8c01bec35bfc1080eab51ac6c71f3f0410890ded3d8f5fbcaf8f92c",
+    "aggregate_mean.jl": "3c45e07fe14e047273c17c99efba2132211f21a966a4393d38b8d5323701b938",
+    "analyze_mean.jl": "48020875daa2c7853229924fc538bfbd18aceea240c93dde3250a5c295fc4a4b",
+    "audit_math.jl": "29af390f3268b7a29bda65abaa1b87a8525176a17e6648c62733b0ab488ec0e5",
+    "campaign_guard.py": "2fee1278d3a79538abaf82cd19ec1fa3210fe8e2057e2d66e9656878faf2c14b",
+    "launch_mean.py": "ac3de82e600a42327b26a63759833bec172a23e7dc89cf4649ed205663c7d631",
+    "mean-report.sbatch": "467489bed83a8470b61c2acab714b74f6cfc7ac2fc85ede1e78a1854efe7a9a3",
+    "mean.sbatch": "2157caf8450fd183ef95641fab76de1d5d9b6be7d2100a11a4a3fe763b2e6169",
+    "mean_math.jl": "24e923bfd698e2e8e93de523db1729aea7af4cdde615d104d5b7e2dbc810cc81",
+    "packet_fields.jl": "ea737434fbcea58787236f6bc41a8ddcd04591021594bd6436de6f0c734edcc0",
+    "publish_mean.py": "c6cc211e9db035afac938ee206239c25f398238edf522addc52f81b055c6375d",
+    "report_mean.py": "c5ef4b22d8a59e906210581414f020b0c65655739afef3328aae4fe1bf3c87de",
+    "submit_mean.py": "e5c267619f4456aec237b5fe47ece234fe9786b5b93ce8d9a8ec6710e77057cc",
+    "temporal_math.jl": "439d958a4cb10e7f38e331b42310f110ded62262ce0cef0f8d04d391aa5ef138",
+    "test_mean_math.jl": "408051ec752b7c7bff40617aad78f811adce2c22911d132691b9a0fd0ff1e412",
+    "test_packet_fields.jl": "58e763c52702eac3a7c04fa8103b14fb46ee8774053790d11bf74888091f4039",
+    "test_report_mean.py": "86bb3186fcd5ece008c7dd2551770931b464f7e7fb27df7d2f93e0a2c19d61d0",
+    "test_temporal_math.jl": "cf2c7b1cf2a8bd24c9794015dc34396ff3a1398c281cf1956247d284e4a298ab"
+  },
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8
+  ],
+  "upstream_commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed",
+  "seed_receipts": [
+    {
+      "completed": true,
+      "seed": 1,
+      "source_version": "51864ddbad85b7c8",
+      "files": {
+        "mean_fields.jld2": "f68986b788ba99042db366f6b6caa8a479b04a518e361b82bcecfbad5bb098b1"
+      }
+    },
+    {
+      "completed": true,
+      "seed": 2,
+      "source_version": "51864ddbad85b7c8",
+      "files": {
+        "mean_fields.jld2": "6226b5a5730468d95bd1d786efb19714a52c754ea1f6935ab3c3b29d9c47790b"
+      }
+    },
+    {
+      "completed": true,
+      "seed": 3,
+      "source_version": "51864ddbad85b7c8",
+      "files": {
+        "mean_fields.jld2": "fedaa77bb15a06f953b1945778a0777ac347458656ffb410a863d13885d36928"
+      }
+    },
+    {
+      "completed": true,
+      "seed": 4,
+      "source_version": "51864ddbad85b7c8",
+      "files": {
+        "mean_fields.jld2": "375dfaf9357bf94d72c12479a5669bae96ee02cbf6597aa7e6e677f42c150375"
+      }
+    },
+    {
+      "completed": true,
+      "seed": 6,
+      "source_version": "51864ddbad85b7c8",
+      "files": {
+        "mean_fields.jld2": "9ef1fffbf1b61ba1fab3ce0c8cd43cb58f8e4784e4df7080c3b9ee2e7290b475"
+      }
+    },
+    {
+      "completed": true,
+      "seed": 7,
+      "source_version": "51864ddbad85b7c8",
+      "files": {
+        "mean_fields.jld2": "2fdaad5d02360c79b0c592226b85a386271ce5845a3bc57eb2d0ffe61d01ad36"
+      }
+    },
+    {
+      "completed": true,
+      "seed": 8,
+      "source_version": "51864ddbad85b7c8",
+      "files": {
+        "mean_fields.jld2": "7d47bba2f8f9c91e342083e8c974de17762d1f34d5ff3f5c2889153bc258b848"
+      }
+    }
+  ],
+  "files": {
+    "coherent-regions.csv": "af5d3dcd285a7bf06b4e4899c533e1cea3300ca1f982b19d0384c8e155fdb79a",
+    "metrics.csv": "96424efe25b33c829427f88d9631cf6bf6df61caa21f5998b2fed7785e21bcc3",
+    "summary.json": "262c5c6658581796c7666dc3260645f3c81e87de1490020bb7c800853048aa99",
+    "briefsummary.txt": "dee0986771d34e660594d2ba013eaa91e870c8dfd653c597ce2e1769d6372b55",
+    "mean-budget.png": "81368d435f08062740e72b1bb75c85e6fe3d70d8cbc83bea104522a255ae3b0c"
+  },
+  "scope": "Transverse/coherent mean vorticity tendency, resolved correlations, and unclosed remainder. Not an assumed closed budget or convergence claim."
+}

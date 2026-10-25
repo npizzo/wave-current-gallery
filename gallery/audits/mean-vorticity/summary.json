@@ -1,0 +1,61 @@
+{
+  "completed": true,
+  "tau0_seconds": 2.8,
+  "retained_seeds": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8
+  ],
+  "groups": 8352,
+  "metric_rows": 64512,
+  "undefined_ratios": 0,
+  "ignored_empty_rows": 0,
+  "ignored_mean_seed_fields_rows": 0,
+  "snapshot_times_seconds": [
+    0.0,
+    14.479999676346779,
+    20.079999551177025,
+    22.879999488592148,
+    25.67999942600727,
+    31.279999300837517,
+    34.07999923825264
+  ],
+  "spatial_stencil_steps": [
+    1,
+    2
+  ],
+  "temporal_strides": [
+    0,
+    1,
+    2
+  ],
+  "averaging": "Mean velocities and vorticity are formed from signed y averages; A and Rbar retain the y averages of their full-field products. Coherent primitives and signed product fields are averaged across the seven retained seeds before forming coherent B, E and C. This reporter uses those supplied coherent fields; it does not average seed norms, ratios or preformed seed B to create them. No Bessel correction is applied.",
+  "equation": "Qt + B = C in ideal CL, with B=U*Qx+W*Qz, E=mean(u*qx+w*qz)-B, C=Rbar-E. observed=Qt+B; unclosed=observed-C.",
+  "paired_difference": "Packet minus matched control is formed for each signed budget field, including B and C, before norms. B of a difference field is not substituted for the difference of B fields.",
+  "metric_definitions": {
+    "observed_to_evolution": "||Qt+B||/(||Qt||+||B||)",
+    "closure_to_evolution": "||C||/(||Qt||+||B||)",
+    "closure_cancellation": "||C||/(||Rbar||+||E||)",
+    "unclosed_to_budget": "||Qt+B-C||/(||Qt||+||B||+||C||)",
+    "closure_to_advection": "||C||/||B||",
+    "observed_to_advection": "||Qt+B||/||B||",
+    "tau_observed_to_q": "tau0*||Qt+B||/||Q||",
+    "mean_native_vy_relative": "||mean_y(v_y)||/sqrt(||mean_y(u_x)||^2+||mean_y(w_z)||^2), if present; a periodicity/numerical check, not a columnarity test"
+  },
+  "sampling": "Local packet-age bins and snapshot times remain separate. Regional mean squares use the physical cell volumes. Four cells are excluded at both vertical boundaries; exact retained depths and volumes are in regions.csv and metrics.csv.",
+  "limits": [
+    "The coherent result is this finite seven-seed mean, not an unbiased population or significance claim.",
+    "unclosed is not pure dissipation: temporal/spatial diagnostic errors, interpolation differences and unresolved numerical terms can contribute.",
+    "Observed mean material tendency can be small absolutely but large relative to tiny mean advection; compare both norms and denominators.",
+    "A large background Q can dilute tau0*||observed||/||Q||; the paired response is retained separately.",
+    "The advection/evolution normalizations use the current-following frame.",
+    "The periodic y average makes mean_y(v_y) zero apart from numerical error; this does not make the original full flow two-dimensional.",
+    "Zero-denominator ratios are undefined and blank in CSV. No numerical noise floor or pass/fail threshold is inferred.",
+    "No time-dependent ratios are computed where temporal_stride=0."
+  ],
+  "plot": "written"
+}
