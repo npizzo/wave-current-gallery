@@ -1,0 +1,18 @@
+Packet vorticity audit: aggregation completed.
+Matched seeds: 1, 2, 3, 4, 6, 7, 8.
+Snapshot times (s): 0, 14.48, 20.08, 22.88, 25.68, 31.28, 34.08.
+Stencil steps: 1, 2.
+Nonempty member/time/region/age/stencil groups: 360.
+Undefined ratios: 0; no denominator clipping.
+
+Equal weights across seven matched seeds after volume-weighted spatial moments within each seed/bin; ensemble mean squares precede square roots and ratios. No pooling across snapshot times or ages.
+Full uncentred fields, including mean and coherent motion. q is transverse Eulerian vorticity; velocity in advection/stretching is Lagrangian.
+Every reported term uses 1<=x<=11 m and a common four-cell exclusion at both vertical boundaries for both stencil steps. Thus even the full region denotes the interior depth range; the top exclusion is about 8 mm on the M2 grid. Exact z limits and sample volumes are retained in each row. Native full-grid divergence maxima remain in each seed qc.csv, outside this regional aggregation.
+
+No uncertainty or statistical-significance claim is attached to the seven-seed ratios.
+No threshold labels Taylor-Proudman balance, quasi-two-dimensional flow, or a transport barrier.
+Small R3D can reflect cancellation of substantial three-dimensional terms; retain individual norms.
+Undefined ratios are blank in CSV. A numerical noise floor is not inferred automatically.
+Sparse snapshots and implicit numerical dissipation prevent a closed temporal vorticity budget.
+Stencil/coarsening sensitivity is not simulation-resolution convergence.
+Profiles remain in their seed directories; this report aggregates regions.csv only.

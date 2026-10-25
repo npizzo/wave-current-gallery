@@ -1,0 +1,132 @@
+{
+  "completed": true,
+  "completed_at": "2026-10-25T19:36:34.119158+00:00",
+  "source_version": "adb45b36cde69ca1",
+  "upstream_commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8
+  ],
+  "source_sha256": {
+    "METHODS.txt": "b3f50ffb2dfb057b2f9e125bb9871a3618615c9c9cfdfde5d937db5e39240f56",
+    "analyze.jl": "a63e450efab802eb458a2b32cc3df8c9b150d93bc20f089431c88440d80bc479",
+    "audit.sbatch": "c86a3589e9d095c8c2fbfe71971eaf4957059bc8be9dfa5d9d2091a8215a8e76",
+    "audit_math.jl": "29af390f3268b7a29bda65abaa1b87a8525176a17e6648c62733b0ab488ec0e5",
+    "launch.py": "cb9264382cd36d39cffd6bd9311ad21800f98d9f6cab040ae5b8cfb27f18b1ba",
+    "packet_fields.jl": "ea737434fbcea58787236f6bc41a8ddcd04591021594bd6436de6f0c734edcc0",
+    "publish.py": "994913bda8b972d64d6900eea64e77b35d81c476f1b9558224b62d0f9360ce8a",
+    "report.py": "f4734441a4579dba3b08a32727558276285d0cd35055ee1431910d231d618802",
+    "report.sbatch": "0e7008a56ceab244b3c1557b18fa4d802313eaec0f045a2cbe775d8907299ad4",
+    "submit.py": "73cce42dbd5681068c8e26dfd9c55f99c8b1f7a755a10178bc7c549990cbc960",
+    "test_audit_math.jl": "65d552f0ee797b7bbe09afcd48983e4aa561506192c8d1adf7f72c4cbb3acab3",
+    "test_packet_fields.jl": "58e763c52702eac3a7c04fa8103b14fb46ee8774053790d11bf74888091f4039",
+    "test_report.py": "f2edd91bc5ead0e4caccde62b076ada103f928deb14f53a9c6b9ac0deafd1b1c",
+    "test_submission.py": "6aa613909503a353876d689e5e883f132dfaf17d4084f14113b1a46dfd04811e"
+  },
+  "seed_receipts": [
+    {
+      "completed": true,
+      "seed": 1,
+      "source_version": "adb45b36cde69ca1",
+      "files": {
+        "audit-receipt.jld2": "7b8d3ac2661df9789ea3918a2e2e946a4029543f747b9a5ef0ec4894934adb9e",
+        "profiles.csv": "c2e764d6ec9e1b31fc4d2bfa20a253d6e4474343d31708ecf67d446aae2cb9a9",
+        "qc.csv": "397b73ef3d07b7c148d60cefef03644945af691ecd9e51ec39573cefc9479c0e",
+        "regions.csv": "1e4a40608e49fd772a6841215d1e9d052dc9760635fcbdda991554b52fead1b4"
+      },
+      "max_scaled_native_divergence": 1.3347271143784258e-07,
+      "max_R3D_algebraic_identity_error": 2.842170943040401e-14
+    },
+    {
+      "completed": true,
+      "seed": 2,
+      "source_version": "adb45b36cde69ca1",
+      "files": {
+        "audit-receipt.jld2": "f2a3193a7ad256d3c59b85adc413c725e082f5ef048530e80e63722e61777acf",
+        "profiles.csv": "b886a6a67219b415a8ac8f5989f6a2cdf013379ca87397cc47a889cbe923e801",
+        "qc.csv": "310219d04a2bfedba6ff19a81d0b94a5feb06af7b7a9857303b45072a53e1948",
+        "regions.csv": "cddb29c5434f192e12ea96b286bedb16af4c0701818834dee5a9ff3cb67b6bbc"
+      },
+      "max_scaled_native_divergence": 1.2955437746991997e-07,
+      "max_R3D_algebraic_identity_error": 5.684341886080802e-14
+    },
+    {
+      "completed": true,
+      "seed": 3,
+      "source_version": "adb45b36cde69ca1",
+      "files": {
+        "audit-receipt.jld2": "c22bcfb750d5c9972b5d5fcfe55826fcd5928c20aa7c5099ea26e62a0d734cfb",
+        "profiles.csv": "a0f876518dbe60f16e83779c2293d65aa3b5425494e94914b952a16e82951dc7",
+        "qc.csv": "e34c5ad6ad8e0bf6048706378d9e5c31744329163a8a2e096b16e4e19a0fc4fd",
+        "regions.csv": "e6628b4a96ce1efea1e5531222ae476a5f021161c99e6ec549fa299eea591cbc"
+      },
+      "max_scaled_native_divergence": 1.368118540084798e-07,
+      "max_R3D_algebraic_identity_error": 5.684341886080802e-14
+    },
+    {
+      "completed": true,
+      "seed": 4,
+      "source_version": "adb45b36cde69ca1",
+      "files": {
+        "audit-receipt.jld2": "2b19f1ce79f2e9bfc4393bb8fd8a25822e09cbddf16d7292462556b6f40dfcae",
+        "profiles.csv": "9039956d70132f8c64c15791142352704f25c6333264f9e2c6438b21eea5215c",
+        "qc.csv": "df8c22c9a10cd5fa46578f8e9d5fda7e2ecd6857ee3b73d074b10954e0f5c9e6",
+        "regions.csv": "aaaaa90cdf50616a1a4062912ab04bfd7ffa2db62e179145f7614f71c286474f"
+      },
+      "max_scaled_native_divergence": 1.1498925539483968e-07,
+      "max_R3D_algebraic_identity_error": 5.684341886080802e-14
+    },
+    {
+      "completed": true,
+      "seed": 6,
+      "source_version": "adb45b36cde69ca1",
+      "files": {
+        "audit-receipt.jld2": "ed30bf6ca3f358ca4912b08ca46b40af70cef9a1f4d635d442046b3a3a365370",
+        "profiles.csv": "be394a4a86df5b843b12bb04767013522f8bfed61288689603a48903705b6d1e",
+        "qc.csv": "77432ab5b4aaccbcd0f5bd3208d0972479f8784e0170e01b749bce0c5990d790",
+        "regions.csv": "0743e0e971edebbc56e017117f208858e5de52fc62381c3dbf0d38ab6fc2f4fb"
+      },
+      "max_scaled_native_divergence": 1.2080136619692682e-07,
+      "max_R3D_algebraic_identity_error": 5.684341886080802e-14
+    },
+    {
+      "completed": true,
+      "seed": 7,
+      "source_version": "adb45b36cde69ca1",
+      "files": {
+        "audit-receipt.jld2": "cfd7d313e130eeada7cc7e6cf11d83dff7d724f812e001dc6535bd381b096f0c",
+        "profiles.csv": "498cbae29eb90c70d73b7ce94c61257158eb710b54ef777121041975c6bf2122",
+        "qc.csv": "dbd3feac1343aa6418f382ae8f21d1229bcc2238def6b3a5ae81cb9535e34326",
+        "regions.csv": "b790be45ce8edfb6b3773a632339f0d35f1b6d73e2b4bec7fff2e73edd33ac0d"
+      },
+      "max_scaled_native_divergence": 1.2860451385412416e-07,
+      "max_R3D_algebraic_identity_error": 5.684341886080802e-14
+    },
+    {
+      "completed": true,
+      "seed": 8,
+      "source_version": "adb45b36cde69ca1",
+      "files": {
+        "audit-receipt.jld2": "0b1d8f65f926ef52dc953c3dfe81e733afe557e0e0702072ad922bcfdd30b7b9",
+        "profiles.csv": "4f490d2bd2d8541e304d477bea409f6d3fa7f83e087882d1e71bab80e05a2b81",
+        "qc.csv": "0b8898c6b4e7fed90976d8b3723cbc9f714bc4863456a866ebe2a5deb92eafbe",
+        "regions.csv": "61fbdafc8279c723d7751c45b1b8b2612b4a2042b1c2620f7a49308c1e1e52a9"
+      },
+      "max_scaled_native_divergence": 1.3223483184742524e-07,
+      "max_R3D_algebraic_identity_error": 2.842170943040401e-14
+    }
+  ],
+  "files": {
+    "ensemble.csv": "0e6bd3b9e055202e894000ef305078806c513d1abd3301e51b87cd1b665d4daa",
+    "metrics.csv": "9852541b13d2fa26b84a307b404a4bab4a63cb69a519b8c89f6924b7a927f473",
+    "summary.json": "914251a3abd1bf68d84adbfacbbda9ac949c53a86432e41ba68d72d29daeaddd",
+    "briefsummary.txt": "d74f36c5388d6d4be539a5ae7268e1bb7e7f27440b2c5e82acf2b3cb2453bdfe",
+    "diagnostic-ratios.png": "e5e402026755ac49459d9e4ea7b190393af1b15595a3a9aecc077b073f94b65d"
+  },
+  "scope": "Full-field geometrical corrections to scalar-q transport. No material-conservation, closed-budget or numerical-convergence claim."
+}

@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8
+  ],
+  "tau0_seconds": 2.8,
+  "nonempty_member_time_region_age_stencil_groups": 360,
+  "ensemble_rows": 12600,
+  "metric_rows": 2520,
+  "ignored_zero_volume_rows": 0,
+  "snapshot_times_seconds": [
+    0.0,
+    14.479999676346779,
+    20.079999551177025,
+    22.879999488592148,
+    25.67999942600727,
+    31.279999300837517,
+    34.07999923825264
+  ],
+  "stencil_steps": [
+    1,
+    2
+  ],
+  "undefined_ratios": 0,
+  "aggregation": "Equal weights across seven matched seeds after volume-weighted spatial moments within each seed/bin; ensemble mean squares precede square roots and ratios. No pooling across snapshot times or ages.",
+  "age": "Local age (t - t_peak(x))/tau0; control uses the same virtual packet coordinate. The all bin includes every sampled age.",
+  "frame": "Current-following simulation frame; the advection-based ratio is frame dependent.",
+  "fields": "Full uncentred fields, including mean and coherent motion. q is transverse Eulerian vorticity; velocity in advection/stretching is Lagrangian.",
+  "sampling": "Every reported term uses 1<=x<=11 m and a common four-cell exclusion at both vertical boundaries for both stencil steps. Thus even the full region denotes the interior depth range; the top exclusion is about 8 mm on the M2 grid. Exact z limits and sample volumes are retained in each row. Native full-grid divergence maxima remain in each seed qc.csv, outside this regional aggregation.",
+  "ratio_definitions": {
+    "epsilon_vy_native": "||native_vy|| / sqrt(||native_ux||^2+||native_wz||^2)",
+    "epsilon_div_native": "||native_ux+native_wz|| / sqrt(||native_ux||^2+||native_wz||^2)",
+    "epsilon_div_centered": "||u_x+w_z|| / sqrt(||u_x||^2+||w_z||^2)",
+    "native_full_divergence_relative": "||native_divergence|| / sqrt(||native_ux||^2+||native_vy||^2+||native_wz||^2)",
+    "r3d_to_uncancelled_advection": "||R3D|| / (||u*qx||+||w*qz||)",
+    "tau_r3d_to_q": "tau0*||R3D||/||q||",
+    "r3d_cancellation": "||R3D||/(||omegaEx*vx||+||q*vy||+||omegaEz*vz||+||v*qy||)"
+  },
+  "units": {
+    "q": "s^-1",
+    "R3D": "s^-2",
+    "q_floor": "s^-1",
+    "advection_floor": "s^-2",
+    "gradient_floor": "s^-1"
+  },
+  "denominator_floors": {
+    "q": 0.0,
+    "advection": 0.0,
+    "gradient": 0.0
+  },
+  "limits": [
+    "No uncertainty or statistical-significance claim is attached to the seven-seed ratios.",
+    "No threshold labels Taylor-Proudman balance, quasi-two-dimensional flow, or a transport barrier.",
+    "Small R3D can reflect cancellation of substantial three-dimensional terms; retain individual norms.",
+    "Undefined ratios are blank in CSV. A numerical noise floor is not inferred automatically.",
+    "Sparse snapshots and implicit numerical dissipation prevent a closed temporal vorticity budget.",
+    "Stencil/coarsening sensitivity is not simulation-resolution convergence.",
+    "Profiles remain in their seed directories; this report aggregates regions.csv only."
+  ],
+  "plot": "written"
+}
