@@ -41,13 +41,27 @@ def main():
         env['GIT_SSH_COMMAND']=' '.join(['ssh','-o','BatchMode=yes','-o','IdentitiesOnly=yes','-o','StrictHostKeyChecking=yes',
             '-o',shlex.quote('UserKnownHostsFile='+str(hosts)),'-i',shlex.quote(str(key))])
         subprocess.run(['git','push','--dry-run',f'git@github.com:{args.repository}.git','HEAD:main'],cwd=root,env=env,check=True)
-        # Current scheduler state avoids attaching dependencies to already-purged jobs.
-        text=subprocess.check_output(['sacct','--array','-X','-n','-P','-j',array+','+analysis,'--format=JobID,State'],text=True)
-        states={}
-        for line in text.splitlines():
-            fields=line.split('|')
-            if len(fields)>=2: states[fields[0]]=fields[1].split()[0].rstrip('+')
         parents=[f'{array}_{i}' for i in range(8)]+[analysis]
+        # Unstarted array elements need not have individual accounting records.
+        # Read history first, then overlay expanded live queue entries (including
+        # pending elements and jobs requeued since an older terminal record).
+        states={}
+        def merge_states(output):
+            for line in output.splitlines():
+                fields=[field.strip() for field in line.split('|')]
+                if len(fields)>=2 and fields[0] in parents and fields[1]:
+                    states[fields[0]]=fields[1].split()[0].rstrip('+')
+        merge_states(subprocess.check_output(['sacct','--array','-X','-n','-P','-j',array+','+analysis,
+                                             '--format=JobID%64,State%32'],text=True))
+        try:
+            merge_states(subprocess.check_output(['squeue','--array','--noheader','--jobs='+array+','+analysis,
+                                                 '--format=%i|%T'],text=True,stderr=subprocess.PIPE))
+        except subprocess.CalledProcessError as error:
+            # Slurm may reject IDs after all finished jobs leave its live cache.
+            # An unavailable live query is tolerable only when history already
+            # confirms every parent is terminal; never guess an active state.
+            if not all(states.get(parent) in TERMINAL for parent in parents):
+                raise RuntimeError('Could not read the live Slurm queue. No publishing jobs submitted.') from error
         missing=[p for p in parents if p not in states]
         if missing: raise RuntimeError('Could not verify scheduler state for '+', '.join(missing)+'. No publishing jobs submitted.')
         record={'campaign_array':array,'campaign_analysis':analysis,'repository':args.repository,'state':'submitting','jobs':[]}

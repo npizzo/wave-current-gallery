@@ -41,6 +41,8 @@ class EventAttachment(unittest.TestCase):
         (self.campaign / "scientific-input.txt").write_text("unchanged input\n")
         self.states = {"66075619_" + str(i): "PENDING" for i in range(8)}
         self.states["66075620"] = "PENDING"
+        self.live_states = {}
+        self.squeue_error = False
         self.commands = []
         self.submitted = []
 
@@ -51,6 +53,10 @@ class EventAttachment(unittest.TestCase):
         self.commands.append(list(argv))
         if argv[0] == "sacct":
             return "".join(key + "|" + value + "\n" for key, value in self.states.items())
+        if argv[0] == "squeue":
+            if self.squeue_error:
+                raise subprocess.CalledProcessError(1, argv, output="", stderr="Invalid job id specified\n")
+            return "".join(key + "|" + value + "\n" for key, value in self.live_states.items())
         if argv[0] == "sbatch":
             self.submitted.append(list(argv))
             return str(70000000 + len(self.submitted)) + ";test-cluster\n"
@@ -116,11 +122,54 @@ class EventAttachment(unittest.TestCase):
         self.assertEqual(self.submitted, [])
         self.assertFalse((self.root / ".unity-publisher/updates.json").exists())
 
+    def test_unmaterialized_pending_tasks_are_supplied_by_live_queue(self):
+        # Exact Unity failure: accounting has the first two materialized tasks
+        # and final placeholder, while squeue expands the other pending tasks.
+        self.states = {"66075619_0": "COMPLETED", "66075619_1": "RUNNING",
+                       "66075619_7": "PENDING", "66075620": "PENDING"}
+        self.live_states = {"66075619_" + str(i): "PENDING" for i in range(1, 8)}
+        self.live_states["66075619_1"] = "RUNNING"
+        self.live_states["66075620"] = "PENDING"
+        self.invoke()
+        self.assertEqual(len(self.submitted), 9)
+        dependencies = {arg for argv in self.submitted for arg in argv if arg.startswith("--dependency=")}
+        self.assertEqual(dependencies, {"--dependency=afterany:" + key for key in self.live_states})
+        self.assertNotIn("--dependency=afterany:66075619_0", dependencies)
+
+    def test_live_states_override_old_terminal_accounting_after_requeue(self):
+        self.states = {key: "COMPLETED" for key in self.states}
+        self.states["66075619_5"] = "FAILED"
+        self.live_states = {"66075619_5": "RUNNING", "66075620": "PENDING"}
+        self.invoke()
+        self.assertEqual(len(self.submitted), 3)
+        dependencies = {arg for argv in self.submitted for arg in argv if arg.startswith("--dependency=")}
+        self.assertEqual(dependencies, {"--dependency=afterany:66075619_5", "--dependency=afterany:66075620"})
+
+    def test_all_terminal_accounting_and_empty_queue_submit_only_immediate(self):
+        self.states = {key: "COMPLETED" for key in self.states}
+        self.invoke()
+        self.assertEqual(len(self.submitted), 1)
+        self.assertFalse(any(arg.startswith("--dependency=") for arg in self.submitted[0]))
+
+    def test_live_query_failure_with_active_jobs_submits_nothing(self):
+        self.squeue_error = True
+        with self.assertRaises((RuntimeError, subprocess.CalledProcessError)):
+            self.invoke()
+        self.assertEqual(self.submitted, [])
+        self.assertFalse((self.root / ".unity-publisher/updates.json").exists())
+
+    def test_purged_terminal_jobs_may_have_no_valid_live_queue_ids(self):
+        self.states = {key: "COMPLETED" for key in self.states}
+        self.squeue_error = True
+        self.invoke()
+        self.assertEqual(len(self.submitted), 1)
+
     def test_array_query_expands_pending_elements(self):
         self.invoke()
-        queries = [argv for argv in self.commands if argv[0] == "sacct"]
-        self.assertTrue(queries)
-        self.assertTrue(all("--array" in argv for argv in queries), "Compressed pending-array IDs omit individual dependency parents")
+        for command in ("sacct", "squeue"):
+            queries = [argv for argv in self.commands if argv[0] == command]
+            self.assertTrue(queries, command + " must be queried")
+            self.assertTrue(all("--array" in argv for argv in queries), "Compressed pending-array IDs omit individual dependency parents")
 
     def test_publisher_inside_campaign_is_rejected(self):
         with self.assertRaises(ValueError):
