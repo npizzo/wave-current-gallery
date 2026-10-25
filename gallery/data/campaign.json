@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T18:06:21.245387+00:00",
+  "generated_at": "2026-10-25T18:41:27.291093+00:00",
   "title": "Surface waves & turbulence",
   "campaign": {
     "id": "packet-1d",
     "title": "Wave-packet laboratory reproduction",
-    "status": "analysis_pending",
+    "status": "complete",
     "source_commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed",
     "parameters": {
       "case": "1.D",
@@ -29,7 +29,7 @@
       "analysis": "66075620"
     },
     "scheduler_states": {
-      "66075620": "RUNNING",
+      "66075620": "COMPLETED",
       "66075619_0": "COMPLETED",
       "66075619_1": "COMPLETED",
       "66075619_2": "COMPLETED",
@@ -647,9 +647,79 @@
       ]
     }
   ],
-  "results": [],
-  "downloads": [],
-  "metrics": [],
+  "results": [
+    {
+      "src": "assets/results/bf44a8ee349621491a3f/figure3-reproduction.png",
+      "title": "Laboratory comparison",
+      "caption": "Seven retained realizations of bounded case 1.D. The original analysis shows raw and paired/control-corrected Eulerian changes; centred-shape agreement is distinguished from the absolute offset."
+    },
+    {
+      "src": "assets/results/bf44a8ee349621491a3f/dimensionality.png",
+      "title": "Transverse invariance of the eddies",
+      "caption": "Ensemble-incoherent eddy energy in ky = 0 modes and vertical velocity variance. The repeatable packet response is removed. This diagnostic does not itself establish a Taylor\u2013Proudman regime or transport barrier."
+    },
+    {
+      "src": "assets/results/bf44a8ee349621491a3f/momentum-flux-partition.png",
+      "title": "Vertical momentum transport",
+      "caption": "Eulerian vertical momentum-flux covariance partitioned between ky = 0 and ky \u2260 0 eddies after ensemble-response subtraction. Flux signs and changes should be assessed alongside the current; no tracer diffusivity is measured."
+    }
+  ],
+  "downloads": [
+    {
+      "href": "data/results/bf44a8ee349621491a3f/figure3-reproduction.csv",
+      "label": "Laboratory-comparison profiles (CSV)"
+    },
+    {
+      "href": "data/results/bf44a8ee349621491a3f/ensemble-snapshots.csv",
+      "label": "Ensemble dimensionality and flux (CSV)"
+    },
+    {
+      "href": "data/results/bf44a8ee349621491a3f/null-timestep-check.csv",
+      "label": "Deterministic null timestep check (CSV)"
+    },
+    {
+      "href": "data/results/bf44a8ee349621491a3f/comparison-summary.json",
+      "label": "Comparison summary (JSON)"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Raw LES: centred profile RMSE",
+      "value": 1.04754,
+      "unit": "mm/s",
+      "note": "Each curve's native PIV-window arithmetic mean is removed; correlated digitized laboratory samples, not a goodness-of-fit test."
+    },
+    {
+      "label": "Raw LES: laboratory \u2212 LES window offset",
+      "value": -2.9269,
+      "unit": "mm/s",
+      "note": "Mean offset before centring; the absolute and shape comparisons answer different questions."
+    },
+    {
+      "label": "Raw LES: difference from saved upstream profile",
+      "value": 0.0177,
+      "unit": "mm/s",
+      "note": "RMSE over \u22121.2 \u2264 k\u2080z \u2264 \u22120.1; turbulent realizations need not be hardware-identical."
+    },
+    {
+      "label": "Paired/control-corrected LES: centred profile RMSE",
+      "value": 0.8069,
+      "unit": "mm/s",
+      "note": "Each curve's native PIV-window arithmetic mean is removed; correlated digitized laboratory samples, not a goodness-of-fit test."
+    },
+    {
+      "label": "Paired/control-corrected LES: laboratory \u2212 LES window offset",
+      "value": -2.37893,
+      "unit": "mm/s",
+      "note": "Mean offset before centring; the absolute and shape comparisons answer different questions."
+    },
+    {
+      "label": "Paired/control-corrected LES: difference from saved upstream profile",
+      "value": 0.03001,
+      "unit": "mm/s",
+      "note": "RMSE over \u22121.2 \u2264 k\u2080z \u2264 \u22120.1; turbulent realizations need not be hardware-identical."
+    }
+  ],
   "notices": [
     "Only verified finished runs are shown. A pending label means no completion receipt has been verified; it does not distinguish queued, running, or failed jobs.",
     "Member figures are individual realizations. Final laboratory and ensemble diagnostics appear only after the complete analysis passes its source and file-integrity checks.",

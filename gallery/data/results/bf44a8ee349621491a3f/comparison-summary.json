@@ -1,0 +1,42 @@
+{
+  "source_commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed",
+  "metrics": [
+    {
+      "label": "Raw LES: centred profile RMSE",
+      "value": 1.04754,
+      "unit": "mm/s",
+      "note": "Each curve's native PIV-window arithmetic mean is removed; correlated digitized laboratory samples, not a goodness-of-fit test."
+    },
+    {
+      "label": "Raw LES: laboratory \u2212 LES window offset",
+      "value": -2.9269,
+      "unit": "mm/s",
+      "note": "Mean offset before centring; the absolute and shape comparisons answer different questions."
+    },
+    {
+      "label": "Raw LES: difference from saved upstream profile",
+      "value": 0.0177,
+      "unit": "mm/s",
+      "note": "RMSE over \u22121.2 \u2264 k\u2080z \u2264 \u22120.1; turbulent realizations need not be hardware-identical."
+    },
+    {
+      "label": "Paired/control-corrected LES: centred profile RMSE",
+      "value": 0.8069,
+      "unit": "mm/s",
+      "note": "Each curve's native PIV-window arithmetic mean is removed; correlated digitized laboratory samples, not a goodness-of-fit test."
+    },
+    {
+      "label": "Paired/control-corrected LES: laboratory \u2212 LES window offset",
+      "value": -2.37893,
+      "unit": "mm/s",
+      "note": "Mean offset before centring; the absolute and shape comparisons answer different questions."
+    },
+    {
+      "label": "Paired/control-corrected LES: difference from saved upstream profile",
+      "value": 0.03001,
+      "unit": "mm/s",
+      "note": "RMSE over \u22121.2 \u2264 k\u2080z \u2264 \u22120.1; turbulent realizations need not be hardware-identical."
+    }
+  ],
+  "scope": "Completed seven-seed reproduction. These are measurements, not a convergence or significance claim."
+}
