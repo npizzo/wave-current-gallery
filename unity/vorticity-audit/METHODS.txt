@@ -1,0 +1,97 @@
+WAVE-PACKET VORTICITY AUDIT
+
+Purpose
+Measure the geometrical corrections to the proposed in-plane scalar-vorticity
+equation from existing Unity snapshots. The simulation source, initial data,
+timesteps, and completed analysis remain unchanged. This is CPU postprocessing.
+
+Fields and exact continuum identity
+All velocities are the full resolved Lagrangian-mean velocity (u,v,w), in the
+current-following frame. We retain the coherent current, horizontal means and
+all transverse modes. We do not subtract the packet-only flow or the ensemble
+mean. Only the prescribed Stokes velocity is subtracted when computing Eulerian
+vorticity omegaE=curl(uL-us). Stokes velocity is evaluated at native staggered
+nodes and averaged with the same adjacent-face interpolation as the velocity.
+
+q=omegaE_y=partial_z(u-us)-partial_x(w-ws).
+For ideal, incompressible, unforced CL dynamics:
+  (partial_t+u partial_x+w partial_z)q = R3D,
+  R3D = omegaE_x*v_x + q*v_y + omegaE_z*v_z - v*q_y.
+For this spanwise-uniform imposed packet, the alternative expression is
+  R3D = w_y*v_x - u_y*v_z + q*v_y - v*q_y.
+We check the two expressions algebraically, and measure the square of their
+NET sum as well as separate norms. Cancellation is retained, not discarded.
+
+Native continuity
+Native adjacent-face differences give u_x, v_y, w_z at common cell centres.
+Incompressibility requires v_y=-(u_x+w_z), so dividing their norms is not useful.
+The relevant ratio is ||v_y||/sqrt(||u_x||^2+||w_z||^2); the report also gives
+the equivalent in-plane-divergence form and the full-divergence error.
+Native full-grid maximum divergence uses the same scaled tolerance (2e-4)
+as the original campaign verifier. This is a software/numerical QC threshold,
+not a physical criterion for two-dimensional dynamics.
+
+Derivative evaluation and coverage
+Snapshot native shapes are u:(Nx+1,Ny,Nz), v:(Nx,Ny,Nz), w:(Nx,Ny,Nz+1).
+Velocities are averaged to cell centres for curls and nonlinear products.
+Diagnostic x,z derivatives are quadratic-exact three-node formulas; z uses
+the original stretched coordinates rounded to Float32. y is periodic. There
+is no wrapping in x or z. Two derivative stencil spacings (1 and 2 cells) are
+evaluated on the same data; native divergence is unchanged between them.
+Four cells at each vertical boundary are excluded from ALL reported regional
+and profile moments, including native-gradient moments, for a common coverage
+that avoids one-sided/nested derivative stencils. Full-grid divergence maxima
+are separately retained. This excludes about 8 mm immediately below the surface
+at M2. Exact sampled depth bounds and volumes are in the tables. Native gradient
+ratios and centred-gradient ratios are reported separately.
+
+Regions: x between 1 and 11 m, with full vertical interior; upper Stokes depth
+z>=-1/(2k); and PIV window -1.2<=kz<=-0.1. All are intersected with the common
+vertical interior above. We weight by actual cell thickness, not by index.
+Profiles retain each sampled depth. Local packet age is
+  (t-(x-x0)/cg)/tau0.
+Bins are before (<-3), leading [-3,-1), core [-1,1), trailing [1,3), after (>=3),
+plus the all-ages bin. The no-wave control uses the same virtual packet clock.
+No averaging across different saved times or packet-age bins is used to make
+an ensemble result. These are spatial bins within sparse instantaneous snapshots,
+not a densely sampled Lagrangian packet-following time history.
+
+Packet sources
+For a moving packet s=partial_x(ws)-partial_z(us) depends on x,z,t. We therefore
+retain analytic s_t, u*s_x and w*s_z, their net s_material, and s*v_y. The supplied
+s and derivatives are analytic cell-centre reference quantities; q itself uses
+the discrete curl of the interpolated Eulerian velocity. A small discrepancy
+between their discrete/analytic forms is possible. Stencil sensitivity and
+manufactured tests assess diagnostic errors, not simulation convergence.
+eta=curl_y(uL) has ideal RHS R3D-s_material. The manuscript convention
+zeta=w_x-u_z=-eta has the opposite sign. A comparison with w*s_z alone would
+omit time dependence and horizontal variation of the packet envelope.
+
+Ratios and limitations
+Absolute signed means, mean squares, RMS norms and maxima are retained.
+Ensemble mean squares are averaged equally over the seven retained paired seeds
+before forming norms/ratios. We do not average seedwise ratios.
+  epsilon_div: in-plane divergence / uncancelled diagonal-gradient norm.
+  R3D/(||u*q_x||+||w*q_z||): correction relative to in-plane advection;
+      this denominator is reference-frame dependent.
+  tau0*||R3D||/||q||: instantaneous correction rate on the packet-width timescale;
+      it is not an integrated material change over tau0.
+  cancellation: ||R3D|| divided by the sum of its four component norms.
+Zero denominators are undefined. No noise floor is inferred automatically.
+Seven upstream-retained seeds are not a convergence or unbiased-population test.
+
+A small R3D would bound the ideal geometrical correction to scalar-q advection.
+It would not, by itself, prove a Taylor-Proudman balance or material conservation.
+Sparse saved snapshots do not resolve the temporal vorticity budget, and implicit
+WENO dissipation is not measured here. A small net correction can arise through
+cancellation of large three-dimensional terms without geometric columnarity.
+No tracer diffusivity, energy-flux budget, or transport-barrier claim is made.
+
+Outputs and provenance
+Each seed writes regions.csv, profiles.csv, qc.csv and a completion receipt in
+the separate gallery .unity-publisher audit directory. Snapshot files are read
+with IOStream; their size/mtime are checked for changes and metadata is hashed.
+Full snapshot bytes are not newly hashed. Campaign source fingerprints and
+completed-run receipts are checked. Frozen audit code is hashed at submission.
+Only small aggregate tables, figures, definitions and provenance are published
+to gallery/audits/vorticity; native fields and large per-seed profiles stay on Unity.
