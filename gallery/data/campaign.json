@@ -1,21 +1,22 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T11:47:40Z",
+  "generated_at": "2026-10-25T12:24:21.992173+00:00",
   "title": "Surface waves & turbulence",
   "campaign": {
     "id": "packet-1d",
     "title": "Wave-packet laboratory reproduction",
-    "status": "awaiting_sync",
+    "status": "running",
     "source_commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed",
     "parameters": {
-      "Tank, x × y × z": "12 × 0.8 × 0.4 m",
-      "Grid": "1536 × 128 × 128",
-      "Carrier wavenumber": "9.3 rad m⁻¹",
-      "Wave steepness, ak": "0.22",
-      "Time step": "0.02 s",
-      "Packet time scale, τ₀": "2.8 s",
-      "Duration": "≈45.77 s",
-      "Turbulence preconditioning": "2 s"
+      "case": "1.D",
+      "grid": "1536 \u00d7 128 \u00d7 128",
+      "tank": "12 \u00d7 0.8 \u00d7 0.4 m",
+      "wave_steepness": "ak = 0.22",
+      "wave_number": "k = 9.3 rad/m",
+      "packet_width": "\u03c4\u2080 = 2.8 s",
+      "time_step": "0.02 s; additional deterministic null at 0.01 s",
+      "numerics": "WENO5, RK3, Float32",
+      "seeds": "1, 2, 3, 4, 6, 7, 8"
     },
     "completed_pairs": 0,
     "total_pairs": 7,
@@ -26,79 +27,202 @@
     "jobs": {
       "array": "66075619",
       "analysis": "66075620"
+    },
+    "scheduler_states": {
+      "66075620": "PENDING",
+      "66075619_0": "COMPLETED",
+      "66075619_1": "RUNNING",
+      "66075619_7": "PENDING"
     }
   },
   "members": [
     {
       "id": "seed-1",
       "seed": 1,
-      "status": "unknown",
-      "label": "Seed 1",
-      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "status": "pending",
+      "label": "Realization 1",
+      "summary": "0 of 2 matched runs verified complete. Scheduler reports RUNNING.",
+      "scheduler_state": "RUNNING",
+      "runs": [],
       "figures": [],
       "downloads": []
     },
     {
       "id": "seed-2",
       "seed": 2,
-      "status": "unknown",
-      "label": "Seed 2",
-      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "status": "pending",
+      "label": "Realization 2",
+      "summary": "0 of 2 matched runs verified complete.",
+      "scheduler_state": null,
+      "runs": [],
       "figures": [],
       "downloads": []
     },
     {
       "id": "seed-3",
       "seed": 3,
-      "status": "unknown",
-      "label": "Seed 3",
-      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "status": "pending",
+      "label": "Realization 3",
+      "summary": "0 of 2 matched runs verified complete.",
+      "scheduler_state": null,
+      "runs": [],
       "figures": [],
       "downloads": []
     },
     {
       "id": "seed-4",
       "seed": 4,
-      "status": "unknown",
-      "label": "Seed 4",
-      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "status": "pending",
+      "label": "Realization 4",
+      "summary": "0 of 2 matched runs verified complete.",
+      "scheduler_state": null,
+      "runs": [],
       "figures": [],
       "downloads": []
     },
     {
       "id": "seed-6",
       "seed": 6,
-      "status": "unknown",
-      "label": "Seed 6",
-      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "status": "pending",
+      "label": "Realization 6",
+      "summary": "0 of 2 matched runs verified complete.",
+      "scheduler_state": null,
+      "runs": [],
       "figures": [],
       "downloads": []
     },
     {
       "id": "seed-7",
       "seed": 7,
-      "status": "unknown",
-      "label": "Seed 7",
-      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "status": "pending",
+      "label": "Realization 7",
+      "summary": "0 of 2 matched runs verified complete.",
+      "scheduler_state": null,
+      "runs": [],
       "figures": [],
       "downloads": []
     },
     {
       "id": "seed-8",
       "seed": 8,
-      "status": "unknown",
-      "label": "Seed 8",
-      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "status": "pending",
+      "label": "Realization 8",
+      "summary": "0 of 2 matched runs verified complete. Scheduler reports PENDING.",
+      "scheduler_state": "PENDING",
+      "runs": [],
       "figures": [],
       "downloads": []
+    },
+    {
+      "id": "controls",
+      "seed": null,
+      "status": "complete",
+      "label": "Deterministic controls",
+      "summary": "3 of 3 controls verified complete. Scheduler reports COMPLETED.",
+      "scheduler_state": "COMPLETED",
+      "runs": [
+        {
+          "member": "quiescent_control",
+          "final_time_s": 45.767818450927734,
+          "iterations": 2289,
+          "dt_s": 0.02
+        },
+        {
+          "member": "packet_null",
+          "final_time_s": 45.767818450927734,
+          "iterations": 2289,
+          "dt_s": 0.02
+        },
+        {
+          "member": "packet_null",
+          "final_time_s": 45.767818450927734,
+          "iterations": 4577,
+          "dt_s": 0.01
+        }
+      ],
+      "figures": [
+        {
+          "src": "assets/members/1e0a5372990ee6bb2275/eulerian-mean.png",
+          "title": "Quiescent control: Eulerian current through the tank",
+          "caption": "Saved y-averaged Eulerian along-wave velocity: prescribed Stokes drift is subtracted at native x faces, then adjacent faces are averaged. Same colour scale within this figure. Display samples at most about 384 x positions; every depth level is retained. This is a deterministic control with no initial turbulence."
+        },
+        {
+          "src": "assets/members/1e0a5372990ee6bb2275/mean-profiles.png",
+          "title": "Quiescent control: Current profiles",
+          "caption": "Eulerian y-mean velocity averaged over 1 \u2264 x \u2264 11 m at selected times. Absolute profiles retain the mean offset. These snapshots use different windows from the final laboratory comparison."
+        },
+        {
+          "src": "assets/members/1e0a5372990ee6bb2275/lagrangian-rms.png",
+          "title": "Quiescent control: Velocity history",
+          "caption": "Native volume-weighted RMS of the full Lagrangian velocity, including its mean and prescribed wave contribution. This is not turbulent RMS, an Eulerian energy, or a mixing-rate diagnostic."
+        },
+        {
+          "src": "assets/members/61ff29e24aa3a25958c5/eulerian-mean.png",
+          "title": "Wave packet without turbulence \u00b7 \u0394t = 0.020 s: Eulerian current through the tank",
+          "caption": "Saved y-averaged Eulerian along-wave velocity: prescribed Stokes drift is subtracted at native x faces, then adjacent faces are averaged. Same colour scale within this figure. Display samples at most about 384 x positions; every depth level is retained. This is a deterministic control with no initial turbulence."
+        },
+        {
+          "src": "assets/members/61ff29e24aa3a25958c5/mean-profiles.png",
+          "title": "Wave packet without turbulence \u00b7 \u0394t = 0.020 s: Current profiles",
+          "caption": "Eulerian y-mean velocity averaged over 1 \u2264 x \u2264 11 m at selected times. Absolute profiles retain the mean offset. These snapshots use different windows from the final laboratory comparison."
+        },
+        {
+          "src": "assets/members/61ff29e24aa3a25958c5/lagrangian-rms.png",
+          "title": "Wave packet without turbulence \u00b7 \u0394t = 0.020 s: Velocity history",
+          "caption": "Native volume-weighted RMS of the full Lagrangian velocity, including its mean and prescribed wave contribution. This is not turbulent RMS, an Eulerian energy, or a mixing-rate diagnostic."
+        },
+        {
+          "src": "assets/members/41d5b587578c0e495852/eulerian-mean.png",
+          "title": "Wave packet without turbulence \u00b7 \u0394t = 0.010 s: Eulerian current through the tank",
+          "caption": "Saved y-averaged Eulerian along-wave velocity: prescribed Stokes drift is subtracted at native x faces, then adjacent faces are averaged. Same colour scale within this figure. Display samples at most about 384 x positions; every depth level is retained. This is a deterministic control with no initial turbulence."
+        },
+        {
+          "src": "assets/members/41d5b587578c0e495852/mean-profiles.png",
+          "title": "Wave packet without turbulence \u00b7 \u0394t = 0.010 s: Current profiles",
+          "caption": "Eulerian y-mean velocity averaged over 1 \u2264 x \u2264 11 m at selected times. Absolute profiles retain the mean offset. These snapshots use different windows from the final laboratory comparison."
+        },
+        {
+          "src": "assets/members/41d5b587578c0e495852/lagrangian-rms.png",
+          "title": "Wave packet without turbulence \u00b7 \u0394t = 0.010 s: Velocity history",
+          "caption": "Native volume-weighted RMS of the full Lagrangian velocity, including its mean and prescribed wave contribution. This is not turbulent RMS, an Eulerian energy, or a mixing-rate diagnostic."
+        }
+      ],
+      "downloads": [
+        {
+          "href": "data/members/1e0a5372990ee6bb2275/mean-profiles.csv",
+          "label": "Quiescent control: Eulerian profiles (CSV)"
+        },
+        {
+          "href": "data/members/1e0a5372990ee6bb2275/velocity-statistics.csv",
+          "label": "Quiescent control: Lagrangian statistics (CSV)"
+        },
+        {
+          "href": "data/members/61ff29e24aa3a25958c5/mean-profiles.csv",
+          "label": "Wave packet without turbulence \u00b7 \u0394t = 0.020 s: Eulerian profiles (CSV)"
+        },
+        {
+          "href": "data/members/61ff29e24aa3a25958c5/velocity-statistics.csv",
+          "label": "Wave packet without turbulence \u00b7 \u0394t = 0.020 s: Lagrangian statistics (CSV)"
+        },
+        {
+          "href": "data/members/41d5b587578c0e495852/mean-profiles.csv",
+          "label": "Wave packet without turbulence \u00b7 \u0394t = 0.010 s: Eulerian profiles (CSV)"
+        },
+        {
+          "href": "data/members/41d5b587578c0e495852/velocity-statistics.csv",
+          "label": "Wave packet without turbulence \u00b7 \u0394t = 0.010 s: Lagrangian statistics (CSV)"
+        }
+      ]
     }
   ],
   "results": [],
+  "downloads": [],
   "metrics": [],
   "notices": [
-    "GPU validation job 66045225 passed, according to the supplied Unity logs. Reproduction array 66075619 and dependent analysis job 66075620 were submitted; their current status has not yet been read.",
-    "This is the first gallery placeholder, not a report of zero completed simulations. Results and completion counts will appear after the first synchronization.",
-    "The original seven-seed comparison excludes seeds 5 and 9 after numerical instability. The retained selection is reproduced here; any new failure must remain visible.",
-    "Software validation and successful completion do not establish spatial or time-step convergence of the turbulent ensemble."
+    "Only verified finished runs are shown. A pending label means no completion receipt has been verified; it does not distinguish queued, running, or failed jobs.",
+    "Member figures are individual realizations. Final laboratory and ensemble diagnostics appear only after the complete analysis passes its source and file-integrity checks.",
+    "The original seven retained seeds exclude upstream numerical failures 5 and 9. This gallery preserves that selection; it is not a population-unbiased or convergence study.",
+    "No tracer was simulated. Vertical momentum flux and ky = 0 energy alone do not establish a transport barrier or a Taylor\u2013Proudman regime.",
+    "Initial-condition, source and validation checks do not substitute for physical validation against the laboratory data."
   ]
 }
