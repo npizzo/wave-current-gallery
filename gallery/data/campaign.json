@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T17:08:02.146542+00:00",
+  "generated_at": "2026-10-25T18:06:21.245387+00:00",
   "title": "Surface waves & turbulence",
   "campaign": {
     "id": "packet-1d",
     "title": "Wave-packet laboratory reproduction",
-    "status": "running",
+    "status": "analysis_pending",
     "source_commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed",
     "parameters": {
       "case": "1.D",
@@ -18,7 +18,7 @@
       "numerics": "WENO5, RK3, Float32",
       "seeds": "1, 2, 3, 4, 6, 7, 8"
     },
-    "completed_pairs": 6,
+    "completed_pairs": 7,
     "total_pairs": 7,
     "validation": {
       "status": "passed",
@@ -29,7 +29,7 @@
       "analysis": "66075620"
     },
     "scheduler_states": {
-      "66075620": "PENDING",
+      "66075620": "RUNNING",
       "66075619_0": "COMPLETED",
       "66075619_1": "COMPLETED",
       "66075619_2": "COMPLETED",
@@ -37,7 +37,7 @@
       "66075619_4": "COMPLETED",
       "66075619_5": "COMPLETED",
       "66075619_6": "COMPLETED",
-      "66075619_7": "PENDING"
+      "66075619_7": "COMPLETED"
     }
   },
   "members": [
@@ -476,13 +476,74 @@
     {
       "id": "seed-8",
       "seed": 8,
-      "status": "pending",
+      "status": "complete",
       "label": "Realization 8",
-      "summary": "0 of 2 matched runs verified complete. Scheduler reports PENDING.",
-      "scheduler_state": "PENDING",
-      "runs": [],
-      "figures": [],
-      "downloads": []
+      "summary": "2 of 2 matched runs verified complete. Scheduler reports COMPLETED.",
+      "scheduler_state": "COMPLETED",
+      "runs": [
+        {
+          "member": "turbulence_control",
+          "final_time_s": 45.767818450927734,
+          "iterations": 2289,
+          "dt_s": 0.02
+        },
+        {
+          "member": "packet_turbulence",
+          "final_time_s": 45.767818450927734,
+          "iterations": 2289,
+          "dt_s": 0.02
+        }
+      ],
+      "figures": [
+        {
+          "src": "assets/members/e5c9e5ee859e6c7c4967/eulerian-mean.png",
+          "title": "No-wave control: Eulerian current through the tank",
+          "caption": "Saved y-averaged Eulerian along-wave velocity: prescribed Stokes drift is subtracted at native x faces, then adjacent faces are averaged. Same colour scale within this figure. Display samples at most about 384 x positions; every depth level is retained. This is one realization, not an ensemble result."
+        },
+        {
+          "src": "assets/members/e5c9e5ee859e6c7c4967/mean-profiles.png",
+          "title": "No-wave control: Current profiles",
+          "caption": "Eulerian y-mean velocity averaged over 1 \u2264 x \u2264 11 m at selected times. Absolute profiles retain the mean offset. These snapshots use different windows from the final laboratory comparison."
+        },
+        {
+          "src": "assets/members/e5c9e5ee859e6c7c4967/lagrangian-rms.png",
+          "title": "No-wave control: Velocity history",
+          "caption": "Native volume-weighted RMS of the full Lagrangian velocity, including its mean and prescribed wave contribution. This is not turbulent RMS, an Eulerian energy, or a mixing-rate diagnostic."
+        },
+        {
+          "src": "assets/members/99243fa2379a3229796b/eulerian-mean.png",
+          "title": "Wave packet + turbulence: Eulerian current through the tank",
+          "caption": "Saved y-averaged Eulerian along-wave velocity: prescribed Stokes drift is subtracted at native x faces, then adjacent faces are averaged. Same colour scale within this figure. Display samples at most about 384 x positions; every depth level is retained. This is one realization, not an ensemble result."
+        },
+        {
+          "src": "assets/members/99243fa2379a3229796b/mean-profiles.png",
+          "title": "Wave packet + turbulence: Current profiles",
+          "caption": "Eulerian y-mean velocity averaged over 1 \u2264 x \u2264 11 m at selected times. Absolute profiles retain the mean offset. These snapshots use different windows from the final laboratory comparison."
+        },
+        {
+          "src": "assets/members/99243fa2379a3229796b/lagrangian-rms.png",
+          "title": "Wave packet + turbulence: Velocity history",
+          "caption": "Native volume-weighted RMS of the full Lagrangian velocity, including its mean and prescribed wave contribution. This is not turbulent RMS, an Eulerian energy, or a mixing-rate diagnostic."
+        }
+      ],
+      "downloads": [
+        {
+          "href": "data/members/e5c9e5ee859e6c7c4967/mean-profiles.csv",
+          "label": "No-wave control: Eulerian profiles (CSV)"
+        },
+        {
+          "href": "data/members/e5c9e5ee859e6c7c4967/velocity-statistics.csv",
+          "label": "No-wave control: Lagrangian statistics (CSV)"
+        },
+        {
+          "href": "data/members/99243fa2379a3229796b/mean-profiles.csv",
+          "label": "Wave packet + turbulence: Eulerian profiles (CSV)"
+        },
+        {
+          "href": "data/members/99243fa2379a3229796b/velocity-statistics.csv",
+          "label": "Wave packet + turbulence: Lagrangian statistics (CSV)"
+        }
+      ]
     },
     {
       "id": "controls",
