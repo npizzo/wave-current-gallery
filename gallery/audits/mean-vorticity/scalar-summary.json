@@ -1,0 +1,58 @@
+{
+  "completed": true,
+  "retained_seeds": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8
+  ],
+  "tau0_seconds": 2.8,
+  "groups": 8352,
+  "metric_rows": 48384,
+  "undefined_ratios": 0,
+  "ignored_empty_rows": 0,
+  "snapshot_times_seconds": [
+    0.0,
+    14.479999676346779,
+    20.079999551177025,
+    22.879999488592148,
+    25.67999942600727,
+    31.279999300837517,
+    34.07999923825264
+  ],
+  "spatial_stencil_steps": [
+    1,
+    2
+  ],
+  "temporal_strides": [
+    0,
+    1,
+    2
+  ],
+  "equation": "Qt+A=Rbar in ideal CL, where A=mean(u*qx+w*qz)=B+E. scalar_observed=Qt+A and unclosed=Qt+A-Rbar. The eddy-advection term E is retained; Qt+B=0 is a separate, stronger unforced mean-flow approximation.",
+  "averaging": "Signed transverse-mean products and vorticity are averaged across the seven retained seeds before regional norms. This reporter consumes supplied coherent fields and never creates them by averaging seed RMS values or ratios. Full mean and coherent flows are retained.",
+  "paired_difference": "Packet minus matched control is formed for every signed field before its regional norm; differences of norms are not substituted.",
+  "metric_definitions": {
+    "rbar_to_scalar_evolution": "||Rbar||/(||Qt||+||A||)",
+    "scalar_observed_to_evolution": "||Qt+A||/(||Qt||+||A||)",
+    "unclosed_to_scalar_budget": "||Qt+A-Rbar||/(||Qt||+||A||+||Rbar||)",
+    "rbar_to_advection": "||Rbar||/||A||",
+    "scalar_observed_to_advection": "||Qt+A||/||A||",
+    "tau_scalar_observed_to_q": "tau0*||Qt+A||/||Q||"
+  },
+  "norms": "RMS follows signed averaging and uses the supplied physical-volume weights. Absolute means, mean squares and maxima remain in scalar-regions.csv. Numerators and denominators are retained in scalar-metrics.csv.",
+  "sampling": "Time, local packet-age bin, depth region and derivative stencil remain separate. Four vertical edge cells are excluded; exact retained depths and volumes are in scalar-regions.csv.",
+  "limits": [
+    "This is a finite seven-realization mean, not population significance or resolution convergence.",
+    "A small Qt+A would support the averaged scalar law with small net correction; it would not prove instantaneous columnarity or justify discarding E.",
+    "A small Rbar can result from signed cancellation; the unaveraged three-dimensional terms need not be small.",
+    "unclosed includes temporal/spatial differencing, interpolation and unresolved numerical effects; it is not identified as pure dissipation and no closed-budget claim is inferred.",
+    "Ratios with zero denominators are undefined. Small denominators and background Q can change normalized impressions; inspect absolute norms and the paired response.",
+    "The advection/evolution normalizations use the simulation frame; no numerical noise floor or pass/fail threshold is inferred.",
+    "The initial temporal_stride=0 records have no centred temporal derivative and produce no time-dependent ratios."
+  ],
+  "plot": "written"
+}

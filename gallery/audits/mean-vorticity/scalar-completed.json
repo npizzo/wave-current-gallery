@@ -1,0 +1,34 @@
+{
+  "completed": true,
+  "completed_at": "2026-10-25T20:13:14.324825+00:00",
+  "source_sha256": {
+    "scalar_transport.jl": "c988177bc9ce61d79182f2f30d5d36a07fa1d8b7ef30dcfc96edca50d419d4e3",
+    "test_scalar_transport.jl": "47280e8757cf23a127a0e317d2be089e3d6c7ede52fcd65cc4c798b5fdffb7bd",
+    "scalar_report.py": "8a5c01c7cd83affffbc3a6374342d927932e2036aed1fb395ffe622e7cf4055b",
+    "test_scalar_report.py": "931b58554607c1a08193f2166f3c95eefae7fcecfab6f11d62bddd17e3be7ba5",
+    "publish_scalar.py": "c274a3a0041d1aeb9375e6b0d2defb1a91dd805eb3952876b0c30d19651e8146",
+    "scalar-report.sbatch": "f4e859faa2e86fcbfee32dd25734950fa088afa2b97ba00b42e612996c485c3a",
+    "aggregate_mean.jl": "3c45e07fe14e047273c17c99efba2132211f21a966a4393d38b8d5323701b938",
+    "mean_math.jl": "24e923bfd698e2e8e93de523db1729aea7af4cdde615d104d5b7e2dbc810cc81",
+    "campaign_guard.py": "2fee1278d3a79538abaf82cd19ec1fa3210fe8e2057e2d66e9656878faf2c14b"
+  },
+  "input_mean_report_sha256": "8f22a81df07ad3af4d34a565d9f8e335e814286146b29f5e08b2ad2111a9aa9e",
+  "input_coherent_maps_sha256": "8e9b12a517080008d6d7468a3a5d3bfede1141afcdd5df77be630ec5217753b5",
+  "input_source_version": "51864ddbad85b7c8",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8
+  ],
+  "files": {
+    "scalar-coherent-regions.csv": "6a39dda2d5af1d1d56cf1edaf7b13c37ac48f262aed2e2d88fbe89c17d88b97a",
+    "scalar-metrics.csv": "6a584042d8442bdc06c55028133aa642c34af98aa03a77acc501d2fc71354666",
+    "scalar-summary.json": "08f588aae2f1d7529df2759579391443faa5bbf3611644a5c006e970455d44b1",
+    "scalar-budget.png": "66f9fd0af86e5556c95811fff24a4f45c7b4c27a947571b537d873e89af367a8"
+  },
+  "scope": "Averaged scalar-vorticity transport retaining covariance advection; signed fields combined before norms. No additional simulations."
+}

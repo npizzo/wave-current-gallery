@@ -3,6 +3,14 @@
 <p><a href="../../">Surface waves &amp; turbulence</a> · <a href="../vorticity/">Full-field diagnostics</a></p><h1>Averaged vorticity balance</h1>
 <p>Transverse periodicity makes mean continuity an identity. These measurements test the remaining mean-vorticity equation: Q<sub>t</sub> + B = C, where B is advection by the mean flow and C retains the net resolved correlations.</p>
 <p>Seven matched pairs. The coherent average is formed before nonlinear mean-flow products. Dense saved means provide Q<sub>t</sub>; the three-dimensional snapshots independently provide C. The unclosed remainder is measured, not assumed to be dissipation.</p>
+<!-- scalar-transport-start -->
+<h2>Scalar transport with eddy advection retained</h2>
+<p>Periodicity guarantees transverse-mean continuity. It does not set averaged products to zero. The scalar-vorticity test retains A = &lang;u q<sub>x</sub> + w q<sub>z</sub>&rang; and measures Q<sub>t</sub> + A against &lang;R<sub>3D</sub>&rang;. Here A = B + E includes covariance transport. A nonzero Q<sub>t</sub> + B alone does not refute the scalar-vorticity mechanism: eddy transport can drive the mean current even for two-dimensional realizations.</p>
+<p>The signed fields are combined before taking spatial norms. Per-realization transverse averages and the seven-seed coherent average are reported separately. The measured unclosed remainder includes discretization, sampling and omitted model tendencies; it is not identified with dissipation.</p>
+<img src="scalar-budget.png" alt="Scalar transport retaining full averaged advection, three-dimensional terms, and unclosed remainder">
+<p><a href="scalar-coherent-regions.csv">Coherent scalar-budget moments</a> · <a href="scalar-metrics.csv">All scalar-budget ratios</a> · <a href="scalar-summary.json">Definitions and limitations</a> · <a href="scalar-completed.json">Supplement provenance</a></p>
+<!-- scalar-transport-end -->
+<h2>Mean-flow and covariance decomposition</h2>
 <img src="mean-budget.png" alt="Observed mean vorticity evolution, mean advection and correlation terms">
 <p><a href="coherent-regions.csv">Coherent term moments</a> · <a href="metrics.csv">Ratios</a> · <a href="summary.json">Definitions</a> · <a href="METHODS.txt">Methods</a> · <a href="completed.json">Provenance</a></p>
 <p>Spatial and temporal sampling sensitivity is retained in the tables. These checks do not establish simulation convergence or statistical significance.</p></html>
