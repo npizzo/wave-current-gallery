@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wave-packet experiments on surface waves, turbulence and opposing currents. Completed Unity results, laboratory comparisons and reproducible diagnostics.">
+  <meta name="theme-color" content="#f7f6f1">
+  <title>Surface waves &amp; turbulence · Research gallery</title>
+  <link rel="stylesheet" href="assets/gallery.css">
+  <script defer src="assets/gallery.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to results</a>
+  <header class="site-header wrap">
+    <nav aria-label="Main navigation"><a class="brand" href="./">Waves <span>/</span> turbulence</a><div class="nav-links"><a href="#results">Results</a><a href="#protocol">Protocol</a><a href="https://github.com/glwagner/NumericalWaveTanks.jl/tree/9ff503ca9bf4672a30f32c5dcfcc336f0be6faed">Reference code <span aria-hidden="true">↗</span></a></div></nav>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">A numerical research gallery</p>
+      <h1 id="page-title">How do surface waves<br>reshape turbulence?</h1>
+      <p class="lead">Following a wave packet through a turbulent water tank: the opposing mean current, its agreement with laboratory measurements, and the motions that carry momentum vertically.</p>
+      <div class="hero-notes"><span>Three-dimensional flow</span><span>Matched wave / no-wave pairs</span><span>Unity GPU experiments</span></div>
+    </section>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="campaign-panel" aria-labelledby="campaign-title">
+      <div class="section-heading"><div><p class="eyebrow">Current campaign · Case 1.D</p><h2 id="campaign-title">Wave-packet laboratory reproduction</h2></div><span class="status" id="campaign-status">Awaiting first sync</span></div>
+      <p class="campaign-description">Reproducing the bounded-tank benchmark in NumericalWaveTanks.jl with the original initialization, solver and seven retained realizations. Each wave run is compared with a no-wave run from the same initial turbulence.</p>
+      <div class="progress-layout"><div class="progress-copy"><span class="progress-number" id="pair-progress">— <span>/ 7 pairs</span></span><p id="progress-description">Completed pairs have not yet been checked on Unity.</p></div><div class="pair-progress" id="pair-segments" aria-label="Completion of the seven paired realizations"></div><div class="validation"><span class="small-label">GPU validation</span><strong id="validation-status">Passed</strong><span id="validation-detail">Reported from job 66045225</span></div></div>
+      <div class="sync-line"><p id="sync-status" role="status" aria-live="polite">Loading the latest published snapshot…</p><button id="refresh-button" type="button">Refresh snapshot <span aria-hidden="true">↻</span></button></div>
+      <div id="data-error" class="data-error" role="alert" hidden></div>
+    </section>
+
+    <section id="results" class="section" aria-labelledby="results-title">
+      <div class="section-heading"><div><p class="eyebrow">From computation to evidence</p><h2 id="results-title">Laboratory comparison &amp; flow diagnostics</h2></div><span class="small-label" id="result-count">Results pending</span></div>
+      <div id="metrics" class="metrics" hidden></div>
+      <div id="result-figures" class="figure-grid"></div>
+      <div id="result-downloads" class="downloads" hidden></div>
+      <div class="empty-results" id="empty-results"><div class="empty-mark" aria-hidden="true">01 — 07</div><div><h3>The ensemble comparison will appear here.</h3><p>As completed outputs are synchronized from Unity, this gallery will show the laboratory velocity profile, the partition of vertical momentum flux, and the fraction of turbulent energy in transversely invariant motions.</p><p class="small">No new campaign results have been imported in this snapshot. The reference calculation is available in the <a href="https://glwagner.github.io/NumericalWaveTanks.jl/figures/anti_stokes/gallery.html">original numerical gallery <span aria-hidden="true">↗</span></a>.</p></div></div>
+      <p class="interpretation">An opposing mean current and two-dimensional organization are separate tests. A match to the laboratory current profile alone does not establish Taylor–Proudman behavior or inhibited tracer mixing.</p>
+    </section>
+
+    <section id="realizations" class="section" aria-labelledby="members-title">
+      <div class="section-heading"><div><p class="eyebrow">Independent realizations</p><h2 id="members-title">Follow the paired runs</h2></div><p class="heading-note">A pair is complete only when both runs are verified.</p></div>
+      <div id="members" class="member-grid"><p class="loading-text">Loading run summaries…</p></div>
+      <p class="small section-note">The original comparison retained seeds 1, 2, 3, 4, 6, 7 and 8; seeds 5 and 9 were excluded upstream after numerical instability. This reproduction preserves that selection and reports any new failure.</p>
+    </section>
+
+    <section id="protocol" class="section protocol-grid" aria-labelledby="protocol-title">
+      <div><p class="eyebrow">The physical setup</p><h2 id="protocol-title">One packet. One matched control.</h2><p>A nearly monochromatic packet crosses a bounded tank containing preconditioned turbulence. The comparison uses the Eulerian mean-velocity change before and after the packet, with the original sampling windows.</p><p>The new diagnostics separate the repeatable packet response from turbulent fluctuations, and distinguish momentum transport by motions that vary across the tank from motions that do not.</p><a class="text-link" href="https://github.com/glwagner/NumericalWaveTanks.jl/blob/9ff503ca9bf4672a30f32c5dcfcc336f0be6faed/experiments/anti_stokes/CAMPAIGN.md">Read the original campaign protocol <span aria-hidden="true">↗</span></a></div>
+      <div class="parameter-panel"><h3>Campaign parameters</h3><table><tbody id="parameters"><tr><th scope="row">Tank, x × y × z</th><td>12 × 0.8 × 0.4 m</td></tr><tr><th scope="row">Grid</th><td>1536 × 128 × 128</td></tr><tr><th scope="row">Carrier wavenumber</th><td>9.3 rad m⁻¹</td></tr><tr><th scope="row">Wave steepness, ak</th><td>0.22</td></tr><tr><th scope="row">Time step</th><td>0.02 s</td></tr><tr><th scope="row">Packet time scale, τ₀</th><td>2.8 s</td></tr><tr><th scope="row">Duration</th><td>≈45.77 s</td></tr><tr><th scope="row">Turbulence preconditioning</th><td>2 s</td></tr></tbody></table><p class="small">Pinned scientific source <a id="source-commit" href="https://github.com/glwagner/NumericalWaveTanks.jl/tree/9ff503ca9bf4672a30f32c5dcfcc336f0be6faed">9ff503ca9bf4</a></p></div>
+    </section>
+
+    <section class="notes-panel" aria-labelledby="notes-title"><div><p class="eyebrow">Reading these results</p><h2 id="notes-title">What has been checked</h2></div><ul id="notices"><li>The GPU validation passed before the reproduction was submitted. Completed scientific results have not yet been imported.</li><li>Software validation and successful completion do not establish spatial or time-step convergence of the turbulent ensemble.</li></ul></section>
+    <noscript><p class="data-error">Enable JavaScript to load the published campaign snapshot and figures, or <a href="data/campaign.json">download the snapshot directly</a>. The page does not connect directly to Unity.</p></noscript>
+  </main>
+
+  <footer class="site-footer wrap"><div><strong>Surface waves &amp; turbulence</strong><p>Nicholas Pizzo · Gregory Wagner · Navid Constantinou · Gregory Chini</p></div><div class="footer-links"><a href="data/campaign.json">Campaign snapshot</a><a href="https://github.com/glwagner/NumericalWaveTanks.jl/tree/9ff503ca9bf4672a30f32c5dcfcc336f0be6faed">Pinned scientific source <span aria-hidden="true">↗</span></a></div><p class="footer-note">Derived results are published here. Full simulation fields remain in research storage. This page shows the last synchronized snapshot; it does not run or control a simulation.</p></footer>
+</body>
+</html>

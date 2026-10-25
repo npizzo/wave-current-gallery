@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-25T11:47:40Z",
+  "title": "Surface waves & turbulence",
+  "campaign": {
+    "id": "packet-1d",
+    "title": "Wave-packet laboratory reproduction",
+    "status": "awaiting_sync",
+    "source_commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed",
+    "parameters": {
+      "Tank, x × y × z": "12 × 0.8 × 0.4 m",
+      "Grid": "1536 × 128 × 128",
+      "Carrier wavenumber": "9.3 rad m⁻¹",
+      "Wave steepness, ak": "0.22",
+      "Time step": "0.02 s",
+      "Packet time scale, τ₀": "2.8 s",
+      "Duration": "≈45.77 s",
+      "Turbulence preconditioning": "2 s"
+    },
+    "completed_pairs": 0,
+    "total_pairs": 7,
+    "validation": {
+      "status": "passed",
+      "job_id": "66045225"
+    },
+    "jobs": {
+      "array": "66075619",
+      "analysis": "66075620"
+    }
+  },
+  "members": [
+    {
+      "id": "seed-1",
+      "seed": 1,
+      "status": "unknown",
+      "label": "Seed 1",
+      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "figures": [],
+      "downloads": []
+    },
+    {
+      "id": "seed-2",
+      "seed": 2,
+      "status": "unknown",
+      "label": "Seed 2",
+      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "figures": [],
+      "downloads": []
+    },
+    {
+      "id": "seed-3",
+      "seed": 3,
+      "status": "unknown",
+      "label": "Seed 3",
+      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "figures": [],
+      "downloads": []
+    },
+    {
+      "id": "seed-4",
+      "seed": 4,
+      "status": "unknown",
+      "label": "Seed 4",
+      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "figures": [],
+      "downloads": []
+    },
+    {
+      "id": "seed-6",
+      "seed": 6,
+      "status": "unknown",
+      "label": "Seed 6",
+      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "figures": [],
+      "downloads": []
+    },
+    {
+      "id": "seed-7",
+      "seed": 7,
+      "status": "unknown",
+      "label": "Seed 7",
+      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "figures": [],
+      "downloads": []
+    },
+    {
+      "id": "seed-8",
+      "seed": 8,
+      "status": "unknown",
+      "label": "Seed 8",
+      "summary": "Wave and no-wave runs submitted from the same initial turbulence. Current progress has not yet been synchronized.",
+      "figures": [],
+      "downloads": []
+    }
+  ],
+  "results": [],
+  "metrics": [],
+  "notices": [
+    "GPU validation job 66045225 passed, according to the supplied Unity logs. Reproduction array 66075619 and dependent analysis job 66075620 were submitted; their current status has not yet been read.",
+    "This is the first gallery placeholder, not a report of zero completed simulations. Results and completion counts will appear after the first synchronization.",
+    "The original seven-seed comparison excludes seeds 5 and 9 after numerical instability. The retained selection is reproduced here; any new failure must remain visible.",
+    "Software validation and successful completion do not establish spatial or time-step convergence of the turbulent ensemble."
+  ]
+}

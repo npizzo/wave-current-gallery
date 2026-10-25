@@ -1,0 +1,95 @@
+Gallery scientific definitions and limits
+========================================
+
+This gallery reads completed outputs of the unchanged, pinned bounded case 1.D
+wave-packet reproduction. It does not run or modify the scientific experiment.
+The original seven retained realizations are seeds 1, 2, 3, 4, 6, 7, 8; the
+upstream campaign documented numerical failures for seeds 5 and 9. That selection
+is disclosed and is not presented as an unbiased population sample.
+
+PUBLICATION GATES
+
+Every update first invokes the campaign guard's source, validation and submission
+checks. A member is read only after its completed step receipt is present,
+completed=true, current source fingerprints match, and its metadata/run-summary
+hashes match. A present invalid receipt stops publication rather than being
+silently treated as pending. The scientific run directories are never written.
+
+The original receipts do not hash raw y_averages.jld2 or statistics.jld2. The
+gallery therefore computes its own SHA-256 of these finished files and verifies
+it again after extracting/rendering. Its cache key covers the completion receipt,
+all four input hashes, and the exporter/rendering source. Cached assets also have
+checksums. This establishes stable finished inputs; it is not a physical-quality
+or numerical-convergence test.
+
+A pending member label means no completed receipt was verified. It is not an
+inference about Slurm state and may include queued, running, or failed tasks.
+The campaign's synchronization time is separate from the physical simulation
+time. Gallery figures can lag a calculation until its completion-triggered
+publisher runs.
+
+If Slurm accounting is available, a read-only sacct query adds explicit scheduler
+states and marks reported failures. It uses expanded array JobID values (rather
+than JobIDRaw, which omits the array identity), as documented at
+https://slurm.schedmd.com/sacct.html. Unavailable accounting does not create an
+inferred state or allow incomplete native data to be read.
+
+Final ensemble products are shown only after all eight array members and all
+individual steps have completed, and the original analysis completion record's
+source fingerprints and every listed file hash pass. Partial analysis PNGs are
+never published. If export fails, the previous manifest remains intact.
+
+INDIVIDUAL FINISHED MEMBERS
+
+Eulerian current through the tank: y-averaged native along-wave velocity U_L at
+times nearest 0, the packet peak at x=6m, peak+3 tau_0, and the final saved time.
+For packet members, the exact prescribed u_s(x,z,t) is evaluated on the native
+x-face/z-centre coordinates from the stored grid, subtracted, and then adjacent
+x faces are averaged onto cell centres. No periodic wrap is applied to bounded
+end walls. Controls have no prescribed Stokes drift. Display samples at most
+about 384 streamwise points, retains all depth levels, and uses a shared colour
+scale across the selected times of that member. Colour limits can differ between
+members. These are organized y-mean currents, not 3D eddy snapshots or an
+ensemble-mean current.
+
+Current profiles: those same Eulerian fields averaged over interior cell centres
+1 <= x <= 11m at each selected time. The uniform x grid makes the arithmetic mean
+appropriate. The absolute offset is retained. These selected times do not replace
+the original laboratory comparison's local-packet-age averaging windows.
+
+Velocity history: the original scalar statistics, including native
+volume-weighted RMS(u_L), RMS(v_L), RMS(w_L). They include the mean and prescribed
+wave contribution, and are labelled Lagrangian. They are not turbulent RMS,
+Eulerian kinetic energy, tracer mixing, or a direct test of two-dimensionality.
+The profile/statistics CSV downloads retain SI units; plots use mm/s.
+
+FINAL ENSEMBLE PRODUCTS
+
+The laboratory panel is copied from the original seven-seed figure3 reproduction.
+It distinguishes raw Eulerian U_after-U_before from the paired/control- and
+deterministic-null-corrected change. The centred shape comparison removes each
+curve's native arithmetic mean in -1.2 <= k_0 z <= -0.1; the absolute offset is
+retained separately in downloadable profiles and summary metrics. Laboratory
+points are digitized and correlated. RMSE is descriptive, not a goodness-of-fit
+probability, and there is no preset agreement threshold.
+
+The dimensionality and momentum-flux panels are copied only from completed added
+analysis. They separate ky=0 and ky!=0 eddies after removing the repeatable
+ensemble response, with finite-sample covariance correction. They therefore
+measure ensemble-incoherent eddies: repeatable phase-locked 2D structures are also
+removed. This is not total-flow dimensionality. The finite retained ensemble does
+not warrant an unbiased population claim, nor is a ratio an unbiased estimator.
+The original analysis definitions retain the raw and corrected distinction.
+
+The vertical momentum flux is a velocity covariance, not a measured passive
+tracer diffusivity. No tracer exists in this campaign. Neither ky=0 energy nor a
+flux difference alone proves a Taylor-Proudman constraint or a transport barrier.
+The separate deterministic null timestep comparison is not turbulent convergence.
+
+PUBLIC DATA HYGIENE
+
+Only explicitly allowed derived PNGs, compact numerical CSVs and reconstructed
+summary JSON are copied. Raw JLD2 files, source archives, run logs, hostname,
+absolute storage paths, command lines, private keys, and environment/fingerprint
+inventories are not published. Synthetic/local test fixtures are confined to
+temporary scratch directories and never enter the gallery output.

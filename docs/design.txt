@@ -1,0 +1,49 @@
+GALLERY DESIGN AND DATA CONTRACT
+
+The static frontend is gallery/index.html, assets/gallery.css and assets/gallery.js.
+It fetches data/campaign.json without a cache. The Refresh snapshot button fetches
+the published JSON again; it neither polls Unity nor starts a simulation. The
+external synchronization/publishing process owns updates to the JSON and assets.
+
+The initial JSON is a clearly marked awaiting_sync stub. Zero completed_pairs is
+an unconfirmed placeholder and the page shows a dash, not zero observed results.
+Validation passed and the submission job IDs came from the user's pasted logs.
+No result figures or numerical result metrics are fabricated in this stub.
+
+Schema version 1:
+- generated_at: ISO 8601 UTC timestamp of this published snapshot.
+- title: human-readable gallery title.
+- campaign: id, title, status, source_commit, parameters, completed_pairs,
+  total_pairs, validation {status, job_id}, jobs {array, analysis}.
+- members: entries with id, seed (integer or null for controls), status, label,
+  summary, figures [{src, title, caption}], downloads [{href, label}].
+- results: final ensemble figures with the same figure shape.
+- downloads: optional final ensemble downloads [{href, label}].
+- metrics: [{label, value, unit, note}]. Null values display as unavailable.
+- notices: a list of plain-text scientific or synchronization qualifications.
+
+Statuses supported: awaiting_sync, unknown, pending, queued, running, partial,
+analysis_pending, complete, completed, success, passed, failed, error, cancelled.
+Partial means some verified runs in a pair or control group; pending means absence of a verified
+completion record, not necessarily a scheduler queue state. A progress segment
+turns green only for a complete paired member. Members with seed=null appear as
+separate control cards and do not contribute to the seven seed segments.
+
+Status and data use plain DOM text, never interpolated HTML. Media/download URLs
+must be relative paths inside gallery/, with no traversal, scheme, query or hash.
+Source URLs accept only a 40-character hexadecimal pinned commit. Broken images
+and a missing/invalid JSON response are shown as unavailable; neither is labelled
+a simulation failure. A failed refresh preserves the last successfully loaded
+snapshot. Snapshots older than 24 hours display their age prominently.
+
+The design uses a warm light background, dark navy type, muted ocean blue, a
+compact editorial hero, a campaign status panel, ensemble-result figures and
+individual seed cards. The layout collapses to one column on narrow screens.
+It has keyboard focus states, a skip link, reduced-motion support, figure alt
+text, semantic tables and a no-JavaScript snapshot link. There are no external
+JavaScript dependencies, third-party fonts or analytics.
+
+Scientific framing: Eulerian mean anti-Stokes current, transverse invariance and
+tracer mixing are separate diagnostics. A profile match alone is not evidence
+for a Taylor-Proudman constraint or a mixing barrier. The preserved original
+seven-seed selection and exclusions for numerical instability remain explicit.

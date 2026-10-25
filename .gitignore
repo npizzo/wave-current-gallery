@@ -1,0 +1,10 @@
+.unity-publisher/
+__pycache__/
+*.pyc
+*.out
+*.err
+*.jld2
+*.h5
+*.hdf5
+.DS_Store
+
