@@ -1,0 +1,76 @@
+JET ROBUSTNESS, NATIVE MOMENTUM BUDGETS, AND VORTEX-WAVE RESPONSE
+
+This is a separate, authorized Unity campaign. It does not modify or restart
+the completed wave-packet reproduction or its source environment.
+
+The three experiments are:
+1. Embed the same nonlinear x-z velocity field in the 3D solver and add
+   divergence-free, zero-transverse-mean disturbances. Their initial kinetic
+   energies are zero, 0.0001, and 1 times the baseline in-plane eddy energy.
+   The baseline in-plane field and mean current remain unchanged. Three
+   realizations are retained. An extra 2D control has doubled eddy energy.
+2. Record native mean-momentum tendencies and signed jet-energy production
+   during every run. Compare the native advection operator on full fields
+   with the same operator on replicated transverse means. Independently
+   retain the continuum Reynolds-flux decomposition. Their difference is
+   numerical transport, not a separately identified physical viscosity.
+3. Add weak positive and negative copies of the same finite-depth vortex
+   wave to matched backgrounds. No-probe runs supply the background response.
+   Laminar, half-amplitude, and refined-grid controls check dispersion and
+   linearity. A frequency or decay rate is reported only with fit quality;
+   loss of coherence is an outcome, not a reason to force a frequency fit.
+
+PHYSICAL CHOICE
+The Stokes velocity is us(z)=S exp(2 k z), with k=6.1 /m and wave steepness
+0.17, so S=0.17^2 sqrt(9.81/6.1) m/s. Waves are fixed and monochromatic.
+The initial Eulerian mean is UE=-0.75 us and the Lagrangian mean is UL=0.25 us.
+Consequently q0(z)=UE_z=-0.75 us_z and q0'(z)=-0.75 us_zz. These profiles,
+including their signs and the mean momentum, are explicit inputs. UL is not
+assumed to vanish, and a homogenized constant q_j is not imposed.
+
+The box is 2 x 1 x 0.5 m, periodic in x and y, impermeable in z. The primary
+grid is 128 x 64 x 96 with uniform z. Initial in-plane eddy RMS is 0.004 m/s
+and its spectral injection wavelength is 0.25 m. The tangential velocity
+boundary gradient matches the prescribed background UL; no external wind,
+planetary rotation, stratification, or explicit viscosity is added. Numerical
+transport is supplied by WENO5 advection and measured in its native budget.
+The initial field is a discrete curl, not a projection of unmatched noise.
+
+The probe has horizontal mode 2 over the 2 m domain. Its vertical structure
+and frequency solve the finite-depth Rayleigh eigenproblem using the actual
+UL and q0' profiles, with impermeable walls. The primary alpha=0.75 choice
+retains nonzero UL and gives a reference period of about 216 s. Each run
+lasts 600 s; no assumption of stationarity of the turbulent background is
+made. The probe velocity RMS is 4e-5 m/s (half that for linearity controls).
+
+CHECKS
+Tiny CPU/GPU agreement, analytic discrete-curl invariance, paired initial
+fields, mean-profile preservation, zero perturbation transverse means,
+isolated-mode eigen residuals and vertical refinement are checked before
+production. Native-budget manufactured checks include exact y-invariant
+fields with zero 3D contribution. A full-grid short run checks GPU operation.
+The production matrix also includes doubled spatial resolution, halved
+maximum time step, doubled transverse width at fixed transverse resolution,
+and the extra-energy 2D control. Initial-condition modes are defined in
+physical coordinates and retained under refinement.
+
+Dense profile records allow finite-interval momentum/energy closure tests.
+The output quadrature is not the RK integrator and its residual is measured.
+Projection-pressure means vanish by periodic x; a stale instantaneous
+pressure field is not used to claim a local vorticity budget. The exact
+decomposition of a native WENO operator includes nonlinear reconstruction
+effects and is not equated with the continuum three-dimensional correction.
+
+PUBLICATION AND STORAGE
+The source and environment are fingerprinted after deployment. Production
+requires a matching passed-validation receipt. Initial/final native fields
+remain on Unity; only verified derived plots, summaries and compact tables
+are published to the existing wave-current-gallery repository. Source paths,
+credentials, checkpoints and raw snapshots are not published. Each completed
+array member triggers a separate publisher; a final publisher reports the
+whole matrix, including missing or failed members. No result is inferred
+from a scheduler job merely disappearing.
+
+This first campaign tests transverse robustness of a prescribed jet-forming
+route. It does not prove spontaneous attraction from arbitrary 3D turbulence,
+statistical significance from three seeds, or laboratory wave-packet fidelity.

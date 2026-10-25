@@ -1,0 +1,246 @@
+{
+  "runs": [
+    {
+      "id": "robust-2d-s1",
+      "status": "waiting",
+      "experiment": "robustness"
+    },
+    {
+      "id": "robust-small3d-s1",
+      "status": "waiting",
+      "experiment": "robustness"
+    },
+    {
+      "id": "robust-finite3d-s1",
+      "status": "waiting",
+      "experiment": "robustness"
+    },
+    {
+      "id": "robust-2d-s2",
+      "status": "waiting",
+      "experiment": "robustness"
+    },
+    {
+      "id": "robust-small3d-s2",
+      "status": "waiting",
+      "experiment": "robustness"
+    },
+    {
+      "id": "robust-finite3d-s2",
+      "status": "waiting",
+      "experiment": "robustness"
+    },
+    {
+      "id": "robust-2d-s3",
+      "status": "waiting",
+      "experiment": "robustness"
+    },
+    {
+      "id": "robust-small3d-s3",
+      "status": "waiting",
+      "experiment": "robustness"
+    },
+    {
+      "id": "robust-finite3d-s3",
+      "status": "waiting",
+      "experiment": "robustness"
+    },
+    {
+      "id": "energy-matched-2d-s1",
+      "status": "waiting",
+      "experiment": "control"
+    },
+    {
+      "id": "refine-2d-s1",
+      "status": "waiting",
+      "experiment": "resolution"
+    },
+    {
+      "id": "halfdt-2d-s1",
+      "status": "waiting",
+      "experiment": "timestep"
+    },
+    {
+      "id": "refine-finite3d-s1",
+      "status": "waiting",
+      "experiment": "resolution"
+    },
+    {
+      "id": "halfdt-finite3d-s1",
+      "status": "waiting",
+      "experiment": "timestep"
+    },
+    {
+      "id": "wide-finite3d-s1",
+      "status": "waiting",
+      "experiment": "width"
+    },
+    {
+      "id": "probe-2d-s1-minus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-2d-s1-plus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-finite3d-s1-minus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-finite3d-s1-plus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-2d-s2-minus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-2d-s2-plus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-finite3d-s2-minus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-finite3d-s2-plus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-2d-s3-minus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-2d-s3-plus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-finite3d-s3-minus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "probe-finite3d-s3-plus",
+      "status": "waiting",
+      "experiment": "wave_response"
+    },
+    {
+      "id": "calibration-zero",
+      "status": "waiting",
+      "experiment": "wave_calibration"
+    },
+    {
+      "id": "calibration-minus",
+      "status": "waiting",
+      "experiment": "wave_calibration"
+    },
+    {
+      "id": "calibration-plus",
+      "status": "waiting",
+      "experiment": "wave_calibration"
+    },
+    {
+      "id": "calibration-half-minus",
+      "status": "waiting",
+      "experiment": "wave_calibration"
+    },
+    {
+      "id": "calibration-half-plus",
+      "status": "waiting",
+      "experiment": "wave_calibration"
+    },
+    {
+      "id": "calibration-fine-zero",
+      "status": "waiting",
+      "experiment": "wave_calibration"
+    },
+    {
+      "id": "calibration-fine-minus",
+      "status": "waiting",
+      "experiment": "wave_calibration"
+    },
+    {
+      "id": "calibration-fine-plus",
+      "status": "waiting",
+      "experiment": "wave_calibration"
+    }
+  ],
+  "probe_groups": {
+    "probe-2d-s1": {
+      "status": "waiting",
+      "reason": "verified_triplet_not_complete"
+    },
+    "probe-finite3d-s1": {
+      "status": "waiting",
+      "reason": "verified_triplet_not_complete"
+    },
+    "probe-2d-s2": {
+      "status": "waiting",
+      "reason": "verified_triplet_not_complete"
+    },
+    "probe-finite3d-s2": {
+      "status": "waiting",
+      "reason": "verified_triplet_not_complete"
+    },
+    "probe-2d-s3": {
+      "status": "waiting",
+      "reason": "verified_triplet_not_complete"
+    },
+    "probe-finite3d-s3": {
+      "status": "waiting",
+      "reason": "verified_triplet_not_complete"
+    },
+    "calibration": {
+      "status": "waiting",
+      "reason": "verified_triplet_not_complete"
+    },
+    "calibration-half": {
+      "status": "waiting",
+      "reason": "verified_triplet_not_complete"
+    },
+    "calibration-fine": {
+      "status": "waiting",
+      "reason": "verified_triplet_not_complete"
+    }
+  },
+  "robustness_comparisons": {
+    "pairs": [],
+    "matched_keys": [
+      "nx",
+      "ny",
+      "nz",
+      "lx",
+      "ly",
+      "h",
+      "k",
+      "S",
+      "alpha",
+      "uoffset",
+      "eddy_rms",
+      "injection_wavelength",
+      "seed",
+      "ic_kind",
+      "waves",
+      "max_dt",
+      "physics_version",
+      "base_ic_sha256"
+    ],
+    "scope": "Paired final-time changes at identical grid, physical mean, wave field, in-plane base realization and maximum timestep. Each seed is reported separately; no significance claim. Added transverse perturbation energy is retained in the metadata."
+  },
+  "numerical_checks": {
+    "pairs": [],
+    "scope": "Descriptive paired final-time, native-budget and recorded-timestep checks. A resolution run may also change the timestep; long-time trajectory differences in a single chaotic realization are not a statistical convergence proof."
+  },
+  "scope": "Controlled nonlinear robustness, native jet-energy budgets and signed weak-mode responses. Results appear only after each required run has a completion record; this report does not submit or modify simulations."
+}
