@@ -1,0 +1,105 @@
+REGIME CAMPAIGN — FINITE-TIME TRANSVERSE GROWTH AND MEAN-FLOW ACCURACY
+
+Question
+When can the y-averaged wave–current flow follow its autonomous x-z dynamics?
+Two distinct measurements are required: growth of transverse dependence, and
+its feedback on the mean. Periodicity makes mean(v_y)=0 but does not remove
+averaged products or establish closure. In-plane eddy transport is retained.
+
+Physical design
+The reference Stokes drift is S exp(2 k z), with k=6.1 m^-1, wave steepness
+0.17 and S=0.17^2 sqrt(g/k). UE0=-alpha us_ref, UL0=(waves-alpha)us_ref,
+q0=UE0'=-alpha us_ref'. Alpha is 0.5 or 1, plus the previous 0.75 anchor.
+The x-z eddy RMS U is 0.0012, 0.004 or 0.012 m/s. Injection wavelength is
+0.25 m. The box is 2 x 1 x 0.5 m, periodic x/y and impermeable z.
+All initial fields are discretely solenoidal. Matching seeds preserve the
+initial y-invariant realization within each physical cell. A transverse
+perturbation adds eta times the base eddy energy: eta=0, 1e-6, 1e-8 or 1.
+The latter is a finite-disturbance experiment with deliberately added energy,
+not an equal-total-energy causal comparison.
+
+Explicit viscosity nu=U*0.25/Re_lambda, Re_lambda=100, accompanies Centered2
+advection. A documented compensating acceleration maintains the prescribed
+laminar UL0 against viscous diffusion; it does not maintain turbulent eddies.
+Its native contribution and the viscous contribution are included in budgets.
+This controlled background distinguishes the regime experiment from the
+unmaintained finite wave packet. Achieved scales and Re must be diagnosed;
+the input reference value is not the Reynolds number of every later state.
+
+Forty-nine integrations
+Seven primary cells, each with four perturbation levels (28 runs).
+A second seed at low-U/alpha=1 and high-U/alpha=0.5, with 2D/tiny/finite (6).
+Anchor tests at Re=300, doubled Ly with doubled Ny, doubled resolution,
+half maximum timestep and no waves, each with 2D/tiny/finite (15).
+The no-wave runs retain the same initial Eulerian background and maintain it;
+they test removal of the vortex force in the presence of that shear.
+The width test changes accessible transverse modes and is a physical-span
+comparison, not a claim that identical initial transverse fields were used.
+All integrations last 600 s. Eddy turnover times and decay vary with U; both
+physical time and normalized time are reported. At most two GPUs run at once.
+
+Measurements
+1. E_perp/E_eddy and E_perp(t)/E_perp(0), with actual amplitude-normalized
+   tiny-disturbance agreement. Growth estimates use only resolved, still-small
+   intervals. A saturated disturbance is not evidence for a linear exponent.
+   This is a finite-amplitude approximation to transverse linear response,
+   checked by two amplitudes; it is not a tangent-linear integration.
+   A displayed fitted rate requires a contiguous small-disturbance interval
+   (both energy fractions below 1%, normalized amplitude difference <=5%,
+   at least five samples, log-amplitude fit RMS <=0.2). These are declared
+   response-quality checks, not physical regime boundaries.
+2. Signed y-mean U(x,z), W(x,z), Q(x,z) and jet-profile anomalies versus the
+   matched 2D trajectory. Retain x-z eddies; record correlations and errors
+   normalized by initial and evolving scales. Chaotic trajectory separation
+   alone does not prove failure of a mean statistical description.
+3. Native full-minus-y-mean momentum advection and its y-curl diagnose direct
+   transverse feedback. Viscosity, imposed forcing and the wave term remain
+   explicit. Signed projections and cumulative effects complement RMS norms.
+4. The continuum scalar equation uses A=mean_y(u q_x+w q_z), and Rbar from
+   the omitted 3D vorticity terms. Qt+A=Rbar+viscous/forcing terms is checked
+   without replacing A by U Qx+W Qz. Its residual includes derivative,
+   interpolation, time-sampling and discrete/continuum differences.
+   This Rbar is not the same object as native full-minus-ymean advection curl.
+5. Signed transfer across horizontal-x cutoffs, where available, is labelled
+   as horizontal-scale transfer. The bounded-depth calculation is not a
+   radially isotropic inverse-cascade measurement. Background/mean exchanges
+   are retained when using anomaly energy.
+6. The existing seven-seed Ellingsen packet audit is assessed separately using
+   signed spatial filtering before norms, preserving A and its covariance.
+   Derivative-stencil and temporal-sampling sensitivity accompany every
+   conclusion. Agreement with a laboratory mean profile does not by itself
+   measure the omitted vorticity terms or prove an autonomous 2D regime.
+
+Numerical and operational checks
+CPU/GPU agreement, restart equivalence, discrete incompressibility and
+impermeable boundaries; exact-2D transverse terms; maintained-laminar null;
+viscous/forcing operator consistency; temporal budget integration; short
+primary/fine GPU runs; synthetic analysis and publication/receipt tests.
+Production source and environment are frozen after validation. Completed-run
+files are hashed and backed up to persistent home storage before a completion
+receipt permits publication. Native fields, keys and credentials are private.
+The public tab receives derived plots, tables, protocol and source provenance.
+Failed jobs are reconciled from Slurm; they are not silently shown as running.
+
+Interpretation
+Report empirical finite-time trends and numerical sensitivity rather than
+assigning universal stable/unstable cutoffs from one ratio. A flow can retain
+3D energy yet have weak mean feedback; small energy can still matter through
+gradients or resonant interactions. No assumption UL0=0 or q0=0 is made.
+The local Stokes shear varies strongly with depth, so a surface proxy alone
+cannot place the whole flow in a rotating-fluid regime.
+
+Literature motivating distinct tests
+Chen, Chen, Eyink & Holm (2005), JFM 542, 139–164:
+https://doi.org/10.1017/S0022112005006324
+Compare the averaged 3D solution with matched 2D dynamics, rather than only
+measuring the fraction of energy in the invariant plane.
+Gallet (2015), JFM 783, 412–447:
+https://doi.org/10.1017/jfm.2015.569
+Distinguish linear stability from attraction under finite disturbances;
+sufficient bounds for rigid rotation are not our empirical regime boundary.
+Seshasayanan & Gallet (2020), JFM 901, R5:
+https://doi.org/10.1017/jfm.2020.541
+Transverse growth on an evolving turbulent base depends on Reynolds number
+and axial extent. Our freely evolving finite-time assay is shorter and uses
+two small amplitudes, so it cannot claim their asymptotic Lyapunov threshold.
