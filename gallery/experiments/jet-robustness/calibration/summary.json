@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "fit": {
+    "available": true,
+    "omega_rad_s": -0.028955347760111487,
+    "effective_amplitude_growth_rate_s_inv": -1.7347086546445492e-08,
+    "phase_advance_cycles": 2.7650320349799498,
+    "phase_residual_rms_rad": 0.0001505987237043544,
+    "complex_coherence": 0.9999999536091149,
+    "complex_relative_fit_error": 0.00021538543452688053,
+    "n_samples": 2401,
+    "duration_s": 600.0,
+    "accepted_as_coherent_wave": true,
+    "limitations": [],
+    "temporal_subset_sensitivity": {
+      "every_other_output": {
+        "omega_rad_s": -0.028955347516998055,
+        "effective_amplitude_growth_rate_s_inv": -1.85147889892614e-08,
+        "complex_coherence": 0.999999953587682
+      },
+      "first_half": {
+        "omega_rad_s": -0.02895595333343504,
+        "effective_amplitude_growth_rate_s_inv": 2.5479266786653493e-07,
+        "complex_coherence": 0.9999999396728111
+      },
+      "second_half": {
+        "omega_rad_s": -0.028954893436883226,
+        "effective_amplitude_growth_rate_s_inv": 4.5737491792074887e-07,
+        "complex_coherence": 0.999999974851544
+      }
+    },
+    "even_to_odd_norm": 1.242655244986228e-14,
+    "acceptance_convention": "At least one fitted cycle, complex coherence >=0.8, relative fit error <=0.5 and, when available, even/odd norm <=0.2; diagnostic conventions, not significance tests.",
+    "predicted_omega_rad_s": -0.029064060365558104,
+    "frequency_relative_difference": 0.003740447964918383
+  },
+  "probe_amplitude": 4e-05,
+  "matched_metadata_checked": [
+    "nx",
+    "ny",
+    "nz",
+    "lx",
+    "ly",
+    "h",
+    "k",
+    "S",
+    "S_reference",
+    "alpha",
+    "uoffset",
+    "eddy_rms",
+    "injection_wavelength",
+    "perturb_energy_ratio",
+    "seed",
+    "ic_kind",
+    "waves",
+    "probe_mode",
+    "max_dt",
+    "velocity_convention",
+    "base_ic_sha256",
+    "perturbation_ic_sha256",
+    "physics_version",
+    "source_hashes"
+  ],
+  "eigenmode_prediction": {
+    "kx": 6.283185307179586,
+    "c": -0.004625688873499811,
+    "omega": -0.029064060365558104,
+    "period": 216.18401655349484,
+    "isolated_gap": 0.004646238839042368,
+    "refined_c": -0.004624773357545995,
+    "relative_refinement_difference": 0.00019795909616243174,
+    "vertical_nodes": 0,
+    "eigen_residual": 1.1447113576639823e-12
+  },
+  "definition": "Odd response=(a_plus\u2212a_minus)/2; linear finite-difference response=odd/probe_amplitude. Even response=(a_plus+a_minus)/2\u2212a_baseline. Signs denote opposite initial amplitudes of the same eigenmode, not opposite propagation branches.",
+  "scope": "An effective exponential response on the measured evolving background. Loss of coherence or large even response prevents identification with a stationary vortex-wave frequency; no frequency is forced to match theory.",
+  "normalization": {
+    "initial_probe_amplitude_units": "in-plane velocity RMS, m/s",
+    "projected_quantity": "complex streamfunction coefficient from the native velocity eigenbasis; Fourier convention exp(-i kx x)",
+    "normalization_velocity_rms": 4.53261959118434,
+    "frequency_sign": "Projected coefficient evolves as exp(-i omega t)."
+  }
+}
