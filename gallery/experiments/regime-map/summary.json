@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "source_version": "da81ab96d7e51fb0",
-  "generated_at": "2026-10-26T20:36:04.308043+00:00",
+  "generated_at": "2026-10-26T21:04:19.166904+00:00",
   "counts": {
     "complete": 0,
     "running": 0,
-    "queued": 0,
-    "waiting": 49,
+    "queued": 49,
+    "waiting": 0,
     "failed": 0
   },
   "runs": [
     {
       "id": "low-a05-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "low-a05",
@@ -20,7 +20,7 @@
     },
     {
       "id": "low-a05-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "low-a05",
@@ -28,7 +28,7 @@
     },
     {
       "id": "low-a05-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "low-a05",
@@ -36,7 +36,7 @@
     },
     {
       "id": "low-a05-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "low-a05",
@@ -44,7 +44,7 @@
     },
     {
       "id": "low-a1-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "low-a1",
@@ -52,7 +52,7 @@
     },
     {
       "id": "low-a1-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "low-a1",
@@ -60,7 +60,7 @@
     },
     {
       "id": "low-a1-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "low-a1",
@@ -68,7 +68,7 @@
     },
     {
       "id": "low-a1-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "low-a1",
@@ -76,7 +76,7 @@
     },
     {
       "id": "mid-a05-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "mid-a05",
@@ -84,7 +84,7 @@
     },
     {
       "id": "mid-a05-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "mid-a05",
@@ -92,7 +92,7 @@
     },
     {
       "id": "mid-a05-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "mid-a05",
@@ -100,7 +100,7 @@
     },
     {
       "id": "mid-a05-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "mid-a05",
@@ -108,7 +108,7 @@
     },
     {
       "id": "mid-a1-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "mid-a1",
@@ -116,7 +116,7 @@
     },
     {
       "id": "mid-a1-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "mid-a1",
@@ -124,7 +124,7 @@
     },
     {
       "id": "mid-a1-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "mid-a1",
@@ -132,7 +132,7 @@
     },
     {
       "id": "mid-a1-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "mid-a1",
@@ -140,7 +140,7 @@
     },
     {
       "id": "high-a05-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "high-a05",
@@ -148,7 +148,7 @@
     },
     {
       "id": "high-a05-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "high-a05",
@@ -156,7 +156,7 @@
     },
     {
       "id": "high-a05-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "high-a05",
@@ -164,7 +164,7 @@
     },
     {
       "id": "high-a05-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "high-a05",
@@ -172,7 +172,7 @@
     },
     {
       "id": "high-a1-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "high-a1",
@@ -180,7 +180,7 @@
     },
     {
       "id": "high-a1-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "high-a1",
@@ -188,7 +188,7 @@
     },
     {
       "id": "high-a1-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "high-a1",
@@ -196,7 +196,7 @@
     },
     {
       "id": "high-a1-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "high-a1",
@@ -204,7 +204,7 @@
     },
     {
       "id": "anchor-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "anchor",
@@ -212,7 +212,7 @@
     },
     {
       "id": "anchor-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "anchor",
@@ -220,7 +220,7 @@
     },
     {
       "id": "anchor-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "anchor",
@@ -228,7 +228,7 @@
     },
     {
       "id": "anchor-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "anchor",
@@ -236,7 +236,7 @@
     },
     {
       "id": "low-a1-2d-s2",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "seed",
       "group": "2d",
       "cell": "low-a1",
@@ -244,7 +244,7 @@
     },
     {
       "id": "low-a1-tiny-s2",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "seed",
       "group": "tiny",
       "cell": "low-a1",
@@ -252,7 +252,7 @@
     },
     {
       "id": "low-a1-finite-s2",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "seed",
       "group": "finite",
       "cell": "low-a1",
@@ -260,7 +260,7 @@
     },
     {
       "id": "high-a05-2d-s2",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "seed",
       "group": "2d",
       "cell": "high-a05",
@@ -268,7 +268,7 @@
     },
     {
       "id": "high-a05-tiny-s2",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "seed",
       "group": "tiny",
       "cell": "high-a05",
@@ -276,7 +276,7 @@
     },
     {
       "id": "high-a05-finite-s2",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "seed",
       "group": "finite",
       "cell": "high-a05",
@@ -284,7 +284,7 @@
     },
     {
       "id": "anchor-wide-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "wide",
       "group": "2d",
       "cell": "anchor-wide",
@@ -292,7 +292,7 @@
     },
     {
       "id": "anchor-wide-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "wide",
       "group": "tiny",
       "cell": "anchor-wide",
@@ -300,7 +300,7 @@
     },
     {
       "id": "anchor-wide-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "wide",
       "group": "finite",
       "cell": "anchor-wide",
@@ -308,7 +308,7 @@
     },
     {
       "id": "anchor-fine-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "fine",
       "group": "2d",
       "cell": "anchor-fine",
@@ -316,7 +316,7 @@
     },
     {
       "id": "anchor-fine-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "fine",
       "group": "tiny",
       "cell": "anchor-fine",
@@ -324,7 +324,7 @@
     },
     {
       "id": "anchor-fine-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "fine",
       "group": "finite",
       "cell": "anchor-fine",
@@ -332,7 +332,7 @@
     },
     {
       "id": "anchor-halfdt-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "halfdt",
       "group": "2d",
       "cell": "anchor-halfdt",
@@ -340,7 +340,7 @@
     },
     {
       "id": "anchor-halfdt-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "halfdt",
       "group": "tiny",
       "cell": "anchor-halfdt",
@@ -348,7 +348,7 @@
     },
     {
       "id": "anchor-halfdt-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "halfdt",
       "group": "finite",
       "cell": "anchor-halfdt",
@@ -356,7 +356,7 @@
     },
     {
       "id": "anchor-nowaves-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "nowaves",
       "group": "2d",
       "cell": "anchor-nowaves",
@@ -364,7 +364,7 @@
     },
     {
       "id": "anchor-nowaves-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "nowaves",
       "group": "tiny",
       "cell": "anchor-nowaves",
@@ -372,7 +372,7 @@
     },
     {
       "id": "anchor-nowaves-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "nowaves",
       "group": "finite",
       "cell": "anchor-nowaves",
@@ -380,7 +380,7 @@
     },
     {
       "id": "anchor-re300-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "viscosity",
       "group": "2d",
       "cell": "anchor-re300",
@@ -388,7 +388,7 @@
     },
     {
       "id": "anchor-re300-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "viscosity",
       "group": "tiny",
       "cell": "anchor-re300",
@@ -396,7 +396,7 @@
     },
     {
       "id": "anchor-re300-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "viscosity",
       "group": "finite",
       "cell": "anchor-re300",
