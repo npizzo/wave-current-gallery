@@ -1,0 +1,323 @@
+{
+  "id": "probe-finite3d-s3-plus",
+  "status": "complete",
+  "physical_settings": {
+    "physics_version": 1,
+    "S": 0.036649447248308646,
+    "waves": true,
+    "probe_amplitude": 4e-05,
+    "perturb_energy_ratio": 1.0,
+    "ly": 1.0,
+    "S_reference": 0.036649447248308646,
+    "perturbation_ic_sha256": "dcf30358d843317f9b006f61c00138d4859a3dc2e52ecbbf8f85d7f041894997",
+    "probe_mode": 2,
+    "nx": 128,
+    "alpha": 0.75,
+    "seed": 3,
+    "velocity_convention": "Lagrangian",
+    "h": 0.5,
+    "base_ic_sha256": "75ca9ce757aba095c039ab42cbc294c79bdccbb9aca28f5bcf24adb6eea295ae",
+    "nz": 96,
+    "uoffset": 0.0,
+    "eddy_rms": 0.004,
+    "probe_sign": 1,
+    "ic_kind": "embedded",
+    "k": 6.1,
+    "max_dt": 0.02,
+    "ny": 64,
+    "lx": 2.0,
+    "initial_condition_sha256": "6920994750dfe9fe8be4885483b4a5552baad2028b79d94c079b35a944789444",
+    "stop_time": 600.0,
+    "injection_wavelength": 0.25,
+    "source_hashes": {
+      "initial_conditions.jl": "84f5379f18858ee6ff71b0fc501fc378820f432f7a7182eeccf2dd473571c522",
+      "jet_diagnostics.jl": "920a7842e38d5d607f0eb7ebccbdcaa98d5ef85a1e1efd7e07d1235b57997b79",
+      "run_jet.jl": "e1127e5a398c6390ec314d75c3b15b58f2223c073fca16a529ed7178e32b50ca",
+      "vortex_modes.jl": "020d0f191d8f39ca71ad5b8d0445a2c9f057be83aee292c520b89c382781ffa4"
+    },
+    "initial_metrics": {
+      "base_inplane_rms": 0.003999999999999999,
+      "base_total_rms": 0.003999999999999999,
+      "perturb_inplane_rms": 0.0030114274930211357,
+      "perturb_total_rms": 0.004000000000000001,
+      "achieved_perturb_energy_ratio": 1.0000000000000009,
+      "max_native_divergence": 9.853229343548264e-16,
+      "max_transverse_mean_perturbation": 1.474684361169737e-17,
+      "max_mean_profile_error": 1.734723475976807e-18,
+      "probe_streamfunction_amplitude": 8.824918834529482e-06,
+      "initial_total_rms": 0.006235305904810312
+    }
+  },
+  "time_start_s": 0.0,
+  "time_end_s": 600.0,
+  "samples": 2401,
+  "final_values": {
+    "Ejet_L": 1.9107548568249386e-06,
+    "Ejet_E": 2.397565701489968e-05,
+    "Ejet_anomaly": 4.802207501663358e-07,
+    "Etotal": 3.4887629057653874e-06,
+    "Einplane": 3.3594637895922234e-06,
+    "Etransverse": 1.2929911617316418e-07,
+    "Ehorizontal_mean": 3.0350353075946654e-06,
+    "Eky0": 3.1680645521258394e-06,
+    "Eeddy": 4.53727598170722e-07,
+    "Eky0_eddy": 1.3302924453117397e-07,
+    "ky0_eddy_fraction": 0.2931918734225192,
+    "cumulative_P_total_L": -4.04847145746335e-07,
+    "cumulative_residual_L": 1.5453845511033474e-11,
+    "cumulative_P_total_E": 3.1353974022310843e-06,
+    "cumulative_residual_E": -1.9325863264331325e-11,
+    "cumulative_P_total_anomaly": 4.802139912480198e-07,
+    "cumulative_residual_anomaly": 6.758918316014369e-12
+  },
+  "native_budget": {
+    "L": {
+      "available": true,
+      "intervals": 2400,
+      "duration_s": 600.0,
+      "mean_absolute_interval_residual_m2_s3": 1.542002823418896e-13,
+      "mean_absolute_endpoint_production_scale_m2_s3": 2.4659979615737905e-09,
+      "relative_to_endpoint_production_scale": 6.253057980773008e-05,
+      "cumulative_residual_m2_s2": 1.5453845511033474e-11,
+      "scope": "Recorded finite-output-interval energy change minus trapezoidal endpoint native production; not exact Runge-Kutta stage closure or pure dissipation."
+    },
+    "E": {
+      "available": true,
+      "intervals": 2400,
+      "duration_s": 600.0,
+      "mean_absolute_interval_residual_m2_s3": 6.482505804408595e-13,
+      "mean_absolute_endpoint_production_scale_m2_s3": 8.457954190344017e-09,
+      "relative_to_endpoint_production_scale": 7.664389825862756e-05,
+      "cumulative_residual_m2_s2": -1.9325863264331325e-11,
+      "scope": "Recorded finite-output-interval energy change minus trapezoidal endpoint native production; not exact Runge-Kutta stage closure or pure dissipation."
+    },
+    "anomaly": {
+      "available": true,
+      "intervals": 2400,
+      "duration_s": 600.0,
+      "mean_absolute_interval_residual_m2_s3": 1.1061269661723913e-13,
+      "mean_absolute_endpoint_production_scale_m2_s3": 1.1398002165594732e-09,
+      "relative_to_endpoint_production_scale": 9.704568836732407e-05,
+      "cumulative_residual_m2_s2": 6.758918316014369e-12,
+      "scope": "Recorded finite-output-interval energy change minus trapezoidal endpoint native production; not exact Runge-Kutta stage closure or pure dissipation."
+    }
+  },
+  "sampled_production_integrals": {
+    "L": {
+      "adv_full": {
+        "signed_integral_m2_s2": -4.048471457463331e-07,
+        "absolute_integral_m2_s2": 1.0882662828640663e-06
+      },
+      "adv_ky0": {
+        "signed_integral_m2_s2": 1.739792042007881e-07,
+        "absolute_integral_m2_s2": 7.928813735284786e-07
+      },
+      "adv_3d": {
+        "signed_integral_m2_s2": -5.788263499471213e-07,
+        "absolute_integral_m2_s2": 6.879375355895209e-07
+      },
+      "wave": {
+        "signed_integral_m2_s2": -1.0437028385932338e-21,
+        "absolute_integral_m2_s2": 1.1942978645195134e-21
+      },
+      "closure": {
+        "signed_integral_m2_s2": 0.0,
+        "absolute_integral_m2_s2": 0.0
+      },
+      "pressure": {
+        "signed_integral_m2_s2": 3.873957948407575e-25,
+        "absolute_integral_m2_s2": 4.391190743448056e-23
+      },
+      "total": {
+        "signed_integral_m2_s2": -4.048471457463342e-07,
+        "absolute_integral_m2_s2": 1.0882662828640669e-06
+      }
+    },
+    "E": {
+      "adv_full": {
+        "signed_integral_m2_s2": 3.135397402231078e-06,
+        "absolute_integral_m2_s2": 4.192992416445895e-06
+      },
+      "adv_ky0": {
+        "signed_integral_m2_s2": 9.427682007362001e-07,
+        "absolute_integral_m2_s2": 2.6439407646382955e-06
+      },
+      "adv_3d": {
+        "signed_integral_m2_s2": 2.1926292014948777e-06,
+        "absolute_integral_m2_s2": 2.4344032453575595e-06
+      },
+      "wave": {
+        "signed_integral_m2_s2": 2.6313553583202105e-21,
+        "absolute_integral_m2_s2": 3.0583219928064753e-21
+      },
+      "closure": {
+        "signed_integral_m2_s2": 0.0,
+        "absolute_integral_m2_s2": 0.0
+      },
+      "pressure": {
+        "signed_integral_m2_s2": -1.3828729222742551e-24,
+        "absolute_integral_m2_s2": 1.1588044867591531e-22
+      },
+      "total": {
+        "signed_integral_m2_s2": 3.1353974022310805e-06,
+        "absolute_integral_m2_s2": 4.192992416445897e-06
+      }
+    },
+    "anomaly": {
+      "adv_full": {
+        "signed_integral_m2_s2": 4.802139912480194e-07,
+        "absolute_integral_m2_s2": 5.645926714400191e-07
+      },
+      "adv_ky0": {
+        "signed_integral_m2_s2": 3.661764533346411e-07,
+        "absolute_integral_m2_s2": 3.852001081670696e-07
+      },
+      "adv_3d": {
+        "signed_integral_m2_s2": 1.1403753791337838e-07,
+        "absolute_integral_m2_s2": 2.9865186374103167e-07
+      },
+      "wave": {
+        "signed_integral_m2_s2": -1.2493828936487238e-22,
+        "absolute_integral_m2_s2": 1.5703446767931766e-22
+      },
+      "closure": {
+        "signed_integral_m2_s2": 0.0,
+        "absolute_integral_m2_s2": 0.0
+      },
+      "pressure": {
+        "signed_integral_m2_s2": -5.517138443799523e-26,
+        "absolute_integral_m2_s2": 9.63358977382162e-24
+      },
+      "total": {
+        "signed_integral_m2_s2": 4.802139912480193e-07,
+        "absolute_integral_m2_s2": 5.64592671440019e-07
+      }
+    }
+  },
+  "anomaly_energy_threshold_crossings": [
+    {
+      "fraction_of_initial_eddy_energy": 0.01,
+      "first_sustained_time_s": 54.5,
+      "consecutive_samples": 3
+    },
+    {
+      "fraction_of_initial_eddy_energy": 0.05,
+      "first_sustained_time_s": null,
+      "consecutive_samples": 3
+    },
+    {
+      "fraction_of_initial_eddy_energy": 0.1,
+      "first_sustained_time_s": null,
+      "consecutive_samples": 3
+    }
+  ],
+  "small_transverse_perturbation_growth": {
+    "available": false,
+    "reason": "requires_a_nonzero_small_initial_transverse_perturbation"
+  },
+  "mean_momentum_budget": {
+    "available": true,
+    "final": {
+      "time_s": 600.0,
+      "profile_interval_s": 0.25,
+      "interval_observed_rms_m_s2": 8.457917770150171e-07,
+      "interval_native_rms_m_s2": 8.457166791485819e-07,
+      "interval_residual_rms_m_s2": 1.4680804171198595e-10,
+      "interval_relative_residual": 8.67911958565976e-05,
+      "cumulative_velocity_residual_rms_m_s": 3.251562464736958e-08,
+      "cumulative_velocity_change_rms_m_s": 0.0009800211734103867,
+      "cumulative_relative_residual": 1.6589311757590605e-05
+    },
+    "scope": "Depth-weighted comparison of actual mean-profile changes with trapezoidal native total tendency at the saved profile times. Profile intervals can be longer than the energy-diagnostic intervals. Residual includes temporal quadrature error; it is not repaired or labelled pure dissipation."
+  },
+  "jet_shape_final": {
+    "time_s": 600.0,
+    "mode": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "coefficient_m_s": [
+      5.482850620187319e-05,
+      -0.0001940602880787335,
+      0.0004340552908850818,
+      -0.0004884870361141564,
+      0.0004873865819321192,
+      -0.000488118037433899,
+      0.0004592254406479959,
+      -0.00043453139947306584,
+      0.00037721678928137234,
+      -0.000325741428494314,
+      0.0002793187087333971,
+      -0.00024526759953290994,
+      0.00021008197256514727,
+      -0.00018285870907038744,
+      0.0001562582190718897,
+      -0.00013522072056360533
+    ],
+    "modal_amplitude_squared_m2_s2": [
+      1.5030825461644234e-09,
+      1.8829697704600516e-08,
+      9.420199777266649e-08,
+      1.1930979222579655e-07,
+      1.1877284012373718e-07,
+      1.191296092341606e-07,
+      1.05444002669173e-07,
+      9.440876856401056e-08,
+      7.114625305787363e-08,
+      5.3053739118758135e-08,
+      3.900947052424616e-08,
+      3.007809769031794e-08,
+      2.2067217598431644e-08,
+      1.6718653741444296e-08,
+      1.2208315513759336e-08,
+      9.14232163487032e-09
+    ],
+    "anomaly_rms_m_s": 0.0009800211734103867,
+    "dominant_cosine_mode": 4,
+    "dominant_vertical_wavelength_m": 0.25,
+    "fit_residual_rms_m_s": 0.00018819575078269109,
+    "depth_m": 0.5
+  },
+  "definitions": {
+    "jet_anomaly": "Energy of the raw change in the horizontally averaged current from its own initial profile, including any uniform momentum drift; distinct from energy already present in the imposed shear. The cosine-shape diagnostic separately removes depth-mean change.",
+    "ky0_eddy_fraction": "Eky0_eddy/Eeddy, with horizontally uniform mean energy removed from both numerator and denominator. Full Eky0 and Ehorizontal_mean remain separate.",
+    "native_3d": "Native advection of the full field minus native advection evaluated on the replicated y mean; scheme-dependent, not identical to a continuum Reynolds covariance.",
+    "jet_spacing": "Cosine least-squares diagnostic of the changed depth profile on the bounded vertical interval. 2H/n is a descriptive wavelength, not a periodic-box spectrum or an eigenmode prediction.",
+    "closure": "Native sampled endpoint tendencies, including the actual closure term; any mismatch remains reported. No post-hoc term repairs the budget.",
+    "pressure": "The horizontal mean of the native gradient of the last projection pressure is a periodicity check; it vanishes for any periodic pressure and is not an instantaneous pointwise pressure solve.",
+    "threshold_crossings": "Descriptive times when changed mean-profile energy exceeds 1%, 5% or 10% of initial eddy energy for three outputs. These conventions do not define a universal jet-onset criterion.",
+    "sampled_production_integrals": "Trapezoidal integrals of the recorded signed and absolute endpoint native productions. They are not exact Runge-Kutta stage integrals."
+  },
+  "limits": [
+    "A single realization is not an ensemble significance test.",
+    "A larger native 3D term does not by itself identify a competing jet mechanism.",
+    "Small-scale vorticity residuals and signed jet-energy supply answer different questions.",
+    "Temporal output quadrature and model time-step convergence require separate checks."
+  ],
+  "provenance": {
+    "initial_condition_sha256": "6920994750dfe9fe8be4885483b4a5552baad2028b79d94c079b35a944789444",
+    "completed_iteration": 31221,
+    "recorded_max_dt_s": 0.020000000000010232,
+    "final_snapshot_manifest": "t00600.000000.json",
+    "receipt_check": "Completion time and initial-condition hash matched the configuration and final diagnostic."
+  },
+  "public_sampling": {
+    "full_diagnostic_rows": 2401,
+    "published_rows": 401,
+    "scope": "Selected columns and evenly indexed samples. Original recorded interval_dt and interval residuals are retained for selected rows; they are not recomputed over the coarser publication spacing. All summary integrals and fits use full local diagnostic series."
+  }
+}
