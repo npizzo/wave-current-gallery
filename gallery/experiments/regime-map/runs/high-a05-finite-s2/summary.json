@@ -1,0 +1,283 @@
+{
+  "id": "high-a05-finite-s2",
+  "status": "complete",
+  "source_version": "da81ab96d7e51fb0",
+  "receipt_sha256": "78bb876ddc5250428470e8e63498ee1055eb88efc5a66914437a520ca8856fab",
+  "config": {
+    "nx": 128,
+    "ny": 64,
+    "nz": 96,
+    "lx": 2.0,
+    "ly": 1.0,
+    "h": 0.5,
+    "k": 6.1,
+    "S": 0.036649447248308646,
+    "S_reference": 0.036649447248308646,
+    "alpha": 0.5,
+    "uoffset": 0.0,
+    "eddy_rms": 0.012,
+    "injection_wavelength": 0.25,
+    "perturb_energy_ratio": 1.0,
+    "seed": 2,
+    "stop_time": 600.0,
+    "max_dt": 0.02,
+    "nu": 3e-05,
+    "maintain_background": true,
+    "advection": "Centered2",
+    "velocity_convention": "Lagrangian",
+    "base_ic_sha256": "309eae743c21e1eaf8c5fb553250131983d31fe931be0abd34e20f75d1b98215",
+    "perturbation_ic_sha256": "e2995a95cbec5b781d180ea0a33143af64ae2c560a0cc56abc8e60db89d025c1",
+    "initial_condition_sha256": "047ae339de7fecfe15a21452bad27f4cbce39e1065082f4412e26659a57952f2",
+    "perturbation_shape_sha256": "68445419442d1455fd077a2fe75e376425447b31c9bfbbddbd35f9fb8aa07f7a",
+    "waves": true,
+    "initial_metrics": {
+      "base_inplane_rms": 0.012,
+      "base_total_rms": 0.012,
+      "perturb_inplane_rms": 0.009162801679474506,
+      "perturb_total_rms": 0.012000000000000002,
+      "base_native_rms": 0.01203809541055312,
+      "perturb_native_rms": 0.012049377601896422,
+      "achieved_perturb_energy_ratio": 1.0000000000000004,
+      "achieved_native_perturb_energy_ratio": 1.0018752930317631,
+      "max_native_divergence": 2.7200464103316335e-15,
+      "max_transverse_mean_perturbation": 4.1226787608761306e-17,
+      "max_mean_profile_error": 3.469446951953614e-18,
+      "probe_streamfunction_amplitude": 0.0,
+      "initial_total_rms": 0.01776247644964073,
+      "achieved_base_Re_lambda": 100.0,
+      "achieved_eddy_Re_lambda": 141.4213562373095,
+      "achieved_native_base_Re_lambda": 100.31746175460933,
+      "achieved_native_eddy_Re_lambda": 141.93681147557038,
+      "achieved_U_over_S": 0.32742649346652275
+    }
+  },
+  "final_time_s": 600.0,
+  "maps": 121,
+  "diagnostic_times": 601,
+  "boundary_exclusion_cells": 2,
+  "retained_z_centers_m": [
+    -0.48697916666666663,
+    -0.013020833333333332
+  ],
+  "filters": [
+    {
+      "id": "unfiltered",
+      "sigma_x_over_stokes_depth": 0.0,
+      "sigma_z_over_stokes_depth": 0.0,
+      "sigma_x_m": 0.0,
+      "sigma_z_m": 0.0,
+      "x_kernel": {
+        "effective_sigma_min_m": 0.0,
+        "effective_sigma_max_m": 0.0,
+        "maximum_centroid_shift_m": 0.0
+      },
+      "z_kernel": {
+        "effective_sigma_min_m": 0.0,
+        "effective_sigma_max_m": 0.0,
+        "maximum_centroid_shift_m": 0.0
+      },
+      "truncate_sigma": 4
+    },
+    {
+      "id": "g1",
+      "sigma_x_over_stokes_depth": 1.0,
+      "sigma_z_over_stokes_depth": 0.25,
+      "sigma_x_m": 0.0819672131147541,
+      "sigma_z_m": 0.020491803278688527,
+      "x_kernel": {
+        "effective_sigma_min_m": 0.05065336149486151,
+        "effective_sigma_max_m": 0.08190660207255206,
+        "maximum_centroid_shift_m": 0.06057028982111039
+      },
+      "z_kernel": {
+        "effective_sigma_min_m": 0.012763687371371693,
+        "effective_sigma_max_m": 0.020478521341275775,
+        "maximum_centroid_shift_m": 0.014759640860583456
+      },
+      "truncate_sigma": 4
+    },
+    {
+      "id": "g2",
+      "sigma_x_over_stokes_depth": 2.0,
+      "sigma_z_over_stokes_depth": 0.5,
+      "sigma_x_m": 0.1639344262295082,
+      "sigma_z_m": 0.04098360655737705,
+      "x_kernel": {
+        "effective_sigma_min_m": 0.10006704635404882,
+        "effective_sigma_max_m": 0.1638312829942489,
+        "maximum_centroid_shift_m": 0.12587292797804128
+      },
+      "z_kernel": {
+        "effective_sigma_min_m": 0.025128791847575223,
+        "effective_sigma_max_m": 0.04096210520950919,
+        "maximum_centroid_shift_m": 0.03107202010030043
+      },
+      "truncate_sigma": 4
+    },
+    {
+      "id": "g4",
+      "sigma_x_over_stokes_depth": 4.0,
+      "sigma_z_over_stokes_depth": 1.0,
+      "sigma_x_m": 0.3278688524590164,
+      "sigma_z_m": 0.0819672131147541,
+      "x_kernel": {
+        "effective_sigma_min_m": 0.19881844986086636,
+        "effective_sigma_max_m": 0.3240231766241397,
+        "maximum_centroid_shift_m": 0.25659607804248796
+      },
+      "z_kernel": {
+        "effective_sigma_min_m": 0.04981573327032832,
+        "effective_sigma_max_m": 0.08061477780341346,
+        "maximum_centroid_shift_m": 0.06374253672745746
+      },
+      "truncate_sigma": 4
+    }
+  ],
+  "transverse_growth": {
+    "available": false,
+    "reason": "not_a_small_initial_perturbation"
+  },
+  "signed_jet_anomaly_supplies": {
+    "adv_ky0": {
+      "signed_integral_m2_s2": 1.6854366932465893e-06,
+      "absolute_integral_m2_s2": 2.1458306211426923e-06
+    },
+    "adv_3d": {
+      "signed_integral_m2_s2": 8.206290315281657e-08,
+      "absolute_integral_m2_s2": 5.718581275925672e-07
+    },
+    "wave": {
+      "signed_integral_m2_s2": 1.4652113626876293e-21,
+      "absolute_integral_m2_s2": 1.4866387889845917e-21
+    },
+    "closure": {
+      "signed_integral_m2_s2": -1.1482803882979727e-05,
+      "absolute_integral_m2_s2": 1.1482803882979727e-05
+    },
+    "forcing": {
+      "signed_integral_m2_s2": 1.0129233765344366e-05,
+      "absolute_integral_m2_s2": 1.0129233765344366e-05
+    },
+    "pressure": {
+      "signed_integral_m2_s2": -6.573451273529364e-25,
+      "absolute_integral_m2_s2": 2.863511690206541e-23
+    },
+    "total": {
+      "signed_integral_m2_s2": 4.139294787640455e-07,
+      "absolute_integral_m2_s2": 2.290586399581002e-06
+    }
+  },
+  "native_qc": {
+    "native_divergence_max": 1.7763568394002505e-15,
+    "native_divergence_rms": 1.9143951651351253e-16,
+    "native_pressure_curl_max": 2.7755575615628914e-16,
+    "viscous_cfl": 0.027033600000000005
+  },
+  "jet_budget_residual": {
+    "cumulative_residual_m2_s2": 3.3286008375398994e-09,
+    "mean_absolute_interval_residual_m2_s3": 1.3606979784304696e-11
+  },
+  "final_energies": {
+    "Etotal": 1.133667219629119e-05,
+    "Eky0": 1.1331483908615648e-05,
+    "Eeddy": 3.1689238927475346e-07,
+    "Eperp": 5.188287675540029e-09,
+    "perp_eddy_fraction": 0.016372395965122584,
+    "Ejet_anomaly": 4.1725807960158576e-07
+  },
+  "final_metrics": [
+    {
+      "time_s": 600.0,
+      "filter_id": "unfiltered",
+      "region": "full",
+      "temporal_stride": 0,
+      "z_min_m": -0.48697916666666663,
+      "z_max_m": -0.013020833333333332,
+      "volume_m3": 0.9583333333333333,
+      "Q_rms": 0.060479324765358555,
+      "A_rms": 6.544813996011307e-05,
+      "Rbar_rms": 6.459651689354734e-07,
+      "Qdot_viscous_rms": 0.0002594941755166117,
+      "Qdot_forcing_rms": 0.00025727570895306293,
+      "rbar_to_advection": 0.009869878186441243,
+      "Qdot_advection_full_rms": 0.00029742543446207106,
+      "Qdot_advection_mean_rms": 0.00029745273397875616,
+      "Qdot_wave_rms": 0.00035095776245011134,
+      "Qdot_total_rms": 6.491393873894784e-05,
+      "native_3d_correction_rms": 8.601051557827878e-07,
+      "native_mean_rhs_rms": 6.492550412773132e-05,
+      "maintained_diffusive_rms": 3.459987295893373e-05,
+      "raw_component_norm_sum": 0.0011651803808985421,
+      "native_3d_to_mean_terms": 0.001259285648259954,
+      "native_3d_to_mean_rhs": 0.013247569923995634,
+      "native_identity_residual_rms": 1.4520170558196626e-20,
+      "q_anomaly_rms": 0.2974574139563335,
+      "native_3d_q_anomaly_supply": 4.188432210349846e-09,
+      "native_mean_q_anomaly_supply": 1.889263689836877e-07,
+      "native_3d_jet_q_anomaly_supply": 6.508342346773276e-11,
+      "native_mean_jet_q_anomaly_supply": -3.8031120206003776e-08,
+      "native_state_Q_rms": 0.060479324765358555,
+      "native_state_A_rms": 6.544813996011307e-05,
+      "native_state_Rbar_rms": 6.459651689354734e-07,
+      "native_state_Qdot_viscous_rms": 0.0002594941755166117,
+      "native_state_Qdot_forcing_rms": 0.00025727570895306293,
+      "native_state_Qt_rms": 6.491393873894784e-05,
+      "native_state_scalar_observed_rms": 3.461640858567139e-05,
+      "native_state_scalar_unclosed_rms": 4.961019927108999e-07,
+      "native_state_rbar_to_scalar_evolution": 0.004955161618944994,
+      "native_state_scalar_observed_to_evolution": 0.2655404771933938,
+      "native_state_unclosed_to_scalar_budget": 0.0030076624078209727,
+      "native_state_tau_scalar_observed_to_q": 0.011924325902547606,
+      "native_state_rbar_to_advection": 0.009869878186441243
+    },
+    {
+      "time_s": 600.0,
+      "filter_id": "unfiltered",
+      "region": "stokes_layer",
+      "temporal_stride": 0,
+      "z_min_m": -0.08072916666666666,
+      "z_max_m": -0.013020833333333332,
+      "volume_m3": 0.14583333333333331,
+      "Q_rms": 0.1366608748055382,
+      "A_rms": 8.357826328585241e-05,
+      "Rbar_rms": 3.3135879230027914e-07,
+      "Qdot_viscous_rms": 0.0005970438801085883,
+      "Qdot_forcing_rms": 0.0006012966958929707,
+      "rbar_to_advection": 0.003964652761053117,
+      "Qdot_advection_full_rms": 0.0005586396902792248,
+      "Qdot_advection_mean_rms": 0.0005587826387098173,
+      "Qdot_wave_rms": 0.0006275869526571637,
+      "Qdot_total_rms": 7.061254532666784e-05,
+      "native_3d_correction_rms": 5.402725312273027e-07,
+      "native_mean_rhs_rms": 7.048319045435451e-05,
+      "maintained_diffusive_rms": 6.105829749526624e-05,
+      "raw_component_norm_sum": 0.00238471016736854,
+      "native_3d_to_mean_terms": 0.00043310922903934266,
+      "native_3d_to_mean_rhs": 0.0076652678141348836,
+      "native_identity_residual_rms": 3.3086034096904375e-20,
+      "q_anomaly_rms": 0.3157399046256938,
+      "native_3d_q_anomaly_supply": -4.1852995708136464e-08,
+      "native_mean_q_anomaly_supply": 2.077276170368525e-06,
+      "native_3d_jet_q_anomaly_supply": -2.750118939489681e-10,
+      "native_mean_jet_q_anomaly_supply": 3.8378163345453e-09,
+      "native_state_Q_rms": 0.1366608748055382,
+      "native_state_A_rms": 8.357826328585241e-05,
+      "native_state_Rbar_rms": 3.3135879230027914e-07,
+      "native_state_Qdot_viscous_rms": 0.0005970438801085883,
+      "native_state_Qdot_forcing_rms": 0.0006012966958929707,
+      "native_state_Qt_rms": 7.061254532666784e-05,
+      "native_state_scalar_observed_rms": 6.108751268264901e-05,
+      "native_state_scalar_unclosed_rms": 7.836656678979012e-07,
+      "native_state_rbar_to_scalar_evolution": 0.002149017799971333,
+      "native_state_scalar_observed_to_evolution": 0.3961812849439115,
+      "native_state_unclosed_to_scalar_budget": 0.0036415623684464132,
+      "native_state_tau_scalar_observed_to_q": 0.00931251549525629,
+      "native_state_rbar_to_advection": 0.003964652761053117
+    }
+  ],
+  "scope": "Finite-time individual realization. Native mean-feedback, scalar continuum balance and transverse energy are separate diagnostics; no single ratio assigns a regime.",
+  "experiment": "seed",
+  "group": "finite",
+  "cell": "high-a05",
+  "seed": 2
+}
