@@ -285,5 +285,26 @@
   "experiment": "primary",
   "group": "tiny",
   "cell": "anchor",
-  "seed": 1
+  "seed": 1,
+  "qualified_transverse_growth": {
+    "available": true,
+    "qualification": {
+      "collapse_tolerance": 0.05,
+      "maximum_energy_fraction": 0.01,
+      "maximum_log_amplitude_fit_rms": 0.2,
+      "minimum_samples": 5
+    },
+    "stop_reason": "end_of_record",
+    "qualified_samples": 601,
+    "amplitude_growth_rate_s_inv": -0.0012652851645135992,
+    "start_s": 0.0,
+    "end_s": 600.0,
+    "samples": 601,
+    "log_amplitude_fit_rms": 0.04769327063788317,
+    "max_energy_fraction": 0.01,
+    "scope": "Finite-time growth on the evolving nonlinear base, not an eigenvalue or asymptotic stability proof.",
+    "max_twin_relative_amplitude_error": 9.957158266891962e-05,
+    "smaller_run": "anchor-tiny100-s1",
+    "larger_run": "anchor-tiny-s1"
+  }
 }
