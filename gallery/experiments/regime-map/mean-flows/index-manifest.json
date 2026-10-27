@@ -1,0 +1,1467 @@
+{
+  "schema_version": 1,
+  "title": "Matched 2D, weakly 3D and finite-3D mean flows",
+  "campaign_sha256": "4ff67db42dc35e729e1498d659b048b0d5529a5180f6609fb8a5c059652b8261",
+  "generator_sha256": "04ff7d5dff90d90ffe356e88c88e66fe7a3b76f8e1679200f083791e83aa1c41",
+  "group_count": 14,
+  "plotted_run_count": 42,
+  "definitions": {
+    "U": "Cell-centered Eulerian velocity averaged in the transverse y direction, converted from the saved Lagrangian field: U(x,z,t)=mean_y u_E(x,y,z,t). No temporal, ensemble, or x average in the field panels.",
+    "velocity_conversion": "The cached Uc field is Lagrangian. Plots and CSV subtract the actual Stokes drift waves*S_reference*exp(2*k*z) to obtain Eulerian velocity. The no-wave controls subtract zero. Time differences are identical in the two conventions because the Stokes drift is steady.",
+    "profile": "Horizontal mean mean_x U(x,z,t); x cells are uniform, so the arithmetic x mean is the horizontal-area mean.",
+    "change": "The horizontally averaged current profile at t minus its own initial profile. Initial Eulerian current and q0 are not assumed zero.",
+    "roles": {
+      "2d": "Exact 2D initial condition, eta=0",
+      "tiny": "Weak 3D perturbation, initial transverse/2D eddy energy eta=1e-6",
+      "finite": "Finite 3D perturbation, initial transverse/2D eddy energy eta=1"
+    },
+    "initial_energy": "Finite perturbations add initial energy. These plots do not compare equal-total-energy initial states.",
+    "coordinates": "All saved cell centers are included, with no boundary exclusion, smoothing, or filtering. x=(i+1/2)Lx/Nx; z and dz are stored cache coordinates.",
+    "colour_scaling": "Within each matched group, all three total-U panels share the exact data minimum and maximum; all three departures from the initial mean profile share a symmetric range reaching their largest absolute value. No quantile clipping. Colour ranges differ across groups and rows.",
+    "units": "Plots use mm/s and m. CSV values use m/s, m and s.",
+    "stokes_depth": "delta_S=1/(2k); upper views show z>=-2delta_S.",
+    "scope": "Finite-time 600 s individual realizations. Mean fields are derived arrays, not native three-dimensional snapshots. The smaller tiny100 amplitude is not plotted again; it belongs to the separate twin-amplitude test.",
+    "field_anomaly": "The lower field row shows U(x,z,t_final)-mean_x U(x,z,0): departure from the initial horizontally averaged profile, retaining the present in-plane eddies and jets. It is not a subtraction of the initial x-z eddy pattern."
+  },
+  "overview": {
+    "png": "primary-mean-current-changes.png",
+    "pdf": "primary-mean-current-changes.pdf"
+  },
+  "anchor_evolution": {
+    "png": "anchor-profile-evolution.png",
+    "pdf": "anchor-profile-evolution.pdf",
+    "requested_times_s": [
+      0,
+      120,
+      300,
+      600
+    ],
+    "actual_times_s": [
+      0.0,
+      120.0,
+      300.0,
+      600.0
+    ]
+  },
+  "profiles_csv": "mean-profiles-final.csv",
+  "groups": [
+    {
+      "name": "low-a05",
+      "seed": 1,
+      "slug": "low-a05-s1",
+      "experiment": "primary",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.5,
+        "uoffset": 0.0,
+        "eddy_rms": 0.0012,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 2.9999999999999997e-06,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "ce4e00947abb14a5f5b5fbb7c89f117a4b6ce9c5f08c3f356ed405689b3b6b06",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "c56cdc6913c5595c98338d5b9e9d61c8ce8a6fe339750226c6a6108d842eb5c3",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.0012,
+          "base_total_rms": 0.0012,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.0012044381176266313,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 2.0816681711721685e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 3.469446951953614e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.005380108700020989,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.36984313555261,
+          "achieved_native_eddy_Re_lambda": 100.36984313555261,
+          "achieved_U_over_S": 0.03274264934665227
+        }
+      },
+      "run_ids": {
+        "2d": "low-a05-2d-s1",
+        "tiny": "low-a05-tiny-s1",
+        "finite": "low-a05-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 6.938893903907228e-18,
+        "finite": 3.469446951953614e-18
+      },
+      "profile_plot": {
+        "png": "low-a05-s1-profiles.png",
+        "pdf": "low-a05-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "low-a05-s1-fields.png",
+        "pdf": "low-a05-s1-fields.pdf"
+      },
+      "profiles_csv": "low-a05-s1-profiles.csv"
+    },
+    {
+      "name": "low-a1",
+      "seed": 1,
+      "slug": "low-a1-s1",
+      "experiment": "primary",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 1.0,
+        "uoffset": 0.0,
+        "eddy_rms": 0.0012,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 2.9999999999999997e-06,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "ce4e00947abb14a5f5b5fbb7c89f117a4b6ce9c5f08c3f356ed405689b3b6b06",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "f26adf35fd1ab90cb016fae28cc5c820f63656e660d75a7c0b58dd5365d9b33f",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.0012,
+          "base_total_rms": 0.0012,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.0012044381176266313,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 1.491862189340054e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 3.8116482626443515e-20,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.0012,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.36984313555261,
+          "achieved_native_eddy_Re_lambda": 100.36984313555261,
+          "achieved_U_over_S": 0.03274264934665227
+        }
+      },
+      "run_ids": {
+        "2d": "low-a1-2d-s1",
+        "tiny": "low-a1-tiny-s1",
+        "finite": "low-a1-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 6.938893903907228e-18,
+        "finite": 6.938893903907228e-18
+      },
+      "profile_plot": {
+        "png": "low-a1-s1-profiles.png",
+        "pdf": "low-a1-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "low-a1-s1-fields.png",
+        "pdf": "low-a1-s1-fields.pdf"
+      },
+      "profiles_csv": "low-a1-s1-profiles.csv"
+    },
+    {
+      "name": "mid-a05",
+      "seed": 1,
+      "slug": "mid-a05-s1",
+      "experiment": "primary",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.5,
+        "uoffset": 0.0,
+        "eddy_rms": 0.004,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 1e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "04bb4e6c2b36d513a5b2cbb990842f88c167f252c41eaf919c8c63c2a8d17fb5",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "70e26cfde860cb02cf243518c6fb77a94e9ae303816858430f67729b43196233",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.004,
+          "base_total_rms": 0.004,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.004014793725422104,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 4.440892098500626e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 5.204170427930421e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.006595875197730891,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.3698431355526,
+          "achieved_native_eddy_Re_lambda": 100.3698431355526,
+          "achieved_U_over_S": 0.10914216448884091
+        }
+      },
+      "run_ids": {
+        "2d": "mid-a05-2d-s1",
+        "tiny": "mid-a05-tiny-s1",
+        "finite": "mid-a05-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 6.938893903907228e-18,
+        "finite": 9.107298248878237e-18
+      },
+      "profile_plot": {
+        "png": "mid-a05-s1-profiles.png",
+        "pdf": "mid-a05-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "mid-a05-s1-fields.png",
+        "pdf": "mid-a05-s1-fields.pdf"
+      },
+      "profiles_csv": "mid-a05-s1-profiles.csv"
+    },
+    {
+      "name": "mid-a1",
+      "seed": 1,
+      "slug": "mid-a1-s1",
+      "experiment": "primary",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 1.0,
+        "uoffset": 0.0,
+        "eddy_rms": 0.004,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 1e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "04bb4e6c2b36d513a5b2cbb990842f88c167f252c41eaf919c8c63c2a8d17fb5",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "12d3e487a086530976d2cde943fdd1be343f40fc5c68c08d08b274c76338f636",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.004,
+          "base_total_rms": 0.004,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.004014793725422104,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 4.718447854656915e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 1.2049043674692422e-19,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.004,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.3698431355526,
+          "achieved_native_eddy_Re_lambda": 100.3698431355526,
+          "achieved_U_over_S": 0.10914216448884091
+        }
+      },
+      "run_ids": {
+        "2d": "mid-a1-2d-s1",
+        "tiny": "mid-a1-tiny-s1",
+        "finite": "mid-a1-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 6.938893903907228e-18,
+        "finite": 9.107298248878237e-18
+      },
+      "profile_plot": {
+        "png": "mid-a1-s1-profiles.png",
+        "pdf": "mid-a1-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "mid-a1-s1-fields.png",
+        "pdf": "mid-a1-s1-fields.pdf"
+      },
+      "profiles_csv": "mid-a1-s1-profiles.csv"
+    },
+    {
+      "name": "high-a05",
+      "seed": 1,
+      "slug": "high-a05-s1",
+      "experiment": "primary",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.5,
+        "uoffset": 0.0,
+        "eddy_rms": 0.012,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 3e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "463b12aa6c6f8b8b52ca5501c2e451bc0533560b49ccd5751cdbed45d1626d4c",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "dafc394615096123b7b9359d7dfa9b40d7e017d311b2d07450bc2183884b3536",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.012,
+          "base_total_rms": 0.012,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.012044381176266312,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 1.2212453270876722e-15,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 3.469446951953614e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.013096013501216374,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.3698431355526,
+          "achieved_native_eddy_Re_lambda": 100.3698431355526,
+          "achieved_U_over_S": 0.32742649346652275
+        }
+      },
+      "run_ids": {
+        "2d": "high-a05-2d-s1",
+        "tiny": "high-a05-tiny-s1",
+        "finite": "high-a05-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 6.938893903907228e-18,
+        "finite": 2.7321894746634712e-17
+      },
+      "profile_plot": {
+        "png": "high-a05-s1-profiles.png",
+        "pdf": "high-a05-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "high-a05-s1-fields.png",
+        "pdf": "high-a05-s1-fields.pdf"
+      },
+      "profiles_csv": "high-a05-s1-profiles.csv"
+    },
+    {
+      "name": "high-a1",
+      "seed": 1,
+      "slug": "high-a1-s1",
+      "experiment": "primary",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 1.0,
+        "uoffset": 0.0,
+        "eddy_rms": 0.012,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 3e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "463b12aa6c6f8b8b52ca5501c2e451bc0533560b49ccd5751cdbed45d1626d4c",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "ac95143d73b9d3716c040543861f614bf4f0c157c97c6c6f376e0568c95beb9e",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.012,
+          "base_total_rms": 0.012,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.012044381176266312,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 1.1379786002407855e-15,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 4.2521053952165877e-19,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.012,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.3698431355526,
+          "achieved_native_eddy_Re_lambda": 100.3698431355526,
+          "achieved_U_over_S": 0.32742649346652275
+        }
+      },
+      "run_ids": {
+        "2d": "high-a1-2d-s1",
+        "tiny": "high-a1-tiny-s1",
+        "finite": "high-a1-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 6.938893903907228e-18,
+        "finite": 2.7321894746634712e-17
+      },
+      "profile_plot": {
+        "png": "high-a1-s1-profiles.png",
+        "pdf": "high-a1-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "high-a1-s1-fields.png",
+        "pdf": "high-a1-s1-fields.pdf"
+      },
+      "profiles_csv": "high-a1-s1-profiles.csv"
+    },
+    {
+      "name": "anchor",
+      "seed": 1,
+      "slug": "anchor-s1",
+      "experiment": "primary",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.75,
+        "uoffset": 0.0,
+        "eddy_rms": 0.004,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 1e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "04bb4e6c2b36d513a5b2cbb990842f88c167f252c41eaf919c8c63c2a8d17fb5",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "5a70620585cc5917ebc1c88aaad22ef94eff5098835fe1f8dca2d1eaf8fabfc5",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.004,
+          "base_total_rms": 0.004,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.004014793725422104,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 4.996003610813204e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 1.734723475976807e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.0047829271796683654,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.3698431355526,
+          "achieved_native_eddy_Re_lambda": 100.3698431355526,
+          "achieved_U_over_S": 0.10914216448884091
+        }
+      },
+      "run_ids": {
+        "2d": "anchor-2d-s1",
+        "tiny": "anchor-tiny-s1",
+        "finite": "anchor-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 3.469446951953614e-18,
+        "finite": 9.107298248878237e-18
+      },
+      "profile_plot": {
+        "png": "anchor-s1-profiles.png",
+        "pdf": "anchor-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "anchor-s1-fields.png",
+        "pdf": "anchor-s1-fields.pdf"
+      },
+      "profiles_csv": "anchor-s1-profiles.csv"
+    },
+    {
+      "name": "low-a1",
+      "seed": 2,
+      "slug": "low-a1-s2",
+      "experiment": "seed",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 1.0,
+        "uoffset": 0.0,
+        "eddy_rms": 0.0012,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 2,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 2.9999999999999997e-06,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "68b6e5edcf33ac6d6ecf42edf121432e3b1ffa09dd2e3e8bd00e8d9ed49cfaf4",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "cae091ad86bfe51e13bf5be1519dde3a4ad4aa0074e47fe0b45e69207cd0f946",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.0012,
+          "base_total_rms": 0.0012,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.001203809541055312,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 1.3877787807814457e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 6.585681164902185e-20,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.0012,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.31746175460934,
+          "achieved_native_eddy_Re_lambda": 100.31746175460934,
+          "achieved_U_over_S": 0.03274264934665227
+        }
+      },
+      "run_ids": {
+        "2d": "low-a1-2d-s2",
+        "tiny": "low-a1-tiny-s2",
+        "finite": "low-a1-finite-s2"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 6.938893903907228e-18,
+        "finite": 6.938893903907228e-18
+      },
+      "profile_plot": {
+        "png": "low-a1-s2-profiles.png",
+        "pdf": "low-a1-s2-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "low-a1-s2-fields.png",
+        "pdf": "low-a1-s2-fields.pdf"
+      },
+      "profiles_csv": "low-a1-s2-profiles.csv"
+    },
+    {
+      "name": "high-a05",
+      "seed": 2,
+      "slug": "high-a05-s2",
+      "experiment": "seed",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.5,
+        "uoffset": 0.0,
+        "eddy_rms": 0.012,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 2,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 3e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "309eae743c21e1eaf8c5fb553250131983d31fe931be0abd34e20f75d1b98215",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "59373c430e11f7628fb9eaea92984cee24b599c5ca7ac2e90235480a640192cb",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.012,
+          "base_total_rms": 0.012,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.01203809541055312,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 9.992007221626409e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 5.204170427930421e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.013096013501216374,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.31746175460933,
+          "achieved_native_eddy_Re_lambda": 100.31746175460933,
+          "achieved_U_over_S": 0.32742649346652275
+        }
+      },
+      "run_ids": {
+        "2d": "high-a05-2d-s2",
+        "tiny": "high-a05-tiny-s2",
+        "finite": "high-a05-finite-s2"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 6.938893903907228e-18,
+        "finite": 1.8214596497756474e-17
+      },
+      "profile_plot": {
+        "png": "high-a05-s2-profiles.png",
+        "pdf": "high-a05-s2-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "high-a05-s2-fields.png",
+        "pdf": "high-a05-s2-fields.pdf"
+      },
+      "profiles_csv": "high-a05-s2-profiles.csv"
+    },
+    {
+      "name": "anchor-wide",
+      "seed": 1,
+      "slug": "anchor-wide-s1",
+      "experiment": "wide",
+      "config": {
+        "nx": 128,
+        "ny": 128,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 2.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.75,
+        "uoffset": 0.0,
+        "eddy_rms": 0.004,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 1e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "0cb6f1125b005e5af64d25a939fccc0dc936ba115716aa67d83a68bea71ba0a7",
+        "perturbation_ic_sha256": "bd30a67f045a9aedc62f7c83ecc91e01519be6f1fee66bc7520d17b3f5619107",
+        "initial_condition_sha256": "1a5e9546ad4759b57ea4cfabab90ee27a1426054d0b9f384c3d6753779b27714",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.004,
+          "base_total_rms": 0.004,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.004014793725422104,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 4.996003610813204e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 1.734723475976807e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.0047829271796683654,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.3698431355526,
+          "achieved_native_eddy_Re_lambda": 100.3698431355526,
+          "achieved_U_over_S": 0.10914216448884091
+        }
+      },
+      "run_ids": {
+        "2d": "anchor-wide-2d-s1",
+        "tiny": "anchor-wide-tiny-s1",
+        "finite": "anchor-wide-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 3.469446951953614e-18,
+        "finite": 6.5052130349130266e-18
+      },
+      "profile_plot": {
+        "png": "anchor-wide-s1-profiles.png",
+        "pdf": "anchor-wide-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "anchor-wide-s1-fields.png",
+        "pdf": "anchor-wide-s1-fields.pdf"
+      },
+      "profiles_csv": "anchor-wide-s1-profiles.csv"
+    },
+    {
+      "name": "anchor-fine",
+      "seed": 1,
+      "slug": "anchor-fine-s1",
+      "experiment": "fine",
+      "config": {
+        "nx": 256,
+        "ny": 128,
+        "nz": 192,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.75,
+        "uoffset": 0.0,
+        "eddy_rms": 0.004,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.01,
+        "nu": 1e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "bef088c20153657628c7acc8882e5c850d805430dd35c62271e8a9cee1044e6c",
+        "perturbation_ic_sha256": "c7725f64c74c3ad0364d79e6de48bfc46ff308136c7bf4a5ffecd3472788c4cd",
+        "initial_condition_sha256": "f77cba66f0e71b6690f1180ab8553bab08e7b61e7572b80324bfcfd76b544e4c",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.003999999999999999,
+          "base_total_rms": 0.003999999999999999,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.00400369192694103,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 8.881784197001252e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 3.469446951953614e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.004783289993774098,
+          "achieved_base_Re_lambda": 99.99999999999997,
+          "achieved_eddy_Re_lambda": 99.99999999999997,
+          "achieved_native_base_Re_lambda": 100.09229817352575,
+          "achieved_native_eddy_Re_lambda": 100.09229817352575,
+          "achieved_U_over_S": 0.10914216448884088
+        }
+      },
+      "run_ids": {
+        "2d": "anchor-fine-2d-s1",
+        "tiny": "anchor-fine-tiny-s1",
+        "finite": "anchor-fine-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49869791666666663,
+        -0.0013020833333333333
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 3.469446951953614e-18,
+        "finite": 2.2551405187698492e-17
+      },
+      "profile_plot": {
+        "png": "anchor-fine-s1-profiles.png",
+        "pdf": "anchor-fine-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "anchor-fine-s1-fields.png",
+        "pdf": "anchor-fine-s1-fields.pdf"
+      },
+      "profiles_csv": "anchor-fine-s1-profiles.csv"
+    },
+    {
+      "name": "anchor-halfdt",
+      "seed": 1,
+      "slug": "anchor-halfdt-s1",
+      "experiment": "halfdt",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.75,
+        "uoffset": 0.0,
+        "eddy_rms": 0.004,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.01,
+        "nu": 1e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "04bb4e6c2b36d513a5b2cbb990842f88c167f252c41eaf919c8c63c2a8d17fb5",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "5a70620585cc5917ebc1c88aaad22ef94eff5098835fe1f8dca2d1eaf8fabfc5",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.004,
+          "base_total_rms": 0.004,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.004014793725422104,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 4.996003610813204e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 1.734723475976807e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.0047829271796683654,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.3698431355526,
+          "achieved_native_eddy_Re_lambda": 100.3698431355526,
+          "achieved_U_over_S": 0.10914216448884091
+        }
+      },
+      "run_ids": {
+        "2d": "anchor-halfdt-2d-s1",
+        "tiny": "anchor-halfdt-tiny-s1",
+        "finite": "anchor-halfdt-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 3.469446951953614e-18,
+        "finite": 9.107298248878237e-18
+      },
+      "profile_plot": {
+        "png": "anchor-halfdt-s1-profiles.png",
+        "pdf": "anchor-halfdt-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "anchor-halfdt-s1-fields.png",
+        "pdf": "anchor-halfdt-s1-fields.pdf"
+      },
+      "profiles_csv": "anchor-halfdt-s1-profiles.csv"
+    },
+    {
+      "name": "anchor-nowaves",
+      "seed": 1,
+      "slug": "anchor-nowaves-s1",
+      "experiment": "nowaves",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.0,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.75,
+        "uoffset": 0.0,
+        "eddy_rms": 0.004,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 1e-05,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "04bb4e6c2b36d513a5b2cbb990842f88c167f252c41eaf919c8c63c2a8d17fb5",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "5a747e36a051d22e10658caa1827808b63d9ca5a842a28efae98fd421cad1613",
+        "perturbation_shape_sha256": null,
+        "waves": false,
+        "initial_metrics": {
+          "base_inplane_rms": 0.004,
+          "base_total_rms": 0.004,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.004014793725422104,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 4.440892098500626e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 6.938893903907228e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.008825391303171403,
+          "achieved_base_Re_lambda": 100.0,
+          "achieved_eddy_Re_lambda": 100.0,
+          "achieved_native_base_Re_lambda": 100.3698431355526,
+          "achieved_native_eddy_Re_lambda": 100.3698431355526,
+          "achieved_U_over_S": 0.10914216448884091
+        }
+      },
+      "run_ids": {
+        "2d": "anchor-nowaves-2d-s1",
+        "tiny": "anchor-nowaves-tiny-s1",
+        "finite": "anchor-nowaves-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 6.938893903907228e-18,
+        "finite": 8.890457814381136e-18
+      },
+      "profile_plot": {
+        "png": "anchor-nowaves-s1-profiles.png",
+        "pdf": "anchor-nowaves-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "anchor-nowaves-s1-fields.png",
+        "pdf": "anchor-nowaves-s1-fields.pdf"
+      },
+      "profiles_csv": "anchor-nowaves-s1-profiles.csv"
+    },
+    {
+      "name": "anchor-re300",
+      "seed": 1,
+      "slug": "anchor-re300-s1",
+      "experiment": "viscosity",
+      "config": {
+        "nx": 128,
+        "ny": 64,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.75,
+        "uoffset": 0.0,
+        "eddy_rms": 0.004,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "stop_time": 600.0,
+        "max_dt": 0.02,
+        "nu": 3.3333333333333333e-06,
+        "maintain_background": true,
+        "advection": "Centered2",
+        "velocity_convention": "Lagrangian",
+        "base_ic_sha256": "04bb4e6c2b36d513a5b2cbb990842f88c167f252c41eaf919c8c63c2a8d17fb5",
+        "perturbation_ic_sha256": "3a475a66e5e8aff9a088d811583dfb6efe317a17fde0f089b7cfe13291172642",
+        "initial_condition_sha256": "5a70620585cc5917ebc1c88aaad22ef94eff5098835fe1f8dca2d1eaf8fabfc5",
+        "perturbation_shape_sha256": null,
+        "waves": true,
+        "initial_metrics": {
+          "base_inplane_rms": 0.004,
+          "base_total_rms": 0.004,
+          "perturb_inplane_rms": 0.0,
+          "perturb_total_rms": 0.0,
+          "base_native_rms": 0.004014793725422104,
+          "perturb_native_rms": 0.0,
+          "achieved_perturb_energy_ratio": 0.0,
+          "achieved_native_perturb_energy_ratio": 0.0,
+          "max_native_divergence": 4.996003610813204e-16,
+          "max_transverse_mean_perturbation": 0.0,
+          "max_mean_profile_error": 1.734723475976807e-18,
+          "probe_streamfunction_amplitude": 0.0,
+          "initial_total_rms": 0.0047829271796683654,
+          "achieved_base_Re_lambda": 300.0,
+          "achieved_eddy_Re_lambda": 300.0,
+          "achieved_native_base_Re_lambda": 301.1095294066578,
+          "achieved_native_eddy_Re_lambda": 301.1095294066578,
+          "achieved_U_over_S": 0.10914216448884091
+        }
+      },
+      "run_ids": {
+        "2d": "anchor-re300-2d-s1",
+        "tiny": "anchor-re300-tiny-s1",
+        "finite": "anchor-re300-finite-s1"
+      },
+      "selected_field_times_s": [
+        0.0,
+        120.0,
+        300.0,
+        600.0
+      ],
+      "z_cell_center_range_m": [
+        -0.49739583333333337,
+        -0.0026041666666666665
+      ],
+      "initial_ymean_max_absolute_difference_m_s": {
+        "2d": 0.0,
+        "tiny": 3.469446951953614e-18,
+        "finite": 9.107298248878237e-18
+      },
+      "profile_plot": {
+        "png": "anchor-re300-s1-profiles.png",
+        "pdf": "anchor-re300-s1-profiles.pdf"
+      },
+      "field_plot": {
+        "png": "anchor-re300-s1-fields.png",
+        "pdf": "anchor-re300-s1-fields.pdf"
+      },
+      "profiles_csv": "anchor-re300-s1-profiles.csv"
+    }
+  ],
+  "sources": {
+    "low-a05-2d-s1": {
+      "summary_sha256": "76a8f9bb3169bde0aaf1a7eb15d45633d80fcdaaca8de51f312ddd685e6bd255",
+      "pair_fields_sha256": "db270338cb2a52961c64e1cb76a52ca33a158515af11f3c41b2ae9857a2c2aae",
+      "native_receipt_sha256": "9e1d785a3e8b449abcae3f993007f3f0c0614659d80e861f246f4f4f59e8bd6b",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "low-a05-tiny-s1": {
+      "summary_sha256": "74b82d5038b81be203904b1cc6316aaee9c5308dad7e20eaa29a79183b78812a",
+      "pair_fields_sha256": "c62186e87a0a2d08b18a925352effdf4587bb9b4bccb4594b880dcae3d77ab3d",
+      "native_receipt_sha256": "08c52ec3de52a987b7d0f3a09bb4b0c2e3592ce5f7ba3fb2115f18f1b73fa11c",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "low-a05-finite-s1": {
+      "summary_sha256": "c8eae08c95ed6c8b428ff0cb2ed8ae8fe7ee078ca80b1e218f704db36a81a3d9",
+      "pair_fields_sha256": "ca3beb15d65a32de2fbefcb31b61b4dd86671014bef36ed676a98f17795bfc08",
+      "native_receipt_sha256": "4c52f96c574d2ec463360d9c8faad7aa1610d7dd808f5f01dd2e1f1d03a9e129",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "low-a1-2d-s1": {
+      "summary_sha256": "c63708de16cab41d624705320db4c0f61b86e03363484a8918976fc838acf444",
+      "pair_fields_sha256": "abdd6846bf2dc17641f05bcedb9abb4c2d9e0221fb2bb4e377a699e19572f3b9",
+      "native_receipt_sha256": "7d00cccd95fd21e670a4e426af8c93e1563ed34b35b2dc1886d026a0d6ee24bc",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "low-a1-tiny-s1": {
+      "summary_sha256": "e159fedcfa9f0f2c5b302410bc436f0304cb79b99651ff8a3edb7cc27cda7e76",
+      "pair_fields_sha256": "3e779f21b71cc81b7956c403dfa8725d99a2326fa89baf99bb2261aabc527692",
+      "native_receipt_sha256": "8fa4c2852418fbe729b43a3758b2b0f00604e39f7c2404dd2c542c9375e23074",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "low-a1-finite-s1": {
+      "summary_sha256": "a8b50518a532fb04436e12167568c16ef7222ba0b9f0c942152ea84902cf1bff",
+      "pair_fields_sha256": "867316491ad942ba102221777e810551decd1caea91e1cc4f1982792d4c30e05",
+      "native_receipt_sha256": "e171c97ca92e202ff20ee4b89265869c5fc23518b0eff66cb8ac1547bd875afd",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "mid-a05-2d-s1": {
+      "summary_sha256": "65ea13bb3cdc622a1376c2e3dd835601acfef315fed599f7e5c2037b9ed524f5",
+      "pair_fields_sha256": "ce9daba0702556b5c68b3ecf9fe7d9ddd50974969b397ba9915a57b06182f626",
+      "native_receipt_sha256": "672db02976b08127d1423d9e5f5e776f28fc53395cc7f652b07aa48b3fbc70bb",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "mid-a05-tiny-s1": {
+      "summary_sha256": "31f21e7829176a211ceac6a7cc71c550efb0456c2183e50aa6ef262fc7f3a620",
+      "pair_fields_sha256": "cc55d057a24da34189b17cb3300d3d77e577a12ce9e1dd637f9d39f0322c99f2",
+      "native_receipt_sha256": "d58b2e994f25fa09c06d65644da663ed0b09c33d8814bfe8e31f18a24ee04fa9",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "mid-a05-finite-s1": {
+      "summary_sha256": "098cc3aade4adbd82bbe37e28978284dfb85c1b243365d11030630a3c57f6d29",
+      "pair_fields_sha256": "4f352e95e9fa06d22178a398eb5e6b219447a71fb248b0e1710e9bf82adc1e00",
+      "native_receipt_sha256": "505e889b93e2516fdd2e6297539c92194bf4e03f1572c88747d186dd421cf636",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "mid-a1-2d-s1": {
+      "summary_sha256": "196d94724c2ee4fcc536375e45572d47ff086d6affcda5cfcbf17c11fe77cde8",
+      "pair_fields_sha256": "58dcec3f67a71f54bb17fb872f8220f3561217b267824224cbd6b925c87f752d",
+      "native_receipt_sha256": "fb8ed261608e7b92b89438468d2ff0c66d0b4f3db730f13eb5b8870e976fa917",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "mid-a1-tiny-s1": {
+      "summary_sha256": "f619807e32dcb820f34a1e2d35c159bdb985077983b87385dc6ed6614056fd07",
+      "pair_fields_sha256": "0272330c55acd9f4bad489f239772b5725f6aec0a3d56c8cc4731219ab3bdeeb",
+      "native_receipt_sha256": "2835baa9fcc6504a3cc7d437d928e5c148838f6a8427ea89eb9997ae52908426",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "mid-a1-finite-s1": {
+      "summary_sha256": "1fca79332656a87050c9a6eff55ee56e250135e3ac42378ead63ca1859bbd79c",
+      "pair_fields_sha256": "b4a5b842ba1dcaa04247c39fa9dd1f68f163b5813b2658d96b229b14ec8e7a47",
+      "native_receipt_sha256": "50733d8cc0b752fc944432acf5be25adbbe06a6038ee7ea6580bf573b577ac40",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "high-a05-2d-s1": {
+      "summary_sha256": "51af50087ffc62343e7405c7b97fc7b2582f78f75236c858d5ea09f31d14e61f",
+      "pair_fields_sha256": "e86f05820dc1be4344273926ed2c81f2173de8bd688dce8c0daa916adcdefe71",
+      "native_receipt_sha256": "93f13d2072b82f9b3c04c3a6c787961f5a73d35a7f5c97a038d3dba34ac2d303",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "high-a05-tiny-s1": {
+      "summary_sha256": "4d1a86b3a6f4d7ae13843f46e0009238fac822e801fc55f2f0d5303d601a27ae",
+      "pair_fields_sha256": "837785ccc9e026aacc06f536775f774236381b4fd5ff6aba37c9daaa3cb3e93a",
+      "native_receipt_sha256": "c312401c899eefa5af215dd5d5c4d052a095a39d3c9738e17e4c17ead70e5ae0",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "high-a05-finite-s1": {
+      "summary_sha256": "5c8c9cd8b282ba444268610f87aef89090197c7028f03364466546c53ce7e56e",
+      "pair_fields_sha256": "325f47d3147d3fd5883da2a637f9cda0ba1010b876ca1e436737c545a5848973",
+      "native_receipt_sha256": "2ffc2e8b110891f1d8c1471d7306ba06409b2db281e3b24e0a696f8c75e33227",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "high-a1-2d-s1": {
+      "summary_sha256": "4dd0662f050ea5ba329cc8420ca725699bddd646a27668feaf28c4ca8b555a7d",
+      "pair_fields_sha256": "b3c9eba81f60220f17eec5b2c8c5ba69bdd99dd317971df41a78f5ed8639898a",
+      "native_receipt_sha256": "8c9799830093e6d33a554193ed8d24c4aff29b3ced0e88bf1e386a209bdd4b6e",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "high-a1-tiny-s1": {
+      "summary_sha256": "ed818ab5adeebd10984c3a2a86148442ed9c14605064066047274dbf928a2742",
+      "pair_fields_sha256": "903cd5eb368999448a6369d7ca911fb639ac093088ad28ff0facd867cf9991c9",
+      "native_receipt_sha256": "42b1be87662a6e294077a81538faa9828ae22fbf187f66fb9bf28c8098957400",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "high-a1-finite-s1": {
+      "summary_sha256": "f3bf346b1dcd585e2bd0c22944c8a531ec460ed17531b8c951260f86fa860cd7",
+      "pair_fields_sha256": "873609fdd607da4319089082447e11cfa636a1c6acb2e9a998ebcbe80c2aa319",
+      "native_receipt_sha256": "59f3c16632180f057105e9059c9a245d77faed6c3c8bdf3305b546361f8c51e4",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-2d-s1": {
+      "summary_sha256": "08179773c37d52fb99a22f27bdc69c798b569260ae4923f04a68c416772dadfb",
+      "pair_fields_sha256": "5e64d4c5c8cf2473943c31df00542ecfdabb9d287602684a966fa84d838a053c",
+      "native_receipt_sha256": "c8ce12bb5fadb85d1a92503a91591947142b71fce4858968756d59efe1c59cbd",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-tiny-s1": {
+      "summary_sha256": "0dcb025e7b5dfd366d7d1a4437bb1097ef4b49199a5208ce2b651557fb7da831",
+      "pair_fields_sha256": "9e82d32e0b77f5bb91a55659d726926f9ced4533a4512a298429e1b473d281df",
+      "native_receipt_sha256": "09038d3313e96646d92a19e0cdc4e18c7d6b3ecc1c5a47afdde640f7724f295e",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-finite-s1": {
+      "summary_sha256": "0ca781dddf6872bd15e255658547b741b01a4f8d5d40ebeccc6a99ff8ad170cd",
+      "pair_fields_sha256": "09be9264b85fd9194a8d284091f8c5e62d87437b8dae0d1d9969e28ac421fd96",
+      "native_receipt_sha256": "5847d103d9c579c6a5d8b43b79abe637c55be5531e290a976c68058343560e35",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "low-a1-2d-s2": {
+      "summary_sha256": "f74ac849d97b47fc279d198a14b82b6a6cb1243a04789235bffdade09457da5a",
+      "pair_fields_sha256": "d14d751b10272201c41c89e5ef0f2dff3d5d70689fe9eea6dc0969c977585233",
+      "native_receipt_sha256": "911e90aed37f0052cca22fcb1e5469b953eeba40ab8eea4971bea3cf0cab4b9f",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "low-a1-tiny-s2": {
+      "summary_sha256": "61e38ca8272a79d15b2c388b9a4f167b546e6c9df2d4107cbc04d368b6793f45",
+      "pair_fields_sha256": "7bcd078f143a0dd9c21c888eb2fbe935bad069772f4ed085b8da6506e085d8a3",
+      "native_receipt_sha256": "a5d7a98fc0325d85848ed93050db2af8160edb045211deac06b8471e91a868cd",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "low-a1-finite-s2": {
+      "summary_sha256": "b98e12643e006bb92e0368ad9ca92e7850bca097bdf6f9f44f7a3b5fba6877b2",
+      "pair_fields_sha256": "bf63fbc23172e29e1faf561a1030abda000fff1096013f99335b5c6175a849ad",
+      "native_receipt_sha256": "6c0c857f2e5d097f99643a10d28f1f9e6e7c8a1071b452aa6c94c14269b085e5",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "high-a05-2d-s2": {
+      "summary_sha256": "38f4e5d5f09eea4e2a2e8c408a71c262347a3b445cdb182200c34c06d7af9a8f",
+      "pair_fields_sha256": "a738396aad79bc66d275a0f55562731c088d773168dad3cde62afcbf76549df0",
+      "native_receipt_sha256": "be790fb27107e728d7dde734e7b9194f495e7438778f1d43003d0c68d90f7f59",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "high-a05-tiny-s2": {
+      "summary_sha256": "a87dfd61f4cd3866e3603c0a22d2a6cbda27f37cc436408e29da3be4958cca09",
+      "pair_fields_sha256": "d0022d6475f9aa1b506c6816681beb371d329349846f0912014b843d3cab4f2a",
+      "native_receipt_sha256": "c6bec4b6c26be1aeb4d012c8a2bf00795318e3b17bc79faad7ad8976f2188aa9",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "high-a05-finite-s2": {
+      "summary_sha256": "0cab30eb43a147185b0b2ea2881d4db70498a7dc251790e0ea6fc4926f9c28f8",
+      "pair_fields_sha256": "27311a0a6600c69ccfa02439081a6cf3c06f5524964201e71981b99abfd73f44",
+      "native_receipt_sha256": "78bb876ddc5250428470e8e63498ee1055eb88efc5a66914437a520ca8856fab",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-wide-2d-s1": {
+      "summary_sha256": "c9cf4090edf4f9d6cf1d293a8270ab828c600000c56b2da58682f30961bcb909",
+      "pair_fields_sha256": "5e64d4c5c8cf2473943c31df00542ecfdabb9d287602684a966fa84d838a053c",
+      "native_receipt_sha256": "2c5f40360f0d08bf5bf61033b324a7b88e2a90f37a5d3738e1477ee528879335",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-wide-tiny-s1": {
+      "summary_sha256": "739bec0132178f94f049e2ca7ba0fe1273e6a39ff260e65ad38f40c2c1e2ecf2",
+      "pair_fields_sha256": "65ccb796f003d764631057493074d3d49bf0dc36f246568b5b6fc6c2a34a3352",
+      "native_receipt_sha256": "1ff0580fa29aad91719096dc3fd4cab7508ece33366f60012ad1f54fbe8bf707",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-wide-finite-s1": {
+      "summary_sha256": "2ac256484b4f423156bbeeb06d9f5dd14f21944f62023ba09c37e5bc5fc81cf9",
+      "pair_fields_sha256": "2bb8b71a3e2647e1617bef593ce24620b3fecec34d2e6da9c2b78b4550a4e08f",
+      "native_receipt_sha256": "8d11fe226dd5b2ab6fad39a996e23f001f6a0190b75b1ee3dba8c0ff664a855d",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-fine-2d-s1": {
+      "summary_sha256": "b706f739c4cc1356bd442157a2d815874c8740c9ade34a81d4aaf3846f847ed3",
+      "pair_fields_sha256": "1f224ce0b5b4fc56042efb97ba38ee8c58748143dbfb76cffd69449ab9360212",
+      "native_receipt_sha256": "3ec5e934119eb4241a9ec9993071e6d0a6e6c0b18ce9e271a92c51a66c4841ca",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-fine-tiny-s1": {
+      "summary_sha256": "ac545d3d2a5d6202e4074acebc177c10524c77a7b83e2f2b88d3f2b90d17d665",
+      "pair_fields_sha256": "5d96472fcfb243ac27aedce4e07f096efb535d7abddb154d8a86f14d58f093bd",
+      "native_receipt_sha256": "0b8cddf91381623aff5bc9aeb1717faeb5f45d46be7f427181b6335f45bfc8b8",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-fine-finite-s1": {
+      "summary_sha256": "f8cb2c6ed64bb71feefd2dfff419894027e8015ed363e3cf1eeb7021b0af1bd3",
+      "pair_fields_sha256": "b2875be5df9f4d951c53e86c307064dd627c71029d6874bf447497888d2dac43",
+      "native_receipt_sha256": "97698824f4b9397896adf4b287ad23d54dffdb5129d79d695dfe0a59c41ec8f4",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-halfdt-2d-s1": {
+      "summary_sha256": "e7f1fc7d78261d88abfa53ff3b18a50b61820fbebbbb68ab9815dfa6e95935da",
+      "pair_fields_sha256": "1c8655e773c714c65c1d801b1811ac762a4b2a8bf21ecc37fb53a230cf414a72",
+      "native_receipt_sha256": "c3eabecb886df06512e930a86f7b74bd78454ad22d6599b9fa65539a32c42d28",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-halfdt-tiny-s1": {
+      "summary_sha256": "a6c7c4bf51d2d821f4f0e3b257388f37bf246d94277724e7d19f19fb7ede853d",
+      "pair_fields_sha256": "a1fa690316c904634f2852c04ca78b64f89498bbfafbd50d756df1616d485341",
+      "native_receipt_sha256": "03746199c08fb9f4424e0ef888859a1d5779134b74ba53bbe06e46f639728e4b",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-halfdt-finite-s1": {
+      "summary_sha256": "b9ae3ac931df0560b33d8ff96eb81de49b6d67a96616827a30b9c2983c954c00",
+      "pair_fields_sha256": "75ab67866265179a685292c827cbd0d2628aa3daa3c8ef9884cd93b00a4dde5d",
+      "native_receipt_sha256": "e11d9f8452552a620ea6ee867092dadf72f16b3c3b5da3be9902bddba276d19c",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-nowaves-2d-s1": {
+      "summary_sha256": "e282d6b42735a4c3faf3dbfc24e44af95de9ae53f9ebda85a87f19c03212a57e",
+      "pair_fields_sha256": "9ef326bb69cdfb519f08812fe96385519ed84ce8ab125997239f84b383b6d63b",
+      "native_receipt_sha256": "f6fb8673fbe3fb6fe91058264f17195b68a4ec7a4a619d450226e056e8df6da0",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-nowaves-tiny-s1": {
+      "summary_sha256": "7c0534fbf199601c2c2e19b357aae4284111b8fa33243d03108e45cc14aeff0d",
+      "pair_fields_sha256": "c6d9d09ed76e445f4526e88daf22cca512b83e5cd3754e28be0311f9521483ed",
+      "native_receipt_sha256": "09c91b90f02e86631cdd0dbab9ff62b550d8fc624a587494430899e8d662ae0a",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-nowaves-finite-s1": {
+      "summary_sha256": "07bca3bf57a0d78da0e623835c8753dddf3dc5ee1aac393a6bf83de82f5ad4d2",
+      "pair_fields_sha256": "7c1a4987797794308434916593334a24d4e0f2d88be4ea6b236d5d43f4a45ed1",
+      "native_receipt_sha256": "a0f4bdc6e471728405698618d5ff4597c035c1b9b930b18635083212734f25f1",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-re300-2d-s1": {
+      "summary_sha256": "f02806639de047f56a50506b82c0330c0c5ea6e0da792fd06b23c689cd8550b6",
+      "pair_fields_sha256": "e3b7547c6fda3c58f826ba1a87c601e62ece2286f467bc468894baffc884b4d5",
+      "native_receipt_sha256": "4d34442413b796f4f6978b5e0a1757f779ac208864b293ea6fd1cf1c14d313f6",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-re300-tiny-s1": {
+      "summary_sha256": "f7b1ba440b4738d9e445bead0924bc9c7b7d659b7a7037e52de8e225b897b910",
+      "pair_fields_sha256": "5f5b06413c54627fd25d737154f11e574ceb6acf2bcd7ff5e1390831b73e2f5d",
+      "native_receipt_sha256": "6983d5cc9fd9fb1a1374d569c7633da98f21a61ef7caa2833c103591bf8711fe",
+      "source_version": "da81ab96d7e51fb0"
+    },
+    "anchor-re300-finite-s1": {
+      "summary_sha256": "6f6f09f203a54be2696cccbf57bb9751df4d7efbd5648d35d1143bc363a56055",
+      "pair_fields_sha256": "76a6a79d3adbf6126553524e49a484340935b48f2ab23826a91ea177a928d756",
+      "native_receipt_sha256": "2606ab17abfa73245de1366a1a3995e005999533810eecd4cd62a3398246871a",
+      "source_version": "da81ab96d7e51fb0"
+    }
+  },
+  "export_provenance": "export-provenance.json",
+  "published_at": "2026-10-27T12:21:17.973326+00:00"
+}
