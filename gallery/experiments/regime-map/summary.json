@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "source_version": "da81ab96d7e51fb0",
-  "generated_at": "2026-10-27T01:16:12.984062+00:00",
+  "generated_at": "2026-10-27T01:19:05.980078+00:00",
   "counts": {
     "complete": 36,
-    "running": 1,
-    "queued": 12,
+    "running": 2,
+    "queued": 11,
     "waiting": 0,
     "failed": 0
   },
@@ -10612,7 +10612,7 @@
     },
     {
       "id": "anchor-fine-tiny-s1",
-      "status": "queued",
+      "status": "running",
       "experiment": "fine",
       "group": "tiny",
       "cell": "anchor-fine",
