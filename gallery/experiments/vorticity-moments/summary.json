@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "analysis_version": "scalar-moments-1",
+  "source_version": "ec2a656be4108374",
+  "generated_at": "2026-10-28T20:59:10.214795+00:00",
+  "counts": {
+    "complete": 0,
+    "running": 0,
+    "queued": 0,
+    "waiting": 36,
+    "failed": 0
+  },
+  "runs": [
+    {
+      "id": "central-re100-2d-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "2d",
+      "cell": "central-re100",
+      "seed": 1,
+      "reference": "central-re100-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re100-tiny100-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "tiny100",
+      "cell": "central-re100",
+      "seed": 1,
+      "reference": "central-re100-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re100-tiny-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "tiny",
+      "cell": "central-re100",
+      "seed": 1,
+      "reference": "central-re100-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re100-moderate-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "moderate",
+      "cell": "central-re100",
+      "seed": 1,
+      "reference": "central-re100-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re100-finite-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "finite",
+      "cell": "central-re100",
+      "seed": 1,
+      "reference": "central-re100-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re200-2d-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "2d",
+      "cell": "central-re200",
+      "seed": 1,
+      "reference": "central-re200-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re200-tiny100-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "tiny100",
+      "cell": "central-re200",
+      "seed": 1,
+      "reference": "central-re200-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re200-tiny-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "tiny",
+      "cell": "central-re200",
+      "seed": 1,
+      "reference": "central-re200-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re200-moderate-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "moderate",
+      "cell": "central-re200",
+      "seed": 1,
+      "reference": "central-re200-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re200-finite-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "finite",
+      "cell": "central-re200",
+      "seed": 1,
+      "reference": "central-re200-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re300-2d-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "2d",
+      "cell": "central-re300",
+      "seed": 1,
+      "reference": "central-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re300-tiny100-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "tiny100",
+      "cell": "central-re300",
+      "seed": 1,
+      "reference": "central-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re300-tiny-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "tiny",
+      "cell": "central-re300",
+      "seed": 1,
+      "reference": "central-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re300-moderate-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "moderate",
+      "cell": "central-re300",
+      "seed": 1,
+      "reference": "central-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re300-finite-s1",
+      "status": "waiting",
+      "experiment": "primary",
+      "group": "finite",
+      "cell": "central-re300",
+      "seed": 1,
+      "reference": "central-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "alpha05-re300-2d-s1",
+      "status": "waiting",
+      "experiment": "background_vorticity",
+      "group": "2d",
+      "cell": "alpha05-re300",
+      "seed": 1,
+      "reference": "alpha05-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "alpha05-re300-tiny-s1",
+      "status": "waiting",
+      "experiment": "background_vorticity",
+      "group": "tiny",
+      "cell": "alpha05-re300",
+      "seed": 1,
+      "reference": "alpha05-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "alpha05-re300-finite-s1",
+      "status": "waiting",
+      "experiment": "background_vorticity",
+      "group": "finite",
+      "cell": "alpha05-re300",
+      "seed": 1,
+      "reference": "alpha05-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "alpha1-re300-2d-s1",
+      "status": "waiting",
+      "experiment": "background_vorticity",
+      "group": "2d",
+      "cell": "alpha1-re300",
+      "seed": 1,
+      "reference": "alpha1-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "alpha1-re300-tiny-s1",
+      "status": "waiting",
+      "experiment": "background_vorticity",
+      "group": "tiny",
+      "cell": "alpha1-re300",
+      "seed": 1,
+      "reference": "alpha1-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "alpha1-re300-finite-s1",
+      "status": "waiting",
+      "experiment": "background_vorticity",
+      "group": "finite",
+      "cell": "alpha1-re300",
+      "seed": 1,
+      "reference": "alpha1-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "nowaves-re100-2d-s1",
+      "status": "waiting",
+      "experiment": "wave_off",
+      "group": "2d",
+      "cell": "nowaves-re100",
+      "seed": 1,
+      "reference": "nowaves-re100-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "nowaves-re100-tiny-s1",
+      "status": "waiting",
+      "experiment": "wave_off",
+      "group": "tiny",
+      "cell": "nowaves-re100",
+      "seed": 1,
+      "reference": "nowaves-re100-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "nowaves-re100-finite-s1",
+      "status": "waiting",
+      "experiment": "wave_off",
+      "group": "finite",
+      "cell": "nowaves-re100",
+      "seed": 1,
+      "reference": "nowaves-re100-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "nowaves-re300-2d-s1",
+      "status": "waiting",
+      "experiment": "wave_off",
+      "group": "2d",
+      "cell": "nowaves-re300",
+      "seed": 1,
+      "reference": "nowaves-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "nowaves-re300-tiny-s1",
+      "status": "waiting",
+      "experiment": "wave_off",
+      "group": "tiny",
+      "cell": "nowaves-re300",
+      "seed": 1,
+      "reference": "nowaves-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "nowaves-re300-finite-s1",
+      "status": "waiting",
+      "experiment": "wave_off",
+      "group": "finite",
+      "cell": "nowaves-re300",
+      "seed": 1,
+      "reference": "nowaves-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "twod3c-waves-re100-2d3c-s1",
+      "status": "waiting",
+      "experiment": "two_d_three_c_null",
+      "group": "2d3c",
+      "cell": "twod3c-waves-re100",
+      "seed": 1,
+      "reference": null,
+      "comparison_kind": "independent_null"
+    },
+    {
+      "id": "twod3c-nowaves-re100-2d3c-s1",
+      "status": "waiting",
+      "experiment": "two_d_three_c_null",
+      "group": "2d3c",
+      "cell": "twod3c-nowaves-re100",
+      "seed": 1,
+      "reference": null,
+      "comparison_kind": "independent_null"
+    },
+    {
+      "id": "central-fine-re300-2d-s1",
+      "status": "waiting",
+      "experiment": "resolution",
+      "group": "2d",
+      "cell": "central-fine-re300",
+      "seed": 1,
+      "reference": "central-fine-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-fine-re300-tiny-s1",
+      "status": "waiting",
+      "experiment": "resolution",
+      "group": "tiny",
+      "cell": "central-fine-re300",
+      "seed": 1,
+      "reference": "central-fine-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-fine-re300-finite-s1",
+      "status": "waiting",
+      "experiment": "resolution",
+      "group": "finite",
+      "cell": "central-fine-re300",
+      "seed": 1,
+      "reference": "central-fine-re300-2d-s1",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-halfdt-re300-finite-s1",
+      "status": "waiting",
+      "experiment": "timestep",
+      "group": "finite",
+      "cell": "central-halfdt-re300",
+      "seed": 1,
+      "reference": "central-re300-finite-s1",
+      "comparison_kind": "timestep"
+    },
+    {
+      "id": "central-re300-2d-s2",
+      "status": "waiting",
+      "experiment": "seed",
+      "group": "2d",
+      "cell": "central-re300",
+      "seed": 2,
+      "reference": "central-re300-2d-s2",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re300-tiny-s2",
+      "status": "waiting",
+      "experiment": "seed",
+      "group": "tiny",
+      "cell": "central-re300",
+      "seed": 2,
+      "reference": "central-re300-2d-s2",
+      "comparison_kind": "matched_2d"
+    },
+    {
+      "id": "central-re300-finite-s2",
+      "status": "waiting",
+      "experiment": "seed",
+      "group": "finite",
+      "cell": "central-re300",
+      "seed": 2,
+      "reference": "central-re300-2d-s2",
+      "comparison_kind": "matched_2d"
+    }
+  ],
+  "figures": [],
+  "mean_comparison_rows": 0,
+  "numerical_control_rows": 0,
+  "methods": {
+    "q": "q = d_z uL - d_x w - d_z us, Eulerian transverse vorticity.",
+    "T": "T = q d_y v + d_y w d_x v - d_y u d_z v. T=0 for all y-independent flows, including nonzero v(x,z).",
+    "transport": "D_L q = T + Dq. The term -v q_y transports q; it is not an additional enstrophy production term.",
+    "q0": "q0=-alpha d_z us_reference is retained. Its native centered discrete derivative defines a=q-q0.",
+    "anomaly": "D_L a=T-w q0_prime+Dq; Pa_background=-<a w q0_prime> can change anomaly enstrophy in 2D.",
+    "partition": "Zq=Zmean+Zvariance; exchange <F\u00b7gradQ> has opposite signs in their budgets. 3D production can change their sum.",
+    "native_feedback": "Curl of full native advection minus advection evaluated on the y-mean field; weighted by Q or Q-q0. Distinct from a continuum Reynolds-stress approximation.",
+    "closure": "Temporal closure compares observed moments with integrated freshly evaluated native qdot. Spatial closure compares the native rate with continuum production, viscosity, forcing, pressure and face transport. Signed residuals remain visible.",
+    "boundary": "Full-depth and Stokes-layer budgets use complete cells and stored face transport; layer-base flux is retained.",
+    "geometry": "Zvariance/Za removes the large prescribed background from the denominator; no threshold is used to assign a regime.",
+    "comparison": "Horizontal-mean UE=UL-us and its change from own initial profile. Exact 2D, tiny, intermediate and finite initial disturbances use the same base field. Finite disturbances add energy.",
+    "limits": "Finite-time cases with limited seed and numerical checks. A production or geometric measure alone neither proves a closure nor establishes an oceanic mixing barrier."
+  }
+}
