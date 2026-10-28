@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "analysis_version": "scalar-moments-1",
-  "source_version": "ec2a656be4108374",
-  "generated_at": "2026-10-28T20:59:10.214795+00:00",
+  "source_version": "95b83aebce7ae34a",
+  "generated_at": "2026-10-28T23:08:02.813629+00:00",
   "counts": {
     "complete": 0,
     "running": 0,
-    "queued": 0,
-    "waiting": 36,
+    "queued": 36,
+    "waiting": 0,
     "failed": 0
   },
   "runs": [
     {
       "id": "central-re100-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "central-re100",
@@ -23,7 +23,7 @@
     },
     {
       "id": "central-re100-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "central-re100",
@@ -33,7 +33,7 @@
     },
     {
       "id": "central-re100-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "central-re100",
@@ -43,7 +43,7 @@
     },
     {
       "id": "central-re100-moderate-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "moderate",
       "cell": "central-re100",
@@ -53,7 +53,7 @@
     },
     {
       "id": "central-re100-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "central-re100",
@@ -63,7 +63,7 @@
     },
     {
       "id": "central-re200-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "central-re200",
@@ -73,7 +73,7 @@
     },
     {
       "id": "central-re200-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "central-re200",
@@ -83,7 +83,7 @@
     },
     {
       "id": "central-re200-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "central-re200",
@@ -93,7 +93,7 @@
     },
     {
       "id": "central-re200-moderate-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "moderate",
       "cell": "central-re200",
@@ -103,7 +103,7 @@
     },
     {
       "id": "central-re200-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "central-re200",
@@ -113,7 +113,7 @@
     },
     {
       "id": "central-re300-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "2d",
       "cell": "central-re300",
@@ -123,7 +123,7 @@
     },
     {
       "id": "central-re300-tiny100-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny100",
       "cell": "central-re300",
@@ -133,7 +133,7 @@
     },
     {
       "id": "central-re300-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "tiny",
       "cell": "central-re300",
@@ -143,7 +143,7 @@
     },
     {
       "id": "central-re300-moderate-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "moderate",
       "cell": "central-re300",
@@ -153,7 +153,7 @@
     },
     {
       "id": "central-re300-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "primary",
       "group": "finite",
       "cell": "central-re300",
@@ -163,7 +163,7 @@
     },
     {
       "id": "alpha05-re300-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "background_vorticity",
       "group": "2d",
       "cell": "alpha05-re300",
@@ -173,7 +173,7 @@
     },
     {
       "id": "alpha05-re300-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "background_vorticity",
       "group": "tiny",
       "cell": "alpha05-re300",
@@ -183,7 +183,7 @@
     },
     {
       "id": "alpha05-re300-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "background_vorticity",
       "group": "finite",
       "cell": "alpha05-re300",
@@ -193,7 +193,7 @@
     },
     {
       "id": "alpha1-re300-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "background_vorticity",
       "group": "2d",
       "cell": "alpha1-re300",
@@ -203,7 +203,7 @@
     },
     {
       "id": "alpha1-re300-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "background_vorticity",
       "group": "tiny",
       "cell": "alpha1-re300",
@@ -213,7 +213,7 @@
     },
     {
       "id": "alpha1-re300-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "background_vorticity",
       "group": "finite",
       "cell": "alpha1-re300",
@@ -223,7 +223,7 @@
     },
     {
       "id": "nowaves-re100-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "wave_off",
       "group": "2d",
       "cell": "nowaves-re100",
@@ -233,7 +233,7 @@
     },
     {
       "id": "nowaves-re100-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "wave_off",
       "group": "tiny",
       "cell": "nowaves-re100",
@@ -243,7 +243,7 @@
     },
     {
       "id": "nowaves-re100-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "wave_off",
       "group": "finite",
       "cell": "nowaves-re100",
@@ -253,7 +253,7 @@
     },
     {
       "id": "nowaves-re300-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "wave_off",
       "group": "2d",
       "cell": "nowaves-re300",
@@ -263,7 +263,7 @@
     },
     {
       "id": "nowaves-re300-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "wave_off",
       "group": "tiny",
       "cell": "nowaves-re300",
@@ -273,7 +273,7 @@
     },
     {
       "id": "nowaves-re300-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "wave_off",
       "group": "finite",
       "cell": "nowaves-re300",
@@ -283,7 +283,7 @@
     },
     {
       "id": "twod3c-waves-re100-2d3c-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "two_d_three_c_null",
       "group": "2d3c",
       "cell": "twod3c-waves-re100",
@@ -293,7 +293,7 @@
     },
     {
       "id": "twod3c-nowaves-re100-2d3c-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "two_d_three_c_null",
       "group": "2d3c",
       "cell": "twod3c-nowaves-re100",
@@ -303,7 +303,7 @@
     },
     {
       "id": "central-fine-re300-2d-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "resolution",
       "group": "2d",
       "cell": "central-fine-re300",
@@ -313,7 +313,7 @@
     },
     {
       "id": "central-fine-re300-tiny-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "resolution",
       "group": "tiny",
       "cell": "central-fine-re300",
@@ -323,7 +323,7 @@
     },
     {
       "id": "central-fine-re300-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "resolution",
       "group": "finite",
       "cell": "central-fine-re300",
@@ -333,7 +333,7 @@
     },
     {
       "id": "central-halfdt-re300-finite-s1",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "timestep",
       "group": "finite",
       "cell": "central-halfdt-re300",
@@ -343,7 +343,7 @@
     },
     {
       "id": "central-re300-2d-s2",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "seed",
       "group": "2d",
       "cell": "central-re300",
@@ -353,7 +353,7 @@
     },
     {
       "id": "central-re300-tiny-s2",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "seed",
       "group": "tiny",
       "cell": "central-re300",
@@ -363,7 +363,7 @@
     },
     {
       "id": "central-re300-finite-s2",
-      "status": "waiting",
+      "status": "queued",
       "experiment": "seed",
       "group": "finite",
       "cell": "central-re300",
