@@ -1,0 +1,159 @@
+{
+  "title": "Wind forcing, mean closure and jet response",
+  "source_version": "d6423e57b0ebb86f",
+  "counts": {
+    "complete": 0,
+    "running": 0,
+    "queued": 0,
+    "waiting": 20,
+    "failed": 0
+  },
+  "criteria": {
+    "weak_correction_threshold": 0.1,
+    "forecast_error_threshold": 0.1,
+    "sensitivity_thresholds": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "current_activity_fraction_of_initial_eddy_rms": 0.01,
+    "vorticity_activity_fraction_of_initial_eddy_over_injection_length": 0.001,
+    "trim_cells": 2,
+    "reference_vertical_cells": 96,
+    "active_stokes_efolding_depths": 3,
+    "response_growth_factor": 1.2,
+    "response_budget_relative_tolerance": 0.05,
+    "linearity_relative_tolerance": 0.1,
+    "refinement_metric_relative_tolerance": 0.1,
+    "forecast_duration_s": 200,
+    "response_fit_windows_s": [
+      [
+        0,
+        50
+      ],
+      [
+        50,
+        200
+      ]
+    ],
+    "closure_threshold": 0.1,
+    "forecast_windows_s": [
+      [
+        600,
+        800
+      ],
+      [
+        1000,
+        1200
+      ]
+    ],
+    "q_reference": "RMS x-varying transverse-mean q at window start; imposed horizontal-mean q0 excluded",
+    "mean_current_activity_floor_fraction_initial_eddy": 0.01,
+    "mean_current_normalization": "maximum RMS parent mean-current increment over window, fixed throughout window",
+    "error_statistic": "maximum RMS forecast error over sampled window",
+    "regions": [
+      "interior",
+      "active_interior"
+    ],
+    "active_depth_stokes_e_folds": 3,
+    "probe_modes": [
+      1,
+      2,
+      4
+    ],
+    "probe_amplitude_m_s": 0.0002,
+    "probe_amplitude_linearity_tolerance": 0.1,
+    "numerical_refinement_tolerance": 0.1,
+    "scope": "Operational criteria, not universal physical thresholds. No jets at weak feedback is not theory failure. Propagation and scale-transfer claims remain separate unless directly measured."
+  },
+  "closure_assessments": {
+    "PASS": 0,
+    "FAIL": 0,
+    "INCONCLUSIVE": 0
+  },
+  "supported_positive_responses": [],
+  "runs": [
+    {
+      "id": "wind-u000-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-u002-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-u004-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-u008-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-u000-a075-s2",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-u002-a075-s2",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-u004-a075-s2",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-u008-a075-s2",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-u004-a050-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-u004-a100-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "nowaves-u004-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "nowaves-u004-a075-s2",
+      "status": "waiting"
+    },
+    {
+      "id": "weakwaves-u004-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "weak3d-u000-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "weak3d-u002-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "fine-u004-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "fine-u008-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "halfdt-u004-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "halfamp-u004-a075-s1",
+      "status": "waiting"
+    },
+    {
+      "id": "exact2d-u004-a075-s1",
+      "status": "waiting"
+    }
+  ],
+  "mechanism_assessment": "INCONCLUSIVE",
+  "mechanism_reason": "This campaign tests conditional closure and weak-band response. It does not yet independently verify vortex-wave dispersion or an inverse energy-transfer mechanism."
+}

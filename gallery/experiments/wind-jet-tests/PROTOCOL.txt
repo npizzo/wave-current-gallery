@@ -1,0 +1,71 @@
+WIND-MAINTAINED TURBULENCE AND VORTEX-WAVE JET ORGANIZATION
+
+Scientific question and scope
+This campaign tests whether the transverse-mean vorticity evolves approximately autonomously under sustained surface stress, and separately whether the turbulence reinforces depth-dependent along-wave currents. Small three-dimensional feedback is an applicability condition for the proposed reduced description, not a sufficient condition for jets or an established necessary condition for every jet in the full equations. A case with small feedback and no jets is not a failure of the necessary-only argument.
+
+This protocol and the numerical matrix are frozen before production. PASS, FAIL and INCONCLUSIVE refer to the specific tests below, not to the entire manuscript or a universal ocean regime boundary. No Chini-regime comparison is included.
+
+Governing configuration
+The full three-dimensional, incompressible wave-averaged equations use prognostic Lagrangian velocity (u,v,w), periodic horizontal directions and impermeable upper and lower boundaries. Waves travel along x. The prescribed steady, monochromatic deep-water Stokes velocity is us=S exp(2 k z), with k=6.1 m^-1, reference S=0.036649447248308646 m/s, and z in [-0.5,0] m. The box is Lx=2 m, Ly=1 m, H=0.5 m. There is no planetary rotation, stratification, surface buoyancy flux, wave breaking or wave packet. These are controlled mechanism experiments, not direct laboratory reproductions.
+
+Constant ScalarDiffusivity with nu=1e-5 m^2/s acts on the Lagrangian prognostic velocity. The imposed model surface momentum stress is nu*partial_z(u)=u_star^2; bottom stress and transverse tangential stresses are zero. u_star is a water-side stress scale. The convention is stated explicitly: this uses the inherited model's Lagrangian-velocity viscous closure rather than silently interpreting it as molecular diffusion of Eulerian velocity. The Stokes profile is externally prescribed and is not updated from wind speed.
+
+A uniform acceleration -u_star^2/H acts on u to balance the depth-integrated surface momentum input. It has zero curl, does not relax the shear or any jet mode, and defines a fixed bulk-current frame for the horizontally homogeneous waves. Its momentum and work are recorded separately from viscous/boundary forcing. The old force that maintained the exponential background current is disabled. Numerical validation must demonstrate the sign and magnitude of surface momentum supply and its cancellation by the uniform force.
+
+The initial interior Eulerian current is UE0=-alpha*us_reference and UL0=(WAVES-alpha)*us_reference. Initial interior q0=-alpha*us_reference_z is retained; UL0=0 is only the alpha=1 wave-on member. Boundary gradients are those of the imposed wind stress, so the interior exponential has an initial boundary adjustment. Actual native initial vorticity, boundary values and later curvature are diagnosed, not replaced by the analytic interior formula. Primary assessment windows begin at 600 s and 1000 s; initial transients remain visible in the plots.
+
+Initial y-independent in-plane eddy RMS is 0.004 m/s with an injection wavelength of 0.25 m. The main cases add a divergence-free y-dependent disturbance with equal initial energy (eta=1). Two weak-disturbance controls use eta=1e-6; an exact y-independent null uses eta=0 and a Flat y grid. Finite disturbances add energy rather than renormalizing total energy. The injection-scale Reynolds number of the base eddy field is 100. Initial seeds 1 and 2 are separate realizations. Wind-maintained turbulence intensity is an outcome; it is not set equal to u_star.
+
+Matrix: 20 case bundles
+- Eight primary cases: u_star=0, 0.002, 0.004 and 0.008 m/s, alpha=0.75, seeds 1 and 2.
+- Two background-current checks: alpha=0.5 and 1 at u_star=0.004 m/s, seed 1.
+- Two wave-off controls: u_star=0.004 m/s, seeds 1 and 2, preserving the same reference Eulerian initial current.
+- One weaker-wave case: S/reference S=1/4, u_star=0.004 m/s, alpha=0.75, seed 1. Both the wave profile and the proportionally specified initial current change; this is not a fixed-q0 wave-strength isolation.
+- Two weak-initial-disturbance cases at u_star=0 and 0.002 m/s, alpha=0.75, seed 1.
+- Two refined-grid cases at u_star=0.004 and 0.008 m/s, alpha=0.75, seed 1.
+- One half-timestep case at u_star=0.004 m/s, alpha=0.75, seed 1.
+- One half-probe-amplitude case at u_star=0.004 m/s, alpha=0.75, seed 1.
+- One exact two-dimensional forced null at u_star=0.004 m/s, alpha=0.75, seed 1.
+
+The primary grid is 128x64x96, maximum dt=0.02 s. The refined grid is 256x128x192, maximum dt=0.01 s. The independent half-step case uses the primary grid with maximum dt=0.01 s. Adaptive advective and viscous timestep limits remain active. The finite-time reference duration is 1200 s; this duration is not by itself a claim of statistical equilibrium.
+
+Within each bundle
+1. Parent: the full case from 0 to 1200 s, with native velocity snapshots at 0,600,1000,1200 s.
+2. Two autonomous mean forecasts: project the actual parent native velocity at 600 or 1000 s onto its y mean, retaining all three components, and integrate on a Flat-y grid for 200 s with identical retained forcing, waves, viscosity, x/z grid and boundary conditions. The reference is the parent's subsequent evolution, not a separate 2D trajectory initialized at t=0.
+3. Paired response branches: at parent time 600 s add +/-delta*cos(m*pi*(z+H)/H) to u, with m=1,2,4 and delta=0.0002 m/s, and integrate each full-dimensional branch to 800 s. The perturbation has zero depth mean and zero added tangential boundary gradient. The half-amplitude check uses delta=0.0001 m/s. The exact 2D null omits these six response branches.
+There are 174 integrations, including short branches and numerical controls, not 174 independent parameter-space samples. Parent states are copied and hash-verified; branches never overwrite their parents.
+
+Test A: applicability of autonomous transverse-mean dynamics
+For Q=<q>_y, the equation is Q_t+U Q_x+W Q_z=C3D+F_Q+D_Q, where C3D=<T>_y-div_xz(<u' q'>_y,<w' q'>_y). Transverse periodicity makes U_x+W_z=0 exactly. T alone, an endpoint 3D energy fraction, and a signed enstrophy contraction are not substitutes for C3D.
+
+The primary numerical C3D is the native curl of the full advection tendency minus the native curl of the same operator evaluated on replicated y-mean velocity, then averaged in y. Linear wave, constant-viscosity and prescribed uniform-force terms commute with this averaging. The separate continuum rearrangement is a diagnostic with a spatial residual; this residual is not assigned to physical 3D production. The measured native source is not a time-difference residual of q.
+
+For each prescribed 200 s forecast window, epsilon_C is the time integral of RMS(C3D), divided by the RMS x-varying Q at the start of the window. The large horizontal-mean background q0 is excluded from this reference. Report dimensional source and reference, sampled cumulative history, and results for the full domain, the interior excluding a fixed physical buffer H*(2/96) at each wall (two primary-grid cells, four refined-grid cells), and the active Stokes layer z>=-3/(2k), intersected with that interior. The primary classification requires agreement in both interior regions. Epsilon_C is a conservative diagnostic of accumulated omitted forcing, not a rigorous bound on nonlinear forecast error.
+
+Forecast Q error is the maximum sampled RMS difference between the parent mean and autonomous forecast during the window, divided by the same starting eddy-vorticity reference. Current-increment error is the maximum depth-RMS mismatch of changes from the shared initial mean, divided by the maximum parent depth-RMS change during the window. This denominator is fixed throughout the window. If parent mean-current activity is below 1% of initial base eddy RMS (0.04 mm/s here), do not classify a quiet state as a successful jet-dynamics test; display Q-only evidence and mark the combined assessment inconclusive. Eddy-vorticity references below 0.1% of initial base eddy RMS divided by injection wavelength likewise cannot pass; the dimensional values remain visible.
+
+The operational primary tolerance is 10%, with 5% and 20% sensitivity tables. Weak feedback means epsilon_C<=0.1. A weak-feedback window with both forecast errors<=0.1 supports the reduced mean dynamics over that window. Strong feedback is outside the tested reduced regime, not evidence against the conditional mechanism. Weak feedback with a large forecast error is an apparent failure of the proposed closure criterion; call it confirmed only if spatial/timestep checks reproduce it and numerical uncertainty is smaller than the discrepancy. Unchecked apparent failures remain inconclusive. These tolerances are declared numerical/scientific assessment criteria, not universal physical transition constants.
+
+Test B: current-band response and actual jet organization
+The paired +/- response isolates a weak current perturbation from the common wind-driven evolution. Project the difference onto its imposed vertical mode, normalized by twice its amplitude and the mode norm. Record response gain over 0-50 s and 50-200 s, mode mixing, and the native momentum-tendency contributions that reinforce or oppose the response. Positive feedback from turbulent advection must be distinguished from total growth, damping, force work and linear redistribution. The m=1 cosine is a monotonic broad-shear perturbation; its growth alone is not evidence for an interior jet. Modes m=2 and 4 test an interior current maximum and multiple bands.
+
+Repeated realizations, the half-amplitude comparison and spatial/timestep comparisons test reproducibility and linear response. A 10% response discrepancy is the operational refinement/linearity tolerance, with raw differences also shown. A response amplitude gain of at least 1.2 over the 200 s interval, positive integrated turbulent reinforcement, and a response-budget residual below 5% define a candidate growing band. These are finite-time amplification criteria, not proof of an exponential eigenmode. A single growing branch is a candidate, not a statistically established instability. Non-growing infinitesimal modes do not exclude finite-amplitude or subcritical jets.
+
+Independently display full and generated Eulerian current profiles, persistent interior extrema, their depths and widths, vertical mode amplitudes, and momentum-flux convergence. Uniform acceleration and an ordinary monotonic wind-driven profile are not counted as spontaneous alternating jets. Report x-invariant transverse overturning energy (Langmuir-roll geometry), y-invariant eddy energy, and horizontal-mean current energy separately; generic y-dependent energy does not distinguish rolls from disordered 3D turbulence. This campaign records vertical momentum flux, not passive-tracer diffusivity.
+
+Descriptive extrema must exceed a two-sided prominence of 1% of initial base eddy RMS. A late-mean extremum is called persistent when a same-type extremum is present in at least 80% of samples over the final 200 s, matched within half its half-prominence width or two cells, whichever is larger. Widths are measured at half prominence relative to the neighboring opposite extrema or boundaries. These operational measures describe profile organization and do not independently establish its mechanism. Metrics use the complete sampled diagnostics; public profiles and current-mode histories are exported every 40 s with eight significant digits.
+
+Connection to the vortex-wave mechanism
+The evolving local restoring gradient is beta_eff=partial_zz(mean_xy UE). Diagnose its sign, magnitude and spatial variation alongside turbulent velocity and candidate Rhines scale sqrt(u_eddy/abs(beta_eff)). Do not silently fix beta_eff to -us_zz or replace u_eddy by u_star. The instantaneous local formula is meaningful only where mean evolution and coefficient variation permit it. A scale comparison alone does not verify propagation or inverse energy transfer. This campaign tests closure and current-band response directly; a complete propagation/transfer test remains distinct. The final report must not label the entire vortex-wave jet mechanism PASS merely because the two numerical diagnostics pass.
+
+Outcome logic
+- Weak feedback, accurate mean forecast, jets: supports applicability, and provides an organization case for further mechanism-specific tests.
+- Weak feedback, accurate mean forecast, no jets: valid reduction with unmet organizing conditions; not a failure of the necessary-only argument.
+- Strong feedback, jets: organization outside the demonstrated autonomous reduced regime.
+- Weak feedback, inaccurate forecast: test of the closure diagnostic, subject to refinement and activity checks.
+Input-space plots use wind stress, Stokes strength, initial current parameter alpha, and numerical controls. They are finite-time slices through parameter space, not a universal ocean phase diagram.
+
+Validation and publication
+Before production, validate imposed-stress sign, bulk momentum conservation, exact 2D zero feedback, source/hash-preserving snapshot reload, divergence-free mean projection, +/- mode constraints, CPU/GPU agreement, and short primary/refined-grid integrations. Tests use the frozen production source and pinned environment. A failed validation blocks production automatically. A submission journal and scheduler reconciliation prevent duplicate arrays after ambiguous outcomes.
+
+Public outputs contain the protocol, parameter matrix, source fingerprints, compact diagnostic tables and plots, per-case status and assessment. Native snapshots, credentials, deployment paths and private archives are not published. Each completed case is verified and backed up before publication; publishing jobs are attached to array tasks and serialized by the existing gallery lock. Earlier gallery pages and simulations remain unchanged. Partial, failed and unassessed cases are labeled explicitly.

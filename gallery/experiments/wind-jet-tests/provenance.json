@@ -1,0 +1,13 @@
+{
+  "source_version": "d6423e57b0ebb86f",
+  "analysis_sources": {
+    "analyze_wind.py": "4bd80aaa9e44897dd6b6cfc8ed15f493c3f46bc6b4db19d95eca8853e51cbe37",
+    "wind_science.py": "2582b66785584c0497d04faa748f82536ffe345db84a8afdd6be9b703a63432d"
+  },
+  "verified_inputs": {},
+  "campaign_sha256": "b7890197810cb5f910d6be2c420785922c0f2550cd4b6e83de36c687f22299e6",
+  "public_profile_export_interval_s": 40,
+  "public_csv_significant_digits": 8,
+  "science_profile_interval_s": 5,
+  "scope": "Only verified backed-up bundles. Full precision and full cadence used for analysis. Native snapshots remain private."
+}
