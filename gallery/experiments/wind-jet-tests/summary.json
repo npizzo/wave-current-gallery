@@ -4,8 +4,8 @@
   "counts": {
     "complete": 0,
     "running": 0,
-    "queued": 0,
-    "waiting": 20,
+    "queued": 20,
+    "waiting": 0,
     "failed": 0
   },
   "criteria": {
@@ -75,83 +75,83 @@
   "runs": [
     {
       "id": "wind-u000-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-u002-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-u004-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-u008-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-u000-a075-s2",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-u002-a075-s2",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-u004-a075-s2",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-u008-a075-s2",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-u004-a050-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-u004-a100-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "nowaves-u004-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "nowaves-u004-a075-s2",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "weakwaves-u004-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "weak3d-u000-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "weak3d-u002-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "fine-u004-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "fine-u008-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "halfdt-u004-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "halfamp-u004-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "exact2d-u004-a075-s1",
-      "status": "waiting"
+      "status": "queued"
     }
   ],
   "mechanism_assessment": "INCONCLUSIVE",
