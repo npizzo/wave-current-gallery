@@ -1,0 +1,353 @@
+{
+  "id": "nowaves-re100-finite-s1",
+  "status": "complete",
+  "source_version": "95b83aebce7ae34a",
+  "receipt_sha256": "c65178fd0a288776e8d42ed4cc0b5b0c1bf3e8fa026f9b0f74028da78a489ac9",
+  "config": {
+    "nx": 128,
+    "ny": 64,
+    "nz": 96,
+    "lx": 2.0,
+    "ly": 1.0,
+    "h": 0.5,
+    "k": 6.1,
+    "S": 0.0,
+    "S_reference": 0.036649447248308646,
+    "alpha": 0.75,
+    "uoffset": 0.0,
+    "eddy_rms": 0.004,
+    "injection_wavelength": 0.25,
+    "perturb_energy_ratio": 1.0,
+    "seed": 1,
+    "stop_time": 1200.0,
+    "max_dt": 0.02,
+    "nu": 1e-05,
+    "maintain_background": true,
+    "advection": "Centered2",
+    "velocity_convention": "Lagrangian",
+    "base_ic_sha256": "04bb4e6c2b36d513a5b2cbb990842f88c167f252c41eaf919c8c63c2a8d17fb5",
+    "perturbation_ic_sha256": "106fccc9f31db6633cfce64e089763c71b132937259f4803d39cbed366f75d13",
+    "initial_condition_sha256": "7b0f28a7507456c3027451c390f0a13430b46dd32479d436f59959d58e5a810c",
+    "perturbation_shape_sha256": "2ffe22a5a208a074df89be67aace42a4b40b236f76e2836ef3391d364274da6c",
+    "waves": false,
+    "initial_metrics": {
+      "base_inplane_rms": 0.004,
+      "base_total_rms": 0.004,
+      "perturb_inplane_rms": 0.0026040316230569386,
+      "perturb_total_rms": 0.004,
+      "base_native_rms": 0.004014793725422104,
+      "perturb_native_rms": 0.004014685126837261,
+      "achieved_perturb_energy_ratio": 1.0,
+      "achieved_native_perturb_energy_ratio": 0.9999459015214747,
+      "max_native_divergence": 8.326672684688674e-16,
+      "max_transverse_mean_perturbation": 1.9217483507305566e-17,
+      "max_mean_profile_error": 3.469446951953614e-18,
+      "probe_streamfunction_amplitude": 0.0,
+      "initial_total_rms": 0.009689557866801427,
+      "achieved_base_Re_lambda": 100.0,
+      "achieved_eddy_Re_lambda": 141.42135623730948,
+      "achieved_native_base_Re_lambda": 100.3698431355526,
+      "achieved_native_eddy_Re_lambda": 141.94247365864675,
+      "achieved_U_over_S": 0.10914216448884091
+    },
+    "two_d_three_c_rms": 0.0,
+    "moment_interval": 1.0,
+    "moment_diagnostic_version": 1,
+    "moment_q_convention": "cell-centred average of native Eulerian x-z curl; q0 is the same native curl of prescribed Eulerian background",
+    "moment_budget_convention": "native semi-discrete chain-rule rates before transverse averaging; continuum production and interpolated advective face transport have a separately reported spatial discretization residual",
+    "two_d_three_c_rule": "optional y-invariant v(x,z), normalized to requested centered RMS; eta and Re_lambda continue to refer to original in-plane base eddy"
+  },
+  "final_time_s": 1200.0,
+  "samples": 1201,
+  "sampling_interval_min_s": 1.0,
+  "sampling_interval_max_s": 1.0,
+  "initial_moments": {
+    "Zq": 0.011227514815893555,
+    "Zmean": 0.00938304961417836,
+    "Zvariance": 0.0018444652017151992,
+    "Za": 0.0066157383585182415,
+    "Zmean_anomaly": 0.00477127315680304
+  },
+  "final_moments": {
+    "Zq": 0.003935802598393941,
+    "Zmean": 0.0038871818291265326,
+    "Zvariance": 4.862076926740855e-05,
+    "Za": 0.00013682842047203284,
+    "Zmean_anomaly": 8.820765120462431e-05
+  },
+  "supplies": {
+    "Pq_T": {
+      "signed_integral": 0.022370136760294843,
+      "absolute_local_integral": 0.08277497524433734,
+      "absolute_spatial_mean_integral": 0.02248832676091114,
+      "signed_over_absolute_local": 0.27025241257109517,
+      "cancellation_fraction": 0.7297475874289048,
+      "cancellation_scope": "space and time"
+    },
+    "Pa_T": {
+      "signed_integral": 0.024494047638988298,
+      "absolute_local_integral": 0.03922165107177822,
+      "absolute_spatial_mean_integral": 0.02449758587640847,
+      "signed_over_absolute_local": 0.6245032263981587,
+      "cancellation_fraction": 0.3754967736018413,
+      "cancellation_scope": "space and time"
+    },
+    "Pa_background": {
+      "signed_integral": 0.0011317933777062069,
+      "absolute_local_integral": null,
+      "absolute_spatial_mean_integral": 0.0011929786844503125,
+      "signed_over_absolute_local": null,
+      "cancellation_fraction": 0.0512878457441156,
+      "cancellation_scope": "time after spatial averaging"
+    },
+    "Pmean_exchange": {
+      "signed_integral": -0.0030955973523507834,
+      "absolute_local_integral": null,
+      "absolute_spatial_mean_integral": 0.003231776080403557,
+      "signed_over_absolute_local": null,
+      "cancellation_fraction": 0.04213742680952348,
+      "cancellation_scope": "time after spatial averaging"
+    },
+    "Pvariance_exchange": {
+      "signed_integral": 0.0030955973523507834,
+      "absolute_local_integral": null,
+      "absolute_spatial_mean_integral": 0.003231776080403557,
+      "signed_over_absolute_local": null,
+      "cancellation_fraction": 0.04213742680952348,
+      "cancellation_scope": "time after spatial averaging"
+    },
+    "Pmean_T": {
+      "signed_integral": 0.0004300842444437689,
+      "absolute_local_integral": null,
+      "absolute_spatial_mean_integral": 0.0016355131307867138,
+      "signed_over_absolute_local": null,
+      "cancellation_fraction": 0.7370340620641243,
+      "cancellation_scope": "time after spatial averaging"
+    },
+    "Pvariance_T": {
+      "signed_integral": 0.021940052515851103,
+      "absolute_local_integral": null,
+      "absolute_spatial_mean_integral": 0.02194193148317525,
+      "signed_over_absolute_local": null,
+      "cancellation_fraction": 8.563363373859101e-05,
+      "cancellation_scope": "time after spatial averaging"
+    },
+    "Pmean_feedback_native": {
+      "signed_integral": -0.00283772886166604,
+      "absolute_local_integral": null,
+      "absolute_spatial_mean_integral": 0.0037270355710383022,
+      "signed_over_absolute_local": null,
+      "cancellation_fraction": 0.23860966508685966,
+      "cancellation_scope": "time after spatial averaging"
+    },
+    "Pmean_anomaly_feedback_native": {
+      "signed_integral": 0.0003604138163983706,
+      "absolute_local_integral": null,
+      "absolute_spatial_mean_integral": 0.0030681575838058532,
+      "signed_over_absolute_local": null,
+      "cancellation_fraction": 0.8825308653308152,
+      "cancellation_scope": "time after spatial averaging"
+    },
+    "Pq_stretch": {
+      "signed_integral": 0.025342145060687323,
+      "absolute_local_integral": 0.07815262434635652,
+      "absolute_spatial_mean_integral": 0.025345863115820464,
+      "signed_over_absolute_local": 0.3242647994567156,
+      "cancellation_fraction": 0.6757352005432844,
+      "cancellation_scope": "space and time"
+    },
+    "Pq_tilt_wy_vx": {
+      "signed_integral": 0.0010091928258025794,
+      "absolute_local_integral": 0.006789204542593184,
+      "absolute_spatial_mean_integral": 0.0010091928258025794,
+      "signed_over_absolute_local": 0.1486466963060611,
+      "cancellation_fraction": 0.8513533036939389,
+      "cancellation_scope": "space and time"
+    },
+    "Pq_tilt_minus_uy_vz": {
+      "signed_integral": -0.003981201126195107,
+      "absolute_local_integral": 0.029022099658629414,
+      "absolute_spatial_mean_integral": 0.004214243676664267,
+      "signed_over_absolute_local": -0.13717825977526538,
+      "cancellation_fraction": 0.8628217402247347,
+      "cancellation_scope": "space and time"
+    },
+    "Pq_T_componentwise_absolute": {
+      "signed_integral": 0.022370136760294843,
+      "absolute_local_integral": 0.11396392854757904,
+      "absolute_spatial_mean_integral": 0.02248832676091114,
+      "signed_over_absolute_local": 0.19629137960925494,
+      "cancellation_fraction": 0.8037086203907451,
+      "cancellation_scope": "space and time"
+    },
+    "Pa_stretch": {
+      "signed_integral": 0.014873914478606943,
+      "absolute_local_integral": 0.031090154175075085,
+      "absolute_spatial_mean_integral": 0.01487772132529396,
+      "signed_over_absolute_local": 0.4784123743757865,
+      "cancellation_fraction": 0.5215876256242136,
+      "cancellation_scope": "space and time"
+    },
+    "Pa_tilt_wy_vx": {
+      "signed_integral": -0.00045104051245444335,
+      "absolute_local_integral": 0.006418449701449962,
+      "absolute_spatial_mean_integral": 0.00045104051245444335,
+      "signed_over_absolute_local": -0.07027250090509408,
+      "cancellation_fraction": 0.9297274990949059,
+      "cancellation_scope": "space and time"
+    },
+    "Pa_tilt_minus_uy_vz": {
+      "signed_integral": 0.010071173672835746,
+      "absolute_local_integral": 0.01904546518426859,
+      "absolute_spatial_mean_integral": 0.010071173672835746,
+      "signed_over_absolute_local": 0.5287964129725988,
+      "cancellation_fraction": 0.47120358702740117,
+      "cancellation_scope": "space and time"
+    },
+    "Pa_T_componentwise_absolute": {
+      "signed_integral": 0.024494047638988298,
+      "absolute_local_integral": 0.05655406906079363,
+      "absolute_spatial_mean_integral": 0.02449758587640847,
+      "signed_over_absolute_local": 0.4331084932661178,
+      "cancellation_fraction": 0.5668915067338822,
+      "cancellation_scope": "space and time"
+    }
+  },
+  "closure": {
+    "full": {
+      "Zq": {
+        "final_temporal_residual": 2.2377780152932347e-06,
+        "final_spatial_residual": -0.0017195553156636777,
+        "max_abs_temporal_residual": 3.0901235427618218e-06,
+        "max_abs_spatial_residual": 0.0017195553156636777,
+        "normalization": 0.011227514815893555,
+        "max_abs_temporal_residual_normalized": 0.00027522774126180396,
+        "max_abs_spatial_residual_normalized": 0.15315547063269006
+      },
+      "Zmean": {
+        "final_temporal_residual": -1.5859492901327404e-07,
+        "final_spatial_residual": -0.00022298024269603017,
+        "max_abs_temporal_residual": 5.589809400022988e-07,
+        "max_abs_spatial_residual": 0.00022298024269603017,
+        "normalization": 0.009383049614178358,
+        "max_abs_temporal_residual_normalized": 5.9573482288492285e-05,
+        "max_abs_spatial_residual_normalized": 0.023764154711395053
+      },
+      "Zvariance": {
+        "final_temporal_residual": 2.39637294429133e-06,
+        "final_spatial_residual": -0.0014965750729676367,
+        "max_abs_temporal_residual": 2.8784133429061217e-06,
+        "max_abs_spatial_residual": 0.0014965750729676367,
+        "normalization": 0.0018444652017151992,
+        "max_abs_temporal_residual_normalized": 0.0015605679848171908,
+        "max_abs_spatial_residual_normalized": 0.8113869925959819
+      },
+      "Za": {
+        "final_temporal_residual": 2.242576994081376e-06,
+        "final_spatial_residual": -0.0015726413704281418,
+        "max_abs_temporal_residual": 2.9646709432152056e-06,
+        "max_abs_spatial_residual": 0.0015726413704281418,
+        "normalization": 0.006615738358518239,
+        "max_abs_temporal_residual_normalized": 0.00044812397083357724,
+        "max_abs_spatial_residual_normalized": 0.23771214718660283
+      },
+      "Zmean_anomaly": {
+        "final_temporal_residual": -1.5379595020171416e-07,
+        "final_spatial_residual": -7.606629746052113e-05,
+        "max_abs_temporal_residual": 5.671034129920739e-07,
+        "max_abs_spatial_residual": 8.487094986457666e-05,
+        "normalization": 0.0047712731568030405,
+        "max_abs_temporal_residual_normalized": 0.00011885788014116923,
+        "max_abs_spatial_residual_normalized": 0.017787904208243627
+      }
+    },
+    "stokes_layer": {
+      "Zq": {
+        "final_temporal_residual": 2.772785924420873e-06,
+        "final_spatial_residual": -0.004149409965166048,
+        "max_abs_temporal_residual": 5.588217103631406e-06,
+        "max_abs_spatial_residual": 0.004149409965166048,
+        "normalization": 0.027690319251253023,
+        "max_abs_temporal_residual_normalized": 0.00020181121975971917,
+        "max_abs_spatial_residual_normalized": 0.14985056428983867
+      },
+      "Zmean": {
+        "final_temporal_residual": -1.2902751236132728e-06,
+        "final_spatial_residual": -0.0008036649471262086,
+        "max_abs_temporal_residual": 2.4413775371713922e-06,
+        "max_abs_spatial_residual": 0.0008036649471262086,
+        "normalization": 0.026211800455553606,
+        "max_abs_temporal_residual_normalized": 9.314039839846741e-05,
+        "max_abs_spatial_residual_normalized": 0.03066042519623762
+      },
+      "Zvariance": {
+        "final_temporal_residual": 4.063061048041952e-06,
+        "final_spatial_residual": -0.0033457450180398407,
+        "max_abs_temporal_residual": 5.248823082409319e-06,
+        "max_abs_spatial_residual": 0.0033457450180398407,
+        "normalization": 0.0024051732212469357,
+        "max_abs_temporal_residual_normalized": 0.00218230563854695,
+        "max_abs_spatial_residual_normalized": 1.391061977775254
+      },
+      "Za": {
+        "final_temporal_residual": 4.403422458030843e-06,
+        "final_spatial_residual": -0.0034480596506447107,
+        "max_abs_temporal_residual": 6.429640404403405e-06,
+        "max_abs_spatial_residual": 0.0034480596506447107,
+        "normalization": 0.0036416612963172737,
+        "max_abs_temporal_residual_normalized": 0.0017655789161132446,
+        "max_abs_spatial_residual_normalized": 0.9468369983039477
+      },
+      "Zmean_anomaly": {
+        "final_temporal_residual": 3.403614099867225e-07,
+        "final_spatial_residual": -0.0001023146326048583,
+        "max_abs_temporal_residual": 1.6069303185498691e-06,
+        "max_abs_spatial_residual": 0.00012283399158640493,
+        "normalization": 0.002163142500617852,
+        "max_abs_temporal_residual_normalized": 0.0007428684509184606,
+        "max_abs_spatial_residual_normalized": 0.056784974430172865
+      }
+    }
+  },
+  "partition_checks": {
+    "partition_residual": 2.6020852139652106e-18,
+    "exchange_sum": 0.0,
+    "production_partition_residual": 2.710505431213761e-20
+  },
+  "global_profile_relative_errors": {
+    "Zq": 4.826278855385707e-16,
+    "Zmean": 4.427417730195237e-16,
+    "Zvariance": 7.056693762333774e-16,
+    "Za": 8.499506685290251e-16,
+    "Zmean_anomaly": 7.244414165605945e-16,
+    "dZq_native": 1.7926201386087996e-13,
+    "dZmean_native": 6.955353507774648e-13,
+    "dZvariance_native": 2.5091928582215743e-13,
+    "dZa_native": 3.0936926865734315e-15,
+    "dZmean_anomaly_native": 1.0862623135015522e-15
+  },
+  "native_qc": {
+    "native_divergence_max": 6.002143226879753e-16,
+    "native_divergence_rms": 6.708610760266879e-17,
+    "native_pressure_curl_max": 2.6020852139652106e-17,
+    "viscous_cfl": 0.0090112,
+    "native_partition_error": 8.893845946170154e-20,
+    "anomaly_partition_error": 7.792703114739563e-20,
+    "q_continuum_rhs_error_rms": 0.0017921442869054014,
+    "T_unsimplified_error2": 8.922612625608843e-37
+  },
+  "max_abs_3d_production": 0.0006618044744086728,
+  "max_T_rms": 0.005692668370438621,
+  "stokes_layer": {
+    "target_bottom_m": -0.0819672131147541,
+    "cell_face_bottom_m": -0.08333333333333333,
+    "cell_face_top_m": 0.0,
+    "cells": 16,
+    "selection": "Whole cells whose centers lie in [-1/(2k), 0]. Boundary transport retained."
+  },
+  "q0": {
+    "definition": "q0=-alpha*2k*S_reference*exp(2kz), with native discrete-center profile used for the anomaly.",
+    "reference_drift_is_not_actual_drift_in_no_wave_controls": true
+  },
+  "scope": "Finite-time individual realization. Tiny initial perturbations are not assumed to stay weak. q-enstrophy production is separate from vector enstrophy, background conversion and transport. Residuals are reported, not fitted away."
+}
