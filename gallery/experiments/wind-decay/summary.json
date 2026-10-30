@@ -1,0 +1,38 @@
+{
+  "title": "From forced rolls to decaying current organization",
+  "source_version": "760d919d68be25db",
+  "counts": {
+    "complete": 0,
+    "running": 0,
+    "queued": 0,
+    "waiting": 2,
+    "failed": 0
+  },
+  "criteria": {
+    "window_s": 200.0,
+    "weak_correction": 0.1,
+    "initial_eddy_rms": 0.004,
+    "current_activity_m_s": 4e-05,
+    "q_activity_s_inverse": 1.6e-05,
+    "trim_reference_nz": 96,
+    "trim_reference_cells": 2,
+    "active_stokes_efolds": 3.0,
+    "extremum_presence": 0.8
+  },
+  "runs": [
+    {
+      "id": "wind-off",
+      "arm": "off",
+      "status": "waiting"
+    },
+    {
+      "id": "wind-on",
+      "arm": "on",
+      "status": "waiting"
+    }
+  ],
+  "comparison": {
+    "status": "AWAITING_MATCHED_PAIR",
+    "reason": "Both verified branches are required"
+  }
+}

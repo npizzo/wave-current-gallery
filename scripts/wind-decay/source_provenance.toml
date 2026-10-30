@@ -1,0 +1,71 @@
+"format" = "wind-decay-parent-approval-v1"
+"campaign" = "unity-wind-decay-tests"
+"approved_parent_source_version" = "d6423e57b0ebb86f"
+
+["sources"]
+
+["sources"."langmuir-u002-t1000"]
+"snapshot_json_sha256" = "4fc0d9e856251b7da876161791cca6a5eb95cb9979cd127eadf6febcb6ba0577"
+"snapshot_metadata_sha256" = "f2e0cd368768b820afad8bcabd77f3238f373685a72b28063c894d741d26c20a"
+"expected_parent_ustar" = 0.002
+"allowed_branch_ustar" = [0.0, 0.002]
+"snapshot_time" = 1000.0
+"parent_case" = "weak3d-u002-a075-s1"
+"parent_snapshot_name" = "t01000.000000.json"
+
+["sources"."langmuir-u002-t1000"."source_hashes"]
+"initial_conditions.jl" = "3a8f83da2f569bd311b9765baef9b8cd32ce70871da929bf7a38496882e526fc"
+"jet_diagnostics.jl" = "4436aee2d706e994fa8717d0b3735b4f51718d1299349d2b2f708be52157d74a"
+"moment_diagnostics.jl" = "35afc1a0ada262b960e22597ba7becb39f936b62440d33af6aed51a72d14fdf1"
+"regime_diagnostics.jl" = "d3ed3c13e7c61ee65b816d20a16dbf0bf313961bc2ddda656b931838daf72008"
+"regime_physics.jl" = "cd097ff947b3d4d5a36729f1f93325f13e2fd192063a0839a57f142ce831202f"
+"run_jet.jl" = "07818017f37cbfcf12280a7e1b46d1bd2e2e17ce39d681f951a27e6a479ba0ae"
+"vortex_modes.jl" = "020d0f191d8f39ca71ad5b8d0445a2c9f057be83aee292c520b89c382781ffa4"
+"wind_physics.jl" = "8b555435a2cfbdd323347bbfaba598095906398248c5e7a4336cf8494c73937b"
+
+["sources"."langmuir-u002-t1000"."parameters"]
+"Sref" = 0.036649447248308646
+"advection_name" = "Centered2"
+"alpha" = 0.75
+"h" = 0.5
+"k" = 6.1
+"lx" = 2.0
+"ly" = 1.0
+"nu" = 1e-05
+"nx" = 128
+"ny" = 64
+"nz" = 96
+"ustar" = 0.002
+"waves" = 1
+
+["sources"."langmuir-u002-t1000"."arrays"]
+
+["sources"."langmuir-u002-t1000"."arrays"."u"]
+"dtype" = "float64"
+"file" = "t01000.000000_u.bin"
+"location" = ["Face", "Center", "Center"]
+"order" = "F"
+"sha256" = "c4fe586ce15c4655f792895492be9971272feff20678889c743ec62c4d736005"
+"shape" = [128, 64, 96]
+
+["sources"."langmuir-u002-t1000"."arrays"."v"]
+"dtype" = "float64"
+"file" = "t01000.000000_v.bin"
+"location" = ["Center", "Face", "Center"]
+"order" = "F"
+"sha256" = "cc69323a4f841e79a7ea9d00b0e1149c756cb2142a7de6c842b18b5507636c2b"
+"shape" = [128, 64, 96]
+
+["sources"."langmuir-u002-t1000"."arrays"."w"]
+"dtype" = "float64"
+"file" = "t01000.000000_w.bin"
+"location" = ["Center", "Center", "Face"]
+"order" = "F"
+"sha256" = "9535feeb8deb4bf97e679e14b2842f924120e9fa194d86df27f0de4eb3237618"
+"shape" = [128, 64, 97]
+
+["sources"."langmuir-u002-t1000"."validation_reference_files"]
+"mean_01010.000000.json" = "2a43012a71b811b75f4a0af84d957e0dff5521be2ac376d56c8408ec30c6bb94"
+"mean_01010.000000_Uc.bin" = "f5c01bc9e5c6b28d1d118dc5c5764210c81f4dd60f246be02825f75fced7e45b"
+"mean_01010.000000_Wc.bin" = "6b03c1423f2a63c03cd15c5f3b55a111ea8b5a61754a9bd3cdf8e7a08b43ffca"
+"mean_01010.000000_Q.bin" = "9ee03ed005d462dee976d42954f108da78311903029ac944bf6b55080054b150"

@@ -1,0 +1,21 @@
+{
+  "parent": "weak3d-u002-a075-s1",
+  "source_version": "d6423e57b0ebb86f",
+  "switch_time_s": 1000,
+  "measured_switch_state": {
+    "time_s": 1000.0,
+    "wind_ustar_m_s": 0.002,
+    "eddy_rms_m_s": 0.005386802546831302,
+    "roll_rms_m_s": 0.004726483393943908,
+    "roll_energy_fraction": 0.7698642612208731,
+    "chi_3d": 0.9815713352689005,
+    "ky0_eddy_rms_m_s": 0.0007312703944377276,
+    "C_native_rms_stokes": 0.000694985966245425,
+    "q_eddy_rms_stokes": 0.004706751045829027
+  },
+  "reason": "Strong developed x-invariant Langmuir-roll geometry before later roll breakdown, with a remaining transverse-mean eddy component. Selected before either shutoff outcome is known.",
+  "inputs": {
+    "wind-budget.csv": "b46bcebcd1e978d7a0c0110c74013df41da3ea84e6e4e86f33e31d6b7370cad6",
+    "regime-budget.csv": "0692a4089ac9ab78f638614d83a214c83d46c9771870916740bc69b1960a3bea"
+  }
+}
