@@ -2,8 +2,8 @@
   "title": "Wind forcing, mean closure and jet response",
   "source_version": "d6423e57b0ebb86f",
   "counts": {
-    "complete": 19,
-    "running": 1,
+    "complete": 20,
+    "running": 0,
     "queued": 0,
     "waiting": 0,
     "failed": 0
@@ -67,7 +67,7 @@
     "scope": "Operational criteria, not universal physical thresholds. No jets at weak feedback is not theory failure. Propagation and scale-transfer claims remain separate unless directly measured."
   },
   "closure_assessments": {
-    "PASS": 4,
+    "PASS": 6,
     "FAIL": 0,
     "INCONCLUSIVE": 34
   },
@@ -8822,7 +8822,282 @@
     },
     {
       "id": "exact2d-u004-a075-s1",
-      "status": "running"
+      "status": "complete",
+      "source_version": "d6423e57b0ebb86f",
+      "configuration": {
+        "nx": 128,
+        "ny": 1,
+        "nz": 96,
+        "lx": 2.0,
+        "ly": 1.0,
+        "h": 0.5,
+        "k": 6.1,
+        "S": 0.036649447248308646,
+        "S_reference": 0.036649447248308646,
+        "alpha": 0.75,
+        "eddy_rms": 0.004,
+        "injection_wavelength": 0.25,
+        "perturb_energy_ratio": 0.0,
+        "seed": 1,
+        "nu": 1e-05,
+        "max_dt": 0.02,
+        "wind_ustar": 0.004,
+        "maintain_background": false,
+        "velocity_convention": "Lagrangian",
+        "closure": "constant ScalarDiffusivity on Lagrangian velocity",
+        "advection": "Centered2",
+        "waves": true,
+        "start_time": 0.0,
+        "stop_time": 1200.0
+      },
+      "parameters": {
+        "u_star_m_s": 0.004,
+        "surface_stokes_m_s": 0.036649447248308646,
+        "langmuir_number": 0.3303667121379527,
+        "alpha": 0.75,
+        "seed": 1,
+        "nu_m2_s": 1e-05
+      },
+      "closure_windows": [
+        {
+          "start_s": 600.0,
+          "stop_s": 800.0,
+          "assessment": "PASS",
+          "reason": "Both prescribed depth regions support the reduced forecast",
+          "regions": [
+            {
+              "region": "full",
+              "start_s": 600.0,
+              "stop_s": 800.0,
+              "z_min_m": -0.49739583333333337,
+              "z_max_m": -0.0026041666666666665,
+              "correction_integral_s_inverse": 0.0,
+              "q_reference_s_inverse": 0.004375893732227507,
+              "correction_sampling_s": 5.0,
+              "forecast_sampling_s": 10.0,
+              "correction_coarse_sampling_relative_difference": 0.0,
+              "current_reference_m_s": 0.007372626420713299,
+              "q_activity_floor_s_inverse": 1.6e-05,
+              "current_activity_floor_m_s": 4e-05,
+              "initial_q_error_s_inverse": 1.0020958085423635e-16,
+              "initial_u_error_m_s": 2.4899245818637424e-18,
+              "initial_mean_matches": true,
+              "active": true,
+              "epsilon_C": 0.0,
+              "max_q_forecast_error": 1.6805582765626616e-10,
+              "max_current_forecast_error": 1.412081394586468e-13,
+              "assessment": "PASS",
+              "reason": "Reduced mean dynamics supported over this 200 s window",
+              "sensitivity": {
+                "0.05": "PASS",
+                "0.1": "PASS",
+                "0.2": "PASS"
+              },
+              "apparent_failure": false
+            },
+            {
+              "region": "interior",
+              "start_s": 600.0,
+              "stop_s": 800.0,
+              "z_min_m": -0.48697916666666663,
+              "z_max_m": -0.013020833333333332,
+              "correction_integral_s_inverse": 0.0,
+              "q_reference_s_inverse": 0.004468172110351988,
+              "correction_sampling_s": 5.0,
+              "forecast_sampling_s": 10.0,
+              "correction_coarse_sampling_relative_difference": 0.0,
+              "current_reference_m_s": 0.007144045057418355,
+              "q_activity_floor_s_inverse": 1.6e-05,
+              "current_activity_floor_m_s": 4e-05,
+              "initial_q_error_s_inverse": 9.946133846603746e-17,
+              "initial_u_error_m_s": 2.4340216888489075e-18,
+              "initial_mean_matches": true,
+              "active": true,
+              "epsilon_C": 0.0,
+              "max_q_forecast_error": 1.6810177494905432e-10,
+              "max_current_forecast_error": 1.474758164202604e-13,
+              "assessment": "PASS",
+              "reason": "Reduced mean dynamics supported over this 200 s window",
+              "sensitivity": {
+                "0.05": "PASS",
+                "0.1": "PASS",
+                "0.2": "PASS"
+              },
+              "apparent_failure": false
+            },
+            {
+              "region": "active_interior",
+              "start_s": 600.0,
+              "stop_s": 800.0,
+              "z_min_m": -0.2421875,
+              "z_max_m": -0.013020833333333332,
+              "correction_integral_s_inverse": 0.0,
+              "q_reference_s_inverse": 0.0016740297396878288,
+              "correction_sampling_s": 5.0,
+              "forecast_sampling_s": 10.0,
+              "correction_coarse_sampling_relative_difference": 0.0,
+              "current_reference_m_s": 0.00830154688083061,
+              "q_activity_floor_s_inverse": 1.6e-05,
+              "current_activity_floor_m_s": 4e-05,
+              "initial_q_error_s_inverse": 1.260470149997482e-16,
+              "initial_u_error_m_s": 2.7005977432359423e-18,
+              "initial_mean_matches": true,
+              "active": true,
+              "epsilon_C": 0.0,
+              "max_q_forecast_error": 5.302942284437293e-11,
+              "max_current_forecast_error": 3.9709929390151976e-14,
+              "assessment": "PASS",
+              "reason": "Reduced mean dynamics supported over this 200 s window",
+              "sensitivity": {
+                "0.05": "PASS",
+                "0.1": "PASS",
+                "0.2": "PASS"
+              },
+              "apparent_failure": false
+            }
+          ]
+        },
+        {
+          "start_s": 1000.0,
+          "stop_s": 1200.0,
+          "assessment": "PASS",
+          "reason": "Both prescribed depth regions support the reduced forecast",
+          "regions": [
+            {
+              "region": "full",
+              "start_s": 1000.0,
+              "stop_s": 1200.0,
+              "z_min_m": -0.49739583333333337,
+              "z_max_m": -0.0026041666666666665,
+              "correction_integral_s_inverse": 0.0,
+              "q_reference_s_inverse": 0.0008007318594500943,
+              "correction_sampling_s": 5.0,
+              "forecast_sampling_s": 10.0,
+              "correction_coarse_sampling_relative_difference": 0.0,
+              "current_reference_m_s": 0.005962864289511324,
+              "q_activity_floor_s_inverse": 1.6e-05,
+              "current_activity_floor_m_s": 4e-05,
+              "initial_q_error_s_inverse": 4.929784461740516e-17,
+              "initial_u_error_m_s": 6.071105333412724e-19,
+              "initial_mean_matches": true,
+              "active": true,
+              "epsilon_C": 0.0,
+              "max_q_forecast_error": 2.1863820427945008e-10,
+              "max_current_forecast_error": 6.349359642984229e-15,
+              "assessment": "PASS",
+              "reason": "Reduced mean dynamics supported over this 200 s window",
+              "sensitivity": {
+                "0.05": "PASS",
+                "0.1": "PASS",
+                "0.2": "PASS"
+              },
+              "apparent_failure": false
+            },
+            {
+              "region": "interior",
+              "start_s": 1000.0,
+              "stop_s": 1200.0,
+              "z_min_m": -0.48697916666666663,
+              "z_max_m": -0.013020833333333332,
+              "correction_integral_s_inverse": 0.0,
+              "q_reference_s_inverse": 0.0008175019521424338,
+              "correction_sampling_s": 5.0,
+              "forecast_sampling_s": 10.0,
+              "correction_coarse_sampling_relative_difference": 0.0,
+              "current_reference_m_s": 0.0058161097293117515,
+              "q_activity_floor_s_inverse": 1.6e-05,
+              "current_activity_floor_m_s": 4e-05,
+              "initial_q_error_s_inverse": 4.9506038099696357e-17,
+              "initial_u_error_m_s": 6.034609980670292e-19,
+              "initial_mean_matches": true,
+              "active": true,
+              "epsilon_C": 0.0,
+              "max_q_forecast_error": 2.1852202560355085e-10,
+              "max_current_forecast_error": 6.574701378895601e-15,
+              "assessment": "PASS",
+              "reason": "Reduced mean dynamics supported over this 200 s window",
+              "sensitivity": {
+                "0.05": "PASS",
+                "0.1": "PASS",
+                "0.2": "PASS"
+              },
+              "apparent_failure": false
+            },
+            {
+              "region": "active_interior",
+              "start_s": 1000.0,
+              "stop_s": 1200.0,
+              "z_min_m": -0.2421875,
+              "z_max_m": -0.013020833333333332,
+              "correction_integral_s_inverse": 0.0,
+              "q_reference_s_inverse": 0.00011006419148552559,
+              "correction_sampling_s": 5.0,
+              "forecast_sampling_s": 10.0,
+              "correction_coarse_sampling_relative_difference": 0.0,
+              "current_reference_m_s": 0.006424929341663457,
+              "q_activity_floor_s_inverse": 1.6e-05,
+              "current_activity_floor_m_s": 4e-05,
+              "initial_q_error_s_inverse": 5.883301874369484e-17,
+              "initial_u_error_m_s": 4.992399404808715e-19,
+              "initial_mean_matches": true,
+              "active": true,
+              "epsilon_C": 0.0,
+              "max_q_forecast_error": 6.549748519495836e-11,
+              "max_current_forecast_error": 3.5328574270822477e-15,
+              "assessment": "PASS",
+              "reason": "Reduced mean dynamics supported over this 200 s window",
+              "sensitivity": {
+                "0.05": "PASS",
+                "0.1": "PASS",
+                "0.2": "PASS"
+              },
+              "apparent_failure": false
+            }
+          ]
+        }
+      ],
+      "mode_responses": [],
+      "final_profile": {
+        "current_change_rms_m_s": 0.05113175692622352,
+        "depth_mean_change_m_s": -3.382710778154774e-17,
+        "interior_maxima": [],
+        "interior_minima": [
+          {
+            "z_m": -0.4921875,
+            "U_E_m_s": -0.03829196005187274
+          }
+        ],
+        "scope": "Current-change amplitude is redistribution, not by itself a spontaneous-jet diagnostic"
+      },
+      "current_organization": {
+        "late_window_s": [
+          1000.0,
+          1200.0
+        ],
+        "prominence_floor_m_s": 4e-05,
+        "persistence_fraction_threshold": 0.8,
+        "late_mean_extrema": [],
+        "width_definition": "Two-sided half-prominence width relative to nearest opposite extrema or boundaries",
+        "scope": "Descriptive profile organization; imposed background and direct wind response can contribute, so persistence alone does not establish the beta mechanism"
+      },
+      "diagnosed_scale": {
+        "active_depth_beta_rms_s_inverse_m_inverse": 4.147427760928173,
+        "final_eddy_rms_m_s": 9.991629493430512e-06,
+        "local_rhines_length_m": 0.001552132331380255,
+        "scope": "Uses the evolved current curvature and measured turbulence; no dispersion or universal spacing test is claimed"
+      },
+      "geometry": {
+        "final_chi_3d": 0.0,
+        "maximum_chi_3d": 0.0
+      },
+      "checks": {
+        "group": "exact-2d-null"
+      },
+      "validation": {
+        "max_native_divergence": 2.2369022053495696e-15,
+        "max_pressure_curl": 9.71445146547012e-17
+      },
+      "scope": "Conditional mean-closure test and finite-time weak-band response; small correction without jets is not failure"
     }
   ],
   "mechanism_assessment": "INCONCLUSIVE",
