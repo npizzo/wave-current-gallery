@@ -4,8 +4,8 @@
   "counts": {
     "complete": 0,
     "running": 0,
-    "queued": 0,
-    "waiting": 2,
+    "queued": 2,
+    "waiting": 0,
     "failed": 0
   },
   "criteria": {
@@ -23,12 +23,12 @@
     {
       "id": "no-wind",
       "arm": "off",
-      "status": "waiting"
+      "status": "queued"
     },
     {
       "id": "wind-on",
       "arm": "on",
-      "status": "waiting"
+      "status": "queued"
     }
   ],
   "comparison": {
