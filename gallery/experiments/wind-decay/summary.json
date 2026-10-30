@@ -3,9 +3,9 @@
   "source_version": "760d919d68be25db",
   "counts": {
     "complete": 0,
-    "running": 0,
-    "queued": 0,
-    "waiting": 2,
+    "running": 1,
+    "queued": 1,
+    "waiting": 0,
     "failed": 0
   },
   "criteria": {
@@ -23,12 +23,12 @@
     {
       "id": "wind-off",
       "arm": "off",
-      "status": "waiting"
+      "status": "running"
     },
     {
       "id": "wind-on",
       "arm": "on",
-      "status": "waiting"
+      "status": "queued"
     }
   ],
   "comparison": {
