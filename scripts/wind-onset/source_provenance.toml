@@ -1,0 +1,80 @@
+"format" = "wind-onset-parent-approval-v1"
+"campaign" = "unity-wind-onset-tests"
+"approved_parent_source_version" = "da81ab96d7e51fb0"
+
+["sources"]
+
+["sources"."jets-re300-tiny-s1-t600"]
+"snapshot_json_sha256" = "042d9411b62f1d160f1a56eabccbed3979ca3165a1697ed8e2924af79b47d59b"
+"snapshot_metadata_sha256" = "b417e05f7b35574236f5d4f65df1bbae3edf667dd9ba757b479b2f2d0ab97065"
+"parent_configuration_sha256" = "c567a95d2ff8f7d43e8743bca66fa010ffb4ac8d5f4935e8bde3cf431351cb46"
+"snapshot_time" = 600.0
+"expected_maintain_background" = true
+"expected_parent_ustar" = 0.0
+"allowed_branch_ustar" = [0.0, 0.002]
+"parent_case" = "anchor-re300-tiny-s1"
+"parent_snapshot_name" = "t00600.000000.json"
+"validation_reference_source_version" = "95b83aebce7ae34a"
+"validation_reference_case" = "central-re300-tiny-s1"
+"cross_campaign_t600_Uc_Wc_Q_max_difference" = 0.0
+
+["sources"."jets-re300-tiny-s1-t600"."source_hashes"]
+"initial_conditions.jl" = "3a8f83da2f569bd311b9765baef9b8cd32ce70871da929bf7a38496882e526fc"
+"jet_diagnostics.jl" = "136071415aee9b9b1d187e9f06aad7325dde09ad39ee8e92a9a18733364be05e"
+"regime_diagnostics.jl" = "c3ea43fd36dab77051b2ba48a990d465f09ee0cbfce1ce5f0fe45e49541be3b7"
+"regime_physics.jl" = "cd097ff947b3d4d5a36729f1f93325f13e2fd192063a0839a57f142ce831202f"
+"run_jet.jl" = "f963abf0de7bf3175bec357c639c5d0e5523f74a9bbedc92292cbb38ee580722"
+"vortex_modes.jl" = "020d0f191d8f39ca71ad5b8d0445a2c9f057be83aee292c520b89c382781ffa4"
+
+["sources"."jets-re300-tiny-s1-t600"."parameters"]
+"nx" = 128
+"ny" = 64
+"nz" = 96
+"lx" = 2.0
+"ly" = 1.0
+"h" = 0.5
+"k" = 6.1
+"alpha" = 0.75
+"uoffset" = 0.0
+"nu" = 3.3333333333333333e-06
+"Sref" = 0.036649447248308646
+"waves" = 1
+"ustar" = 0.0
+"maintain" = true
+"advection_name" = "Centered2"
+
+["sources"."jets-re300-tiny-s1-t600"."arrays"]
+
+["sources"."jets-re300-tiny-s1-t600"."arrays"."u"]
+"file" = "t00600.000000_u.bin"
+"shape" = [128, 64, 96]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Face", "Center", "Center"]
+"sha256" = "a7ccbffdc81e5e72204c13b85e1109bc2c86c7916b008da945318231a01d2206"
+
+["sources"."jets-re300-tiny-s1-t600"."arrays"."v"]
+"file" = "t00600.000000_v.bin"
+"shape" = [128, 64, 96]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Center", "Face", "Center"]
+"sha256" = "72a4fbf9fef451b7d36f29fef939f4ec6c8257c7eb9112f0cc98cb63d8fbd427"
+
+["sources"."jets-re300-tiny-s1-t600"."arrays"."w"]
+"file" = "t00600.000000_w.bin"
+"shape" = [128, 64, 97]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Center", "Center", "Face"]
+"sha256" = "aa9bfa52b6f0252344d0aa9b4340db0d581ee13c59f834019fbde643829a0510"
+
+["sources"."jets-re300-tiny-s1-t600"."validation_reference_files"]
+"mean_00600.000000.json" = "902d426b49b06b7070f8080adbb6928c2f9e9881327a8a83c43bba0bcda90572"
+"mean_00600.000000_Uc.bin" = "484a26e5bd9d6464a59d4fa009624e5bed91a4b8c7a6a20031d3e7c33662da02"
+"mean_00600.000000_Wc.bin" = "0409b6055a59e3455cac8ea0d9bc9576ce5ceab4a3a470400e280939ce8ee49a"
+"mean_00600.000000_Q.bin" = "21ee830df214851f4b72b12799cfe06abb0b92594ee24d1bda24c94dc2e4cb25"
+"mean_00620.000000.json" = "e5981a4403c5a58f73f8c7a89320a6731d9edd05187da11ebcaf3becbde5b04a"
+"mean_00620.000000_Uc.bin" = "3cc5c1cbb1f61af910c8de043edda1db6847a12acc1d2ed855e8000f1c8a9c4b"
+"mean_00620.000000_Wc.bin" = "a65087ee42b5eb2e7ef02f48118c374ffb6a98b913f56222d66e39f256715fae"
+"mean_00620.000000_Q.bin" = "8c0ec0d5786635dc405ffdce31dee557d7d3e65cf99757c07931e032e7eb3bbe"
