@@ -3,9 +3,9 @@
   "source_version": "ae1514df927e6e81",
   "new_run_counts": {
     "complete": 0,
-    "running": 0,
-    "queued": 0,
-    "waiting": 4,
+    "running": 1,
+    "queued": 3,
+    "waiting": 0,
     "failed": 0
   },
   "reused_runs": 2,
@@ -1732,25 +1732,25 @@
     },
     {
       "id": "3d-u00075",
-      "status": "waiting",
+      "status": "running",
       "mode": "3d",
       "reused": false
     },
     {
       "id": "3d-u00125",
-      "status": "waiting",
+      "status": "queued",
       "mode": "3d",
       "reused": false
     },
     {
       "id": "2d-u0",
-      "status": "waiting",
+      "status": "queued",
       "mode": "2d",
       "reused": false
     },
     {
       "id": "2d-u002",
-      "status": "waiting",
+      "status": "queued",
       "mode": "2d",
       "reused": false
     }
