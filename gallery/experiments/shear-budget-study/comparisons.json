@@ -147,80 +147,2615 @@
     },
     {
       "id": "base-intermediate",
-      "status": "pending",
-      "missing_cases": [
-        "base-2d-u00125"
-      ]
+      "status": "complete",
+      "cases": {
+        "3d_control": "3d-u0-reference",
+        "3d_wind": "3d-u00125",
+        "2d_control": "2d-u0",
+        "2d_wind": "base-2d-u00125"
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "retained_prominence": {
+            "3d_control": 0.5519803840820837,
+            "3d_wind": 0.41685681362107707,
+            "2d_control": 0.5646950173818309,
+            "2d_wind": 0.4289383227217029
+          },
+          "wind_effect_3d": -0.13512357046100665,
+          "wind_effect_2d": -0.13575669466012802,
+          "additional_3d_prominence_effect": 0.000633124199121371,
+          "band_energy_change_difference_m2_s2": 1.1293262827732155e-09,
+          "signed_band_work_differences_m2_s2": {
+            "A0": 9.264940461172479e-10,
+            "C": 5.7372458815421505e-11,
+            "W": -8.088246558670439e-24,
+            "D": 1.4568652857262602e-10,
+            "F": -2.536464147731975e-13,
+            "P": 2.4593137278615575e-26
+          },
+          "band_energy_difference_closure_m2_s2": 2.6895682701288332e-14
+        },
+        {
+          "elapsed_s": 400,
+          "retained_prominence": {
+            "3d_control": 0.40381932412728666,
+            "3d_wind": 0.4514627137243126,
+            "2d_control": 0.40986606614800397,
+            "2d_wind": 0.47058672775544536
+          },
+          "wind_effect_3d": 0.047643389597025965,
+          "wind_effect_2d": 0.060720661607441384,
+          "additional_3d_prominence_effect": -0.01307727201041542,
+          "band_energy_change_difference_m2_s2": 1.364622580144186e-09,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -1.2960263720209754e-09,
+            "C": 1.1600914317244092e-09,
+            "W": 1.4048694115782603e-22,
+            "D": 1.5209984712146428e-09,
+            "F": -2.0378620954047723e-11,
+            "P": 2.949924416753936e-24
+          },
+          "band_energy_difference_closure_m2_s2": -6.232981998640752e-14
+        },
+        {
+          "elapsed_s": 600,
+          "retained_prominence": {
+            "3d_control": 0.2472184312265691,
+            "3d_wind": 0.12764227033090514,
+            "2d_control": 0.2587716240870105,
+            "2d_wind": 0.12676672829096536
+          },
+          "wind_effect_3d": -0.11957616089566397,
+          "wind_effect_2d": -0.13200489579604513,
+          "additional_3d_prominence_effect": 0.012428734900381155,
+          "band_energy_change_difference_m2_s2": -6.83002055080029e-07,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -1.1163406158454979e-08,
+            "C": -8.881478214487098e-07,
+            "W": -2.7103212496594347e-21,
+            "D": 2.0665348408361602e-07,
+            "F": 9.656266731595224e-09,
+            "P": 4.780062601161747e-24
+          },
+          "band_energy_difference_closure_m2_s2": -5.782880727080966e-13
+        },
+        {
+          "elapsed_s": 800,
+          "retained_prominence": {
+            "3d_control": 0.12124888482362822,
+            "3d_wind": 0.1340983939752057,
+            "2d_control": 0.12911963913105978,
+            "2d_wind": 0.1536905234010111
+          },
+          "wind_effect_3d": 0.012849509151577482,
+          "wind_effect_2d": 0.024570884269951326,
+          "additional_3d_prominence_effect": -0.011721375118373845,
+          "band_energy_change_difference_m2_s2": -1.7153379022811454e-06,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -3.919980729890796e-08,
+            "C": -2.424234422416464e-06,
+            "W": -4.6708771024268575e-21,
+            "D": 7.068153185582197e-07,
+            "F": 4.127953742517001e-08,
+            "P": 3.1723280993429848e-24
+          },
+          "band_energy_difference_closure_m2_s2": 1.4714508412691973e-12
+        },
+        {
+          "elapsed_s": 1000,
+          "retained_prominence": {
+            "3d_control": 0.0,
+            "3d_wind": 0.0,
+            "2d_control": 0.058328729990784804,
+            "2d_wind": 0.0
+          },
+          "wind_effect_3d": 0.0,
+          "wind_effect_2d": -0.058328729990784804,
+          "additional_3d_prominence_effect": 0.058328729990784804,
+          "band_energy_change_difference_m2_s2": -3.389462337994755e-06,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -1.3467965722594724e-07,
+            "C": -4.793868340306914e-06,
+            "W": -3.611336774814536e-21,
+            "D": 1.4305323637865394e-06,
+            "F": 1.0854505722621515e-07,
+            "P": 4.0536763931296244e-24
+          },
+          "band_energy_difference_closure_m2_s2": 8.238525354846741e-12
+        },
+        {
+          "elapsed_s": 1200,
+          "retained_prominence": {
+            "3d_control": 0.0,
+            "3d_wind": 0.0,
+            "2d_control": 0.0,
+            "2d_wind": 0.0
+          },
+          "wind_effect_3d": 0.0,
+          "wind_effect_2d": 0.0,
+          "additional_3d_prominence_effect": 0.0,
+          "band_energy_change_difference_m2_s2": -5.926748112916002e-06,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -2.035192653578739e-07,
+            "C": -8.270509870060691e-06,
+            "W": 1.7795729842847276e-21,
+            "D": 2.3151096363245253e-06,
+            "F": 2.321721292002065e-07,
+            "P": 4.6240931106276575e-24
+          },
+          "band_energy_difference_closure_m2_s2": -7.43022170923886e-13
+        }
+      ],
+      "interpretation": "Negative prominence difference means added wind reduces retained jet prominence more when 3D motions are allowed. Signed work differences decompose four realized trajectories; they are not independent causal effects of turning off individual tendencies. Late extrema rematching is qualified by the original profile histories."
     },
     {
       "id": "fine-strong",
-      "status": "pending",
-      "missing_cases": [
-        "fine-3d-u0",
-        "fine-3d-u002",
-        "fine-2d-u0",
-        "fine-2d-u002"
-      ]
+      "status": "complete",
+      "cases": {
+        "3d_control": "fine-3d-u0",
+        "3d_wind": "fine-3d-u002",
+        "2d_control": "fine-2d-u0",
+        "2d_wind": "fine-2d-u002"
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "retained_prominence": {
+            "3d_control": 0.5505999637283936,
+            "3d_wind": 0.31846279541534295,
+            "2d_control": 0.5633896574144772,
+            "2d_wind": 0.4191312952292967
+          },
+          "wind_effect_3d": -0.23213716831305065,
+          "wind_effect_2d": -0.1442583621851805,
+          "additional_3d_prominence_effect": -0.08787880612787013,
+          "band_energy_change_difference_m2_s2": -4.81292214910195e-06,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -1.1870986914890642e-07,
+            "C": -4.218355395232692e-06,
+            "W": 6.984044888571545e-22,
+            "D": -5.031963895150325e-07,
+            "F": 2.7312481409103835e-08,
+            "P": -1.3867714605241609e-24
+          },
+          "band_energy_difference_closure_m2_s2": 2.702338557647319e-11
+        },
+        {
+          "elapsed_s": 400,
+          "retained_prominence": {
+            "3d_control": 0.40291543102553234,
+            "3d_wind": 0.2258767279318707,
+            "2d_control": 0.40888097472821416,
+            "2d_wind": 0.5257472019110596
+          },
+          "wind_effect_3d": -0.17703870309366165,
+          "wind_effect_2d": 0.11686622718284545,
+          "additional_3d_prominence_effect": -0.2939049302765071,
+          "band_energy_change_difference_m2_s2": -1.9080310144925916e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -6.874201033197123e-07,
+            "C": -1.6178549247283698e-05,
+            "W": 2.197979276128411e-20,
+            "D": -2.466867338299553e-06,
+            "F": 2.5255520372741754e-07,
+            "P": -3.629974357978772e-24
+          },
+          "band_energy_difference_closure_m2_s2": -2.865975039145134e-11
+        },
+        {
+          "elapsed_s": 600,
+          "retained_prominence": {
+            "3d_control": 0.24652600797602647,
+            "3d_wind": 0.0,
+            "2d_control": 0.25803730535236397,
+            "2d_wind": 0.1370479036318787
+          },
+          "wind_effect_3d": -0.24652600797602647,
+          "wind_effect_2d": -0.12098940172048528,
+          "additional_3d_prominence_effect": -0.1255366062555412,
+          "band_energy_change_difference_m2_s2": -3.686230683126595e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -1.658419937982512e-07,
+            "C": -3.180260976484741e-05,
+            "W": 2.6057778644347282e-21,
+            "D": -5.670429339127711e-06,
+            "F": 7.763597466142359e-07,
+            "P": -1.3181732423409683e-25
+          },
+          "band_energy_difference_closure_m2_s2": 2.1451989318889203e-10
+        },
+        {
+          "elapsed_s": 800,
+          "retained_prominence": {
+            "3d_control": 0.12068082269438367,
+            "3d_wind": 0.0,
+            "2d_control": 0.12842085244385648,
+            "2d_wind": 0.0
+          },
+          "wind_effect_3d": -0.12068082269438367,
+          "wind_effect_2d": -0.12842085244385648,
+          "additional_3d_prominence_effect": 0.007740029749472813,
+          "band_energy_change_difference_m2_s2": -5.649469119847449e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": 2.2581281255890825e-07,
+            "C": -4.855613050294032e-05,
+            "W": -2.4624593237112697e-20,
+            "D": -9.763276695694156e-06,
+            "F": 1.598814422803746e-06,
+            "P": -2.709329255988634e-25
+          },
+          "band_energy_difference_closure_m2_s2": 8.876479735839488e-11
+        },
+        {
+          "elapsed_s": 1000,
+          "retained_prominence": {
+            "3d_control": 0.0,
+            "3d_wind": 0.0,
+            "2d_control": 0.05797820841629931,
+            "2d_wind": 0.0
+          },
+          "wind_effect_3d": 0.0,
+          "wind_effect_2d": -0.05797820841629931,
+          "additional_3d_prominence_effect": 0.05797820841629931,
+          "band_energy_change_difference_m2_s2": -7.50739738940243e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": 8.034896311469528e-07,
+            "C": -6.454627485630512e-05,
+            "W": 1.6191137878654843e-20,
+            "D": -1.3996395394271543e-05,
+            "F": 2.6653593819276187e-06,
+            "P": -9.683893244458178e-25
+          },
+          "band_energy_difference_closure_m2_s2": -1.5265652222949243e-10
+        },
+        {
+          "elapsed_s": 1200,
+          "retained_prominence": {
+            "3d_control": 0.0,
+            "3d_wind": 0.0,
+            "2d_control": 0.0,
+            "2d_wind": 0.0
+          },
+          "wind_effect_3d": 0.0,
+          "wind_effect_2d": 0.0,
+          "additional_3d_prominence_effect": 0.0,
+          "band_energy_change_difference_m2_s2": -9.15569775649516e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": 1.7576908095261795e-06,
+            "C": -7.931182726621221e-05,
+            "W": 1.3802470965885387e-19,
+            "D": -1.793082126762716e-05,
+            "F": 3.927970516301984e-06,
+            "P": 8.887032080919825e-25
+          },
+          "band_energy_difference_closure_m2_s2": 9.643059476469908e-12
+        }
+      ],
+      "interpretation": "Negative prominence difference means added wind reduces retained jet prominence more when 3D motions are allowed. Signed work differences decompose four realized trajectories; they are not independent causal effects of turning off individual tendencies. Late extrema rematching is qualified by the original profile histories."
     }
   ],
   "numerical_checks": [
     {
       "id": "3d-u0",
-      "status": "pending",
-      "missing_cases": [
-        "fine-3d-u0"
-      ]
+      "status": "complete",
+      "kind": "spatial",
+      "coarse": "3d-u0-reference",
+      "fine": "fine-3d-u0",
+      "grid_coarse": [
+        128,
+        64,
+        96
+      ],
+      "grid_fine": [
+        256,
+        128,
+        192
+      ],
+      "dt_coarse_s": 0.02,
+      "dt_fine_s": 0.02,
+      "onset_1percent_s": {
+        "coarse": null,
+        "fine": null
+      },
+      "onset_10percent_s": {
+        "coarse": null,
+        "fine": null
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "jet_prominence_fraction": {
+            "coarse": 0.5519803840820837,
+            "fine": 0.5505999637283936,
+            "fine_minus_coarse": -0.001380420353690126
+          },
+          "chi_3d": {
+            "coarse": 0.001169524361088798,
+            "fine": 0.0011655665211303947,
+            "fine_minus_coarse": -3.957839958403358e-06
+          },
+          "roll_rms_m_s": {
+            "coarse": 7.74863641117451e-06,
+            "fine": 7.78764478122984e-06,
+            "fine_minus_coarse": 3.900837005532951e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 4.960404322949713e-08,
+            "fine": 4.99941431210319e-08,
+            "fine_minus_coarse": 3.9009989153477516e-10
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -1.6384349577460175e-09,
+            "fine": -1.642597809466184e-09,
+            "fine_minus_coarse": -4.162851720166537e-12
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 5.614949717859956e-23,
+            "fine": 1.150249027970942e-22,
+            "fine_minus_coarse": 5.887540561849463e-23
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -1.0209221430941431e-07,
+            "fine": -1.021619183432051e-07,
+            "fine_minus_coarse": -6.97040337907895e-11
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 1.9065414522707945e-08,
+            "fine": 1.926124764449662e-08,
+            "fine_minus_coarse": 1.9583312178867383e-10
+          }
+        },
+        {
+          "elapsed_s": 400,
+          "jet_prominence_fraction": {
+            "coarse": 0.40381932412728666,
+            "fine": 0.40291543102553234,
+            "fine_minus_coarse": -0.0009038931017543161
+          },
+          "chi_3d": {
+            "coarse": 0.0014623943754743928,
+            "fine": 0.0014508760146212882,
+            "fine_minus_coarse": -1.1518360853104634e-05
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.130335358076239e-05,
+            "fine": 1.133258133884603e-05,
+            "fine_minus_coarse": 2.9227758083640875e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.8828645550188248e-08,
+            "fine": 1.7704088545949596e-08,
+            "fine_minus_coarse": -1.1245570042386517e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -3.145259473460453e-09,
+            "fine": -3.1538111229694803e-09,
+            "fine_minus_coarse": -8.551649509027408e-12
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.4597051724549883e-22,
+            "fine": 2.9749423246073324e-22,
+            "fine_minus_coarse": 1.5152371521523442e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -1.933941417273509e-07,
+            "fine": -1.9366487897598253e-07,
+            "fine_minus_coarse": -2.707372486316342e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 5.3780640082959546e-08,
+            "fine": 5.451276592482684e-08,
+            "fine_minus_coarse": 7.321258418672967e-10
+          }
+        },
+        {
+          "elapsed_s": 600,
+          "jet_prominence_fraction": {
+            "coarse": 0.2472184312265691,
+            "fine": 0.24652600797602647,
+            "fine_minus_coarse": -0.0006924232505426398
+          },
+          "chi_3d": {
+            "coarse": 0.0015835485708647458,
+            "fine": 0.0015814899149402008,
+            "fine_minus_coarse": -2.058655924545025e-06
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.598189037659632e-05,
+            "fine": 1.5853459514413346e-05,
+            "fine_minus_coarse": -1.284308621829742e-07
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.623773983745637e-08,
+            "fine": 1.4527488298854964e-08,
+            "fine_minus_coarse": -1.7102515386014049e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -4.581246793977406e-09,
+            "fine": -4.579718354010946e-09,
+            "fine_minus_coarse": 1.5284399664604865e-12
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 2.0719210178742521e-22,
+            "fine": 4.195574479113586e-22,
+            "fine_minus_coarse": 2.123653461239334e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -2.5485434563749777e-07,
+            "fine": -2.552301669034609e-07,
+            "fine_minus_coarse": -3.7582126596314615e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 8.496352525182316e-08,
+            "fine": 8.605297252357551e-08,
+            "fine_minus_coarse": 1.0894472717523472e-09
+          }
+        },
+        {
+          "elapsed_s": 800,
+          "jet_prominence_fraction": {
+            "coarse": 0.12124888482362822,
+            "fine": 0.12068082269438367,
+            "fine_minus_coarse": -0.0005680621292445537
+          },
+          "chi_3d": {
+            "coarse": 0.0021162461851527963,
+            "fine": 0.0020768273162140192,
+            "fine_minus_coarse": -3.94188689387771e-05
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.5209930036207945e-05,
+            "fine": 1.5137717737373798e-05,
+            "fine_minus_coarse": -7.221229883414731e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.0034585847677247e-08,
+            "fine": 8.945512158221742e-09,
+            "fine_minus_coarse": -1.0890736894555046e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -5.992212995356108e-09,
+            "fine": -5.963564752622102e-09,
+            "fine_minus_coarse": 2.864824273400596e-11
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 2.527007432610245e-22,
+            "fine": 5.125521377414335e-22,
+            "fine_minus_coarse": 2.5985139448040897e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -3.098589145157514e-07,
+            "fine": -3.1035773221502086e-07,
+            "fine_minus_coarse": -4.988176992694604e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 1.1830159202545127e-07,
+            "fine": 1.196626574475762e-07,
+            "fine_minus_coarse": 1.3610654221249364e-09
+          }
+        },
+        {
+          "elapsed_s": 1000,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.0016204779732122152,
+            "fine": 0.0015826750384317105,
+            "fine_minus_coarse": -3.780293478050471e-05
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.822414534317291e-05,
+            "fine": 1.8128842939896256e-05,
+            "fine_minus_coarse": -9.530240327665292e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.581220780909019e-08,
+            "fine": 1.4704893158216815e-08,
+            "fine_minus_coarse": -1.1073146508733735e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -7.071740296570589e-09,
+            "fine": -7.0189303264818796e-09,
+            "fine_minus_coarse": 5.280997008870935e-11
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 2.736031676931238e-22,
+            "fine": 5.5492573939637645e-22,
+            "fine_minus_coarse": 2.8132257170325265e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -3.5507508309548876e-07,
+            "fine": -3.5573291689060185e-07,
+            "fine_minus_coarse": -6.578337951130913e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 1.4876523449855636e-07,
+            "fine": 1.5032161208408624e-07,
+            "fine_minus_coarse": 1.5563775855298769e-09
+          }
+        },
+        {
+          "elapsed_s": 1200,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.0009757286397044121,
+            "fine": 0.0009492604894166927,
+            "fine_minus_coarse": -2.646815028771942e-05
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.5497991348765892e-05,
+            "fine": 1.5394523043309807e-05,
+            "fine_minus_coarse": -1.0346830545608537e-07
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.6350605711229143e-08,
+            "fine": 1.5429634353753297e-08,
+            "fine_minus_coarse": -9.209713574758454e-10
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -7.591110536890578e-09,
+            "fine": -7.523934723223844e-09,
+            "fine_minus_coarse": 6.717581366673399e-11
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 3.157675754493989e-22,
+            "fine": 6.373881978840082e-22,
+            "fine_minus_coarse": 3.2162062243460935e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -3.937768087642354e-07,
+            "fine": -3.945605465696299e-07,
+            "fine_minus_coarse": -7.837378053944895e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 1.7674138413801788e-07,
+            "fine": 1.784164075933311e-07,
+            "fine_minus_coarse": 1.6750234553132145e-09
+          }
+        }
+      ],
+      "coarse_eddy_vorticity_closure": 0.0010814211131016833,
+      "fine_eddy_vorticity_closure": 1.051185973746872e-05,
+      "interpretation": "Targeted numerical sensitivity, not an asymptotic convergence proof. Three-dimensional energy thresholds are descriptive onset markers. Refined-grid parent interpolation and subsequent nonlinear divergence remain part of this comparison."
     },
     {
       "id": "3d-u00075",
-      "status": "pending",
-      "missing_cases": [
-        "fine-3d-u00075"
-      ]
+      "status": "complete",
+      "kind": "spatial",
+      "coarse": "3d-u00075",
+      "fine": "fine-3d-u00075",
+      "grid_coarse": [
+        128,
+        64,
+        96
+      ],
+      "grid_fine": [
+        256,
+        128,
+        192
+      ],
+      "dt_coarse_s": 0.02,
+      "dt_fine_s": 0.02,
+      "onset_1percent_s": {
+        "coarse": null,
+        "fine": null
+      },
+      "onset_10percent_s": {
+        "coarse": null,
+        "fine": null
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "jet_prominence_fraction": {
+            "coarse": 0.4766977836876381,
+            "fine": 0.47555604464738777,
+            "fine_minus_coarse": -0.0011417390402503336
+          },
+          "chi_3d": {
+            "coarse": 0.0013962796080556235,
+            "fine": 0.001396589676470296,
+            "fine_minus_coarse": 3.100684146724753e-07
+          },
+          "roll_rms_m_s": {
+            "coarse": 7.65922504333136e-06,
+            "fine": 7.678381657573033e-06,
+            "fine_minus_coarse": 1.9156614241672178e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 9.515361803977971e-08,
+            "fine": 9.60923730925436e-08,
+            "fine_minus_coarse": 9.387550527638965e-10
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -1.6101362658120684e-09,
+            "fine": -1.6154051386887299e-09,
+            "fine_minus_coarse": -5.2688728766614645e-12
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 3.948716423360223e-23,
+            "fine": 7.724234391047747e-23,
+            "fine_minus_coarse": 3.775517967687524e-23
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.6259769635332057e-07,
+            "fine": 1.626961247650474e-07,
+            "fine_minus_coarse": 9.842841172682989e-11
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -3.4132070002327574e-08,
+            "fine": -3.4148085372078723e-08,
+            "fine_minus_coarse": -1.6015369751149708e-11
+          }
+        },
+        {
+          "elapsed_s": 400,
+          "jet_prominence_fraction": {
+            "coarse": 0.32238912414479026,
+            "fine": 0.32010533534379737,
+            "fine_minus_coarse": -0.002283788800992892
+          },
+          "chi_3d": {
+            "coarse": 0.001614477377454873,
+            "fine": 0.0016297698580753448,
+            "fine_minus_coarse": 1.529248062047189e-05
+          },
+          "roll_rms_m_s": {
+            "coarse": 9.769553521064769e-06,
+            "fine": 9.959162992872e-06,
+            "fine_minus_coarse": 1.8960947180723172e-07
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.6109291758309143e-07,
+            "fine": 1.584765422383794e-07,
+            "fine_minus_coarse": -2.6163753447120343e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -2.552536030508752e-09,
+            "fine": -2.5672429070475424e-09,
+            "fine_minus_coarse": -1.4706876538790528e-11
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 4.9143078839068206e-23,
+            "fine": 1.1055641573265133e-22,
+            "fine_minus_coarse": 6.141333689358311e-23
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 5.278513261118517e-07,
+            "fine": 5.284561159061189e-07,
+            "fine_minus_coarse": 6.047897942672945e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.409402732523241e-07,
+            "fine": -1.4096355871370742e-07,
+            "fine_minus_coarse": -2.3285461383320887e-11
+          }
+        },
+        {
+          "elapsed_s": 600,
+          "jet_prominence_fraction": {
+            "coarse": 0.35778284551641687,
+            "fine": 0.3543371531071014,
+            "fine_minus_coarse": -0.0034456924093154706
+          },
+          "chi_3d": {
+            "coarse": 0.0023520035361945055,
+            "fine": 0.002401885449324197,
+            "fine_minus_coarse": 4.9881913129691535e-05
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.8734589348022987e-05,
+            "fine": 1.869455742466101e-05,
+            "fine_minus_coarse": -4.0031923361977316e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 2.0711984474245371e-07,
+            "fine": 2.0871220757477057e-07,
+            "fine_minus_coarse": 1.5923628323168564e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -2.8919808395684803e-09,
+            "fine": -2.9183882148325934e-09,
+            "fine_minus_coarse": -2.640737526411309e-11
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 3.603560898029287e-22,
+            "fine": 7.376948043664897e-22,
+            "fine_minus_coarse": 3.7733871456356104e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 9.836253196168425e-07,
+            "fine": 9.861125680945334e-07,
+            "fine_minus_coarse": 2.4872484776908884e-09
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.959093527635493e-07,
+            "fine": -2.9636462417102424e-07,
+            "fine_minus_coarse": -4.5527140747493036e-10
+          }
+        },
+        {
+          "elapsed_s": 800,
+          "jet_prominence_fraction": {
+            "coarse": 0.10140502487978036,
+            "fine": 0.10166411734967162,
+            "fine_minus_coarse": 0.0002590924698912672
+          },
+          "chi_3d": {
+            "coarse": 0.002710774680392028,
+            "fine": 0.0027219255163867615,
+            "fine_minus_coarse": 1.1150835994733644e-05
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.7126183588288786e-05,
+            "fine": 1.70199556426919e-05,
+            "fine_minus_coarse": -1.0622794559688546e-07
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 2.4541638829323646e-07,
+            "fine": 2.46122946681193e-07,
+            "fine_minus_coarse": 7.065583879565141e-10
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -3.892049600244311e-09,
+            "fine": -3.901585602908939e-09,
+            "fine_minus_coarse": -9.536002664627427e-12
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 8.232581618429115e-22,
+            "fine": 1.4867721217185128e-21,
+            "fine_minus_coarse": 6.635139598756013e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.507873118912015e-06,
+            "fine": 1.511036065288851e-06,
+            "fine_minus_coarse": 3.1629463768359346e-09
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -4.996607363719353e-07,
+            "fine": -5.00467163706349e-07,
+            "fine_minus_coarse": -8.064273344137704e-10
+          }
+        },
+        {
+          "elapsed_s": 1000,
+          "jet_prominence_fraction": {
+            "coarse": 0.03599954772854625,
+            "fine": 0.03595132737238863,
+            "fine_minus_coarse": -4.822035615761888e-05
+          },
+          "chi_3d": {
+            "coarse": 0.001902884971770713,
+            "fine": 0.001894109913777783,
+            "fine_minus_coarse": -8.775057992930048e-06
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.841156012308567e-05,
+            "fine": 1.831769430457898e-05,
+            "fine_minus_coarse": -9.38658185066904e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 2.824508209177861e-07,
+            "fine": 2.8145534910542346e-07,
+            "fine_minus_coarse": -9.954718123626227e-10
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -4.229184002276557e-09,
+            "fine": -4.2255213177278906e-09,
+            "fine_minus_coarse": 3.6626845486660975e-12
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.3479393332283987e-21,
+            "fine": 2.474356406066406e-21,
+            "fine_minus_coarse": 1.1264170728380075e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 2.0487372726142053e-06,
+            "fine": 2.0526974825505666e-06,
+            "fine_minus_coarse": 3.960209936361314e-09
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -7.324563117203798e-07,
+            "fine": -7.336551408417757e-07,
+            "fine_minus_coarse": -1.1988291213958866e-09
+          }
+        },
+        {
+          "elapsed_s": 1200,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.002017468602738381,
+            "fine": 0.001986964325744714,
+            "fine_minus_coarse": -3.0504276993666927e-05
+          },
+          "roll_rms_m_s": {
+            "coarse": 9.324499344659066e-06,
+            "fine": 9.276162022977572e-06,
+            "fine_minus_coarse": -4.833732168149411e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.912163699834857e-07,
+            "fine": 1.933699305766388e-07,
+            "fine_minus_coarse": 2.1535605931531113e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -4.171326452632673e-09,
+            "fine": -4.171780713009571e-09,
+            "fine_minus_coarse": -4.5426037689811166e-13
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.685381561223101e-21,
+            "fine": 3.1426168165499243e-21,
+            "fine_minus_coarse": 1.4572352553268233e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 2.6287939761813204e-06,
+            "fine": 2.6335188455262107e-06,
+            "fine_minus_coarse": 4.724869344890255e-09
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -9.904069018822913e-07,
+            "fine": -9.920437476612902e-07,
+            "fine_minus_coarse": -1.6368457789988873e-09
+          }
+        }
+      ],
+      "coarse_eddy_vorticity_closure": 0.001276793537839578,
+      "fine_eddy_vorticity_closure": 1.1657670732541868e-05,
+      "interpretation": "Targeted numerical sensitivity, not an asymptotic convergence proof. Three-dimensional energy thresholds are descriptive onset markers. Refined-grid parent interpolation and subsequent nonlinear divergence remain part of this comparison."
     },
     {
       "id": "3d-u00125",
-      "status": "pending",
-      "missing_cases": [
-        "fine-3d-u00125"
-      ]
+      "status": "complete",
+      "kind": "spatial",
+      "coarse": "3d-u00125",
+      "fine": "fine-3d-u00125",
+      "grid_coarse": [
+        128,
+        64,
+        96
+      ],
+      "grid_fine": [
+        256,
+        128,
+        192
+      ],
+      "dt_coarse_s": 0.02,
+      "dt_fine_s": 0.02,
+      "onset_1percent_s": {
+        "coarse": 430.0,
+        "fine": 423.0
+      },
+      "onset_10percent_s": {
+        "coarse": 451.0,
+        "fine": 444.0
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "jet_prominence_fraction": {
+            "coarse": 0.41685681362107707,
+            "fine": 0.41550576419765906,
+            "fine_minus_coarse": -0.001351049423418016
+          },
+          "chi_3d": {
+            "coarse": 0.0014753320772373003,
+            "fine": 0.0014785858118790299,
+            "fine_minus_coarse": 3.2537346417295474e-06
+          },
+          "roll_rms_m_s": {
+            "coarse": 8.070784793198937e-06,
+            "fine": 8.089025357729842e-06,
+            "fine_minus_coarse": 1.8240564530905287e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 9.465564329509865e-08,
+            "fine": 9.60984950622374e-08,
+            "fine_minus_coarse": 1.4428517671387455e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -1.581062498930596e-09,
+            "fine": -1.5884725339584764e-09,
+            "fine_minus_coarse": -7.410035027880463e-12
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -1.0848200954526757e-22,
+            "fine": -2.3623891596220558e-22,
+            "fine_minus_coarse": -1.27756906416938e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.7007415016962975e-06,
+            "fine": 1.7035245604747618e-06,
+            "fine_minus_coarse": 2.783058778464311e-09
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.1295194596259239e-07,
+            "fine": -1.1299537829683973e-07,
+            "fine_minus_coarse": -4.343233424734162e-11
+          }
+        },
+        {
+          "elapsed_s": 400,
+          "jet_prominence_fraction": {
+            "coarse": 0.4514627137243126,
+            "fine": 0.44462273909545486,
+            "fine_minus_coarse": -0.00683997462885777
+          },
+          "chi_3d": {
+            "coarse": 0.0018051320904367636,
+            "fine": 0.002137824282708532,
+            "fine_minus_coarse": 0.00033269219227176827
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.3601290367046233e-05,
+            "fine": 1.8641511176726866e-05,
+            "fine_minus_coarse": 5.040220809680633e-06
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 2.3798522561772712e-07,
+            "fine": 2.3316530902361622e-07,
+            "fine_minus_coarse": -4.819916594110894e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -1.9851680417360437e-09,
+            "fine": -2.1130670161211793e-09,
+            "fine_minus_coarse": -1.2789897438513559e-10
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -2.7217527862228797e-21,
+            "fine": -5.371870589668185e-21,
+            "fine_minus_coarse": -2.6501178034453055e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 4.6577326101508615e-06,
+            "fine": 4.662366789525242e-06,
+            "fine_minus_coarse": 4.634179374380438e-09
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -4.129779856432454e-07,
+            "fine": -4.1320591867406606e-07,
+            "fine_minus_coarse": -2.279330308206857e-10
+          }
+        },
+        {
+          "elapsed_s": 600,
+          "jet_prominence_fraction": {
+            "coarse": 0.12764227033090514,
+            "fine": 0.12815938270835012,
+            "fine_minus_coarse": 0.0005171123774449782
+          },
+          "chi_3d": {
+            "coarse": 0.24742940402446528,
+            "fine": 0.27430829463502276,
+            "fine_minus_coarse": 0.026878890610557482
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.00030516105981750113,
+            "fine": 0.00040414963527218275,
+            "fine_minus_coarse": 9.898857545468162e-05
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -8.482065330892597e-08,
+            "fine": -6.871336108902899e-08,
+            "fine_minus_coarse": 1.610729221989698e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -8.927290682426873e-07,
+            "fine": -9.36957302123386e-07,
+            "fine_minus_coarse": -4.4228233880698764e-08
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -3.872440962384863e-21,
+            "fine": -6.874252645141576e-21,
+            "fine_minus_coarse": -3.0018116827567135e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 8.19640223456292e-06,
+            "fine": 8.204234318862334e-06,
+            "fine_minus_coarse": 7.832084299413521e-09
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -8.390691994208154e-07,
+            "fine": -8.393497462491523e-07,
+            "fine_minus_coarse": -2.8054682833688717e-10
+          }
+        },
+        {
+          "elapsed_s": 800,
+          "jet_prominence_fraction": {
+            "coarse": 0.1340983939752057,
+            "fine": 0.13757841601331908,
+            "fine_minus_coarse": 0.003480022038113373
+          },
+          "chi_3d": {
+            "coarse": 0.47540976104915655,
+            "fine": 0.48646924150915144,
+            "fine_minus_coarse": 0.011059480459994886
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.00046232678841158677,
+            "fine": 0.0004313782212187318,
+            "fine_minus_coarse": -3.0948567192854955e-05
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 2.4824832344420873e-08,
+            "fine": 5.4214746520558336e-08,
+            "fine_minus_coarse": 2.9389914176137463e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -2.43022663541182e-06,
+            "fine": -2.4100295388191893e-06,
+            "fine_minus_coarse": 2.0197096592630714e-08
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -1.3644334957359896e-21,
+            "fine": -2.1288009930933078e-21,
+            "fine_minus_coarse": -7.643674973573182e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.218237032971321e-05,
+            "fine": 1.2193259385237513e-05,
+            "fine_minus_coarse": 1.088905552430405e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.3520806787244179e-06,
+            "fine": -1.3523138188127867e-06,
+            "fine_minus_coarse": -2.331400883687813e-10
+          }
+        },
+        {
+          "elapsed_s": 1000,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.7076885107153956,
+            "fine": 0.7031567479480071,
+            "fine_minus_coarse": -0.004531762767388536
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0006791540667861842,
+            "fine": 0.0006785981279150266,
+            "fine_minus_coarse": -5.55938871157533e-07
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -2.472178997495095e-07,
+            "fine": -1.7538034143973791e-07,
+            "fine_minus_coarse": 7.183755830977159e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -4.8009400806034845e-06,
+            "fine": -4.846935770394667e-06,
+            "fine_minus_coarse": -4.599568979118213e-08
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 3.718867383872804e-21,
+            "fine": 6.977068795753938e-21,
+            "fine_minus_coarse": 3.258201411881134e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.6430380203707903e-05,
+            "fine": 1.6443171593357638e-05,
+            "fine_minus_coarse": 1.2791389649734522e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.920881468525522e-06,
+            "fine": -1.9210648940361027e-06,
+            "fine_minus_coarse": -1.8342551058079547e-10
+          }
+        },
+        {
+          "elapsed_s": 1200,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.8516522908943265,
+            "fine": 0.8431650839001089,
+            "fine_minus_coarse": -0.008487206994217567
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0008432989358886453,
+            "fine": 0.0009069279147314304,
+            "fine_minus_coarse": 6.362897884278518e-05
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -6.5645806954948e-07,
+            "fine": -5.853075135252219e-07,
+            "fine_minus_coarse": 7.115055602425813e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -8.278100980597581e-06,
+            "fine": -8.26544697682442e-06,
+            "fine_minus_coarse": 1.2654003773160676e-08
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 9.049456508917604e-21,
+            "fine": 1.7350593145041367e-20,
+            "fine_minus_coarse": 8.301136636123763e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 2.0774341632890412e-05,
+            "fine": 2.078312863116345e-05,
+            "fine_minus_coarse": 8.786998273038824e-09
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.5009922959438475e-06,
+            "fine": -2.5027212847975945e-06,
+            "fine_minus_coarse": -1.7289888537469916e-09
+          }
+        }
+      ],
+      "coarse_eddy_vorticity_closure": 0.0012313197878645323,
+      "fine_eddy_vorticity_closure": 1.101420749690323e-05,
+      "interpretation": "Targeted numerical sensitivity, not an asymptotic convergence proof. Three-dimensional energy thresholds are descriptive onset markers. Refined-grid parent interpolation and subsequent nonlinear divergence remain part of this comparison."
     },
     {
       "id": "3d-u002",
-      "status": "pending",
-      "missing_cases": [
-        "fine-3d-u002"
-      ]
+      "status": "complete",
+      "kind": "spatial",
+      "coarse": "3d-u002-reference",
+      "fine": "fine-3d-u002",
+      "grid_coarse": [
+        128,
+        64,
+        96
+      ],
+      "grid_fine": [
+        256,
+        128,
+        192
+      ],
+      "dt_coarse_s": 0.02,
+      "dt_fine_s": 0.02,
+      "onset_1percent_s": {
+        "coarse": 110.0,
+        "fine": 108.0
+      },
+      "onset_10percent_s": {
+        "coarse": 119.0,
+        "fine": 117.0
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "jet_prominence_fraction": {
+            "coarse": 0.3202762608004925,
+            "fine": 0.31846279541534295,
+            "fine_minus_coarse": -0.0018134653851495375
+          },
+          "chi_3d": {
+            "coarse": 0.5335579907695838,
+            "fine": 0.5290179637089925,
+            "fine_minus_coarse": -0.004540027060591312
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0004985243173703006,
+            "fine": 0.00046557274545996484,
+            "fine_minus_coarse": -3.295157191033574e-05
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -6.863619623189965e-08,
+            "fine": -1.3074036605939268e-07,
+            "fine_minus_coarse": -6.210416982749302e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -4.278838931937406e-06,
+            "fine": -4.219997993042159e-06,
+            "fine_minus_coarse": 5.884093889524715e-08
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -1.442148181500153e-22,
+            "fine": -1.1234184085757908e-22,
+            "fine_minus_coarse": 3.1872977292436215e-23
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.0183742861930538e-05,
+            "fine": 1.0216463918191357e-05,
+            "fine_minus_coarse": 3.2721056260819084e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.6022139519069577e-07,
+            "fine": -2.606629357009766e-07,
+            "fine_minus_coarse": -4.415405102808085e-10
+          }
+        },
+        {
+          "elapsed_s": 400,
+          "jet_prominence_fraction": {
+            "coarse": 0.24097325917660276,
+            "fine": 0.2258767279318707,
+            "fine_minus_coarse": -0.015096531244732064
+          },
+          "chi_3d": {
+            "coarse": 0.7876055859759553,
+            "fine": 0.8158521912114584,
+            "fine_minus_coarse": 0.02824660523550304
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0007700632377477525,
+            "fine": 0.0009356943736558169,
+            "fine_minus_coarse": 0.0001656311359080645
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -3.772736631127525e-07,
+            "fine": -4.0606543887959687e-07,
+            "fine_minus_coarse": -2.8791775766844353e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -1.5591694111993265e-05,
+            "fine": -1.618170305840667e-05,
+            "fine_minus_coarse": -5.900089464134032e-07
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.5530977215629693e-21,
+            "fine": 2.0947102368694335e-21,
+            "fine_minus_coarse": 5.416125153064642e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 2.6158339328321697e-05,
+            "fine": 2.6228711415671693e-05,
+            "fine_minus_coarse": 7.037208734999683e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -7.767738949413475e-07,
+            "fine": -7.764341328799801e-07,
+            "fine_minus_coarse": 3.3976206136737686e-10
+          }
+        },
+        {
+          "elapsed_s": 600,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.9079854016633551,
+            "fine": 0.8827860124726061,
+            "fine_minus_coarse": -0.025199389190748933
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.001247073944311522,
+            "fine": 0.0011516852531163588,
+            "fine_minus_coarse": -9.538869119516324e-05
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -5.842794844892467e-07,
+            "fine": -8.600595845297671e-07,
+            "fine_minus_coarse": -2.7578010004052035e-07
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -3.204672934843439e-05,
+            "fine": -3.180718948320142e-05,
+            "fine_minus_coarse": 2.3953986523296463e-07
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 5.572282774034858e-21,
+            "fine": 6.773625965111046e-21,
+            "fine_minus_coarse": 1.2013431910761875e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 4.305023106156708e-05,
+            "fine": 4.298301631281823e-05,
+            "fine_minus_coarse": -6.721474874885134e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.358274036778193e-06,
+            "fine": -1.3460515562961265e-06,
+            "fine_minus_coarse": 1.2222480482066444e-08
+          }
+        },
+        {
+          "elapsed_s": 800,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.9505036078111616,
+            "fine": 0.9307899156925457,
+            "fine_minus_coarse": -0.019713692118615955
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0016456380658229149,
+            "fine": 0.0010814389596293572,
+            "fine_minus_coarse": -0.0005641991061935577
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -7.504244707696798e-07,
+            "fine": -9.90568248741874e-07,
+            "fine_minus_coarse": -2.4014377797219416e-07
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -4.9300561495157335e-05,
+            "fine": -4.8562094067692946e-05,
+            "fine_minus_coarse": 7.384674274643887e-07
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 9.621584663307104e-21,
+            "fine": 1.163635571812015e-20,
+            "fine_minus_coarse": 2.014771054813046e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 5.911121777461417e-05,
+            "fine": 5.909308368586414e-05,
+            "fine_minus_coarse": -1.81340887500306e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.895701159187401e-06,
+            "fine": -1.8807316788663112e-06,
+            "fine_minus_coarse": 1.4969480321089756e-08
+          }
+        },
+        {
+          "elapsed_s": 1000,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.9322837212670793,
+            "fine": 0.9373831353142281,
+            "fine_minus_coarse": 0.005099414047148865
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0016343958096612418,
+            "fine": 0.0015372727670373257,
+            "fine_minus_coarse": -9.712304262391607e-05
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -6.928983983507768e-07,
+            "fine": -1.121311972384517e-06,
+            "fine_minus_coarse": -4.284135740337402e-07
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -6.444950162631536e-05,
+            "fine": -6.45532937866316e-05,
+            "fine_minus_coarse": -1.0379216031623393e-07
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.3117865395210018e-20,
+            "fine": 1.634841242516943e-20,
+            "fine_minus_coarse": 3.2305470299594107e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 7.456836389247496e-05,
+            "fine": 7.489207916627282e-05,
+            "fine_minus_coarse": 3.237152737978633e-07
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.4009846623969413e-06,
+            "fine": -2.3958656449159697e-06,
+            "fine_minus_coarse": 5.119017480971582e-09
+          }
+        },
+        {
+          "elapsed_s": 1200,
+          "jet_prominence_fraction": {
+            "coarse": 0.0852648136764293,
+            "fine": 0.0,
+            "fine_minus_coarse": -0.0852648136764293
+          },
+          "chi_3d": {
+            "coarse": 0.9353180163162976,
+            "fine": 0.9253638608934857,
+            "fine_minus_coarse": -0.009954155422811972
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.00215979032820202,
+            "fine": 0.0015732959197439548,
+            "fine_minus_coarse": -0.000586494408458065
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -8.960053857243153e-07,
+            "fine": -1.1577230590822207e-06,
+            "fine_minus_coarse": -2.6171767335790543e-07
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -7.89670545828231e-05,
+            "fine": -7.931935120093543e-05,
+            "fine_minus_coarse": -3.522966181123278e-07
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.63136306659099e-20,
+            "fine": 2.0785147051564652e-20,
+            "fine_minus_coarse": 4.471516385654751e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 8.996200285149426e-05,
+            "fine": 9.04431784702906e-05,
+            "fine_minus_coarse": 4.811756187963448e-07
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.9038195899299505e-06,
+            "fine": -2.9000812514275126e-06,
+            "fine_minus_coarse": 3.738338502437933e-09
+          }
+        }
+      ],
+      "coarse_eddy_vorticity_closure": 0.01323517230954308,
+      "fine_eddy_vorticity_closure": 4.729634048264829e-05,
+      "interpretation": "Targeted numerical sensitivity, not an asymptotic convergence proof. Three-dimensional energy thresholds are descriptive onset markers. Refined-grid parent interpolation and subsequent nonlinear divergence remain part of this comparison."
     },
     {
       "id": "2d-u0",
-      "status": "pending",
-      "missing_cases": [
-        "fine-2d-u0"
-      ]
+      "status": "complete",
+      "kind": "spatial",
+      "coarse": "2d-u0",
+      "fine": "fine-2d-u0",
+      "grid_coarse": [
+        128,
+        1,
+        96
+      ],
+      "grid_fine": [
+        256,
+        1,
+        192
+      ],
+      "dt_coarse_s": 0.02,
+      "dt_fine_s": 0.02,
+      "onset_1percent_s": {
+        "coarse": null,
+        "fine": null
+      },
+      "onset_10percent_s": {
+        "coarse": null,
+        "fine": null
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "jet_prominence_fraction": {
+            "coarse": 0.5646950173818309,
+            "fine": 0.5633896574144772,
+            "fine_minus_coarse": -0.001305359967353703
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 5.1167721875997496e-08,
+            "fine": 5.1567852592297584e-08,
+            "fine_minus_coarse": 4.0013071630008755e-10
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 4.769773707463429e-23,
+            "fine": 1.1556319306076252e-22,
+            "fine_minus_coarse": 6.786545598612822e-23
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -1.0257449533063122e-07,
+            "fine": -1.0264804152414825e-07,
+            "fine_minus_coarse": -7.35461935170237e-11
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 1.909099648570108e-08,
+            "fine": 1.9287344684170647e-08,
+            "fine_minus_coarse": 1.9634819846956604e-10
+          }
+        },
+        {
+          "elapsed_s": 400,
+          "jet_prominence_fraction": {
+            "coarse": 0.40986606614800397,
+            "fine": 0.40888097472821416,
+            "fine_minus_coarse": -0.0009850914197898075
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 2.0018252413939673e-08,
+            "fine": 1.88719832284097e-08,
+            "fine_minus_coarse": -1.146269185529973e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.4002678900931754e-22,
+            "fine": 2.9674545579700553e-22,
+            "fine_minus_coarse": 1.5671866678768799e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -1.9487232378687276e-07,
+            "fine": -1.9514577591139204e-07,
+            "fine_minus_coarse": -2.7345212451928644e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 5.402358909556249e-08,
+            "fine": 5.475970949929056e-08,
+            "fine_minus_coarse": 7.361204037280694e-10
+          }
+        },
+        {
+          "elapsed_s": 600,
+          "jet_prominence_fraction": {
+            "coarse": 0.2587716240870105,
+            "fine": 0.25803730535236397,
+            "fine_minus_coarse": -0.0007343187346465219
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.574861878164463e-08,
+            "fine": 1.4012577544747102e-08,
+            "fine_minus_coarse": -1.7360412368975275e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 2.0698286003686375e-22,
+            "fine": 4.244606468703233e-22,
+            "fine_minus_coarse": 2.1747778683345957e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -2.572839145276153e-07,
+            "fine": -2.576565906307878e-07,
+            "fine_minus_coarse": -3.7267610317249283e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 8.544121152655016e-08,
+            "fine": 8.653243421329363e-08,
+            "fine_minus_coarse": 1.0912226867434673e-09
+          }
+        },
+        {
+          "elapsed_s": 800,
+          "jet_prominence_fraction": {
+            "coarse": 0.12911963913105978,
+            "fine": 0.12842085244385648,
+            "fine_minus_coarse": -0.0006987866872033011
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 9.653811948161128e-09,
+            "fine": 8.546475411186068e-09,
+            "fine_minus_coarse": -1.1073365369750604e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 2.5002036024145908e-22,
+            "fine": 5.244672003442527e-22,
+            "fine_minus_coarse": 2.7444684010279366e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -3.1327872592226333e-07,
+            "fine": -3.137696365194354e-07,
+            "fine_minus_coarse": -4.9091059717209e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 1.1896718317437309e-07,
+            "fine": 1.2033016689879064e-07,
+            "fine_minus_coarse": 1.3629837244175579e-09
+          }
+        },
+        {
+          "elapsed_s": 1000,
+          "jet_prominence_fraction": {
+            "coarse": 0.058328729990784804,
+            "fine": 0.05797820841629931,
+            "fine_minus_coarse": -0.00035052157448549337
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.4583496915200415e-08,
+            "fine": 1.3457999723761888e-08,
+            "fine_minus_coarse": -1.1254971914385266e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 2.699542489499899e-22,
+            "fine": 5.762266851090869e-22,
+            "fine_minus_coarse": 3.0627243615909697e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -3.596478370998255e-07,
+            "fine": -3.6028236130701904e-07,
+            "fine_minus_coarse": -6.34524207193549e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 1.496049904679012e-07,
+            "fine": 1.51158783217284e-07,
+            "fine_minus_coarse": 1.5537927493828086e-09
+          }
+        },
+        {
+          "elapsed_s": 1200,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 1.4476268551837342e-08,
+            "fine": 1.3545582438984485e-08,
+            "fine_minus_coarse": -9.306861128528575e-10
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 3.095699071084029e-22,
+            "fine": 6.604579905659855e-22,
+            "fine_minus_coarse": 3.508880834575826e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": -3.992518430192157e-07,
+            "fine": -3.9998987025331656e-07,
+            "fine_minus_coarse": -7.380272341008832e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": 1.7771892370113858e-07,
+            "fine": 1.7938410845044543e-07,
+            "fine_minus_coarse": 1.665184749306853e-09
+          }
+        }
+      ],
+      "coarse_eddy_vorticity_closure": 0.0010812374638354562,
+      "fine_eddy_vorticity_closure": 1.0512102198555185e-05,
+      "interpretation": "Targeted numerical sensitivity, not an asymptotic convergence proof. Three-dimensional energy thresholds are descriptive onset markers. Refined-grid parent interpolation and subsequent nonlinear divergence remain part of this comparison."
     },
     {
       "id": "2d-u002",
-      "status": "pending",
-      "missing_cases": [
-        "fine-2d-u002"
-      ]
+      "status": "complete",
+      "kind": "spatial",
+      "coarse": "2d-u002",
+      "fine": "fine-2d-u002",
+      "grid_coarse": [
+        128,
+        1,
+        96
+      ],
+      "grid_fine": [
+        256,
+        1,
+        192
+      ],
+      "dt_coarse_s": 0.02,
+      "dt_fine_s": 0.02,
+      "onset_1percent_s": {
+        "coarse": null,
+        "fine": null
+      },
+      "onset_10percent_s": {
+        "coarse": null,
+        "fine": null
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "jet_prominence_fraction": {
+            "coarse": 0.42329288151807676,
+            "fine": 0.4191312952292967,
+            "fine_minus_coarse": -0.00416158628878005
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -1.1735852970532243e-08,
+            "fine": -1.045678743922059e-08,
+            "fine_minus_coarse": 1.279065531311652e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -4.946656495286779e-23,
+            "fine": -8.102080394510652e-22,
+            "fine_minus_coarse": -7.607414744981975e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.0697286068302868e-05,
+            "fine": 1.0719174184525446e-05,
+            "fine_minus_coarse": 2.188811622257764e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.877463041902157e-07,
+            "fine": -2.879493200704064e-07,
+            "fine_minus_coarse": -2.0301588019068068e-10
+          }
+        },
+        {
+          "elapsed_s": 400,
+          "jet_prominence_fraction": {
+            "coarse": 0.5272652107738559,
+            "fine": 0.5257472019110596,
+            "fine_minus_coarse": -0.001518008862796294
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 2.758485120390942e-07,
+            "fine": 2.8252255912257555e-07,
+            "fine_minus_coarse": 6.674047083481353e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -9.235685356116155e-21,
+            "fine": -1.9885831301078403e-20,
+            "fine_minus_coarse": -1.0650145944962248e-20
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 2.8655596431706377e-05,
+            "fine": 2.8694097857035836e-05,
+            "fine_minus_coarse": 3.850142532945867e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.0276393699071525e-06,
+            "fine": -1.028742393032934e-06,
+            "fine_minus_coarse": -1.103023125781571e-09
+          }
+        },
+        {
+          "elapsed_s": 600,
+          "jet_prominence_fraction": {
+            "coarse": 0.1374061247823844,
+            "fine": 0.1370479036318787,
+            "fine_minus_coarse": -0.0003582211505057109
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -6.742452594077646e-07,
+            "fine": -6.947325014856237e-07,
+            "fine_minus_coarse": -2.0487242077859104e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 2.649963611182391e-22,
+            "fine": 4.172751299635283e-21,
+            "fine_minus_coarse": 3.9077549385170436e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 4.859736464204663e-05,
+            "fine": 4.865101922821861e-05,
+            "fine_minus_coarse": 5.3654586171983495e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.1196805005590326e-06,
+            "fine": -2.121931841220644e-06,
+            "fine_minus_coarse": -2.2513406616115594e-09
+          }
+        },
+        {
+          "elapsed_s": 800,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -1.1875382938088628e-06,
+            "fine": -1.2167800980478177e-06,
+            "fine_minus_coarse": -2.9241804238954872e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.976425424541807e-20,
+            "fine": 3.627286401783567e-20,
+            "fine_minus_coarse": 1.6508609772417598e-20
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 6.878884565567493e-05,
+            "fine": 6.885294847725387e-05,
+            "fine_minus_coarse": 6.410282157894693e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -3.4754930924062374e-06,
+            "fine": -3.4788785922188425e-06,
+            "fine_minus_coarse": -3.3854998126051447e-09
+          }
+        },
+        {
+          "elapsed_s": 1000,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -1.909720603406443e-06,
+            "fine": -1.9260484969659246e-06,
+            "fine_minus_coarse": -1.63278935594818e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.8485586569992174e-21,
+            "fine": 1.7857549222729564e-22,
+            "fine_minus_coarse": -1.6699831647719218e-21
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 8.880580607263692e-05,
+            "fine": 8.888392511612795e-05,
+            "fine_minus_coarse": 7.811904349102911e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -5.055531407868144e-06,
+            "fine": -5.060387855710391e-06,
+            "fine_minus_coarse": -4.856447842247033e-09
+          }
+        },
+        {
+          "elapsed_s": 1200,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -2.8884832906162327e-06,
+            "fine": -2.917297920523169e-06,
+            "fine_minus_coarse": -2.8814629906936455e-08
+          },
+          "band_work_C_m2_s2": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -5.690545241408152e-20,
+            "fine": -1.1721649281460724e-19,
+            "fine_minus_coarse": -6.031104040052572e-20
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 0.00010827725780788895,
+            "fine": 0.00010836857041423408,
+            "fine_minus_coarse": 9.131260634513e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -6.820606807614865e-06,
+            "fine": -6.827084066872382e-06,
+            "fine_minus_coarse": -6.477259257517126e-09
+          }
+        }
+      ],
+      "coarse_eddy_vorticity_closure": 0.004389045719934158,
+      "fine_eddy_vorticity_closure": 3.6360035307983904e-05,
+      "interpretation": "Targeted numerical sensitivity, not an asymptotic convergence proof. Three-dimensional energy thresholds are descriptive onset markers. Refined-grid parent interpolation and subsequent nonlinear divergence remain part of this comparison."
     },
     {
       "id": "dt-3d-u00125",
-      "status": "pending",
-      "missing_cases": [
-        "fine-3d-u00125",
-        "fine-dt-3d-u00125"
-      ]
+      "status": "complete",
+      "kind": "time-step",
+      "coarse": "fine-3d-u00125",
+      "fine": "fine-dt-3d-u00125",
+      "grid_coarse": [
+        256,
+        128,
+        192
+      ],
+      "grid_fine": [
+        256,
+        128,
+        192
+      ],
+      "dt_coarse_s": 0.02,
+      "dt_fine_s": 0.01,
+      "onset_1percent_s": {
+        "coarse": 423.0,
+        "fine": 423.0
+      },
+      "onset_10percent_s": {
+        "coarse": 444.0,
+        "fine": 444.0
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "jet_prominence_fraction": {
+            "coarse": 0.41550576419765906,
+            "fine": 0.41550576417139323,
+            "fine_minus_coarse": -2.6265822850035647e-11
+          },
+          "chi_3d": {
+            "coarse": 0.0014785858118790299,
+            "fine": 0.0014785858118650421,
+            "fine_minus_coarse": -1.3987725908104487e-14
+          },
+          "roll_rms_m_s": {
+            "coarse": 8.089025357729842e-06,
+            "fine": 8.089025357858018e-06,
+            "fine_minus_coarse": 1.2817641371030974e-16
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 9.60984950622374e-08,
+            "fine": 9.609849506355415e-08,
+            "fine_minus_coarse": 1.3167524211762124e-18
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -1.5884725339584764e-09,
+            "fine": -1.5884725340378426e-09,
+            "fine_minus_coarse": -7.936611861808476e-20
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -2.3623891596220558e-22,
+            "fine": -2.361429508903422e-22,
+            "fine_minus_coarse": 9.596507186337735e-26
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.7035245604747618e-06,
+            "fine": 1.7035245604841569e-06,
+            "fine_minus_coarse": 9.395077692707886e-18
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.1299537829683973e-07,
+            "fine": -1.1299537829786783e-07,
+            "fine_minus_coarse": -1.0280994746197079e-18
+          }
+        },
+        {
+          "elapsed_s": 400,
+          "jet_prominence_fraction": {
+            "coarse": 0.44462273909545486,
+            "fine": 0.44462273909540256,
+            "fine_minus_coarse": -5.229150445984487e-14
+          },
+          "chi_3d": {
+            "coarse": 0.002137824282708532,
+            "fine": 0.002137824284785979,
+            "fine_minus_coarse": 2.077447155274248e-12
+          },
+          "roll_rms_m_s": {
+            "coarse": 1.8641511176726866e-05,
+            "fine": 1.8641511170481353e-05,
+            "fine_minus_coarse": -6.245512733284858e-15
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 2.3316530902361622e-07,
+            "fine": 2.3316530902766893e-07,
+            "fine_minus_coarse": 4.052708545477005e-18
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -2.1130670161211793e-09,
+            "fine": -2.1130670172750263e-09,
+            "fine_minus_coarse": -1.1538470577497129e-18
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -5.371870589668185e-21,
+            "fine": -5.376265300511452e-21,
+            "fine_minus_coarse": -4.394710843266976e-24
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 4.662366789525242e-06,
+            "fine": 4.6623667895828766e-06,
+            "fine_minus_coarse": 5.763466283002436e-17
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -4.1320591867406606e-07,
+            "fine": -4.13205918679061e-07,
+            "fine_minus_coarse": -4.994953289958609e-18
+          }
+        },
+        {
+          "elapsed_s": 600,
+          "jet_prominence_fraction": {
+            "coarse": 0.12815938270835012,
+            "fine": 0.12815938252571402,
+            "fine_minus_coarse": -1.8263610068736114e-10
+          },
+          "chi_3d": {
+            "coarse": 0.27430829463502276,
+            "fine": 0.2743082989546951,
+            "fine_minus_coarse": 4.319672342045777e-09
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.00040414963527218275,
+            "fine": 0.0004041496256097222,
+            "fine_minus_coarse": -9.662460556062596e-12
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -6.871336108902899e-08,
+            "fine": -6.871335703897251e-08,
+            "fine_minus_coarse": 4.050056472084262e-15
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -9.36957302123386e-07,
+            "fine": -9.369573229475115e-07,
+            "fine_minus_coarse": -2.0824125437262156e-14
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -6.874252645141576e-21,
+            "fine": -6.878430951868347e-21,
+            "fine_minus_coarse": -4.178306726770663e-24
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 8.204234318862334e-06,
+            "fine": 8.204234318517241e-06,
+            "fine_minus_coarse": -3.450930811726635e-16
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -8.393497462491523e-07,
+            "fine": -8.393497461472568e-07,
+            "fine_minus_coarse": 1.0189552245585057e-16
+          }
+        },
+        {
+          "elapsed_s": 800,
+          "jet_prominence_fraction": {
+            "coarse": 0.13757841601331908,
+            "fine": 0.13757841392116715,
+            "fine_minus_coarse": -2.092151923926977e-09
+          },
+          "chi_3d": {
+            "coarse": 0.48646924150915144,
+            "fine": 0.48646910633798646,
+            "fine_minus_coarse": -1.351711649832943e-07
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0004313782212187318,
+            "fine": 0.00043137764636276543,
+            "fine_minus_coarse": -5.748559663769186e-10
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": 5.4214746520558336e-08,
+            "fine": 5.421467108924642e-08,
+            "fine_minus_coarse": -7.543131191711087e-14
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -2.4100295388191893e-06,
+            "fine": -2.4100291581660713e-06,
+            "fine_minus_coarse": 3.806531179908893e-13
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -2.1288009930933078e-21,
+            "fine": -2.123855561455613e-21,
+            "fine_minus_coarse": 4.9454316376948954e-24
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.2193259385237513e-05,
+            "fine": 1.2193259374308754e-05,
+            "fine_minus_coarse": -1.0928759592719779e-14
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.3523138188127867e-06,
+            "fine": -1.352313819380638e-06,
+            "fine_minus_coarse": -5.678513113557566e-16
+          }
+        },
+        {
+          "elapsed_s": 1000,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.7031567479480071,
+            "fine": 0.703143141836647,
+            "fine_minus_coarse": -1.360611136014267e-05
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0006785981279150266,
+            "fine": 0.0006786117620587677,
+            "fine_minus_coarse": 1.3634143741086957e-08
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -1.7538034143973791e-07,
+            "fine": -1.7537854181439656e-07,
+            "fine_minus_coarse": 1.7996253413576055e-12
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -4.846935770394667e-06,
+            "fine": -4.846917643865043e-06,
+            "fine_minus_coarse": 1.8126529623339036e-11
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 6.977068795753938e-21,
+            "fine": 6.979869104421795e-21,
+            "fine_minus_coarse": 2.8003086678564826e-24
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.6443171593357638e-05,
+            "fine": 1.6443171833764616e-05,
+            "fine_minus_coarse": 2.4040697817889756e-13
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.9210648940361027e-06,
+            "fine": -1.9210650101678383e-06,
+            "fine_minus_coarse": -1.1613173564342747e-13
+          }
+        },
+        {
+          "elapsed_s": 1200,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.8431650839001089,
+            "fine": 0.842822605180627,
+            "fine_minus_coarse": -0.0003424787194818979
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0009069279147314304,
+            "fine": 0.0009057139492350875,
+            "fine_minus_coarse": -1.2139654963429398e-06
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -5.853075135252219e-07,
+            "fine": -5.858364236822151e-07,
+            "fine_minus_coarse": -5.289101569931979e-10
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -8.26544697682442e-06,
+            "fine": -8.265514894724018e-06,
+            "fine_minus_coarse": -6.791789959789392e-11
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.7350593145041367e-20,
+            "fine": 1.735196895175226e-20,
+            "fine_minus_coarse": 1.375806710893196e-24
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 2.078312863116345e-05,
+            "fine": 2.078306798433723e-05,
+            "fine_minus_coarse": -6.064682622132392e-11
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.5027212847975945e-06,
+            "fine": -2.502721494105338e-06,
+            "fine_minus_coarse": -2.0930774339211408e-13
+          }
+        }
+      ],
+      "coarse_eddy_vorticity_closure": 1.101420749690323e-05,
+      "fine_eddy_vorticity_closure": 1.1014483425400052e-05,
+      "interpretation": "Targeted numerical sensitivity, not an asymptotic convergence proof. Three-dimensional energy thresholds are descriptive onset markers. Refined-grid parent interpolation and subsequent nonlinear divergence remain part of this comparison."
     },
     {
       "id": "dt-3d-u002",
-      "status": "pending",
-      "missing_cases": [
-        "fine-3d-u002",
-        "fine-dt-3d-u002"
-      ]
+      "status": "complete",
+      "kind": "time-step",
+      "coarse": "fine-3d-u002",
+      "fine": "fine-dt-3d-u002",
+      "grid_coarse": [
+        256,
+        128,
+        192
+      ],
+      "grid_fine": [
+        256,
+        128,
+        192
+      ],
+      "dt_coarse_s": 0.02,
+      "dt_fine_s": 0.01,
+      "onset_1percent_s": {
+        "coarse": 108.0,
+        "fine": 108.0
+      },
+      "onset_10percent_s": {
+        "coarse": 117.0,
+        "fine": 117.0
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "jet_prominence_fraction": {
+            "coarse": 0.31846279541534295,
+            "fine": 0.3184629164482079,
+            "fine_minus_coarse": 1.2103286495257493e-07
+          },
+          "chi_3d": {
+            "coarse": 0.5290179637089925,
+            "fine": 0.5290259656343544,
+            "fine_minus_coarse": 8.00192536198896e-06
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.00046557274545996484,
+            "fine": 0.000465580058413554,
+            "fine_minus_coarse": 7.312953589151856e-09
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -1.3074036605939268e-07,
+            "fine": -1.3073510424343287e-07,
+            "fine_minus_coarse": 5.2618159598078155e-12
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -4.219997993042159e-06,
+            "fine": -4.220028515860584e-06,
+            "fine_minus_coarse": -3.0522818425648816e-11
+          },
+          "band_work_W_m2_s2": {
+            "coarse": -1.1234184085757908e-22,
+            "fine": -1.1505563336941587e-22,
+            "fine_minus_coarse": -2.7137925118367964e-24
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 1.0216463918191357e-05,
+            "fine": 1.0216461783626759e-05,
+            "fine_minus_coarse": -2.134564597763822e-12
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.606629357009766e-07,
+            "fine": -2.6066286726701266e-07,
+            "fine_minus_coarse": 6.843396391878904e-14
+          }
+        },
+        {
+          "elapsed_s": 400,
+          "jet_prominence_fraction": {
+            "coarse": 0.2258767279318707,
+            "fine": 0.2252752145595423,
+            "fine_minus_coarse": -0.0006015133723283883
+          },
+          "chi_3d": {
+            "coarse": 0.8158521912114584,
+            "fine": 0.8115299384615327,
+            "fine_minus_coarse": -0.0043222527499257035
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0009356943736558169,
+            "fine": 0.0010158504594570766,
+            "fine_minus_coarse": 8.015608580125961e-05
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -4.0606543887959687e-07,
+            "fine": -4.0900091310567287e-07,
+            "fine_minus_coarse": -2.935474226075997e-09
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -1.618170305840667e-05,
+            "fine": -1.6178901646127823e-05,
+            "fine_minus_coarse": 2.801412278845614e-09
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 2.0947102368694335e-21,
+            "fine": 2.1312615539514005e-21,
+            "fine_minus_coarse": 3.6551317081967034e-23
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 2.6228711415671693e-05,
+            "fine": 2.622961885375819e-05,
+            "fine_minus_coarse": 9.074380864951368e-10
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -7.764341328799801e-07,
+            "fine": -7.764932032000388e-07,
+            "fine_minus_coarse": -5.90703200586815e-11
+          }
+        },
+        {
+          "elapsed_s": 600,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.8827860124726061,
+            "fine": 0.9108833432873524,
+            "fine_minus_coarse": 0.028097330814746302
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0011516852531163588,
+            "fine": 0.0011677268115447522,
+            "fine_minus_coarse": 1.604155842839343e-05
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -8.600595845297671e-07,
+            "fine": -5.82764552224793e-07,
+            "fine_minus_coarse": 2.7729503230497406e-07
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -3.180718948320142e-05,
+            "fine": -3.244870896235e-05,
+            "fine_minus_coarse": -6.415194791485769e-07
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 6.773625965111046e-21,
+            "fine": 6.645705418014194e-21,
+            "fine_minus_coarse": -1.279205470968516e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 4.298301631281823e-05,
+            "fine": 4.294666338105803e-05,
+            "fine_minus_coarse": -3.6352931760196634e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.3460515562961265e-06,
+            "fine": -1.3441088526880674e-06,
+            "fine_minus_coarse": 1.942703608059053e-09
+          }
+        },
+        {
+          "elapsed_s": 800,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.0,
+            "fine_minus_coarse": 0.0
+          },
+          "chi_3d": {
+            "coarse": 0.9307899156925457,
+            "fine": 0.9411985567924392,
+            "fine_minus_coarse": 0.01040864109989359
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0010814389596293572,
+            "fine": 0.0013604097495975346,
+            "fine_minus_coarse": 0.0002789707899681774
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -9.90568248741874e-07,
+            "fine": -6.862437571321044e-07,
+            "fine_minus_coarse": 3.043244916097695e-07
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -4.8562094067692946e-05,
+            "fine": -4.909626958325806e-05,
+            "fine_minus_coarse": -5.341755155651134e-07
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.163635571812015e-20,
+            "fine": 1.1912562158796306e-20,
+            "fine_minus_coarse": 2.762064406761559e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 5.909308368586414e-05,
+            "fine": 5.90302947485088e-05,
+            "fine_minus_coarse": -6.278893735533927e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -1.8807316788663112e-06,
+            "fine": -1.8765794271659191e-06,
+            "fine_minus_coarse": 4.152251700392069e-09
+          }
+        },
+        {
+          "elapsed_s": 1000,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.07125928759682919,
+            "fine_minus_coarse": 0.07125928759682919
+          },
+          "chi_3d": {
+            "coarse": 0.9373831353142281,
+            "fine": 0.9326880537713158,
+            "fine_minus_coarse": -0.004695081542912316
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0015372727670373257,
+            "fine": 0.001864663260227652,
+            "fine_minus_coarse": 0.00032739049319032635
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -1.121311972384517e-06,
+            "fine": -6.464448818360551e-07,
+            "fine_minus_coarse": 4.748670905484618e-07
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -6.45532937866316e-05,
+            "fine": -6.420690007504679e-05,
+            "fine_minus_coarse": 3.463937115848046e-07
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 1.634841242516943e-20,
+            "fine": 1.638030681759888e-20,
+            "fine_minus_coarse": 3.189439242945044e-23
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 7.489207916627282e-05,
+            "fine": 7.46372540401199e-05,
+            "fine_minus_coarse": -2.5482512615292456e-07
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.3958656449159697e-06,
+            "fine": -2.3824480397082277e-06,
+            "fine_minus_coarse": 1.3417605207741995e-08
+          }
+        },
+        {
+          "elapsed_s": 1200,
+          "jet_prominence_fraction": {
+            "coarse": 0.0,
+            "fine": 0.07080823250056664,
+            "fine_minus_coarse": 0.07080823250056664
+          },
+          "chi_3d": {
+            "coarse": 0.9253638608934857,
+            "fine": 0.9014178434292118,
+            "fine_minus_coarse": -0.023946017464273828
+          },
+          "roll_rms_m_s": {
+            "coarse": 0.0015732959197439548,
+            "fine": 0.0010045053111547371,
+            "fine_minus_coarse": -0.0005687906085892177
+          },
+          "band_work_A0_m2_s2": {
+            "coarse": -1.1577230590822207e-06,
+            "fine": -7.603506727456388e-07,
+            "fine_minus_coarse": 3.9737238633658187e-07
+          },
+          "band_work_C_m2_s2": {
+            "coarse": -7.931935120093543e-05,
+            "fine": -7.915760799438201e-05,
+            "fine_minus_coarse": 1.6174320655341565e-07
+          },
+          "band_work_W_m2_s2": {
+            "coarse": 2.0785147051564652e-20,
+            "fine": 2.0646230222998063e-20,
+            "fine_minus_coarse": -1.3891682856658912e-22
+          },
+          "band_work_D_m2_s2": {
+            "coarse": 9.04431784702906e-05,
+            "fine": 9.035199671617825e-05,
+            "fine_minus_coarse": -9.118175411235358e-08
+          },
+          "band_work_F_m2_s2": {
+            "coarse": -2.9000812514275126e-06,
+            "fine": -2.899284147335987e-06,
+            "fine_minus_coarse": 7.971040915254409e-10
+          }
+        }
+      ],
+      "coarse_eddy_vorticity_closure": 4.729634048264829e-05,
+      "fine_eddy_vorticity_closure": 4.470576234200582e-05,
+      "interpretation": "Targeted numerical sensitivity, not an asymptotic convergence proof. Three-dimensional energy thresholds are descriptive onset markers. Refined-grid parent interpolation and subsequent nonlinear divergence remain part of this comparison."
     }
   ]
 }
