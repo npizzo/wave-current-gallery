@@ -1,0 +1,226 @@
+{
+  "interventions": [
+    {
+      "id": "base-strong",
+      "status": "complete",
+      "cases": {
+        "3d_control": "3d-u0-reference",
+        "3d_wind": "3d-u002-reference",
+        "2d_control": "2d-u0",
+        "2d_wind": "2d-u002"
+      },
+      "windows": [
+        {
+          "elapsed_s": 200,
+          "retained_prominence": {
+            "3d_control": 0.5519803840820837,
+            "3d_wind": 0.3202762608004925,
+            "2d_control": 0.5646950173818309,
+            "2d_wind": 0.42329288151807676
+          },
+          "wind_effect_3d": -0.23170412328159123,
+          "wind_effect_2d": -0.14140213586375416,
+          "additional_3d_prominence_effect": -0.09030198741783707,
+          "band_energy_change_difference_m2_s2": -4.8189956475036915e-06,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -5.533666461486704e-08,
+            "C": -4.27720049697966e-06,
+            "W": -1.0320001330111278e-22,
+            "D": -5.140254873935479e-07,
+            "F": 2.755049096251306e-08,
+            "P": -1.2809475362901663e-26
+          },
+          "band_energy_difference_closure_m2_s2": 1.651052187051367e-11
+        },
+        {
+          "elapsed_s": 400,
+          "retained_prominence": {
+            "3d_control": 0.40381932412728666,
+            "3d_wind": 0.24097325917660276,
+            "2d_control": 0.40986606614800397,
+            "2d_wind": 0.5272652107738559
+          },
+          "wind_effect_3d": -0.1628460649506839,
+          "wind_effect_2d": 0.11739914462585194,
+          "additional_3d_prominence_effect": -0.28024520957653587,
+          "band_energy_change_difference_m2_s2": -1.8488048744004665e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": -6.519325682880953e-07,
+            "C": -1.5588548852519806e-05,
+            "W": 1.0782839349442942e-20,
+            "D": -2.498735285444204e-06,
+            "F": 2.5110842397840784e-07,
+            "P": -5.352079819695907e-24
+          },
+          "band_energy_difference_closure_m2_s2": 5.953826902251481e-11
+        },
+        {
+          "elapsed_s": 600,
+          "retained_prominence": {
+            "3d_control": 0.2472184312265691,
+            "3d_wind": 0.0,
+            "2d_control": 0.2587716240870105,
+            "2d_wind": 0.1374061247823844
+          },
+          "wind_effect_3d": -0.2472184312265691,
+          "wind_effect_2d": -0.12136549930462609,
+          "additional_3d_prominence_effect": -0.12585293192194302,
+          "band_energy_change_difference_m2_s2": -3.674037016213421e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": 8.947665386270619e-08,
+            "C": -3.204214810164041e-05,
+            "W": 5.307077171166057e-21,
+            "D": -5.54956314936967e-06,
+            "F": 7.618841500555668e-07,
+            "P": -4.121721477046538e-24
+          },
+          "band_energy_difference_closure_m2_s2": -1.9715042410563786e-11
+        },
+        {
+          "elapsed_s": 800,
+          "retained_prominence": {
+            "3d_control": 0.12124888482362822,
+            "3d_wind": 0.0,
+            "2d_control": 0.12911963913105978,
+            "2d_wind": 0.0
+          },
+          "wind_effect_3d": -0.12124888482362822,
+          "wind_effect_2d": -0.12911963913105978,
+          "additional_3d_prominence_effect": 0.00787075430743156,
+          "band_energy_change_difference_m2_s2": -5.695849136689465e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": 4.3673304913966707e-07,
+            "C": -4.929456928216198e-05,
+            "W": -1.0145349965130533e-20,
+            "D": -9.681047692467269e-06,
+            "F": 1.5804575243677584e-06,
+            "P": -3.5007313507661e-24
+          },
+          "band_energy_difference_closure_m2_s2": -6.496577281261138e-11
+        },
+        {
+          "elapsed_s": 1000,
+          "retained_prominence": {
+            "3d_control": 0.0,
+            "3d_wind": 0.0,
+            "2d_control": 0.058328729990784804,
+            "2d_wind": 0.0
+          },
+          "wind_effect_3d": 0.0,
+          "wind_effect_2d": -0.058328729990784804,
+          "additional_3d_prominence_effect": 0.058328729990784804,
+          "band_energy_change_difference_m2_s2": -7.481358601952726e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": 1.2155934941617765e-06,
+            "C": -6.44424298860188e-05,
+            "W": 1.1265657819467667e-20,
+            "D": -1.4242014934166293e-05,
+            "F": 2.655386501440547e-06,
+            "P": -4.075395770170914e-24
+          },
+          "band_energy_difference_closure_m2_s2": -1.2119494450168414e-10
+        },
+        {
+          "elapsed_s": 1200,
+          "retained_prominence": {
+            "3d_control": 0.0,
+            "3d_wind": 0.0852648136764293,
+            "2d_control": 0.0,
+            "2d_wind": 0.0
+          },
+          "wind_effect_3d": 0.0852648136764293,
+          "wind_effect_2d": 0.0,
+          "additional_3d_prominence_effect": 0.0852648136764293,
+          "band_energy_change_difference_m2_s2": -9.137173168253905e-05,
+          "signed_band_work_differences_m2_s2": {
+            "A0": 1.9906035677325255e-06,
+            "C": -7.895946347228621e-05,
+            "W": 7.321288541165043e-20,
+            "D": -1.8320729990649662e-05,
+            "F": 3.917764757248035e-06,
+            "P": -4.848291385947009e-24
+          },
+          "band_energy_difference_closure_m2_s2": 9.345541618951524e-11
+        }
+      ],
+      "interpretation": "Negative prominence difference means added wind reduces retained jet prominence more when 3D motions are allowed. Signed work differences decompose four realized trajectories; they are not independent causal effects of turning off individual tendencies. Late extrema rematching is qualified by the original profile histories."
+    },
+    {
+      "id": "base-intermediate",
+      "status": "pending",
+      "missing_cases": [
+        "base-2d-u00125"
+      ]
+    },
+    {
+      "id": "fine-strong",
+      "status": "pending",
+      "missing_cases": [
+        "fine-3d-u0",
+        "fine-3d-u002",
+        "fine-2d-u0",
+        "fine-2d-u002"
+      ]
+    }
+  ],
+  "numerical_checks": [
+    {
+      "id": "3d-u0",
+      "status": "pending",
+      "missing_cases": [
+        "fine-3d-u0"
+      ]
+    },
+    {
+      "id": "3d-u00075",
+      "status": "pending",
+      "missing_cases": [
+        "fine-3d-u00075"
+      ]
+    },
+    {
+      "id": "3d-u00125",
+      "status": "pending",
+      "missing_cases": [
+        "fine-3d-u00125"
+      ]
+    },
+    {
+      "id": "3d-u002",
+      "status": "pending",
+      "missing_cases": [
+        "fine-3d-u002"
+      ]
+    },
+    {
+      "id": "2d-u0",
+      "status": "pending",
+      "missing_cases": [
+        "fine-2d-u0"
+      ]
+    },
+    {
+      "id": "2d-u002",
+      "status": "pending",
+      "missing_cases": [
+        "fine-2d-u002"
+      ]
+    },
+    {
+      "id": "dt-3d-u00125",
+      "status": "pending",
+      "missing_cases": [
+        "fine-3d-u00125",
+        "fine-dt-3d-u00125"
+      ]
+    },
+    {
+      "id": "dt-3d-u002",
+      "status": "pending",
+      "missing_cases": [
+        "fine-3d-u002",
+        "fine-dt-3d-u002"
+      ]
+    }
+  ]
+}

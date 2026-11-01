@@ -1,0 +1,221 @@
+"format" = "shear-budget-parent-approval-v1"
+"campaign" = "unity-shear-budget-study"
+"approved_parent_source_version" = "da81ab96d7e51fb0"
+
+["sources"]
+
+["sources"."jets-re300-tiny-s1-t600"]
+"snapshot_json_sha256" = "042d9411b62f1d160f1a56eabccbed3979ca3165a1697ed8e2924af79b47d59b"
+"snapshot_metadata_sha256" = "b417e05f7b35574236f5d4f65df1bbae3edf667dd9ba757b479b2f2d0ab97065"
+"parent_configuration_sha256" = "c567a95d2ff8f7d43e8743bca66fa010ffb4ac8d5f4935e8bde3cf431351cb46"
+"snapshot_time" = 600.0
+"expected_maintain_background" = true
+"expected_parent_ustar" = 0.0
+"allowed_branches" = [{ "kind" = "full", "ustar" = 0.0 }, { "kind" = "full", "ustar" = 0.00075 }, { "kind" = "full", "ustar" = 0.00125 }, { "kind" = "full", "ustar" = 0.002 }, { "kind" = "mean", "ustar" = 0.0 }, { "kind" = "mean", "ustar" = 0.002 }, { "kind" = "full", "ustar" = 0.001 }, { "kind" = "full", "ustar" = 0.0011 }, { "kind" = "full", "ustar" = 0.0015 }, { "kind" = "mean", "ustar" = 0.00125 }]
+"parent_case" = "anchor-re300-tiny-s1"
+"parent_snapshot_name" = "t00600.000000.json"
+"validation_reference_source_version" = "95b83aebce7ae34a"
+"validation_reference_case" = "central-re300-tiny-s1"
+"cross_campaign_t600_Uc_Wc_Q_max_difference" = 0.0
+"metadata_translation" = "legacy-native-json-plus-original-configuration-v1"
+
+["sources"."jets-re300-tiny-s1-t600"."source_hashes"]
+"initial_conditions.jl" = "3a8f83da2f569bd311b9765baef9b8cd32ce70871da929bf7a38496882e526fc"
+"jet_diagnostics.jl" = "136071415aee9b9b1d187e9f06aad7325dde09ad39ee8e92a9a18733364be05e"
+"regime_diagnostics.jl" = "c3ea43fd36dab77051b2ba48a990d465f09ee0cbfce1ce5f0fe45e49541be3b7"
+"regime_physics.jl" = "cd097ff947b3d4d5a36729f1f93325f13e2fd192063a0839a57f142ce831202f"
+"run_jet.jl" = "f963abf0de7bf3175bec357c639c5d0e5523f74a9bbedc92292cbb38ee580722"
+"vortex_modes.jl" = "020d0f191d8f39ca71ad5b8d0445a2c9f057be83aee292c520b89c382781ffa4"
+
+["sources"."jets-re300-tiny-s1-t600"."parameters"]
+"nx" = 128
+"ny" = 64
+"nz" = 96
+"lx" = 2.0
+"ly" = 1.0
+"h" = 0.5
+"k" = 6.1
+"alpha" = 0.75
+"uoffset" = 0.0
+"nu" = 3.3333333333333333e-06
+"Sref" = 0.036649447248308646
+"waves" = 1
+"ustar" = 0.0
+"maintain" = true
+"advection_name" = "Centered2"
+
+["sources"."jets-re300-tiny-s1-t600"."arrays"]
+
+["sources"."jets-re300-tiny-s1-t600"."arrays"."u"]
+"file" = "t00600.000000_u.bin"
+"shape" = [128, 64, 96]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Face", "Center", "Center"]
+"sha256" = "a7ccbffdc81e5e72204c13b85e1109bc2c86c7916b008da945318231a01d2206"
+
+["sources"."jets-re300-tiny-s1-t600"."arrays"."v"]
+"file" = "t00600.000000_v.bin"
+"shape" = [128, 64, 96]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Center", "Face", "Center"]
+"sha256" = "72a4fbf9fef451b7d36f29fef939f4ec6c8257c7eb9112f0cc98cb63d8fbd427"
+
+["sources"."jets-re300-tiny-s1-t600"."arrays"."w"]
+"file" = "t00600.000000_w.bin"
+"shape" = [128, 64, 97]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Center", "Center", "Face"]
+"sha256" = "aa9bfa52b6f0252344d0aa9b4340db0d581ee13c59f834019fbde643829a0510"
+
+["sources"."jets-re300-tiny-s1-t600"."validation_reference_files"]
+"mean_00600.000000.json" = "902d426b49b06b7070f8080adbb6928c2f9e9881327a8a83c43bba0bcda90572"
+"mean_00600.000000_Uc.bin" = "484a26e5bd9d6464a59d4fa009624e5bed91a4b8c7a6a20031d3e7c33662da02"
+"mean_00600.000000_Wc.bin" = "0409b6055a59e3455cac8ea0d9bc9576ce5ceab4a3a470400e280939ce8ee49a"
+"mean_00600.000000_Q.bin" = "21ee830df214851f4b72b12799cfe06abb0b92594ee24d1bda24c94dc2e4cb25"
+"mean_00620.000000.json" = "e5981a4403c5a58f73f8c7a89320a6731d9edd05187da11ebcaf3becbde5b04a"
+"mean_00620.000000_Uc.bin" = "3cc5c1cbb1f61af910c8de043edda1db6847a12acc1d2ed855e8000f1c8a9c4b"
+"mean_00620.000000_Wc.bin" = "a65087ee42b5eb2e7ef02f48118c374ffb6a98b913f56222d66e39f256715fae"
+"mean_00620.000000_Q.bin" = "8c0ec0d5786635dc405ffdce31dee557d7d3e65cf99757c07931e032e7eb3bbe"
+
+["sources"."jets-re300-tiny-s1-t600-fine"]
+"snapshot_json_sha256" = "b2a83f5594f4cc6a3e3ded250e0fbc65f3700b0d7e6d1dec0257640e35f6f63b"
+"snapshot_metadata_sha256" = "0d2e9fd04310618fa5ce698633f14926a74c23f8db91750b2e06d67f1bc3dff8"
+"parent_configuration_sha256" = "c567a95d2ff8f7d43e8743bca66fa010ffb4ac8d5f4935e8bde3cf431351cb46"
+"snapshot_time" = 600.0
+"expected_maintain_background" = true
+"expected_parent_ustar" = 0.0
+"allowed_branches" = [{ "kind" = "full", "ustar" = 0.0 }, { "kind" = "full", "ustar" = 0.00075 }, { "kind" = "full", "ustar" = 0.00125 }, { "kind" = "full", "ustar" = 0.002 }, { "kind" = "mean", "ustar" = 0.0 }, { "kind" = "mean", "ustar" = 0.002 }]
+"parent_case" = "anchor-re300-tiny-s1"
+"parent_snapshot_name" = "t00600.000000.json"
+"metadata_translation" = "native-parent-refinement-v1"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."source_hashes"]
+"refine_native_snapshot.py" = "9f438b7fd8e248569e683476f083196d8a3d2f3ec341553d2a18193bf2b777d4"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."parameters"]
+"nx" = 256
+"ny" = 128
+"nz" = 192
+"lx" = 2.0
+"ly" = 1.0
+"h" = 0.5
+"k" = 6.1
+"alpha" = 0.75
+"uoffset" = 0.0
+"nu" = 3.3333333333333333e-06
+"Sref" = 0.036649447248308646
+"waves" = 1
+"ustar" = 0.0
+"maintain" = true
+"advection_name" = "Centered2"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."arrays"]
+
+["sources"."jets-re300-tiny-s1-t600-fine"."arrays"."u"]
+"file" = "t00600.000000_u.bin"
+"shape" = [256, 128, 192]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Face", "Center", "Center"]
+"sha256" = "4562990231bd14eddcda4ddfe978434668074f8bb12035a2b39ec721758c0337"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."arrays"."v"]
+"file" = "t00600.000000_v.bin"
+"shape" = [256, 128, 192]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Center", "Face", "Center"]
+"sha256" = "89e0e23fa4311f1a606cccd8bef48eb4194afaeee31b050d45d72e909d06885a"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."arrays"."w"]
+"file" = "t00600.000000_w.bin"
+"shape" = [256, 128, 193]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Center", "Center", "Face"]
+"sha256" = "f7ad627d3dda6c037af204fed13ee85e10100bb83806de09224001ef2aac43bb"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"]
+"method" = "periodic-spectral-even-odd-native-projection-v1"
+"source_version" = "da81ab96d7e51fb0"
+"source_snapshot_sha256" = "042d9411b62f1d160f1a56eabccbed3979ca3165a1697ed8e2924af79b47d59b"
+"source_metadata_sha256" = "b417e05f7b35574236f5d4f65df1bbae3edf667dd9ba757b479b2f2d0ab97065"
+"target_grid" = [256, 128, 192]
+"resampler_sha256" = "9f438b7fd8e248569e683476f083196d8a3d2f3ec341553d2a18193bf2b777d4"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."source_hashes"]
+"initial_conditions.jl" = "3a8f83da2f569bd311b9765baef9b8cd32ce70871da929bf7a38496882e526fc"
+"jet_diagnostics.jl" = "136071415aee9b9b1d187e9f06aad7325dde09ad39ee8e92a9a18733364be05e"
+"regime_diagnostics.jl" = "c3ea43fd36dab77051b2ba48a990d465f09ee0cbfce1ce5f0fe45e49541be3b7"
+"regime_physics.jl" = "cd097ff947b3d4d5a36729f1f93325f13e2fd192063a0839a57f142ce831202f"
+"run_jet.jl" = "f963abf0de7bf3175bec357c639c5d0e5523f74a9bbedc92292cbb38ee580722"
+"vortex_modes.jl" = "020d0f191d8f39ca71ad5b8d0445a2c9f057be83aee292c520b89c382781ffa4"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."source_arrays"]
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."source_arrays"."u"]
+"file" = "t00600.000000_u.bin"
+"shape" = [128, 64, 96]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Face", "Center", "Center"]
+"sha256" = "a7ccbffdc81e5e72204c13b85e1109bc2c86c7916b008da945318231a01d2206"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."source_arrays"."v"]
+"file" = "t00600.000000_v.bin"
+"shape" = [128, 64, 96]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Center", "Face", "Center"]
+"sha256" = "72a4fbf9fef451b7d36f29fef939f4ec6c8257c7eb9112f0cc98cb63d8fbd427"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."source_arrays"."w"]
+"file" = "t00600.000000_w.bin"
+"shape" = [128, 64, 97]
+"dtype" = "float64"
+"order" = "F"
+"location" = ["Center", "Center", "Face"]
+"sha256" = "aa9bfa52b6f0252344d0aa9b4340db0d581ee13c59f834019fbde643829a0510"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."source_parameters"]
+"nx" = 128
+"ny" = 64
+"nz" = 96
+"lx" = 2.0
+"ly" = 1.0
+"h" = 0.5
+"k" = 6.1
+"alpha" = 0.75
+"uoffset" = 0.0
+"nu" = 3.3333333333333333e-06
+"Sref" = 0.036649447248308646
+"waves" = 1
+"ustar" = 0.0
+"maintain" = true
+"advection_name" = "Centered2"
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."diagnostics"]
+"scaled_divergence_before" = 0.0004477719422669168
+"scaled_divergence_after" = 3.0039044717328153e-16
+"projection_rms_m_s" = 1.0139666068968649e-06
+"projection_fraction_total" = 0.0003337792765715677
+"projection_fraction_eddy" = 0.00044296864343129383
+"energy_parent" = 2.6147556576483973e-06
+"energy_interpolated" = 2.619819316202378e-06
+"energy_projected" = 2.6198208470509412e-06
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."diagnostics"."bulk_momentum_shift_m_s"]
+"u" = -1.890626507182122e-07
+"v" = 1.3648480107124957e-23
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."diagnostics"."horizontal_mean_projection_max_m_s"]
+"u" = 7.719519468096792e-17
+"v" = 2.1705219273391446e-21
+"w" = 6.687583198923818e-18
+
+["sources"."jets-re300-tiny-s1-t600-fine"."derived_from"."diagnostics"."bulk_momentum_error_m_s"]
+"u" = -1.734723475976807e-18
+"v" = 1.5440704767656485e-23
