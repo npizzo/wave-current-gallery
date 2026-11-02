@@ -15,11 +15,25 @@
       "id": "a1-nowaves",
       "alpha": 1,
       "member": "sheared_control",
-      "status": {
-        "cfl": 0.309472848477624,
-        "iteration": 5353,
-        "time": 53.0,
-        "wall_seconds": 387.611335682
+      "result": {
+        "final": {
+          "time": 600.0,
+          "Eeddy": 7.780664184436789e-06,
+          "E3d": 1.1190811452721177e-06,
+          "fraction3d": 0.14382848542808863,
+          "w_rms": 0.0008585803058825261,
+          "w_rms_active": 0.0008011017431267935,
+          "R_active": 0.0015605376616608364,
+          "adv_active": 0.00636751998577464,
+          "wave_active": 0.0,
+          "R_ratio_active": 0.24507777991229804,
+          "continuity_rms": 1.9743452727294183e-07,
+          "mean_current_change_rms": 0.01176999036727215,
+          "direct_R_current_work": -3.0677110490615384e-11,
+          "cfl": 0.06745932994008808
+        },
+        "complete": true,
+        "scope": "Single realization; initial shear already present. New jets require persistent new extrema and separation from inherited shear. R is a continuum postprocessing diagnostic, not an exact native tendency split."
       }
     },
     {
@@ -35,7 +49,7 @@
       "status": "queued or not yet started"
     }
   ],
-  "completed": 0,
+  "completed": 1,
   "total": 4,
   "source": "a0f37e5bdc238f55",
   "scope": "Candidate screen, not a convergence or mechanism proof."
