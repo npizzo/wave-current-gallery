@@ -15,7 +15,12 @@
       "id": "a1-nowaves",
       "alpha": 1,
       "member": "sheared_control",
-      "status": "queued or not yet started"
+      "status": {
+        "cfl": 0.3457487494985337,
+        "iteration": 4545,
+        "time": 45.0,
+        "wall_seconds": 272.387822196
+      }
     },
     {
       "id": "a2-waves",
