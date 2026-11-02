@@ -1,9 +1,9 @@
 {
-  "version": "444c4a1181263b23",
+  "version": "a0f37e5bdc238f55",
   "files": {
     "PROTOCOL.txt": "66334f3e07d74cb8d7fb81c4a13c3ab66d62f1cdc62a57d1165c8f917b4be3c4",
     "UPSTREAM-FILES.json": "b813c02773a99feeaf844aeb253b8ed2d57e8b3cbe78ea3fb75b70705fbe05b1",
-    "analysis/analyze.py": "4ad2d324f3f6af672eb2efaacd80595d0d68974a0eaa4c8d903dc8cdb67fde24",
+    "analysis/analyze.py": "9c9e585e91a17c05f8a59d4168eed82589b442c7208d4a016f8dbbae23d14902",
     "analysis/test_math.py": "9589b3dfe32691dcbb987f32f4f8b83735e0e96e4ee46b0efa2cebfa82458eeb",
     "campaign.json": "8fcbf3ca5a8fbb1e0ec09ba9ba808beef2075ea419afdc217323e1a433e68e4d",
     "run/driver.jl": "b55fcf8b5cfb973cd45cedee191b19a30ab65aa0d5f5eb853b340e97f448fef0",
@@ -13,7 +13,7 @@
     "scripts/common.sh": "3a269cc9997cea49671170f35855cf0e021de49ca34f17d107c9d6bab8f4e78f",
     "scripts/dispatch.sbatch": "feaa5c98d8cdc8200456c254ae039346a1dc454d4b6d3cac6435c7adeba4d005",
     "scripts/ops.py": "0e0322d5564772642f7e14709d5d35117cdeb509408b1e8cf7123d1b46c89930",
-    "scripts/publish.py": "ce56f8bcc1fd64a1dfb8e4aa83f1c2d91e188581b1d1802f435599a8e6b23584",
+    "scripts/publish.py": "304625311dac398d1975a08c693f470be704e862f86b54efefde25b1776abeac",
     "scripts/publish.sbatch": "faef9c99fd88a765390a2a3407af9bbb4e2cea8cb311be36353293482979826e",
     "scripts/run.sbatch": "7ec589b76f28e8137ade113fa035c28620062624dff31c9b48bcbcea84eec6e0",
     "scripts/validate.sbatch": "59a796fa2d9e4ed2cba5e6be311e08325655c582bd32a04bfbffc2e153277754",

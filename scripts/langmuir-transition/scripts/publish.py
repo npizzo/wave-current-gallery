@@ -9,7 +9,7 @@ def main():
  env=dict(os.environ);env['GIT_SSH_COMMAND']=' '.join(['ssh','-o','BatchMode=yes','-o','IdentitiesOnly=yes','-o','StrictHostKeyChecking=yes','-o',shlex.quote('UserKnownHostsFile='+str(publisher/'known_hosts')),'-i',shlex.quote(str(publisher/'id_ed25519'))])
  with (publisher/'publish.lock').open('a') as lock:
   fcntl.flock(lock,fcntl.LOCK_EX)
-  with tempfile.TemporaryDirectory(prefix='langmuir-render-',dir=ROOT/'runtime') as tmp:
+  with tempfile.TemporaryDirectory(prefix='langmuir-render-',dir=ROOT/'runtime',ignore_cleanup_errors=True) as tmp:
    page=Path(tmp)/'page';render(ROOT,page)
    # Fit this campaign within the existing gallery allowance; never alter other pages.
    if sum(p.stat().st_size for p in page.rglob('*') if p.is_file())>3*1024**2:
@@ -21,7 +21,7 @@ def main():
    backup=Path(paths['backup']);backup.mkdir(parents=True,exist_ok=True)
    shutil.copytree(page,backup/'gallery',dirs_exist_ok=True)
    for attempt in range(4):
-    with tempfile.TemporaryDirectory(prefix='langmuir-publish-',dir=publisher) as td:
+    with tempfile.TemporaryDirectory(prefix='langmuir-publish-',dir=publisher,ignore_cleanup_errors=True) as td:
      repo=Path(td)/'repo';subprocess.run(['git','clone','--quiet','--depth=1','--branch=main','https://github.com/npizzo/wave-current-gallery.git',str(repo)],check=True,env=env)
      dest=repo/'gallery/experiments'/PAGE
      if dest.exists():shutil.rmtree(dest)

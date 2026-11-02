@@ -74,10 +74,11 @@ def main(root,out):
  out.mkdir(parents=True,exist_ok=True);campaign=read(root/'campaign.json');runs=[]
  for c in campaign['runs']:
   r=root/'data/runs'/c['id'];entry=dict(c)
-  if (r/'completed.json').exists():
-   if not (r/'backup.json').exists():raise RuntimeError('Final state not backed up')
+  if (r/'completed.json').exists() and (r/'backup.json').exists():
+   if read(r/'backup.json').get('verified') is not True:raise RuntimeError('Final state backup verification failed')
    receipt=read(r/'completed.json');assert receipt['source']==read(root/'source-manifest.json')['version']
    entry['result']=analyze_run(r,out/c['id'])
+  elif (r/'completed.json').exists():entry['status']='Integration finished; final-state backup is not yet verified.'
   elif (r/'status.json').exists():entry['status']=read(r/'status.json')
   else:entry['status']='queued or not yet started'
   runs.append(entry)
