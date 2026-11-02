@@ -1,0 +1,32 @@
+{
+  "runs": [
+    {
+      "id": "a1-waves",
+      "alpha": 1,
+      "member": "steady_sheared_turbulence",
+      "status": "queued or not yet started"
+    },
+    {
+      "id": "a1-nowaves",
+      "alpha": 1,
+      "member": "sheared_control",
+      "status": "queued or not yet started"
+    },
+    {
+      "id": "a2-waves",
+      "alpha": 2,
+      "member": "steady_sheared_turbulence",
+      "status": "queued or not yet started"
+    },
+    {
+      "id": "a2-nowaves",
+      "alpha": 2,
+      "member": "sheared_control",
+      "status": "queued or not yet started"
+    }
+  ],
+  "completed": 0,
+  "total": 4,
+  "source": "a3673031a4e9f8b7",
+  "scope": "Candidate screen, not a convergence or mechanism proof."
+}

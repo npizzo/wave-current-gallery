@@ -1,0 +1,29 @@
+{
+  "upstream_commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed",
+  "level": "M2",
+  "seed": 1,
+  "stop": 600,
+  "dt": 0.01,
+  "runs": [
+    {
+      "id": "a1-waves",
+      "alpha": 1,
+      "member": "steady_sheared_turbulence"
+    },
+    {
+      "id": "a1-nowaves",
+      "alpha": 1,
+      "member": "sheared_control"
+    },
+    {
+      "id": "a2-waves",
+      "alpha": 2,
+      "member": "steady_sheared_turbulence"
+    },
+    {
+      "id": "a2-nowaves",
+      "alpha": 2,
+      "member": "sheared_control"
+    }
+  ]
+}

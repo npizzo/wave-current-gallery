@@ -1,0 +1,180 @@
+{
+  "commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob": "14898afd53864cefcddb07618b18ceaac8286b3e",
+      "tool_sha": "14898afd53864cefcddb07618b18ceaac8286b3e"
+    },
+    {
+      "path": "Manifest.toml",
+      "git_blob": "51c22171ecb5ba93994ee1df0cd5aed0d843250f",
+      "tool_sha": "51c22171ecb5ba93994ee1df0cd5aed0d843250f"
+    },
+    {
+      "path": "Project.toml",
+      "git_blob": "293dbd77a6d21bf4e24ac1f8b9bd9c8cd370c349",
+      "tool_sha": "293dbd77a6d21bf4e24ac1f8b9bd9c8cd370c349"
+    },
+    {
+      "path": "analysis/anti_stokes/common.jl",
+      "git_blob": "e503cccebd406024557e8d2ac09184eac3479339",
+      "tool_sha": "e503cccebd406024557e8d2ac09184eac3479339"
+    },
+    {
+      "path": "analysis/anti_stokes/compare_cases.jl",
+      "git_blob": "bc35d23648e29bab536660e7e042a3f45d866cfc",
+      "tool_sha": "bc35d23648e29bab536660e7e042a3f45d866cfc"
+    },
+    {
+      "path": "analysis/anti_stokes/compare_packet_control.jl",
+      "git_blob": "6ee0c4278d17b9ad0b932ac286fc1a02a8c95ce7",
+      "tool_sha": "6ee0c4278d17b9ad0b932ac286fc1a02a8c95ce7"
+    },
+    {
+      "path": "analysis/anti_stokes/data/ellingsen2026_fig3a_1D.csv",
+      "git_blob": "7da7f95a8331283bce27a036c9d826bc5396d67b",
+      "tool_sha": "7da7f95a8331283bce27a036c9d826bc5396d67b"
+    },
+    {
+      "path": "analysis/anti_stokes/data/ellingsen2026_fig3b.csv",
+      "git_blob": "83f5831f9bb229d497c361f9cd9a40ed527a4f1e",
+      "tool_sha": "83f5831f9bb229d497c361f9cd9a40ed527a4f1e"
+    },
+    {
+      "path": "analysis/anti_stokes/ensemble_profile.jl",
+      "git_blob": "6647cc6a485cb5c12714fa09ca9f30765996fc86",
+      "tool_sha": "6647cc6a485cb5c12714fa09ca9f30765996fc86"
+    },
+    {
+      "path": "analysis/anti_stokes/figure3_reproduction.jl",
+      "git_blob": "72046907c77a56ea9d1d22e28f58e98d6b075af4",
+      "tool_sha": "72046907c77a56ea9d1d22e28f58e98d6b075af4"
+    },
+    {
+      "path": "analysis/anti_stokes/lagrangian_mean.jl",
+      "git_blob": "ddd218f9ddc0ca3a147ebf679e284b21782ec2d6",
+      "tool_sha": "ddd218f9ddc0ca3a147ebf679e284b21782ec2d6"
+    },
+    {
+      "path": "analysis/anti_stokes/langmuir_diagnostics.jl",
+      "git_blob": "0540d52cc0cee8569a3d19e5142a81ebcac3ade5",
+      "tool_sha": "0540d52cc0cee8569a3d19e5142a81ebcac3ade5"
+    },
+    {
+      "path": "analysis/anti_stokes/langmuir_signatures.jl",
+      "git_blob": "785ac1f8c428023ae1909914685c07477276255b",
+      "tool_sha": "785ac1f8c428023ae1909914685c07477276255b"
+    },
+    {
+      "path": "analysis/anti_stokes/momentum_budget.jl",
+      "git_blob": "9cd70f11706cd26ab920c07f2f0d91f774b1f866",
+      "tool_sha": "9cd70f11706cd26ab920c07f2f0d91f774b1f866"
+    },
+    {
+      "path": "analysis/anti_stokes/packet_hovmoller.jl",
+      "git_blob": "49564557eb322e7bbd83f5f9d6ebbe535077fcfe",
+      "tool_sha": "49564557eb322e7bbd83f5f9d6ebbe535077fcfe"
+    },
+    {
+      "path": "analysis/anti_stokes/quick_checks.jl",
+      "git_blob": "b5e416ee82010c7a19656a739d475ad7bdf054ba",
+      "tool_sha": "b5e416ee82010c7a19656a739d475ad7bdf054ba"
+    },
+    {
+      "path": "analysis/anti_stokes/run_stage_analysis.jl",
+      "git_blob": "d8c18fc42c2b9457bd91cb430ec50e816321a4c7",
+      "tool_sha": "d8c18fc42c2b9457bd91cb430ec50e816321a4c7"
+    },
+    {
+      "path": "analysis/anti_stokes/surface_view.jl",
+      "git_blob": "233e14655d5b573c9d443b207bd382105453c981",
+      "tool_sha": "233e14655d5b573c9d443b207bd382105453c981"
+    },
+    {
+      "path": "analysis/anti_stokes/turbulence_statistics.jl",
+      "git_blob": "15926312b14e37c3be2a726bfd0fa7b95406abb2",
+      "tool_sha": "15926312b14e37c3be2a726bfd0fa7b95406abb2"
+    },
+    {
+      "path": "analysis/anti_stokes/uniform_packet.jl",
+      "git_blob": "8694f2c7f77dce4d10340f5ea3bf2be94bbc7851",
+      "tool_sha": "8694f2c7f77dce4d10340f5ea3bf2be94bbc7851"
+    },
+    {
+      "path": "experiments/anti_stokes/CAMPAIGN.md",
+      "git_blob": "4ee9794c479b859db1b00358090eb621396bf455",
+      "tool_sha": "4ee9794c479b859db1b00358090eb621396bf455"
+    },
+    {
+      "path": "experiments/anti_stokes/README.md",
+      "git_blob": "d06dd79faa6cde85571db5e9065631a5002d119b",
+      "tool_sha": "d06dd79faa6cde85571db5e9065631a5002d119b"
+    },
+    {
+      "path": "experiments/anti_stokes/cases.jl",
+      "git_blob": "9620a71cf4db6e3d2c0c998353da50898824600f",
+      "tool_sha": "9620a71cf4db6e3d2c0c998353da50898824600f"
+    },
+    {
+      "path": "experiments/anti_stokes/common.jl",
+      "git_blob": "f93f59f2bf9dd8064be4d7059e4f627188b15d7b",
+      "tool_sha": "f93f59f2bf9dd8064be4d7059e4f627188b15d7b"
+    },
+    {
+      "path": "experiments/anti_stokes/forced_turbulence.jl",
+      "git_blob": "e1c127cf04a58bb0df63947972656fdd8b42d11a",
+      "tool_sha": "e1c127cf04a58bb0df63947972656fdd8b42d11a"
+    },
+    {
+      "path": "experiments/anti_stokes/generate_turbulence.jl",
+      "git_blob": "6a8ac2ebb52c9ce87026c647b4b03785fb99b9b0",
+      "tool_sha": "6a8ac2ebb52c9ce87026c647b4b03785fb99b9b0"
+    },
+    {
+      "path": "experiments/anti_stokes/moving_packet.jl",
+      "git_blob": "acb1d0049821e062e0eaf377579b019966ab34c8",
+      "tool_sha": "acb1d0049821e062e0eaf377579b019966ab34c8"
+    },
+    {
+      "path": "experiments/anti_stokes/moving_packet_experiment.jl",
+      "git_blob": "1929d410b9420f3d9ca360b37639293e4d000b87",
+      "tool_sha": "1929d410b9420f3d9ca360b37639293e4d000b87"
+    },
+    {
+      "path": "experiments/anti_stokes/regular_waves.jl",
+      "git_blob": "374e9445e43e0aac2f85db14ce6688d95a1e364b",
+      "tool_sha": "374e9445e43e0aac2f85db14ce6688d95a1e364b"
+    },
+    {
+      "path": "experiments/anti_stokes/run_moving_packet.jl",
+      "git_blob": "b241a698d51e2cba7c11df8d33c4694a1524ff3a",
+      "tool_sha": "b241a698d51e2cba7c11df8d33c4694a1524ff3a"
+    },
+    {
+      "path": "experiments/anti_stokes/smoke_test_moving_packet.jl",
+      "git_blob": "ae3803a931a237dd1998f6e1798896f2b296f653",
+      "tool_sha": "ae3803a931a237dd1998f6e1798896f2b296f653"
+    },
+    {
+      "path": "experiments/anti_stokes/stage_S0.jl",
+      "git_blob": "21d3312844c98a851953ce996ce7f9e418043ad7",
+      "tool_sha": "21d3312844c98a851953ce996ce7f9e418043ad7"
+    },
+    {
+      "path": "src/NumericalWaveTanks.jl",
+      "git_blob": "6c449d14787d20146ecc4ba6f6d2dc3251e63bf0",
+      "tool_sha": "6c449d14787d20146ecc4ba6f6d2dc3251e63bf0"
+    },
+    {
+      "path": "test/runtests.jl",
+      "git_blob": "a5fd08999ed7ad19a2fc862bb63e9b3380515546",
+      "tool_sha": "a5fd08999ed7ad19a2fc862bb63e9b3380515546"
+    },
+    {
+      "path": "test/test_moving_packet.jl",
+      "git_blob": "6831811cc270292dd19fccf3d557831d74e0471b",
+      "tool_sha": "6831811cc270292dd19fccf3d557831d74e0471b"
+    }
+  ]
+}
