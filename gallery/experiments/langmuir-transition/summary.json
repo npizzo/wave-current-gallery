@@ -4,7 +4,12 @@
       "id": "a1-waves",
       "alpha": 1,
       "member": "steady_sheared_turbulence",
-      "status": "queued or not yet started"
+      "status": {
+        "cfl": 0.816049477557683,
+        "iteration": 505,
+        "time": 5.0,
+        "wall_seconds": 50.647510512
+      }
     },
     {
       "id": "a1-nowaves",
