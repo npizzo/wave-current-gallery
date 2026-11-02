@@ -16,10 +16,10 @@
       "alpha": 1,
       "member": "sheared_control",
       "status": {
-        "cfl": 0.3457487494985337,
-        "iteration": 4545,
-        "time": 45.0,
-        "wall_seconds": 272.387822196
+        "cfl": 0.309472848477624,
+        "iteration": 5353,
+        "time": 53.0,
+        "wall_seconds": 387.611335682
       }
     },
     {
