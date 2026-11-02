@@ -47,7 +47,7 @@ def analyze_run(root,out):
    residual=der+b[1]['adv']-b[1]['wave']-b[1]['R'];b[2]['continuum_residual_active']=norm(residual,active);b[2]['vorticity_t_active']=norm(der,active);history.pop(0)
   if any(abs(m['time']-t)<1e-6 for t in [0,10,60,600]):maps.append((m['time'],U-S*np.exp(2*k*z)[None,:]))
  t=np.array([x['time'] for x in rows]);p=np.array(profiles)
- np.savetxt(out/'profiles.csv',np.column_stack([np.repeat(t,len(z)),np.tile(z,len(t)),*[p[:,j,:].reshape(-1) for j in range(5)]]),delimiter=',',header='time_s,z_m,UL_m_s,UE_m_s,Q_s_inv,beta_m_inv_s_inv,wvariance_m2_s2',comments='')
+ np.savetxt(out/'profiles.csv.gz',np.column_stack([np.repeat(t,len(z)),np.tile(z,len(t)),*[p[:,j,:].reshape(-1) for j in range(5)]]),delimiter=',',fmt='%.7g',header='time_s,z_m,UL_m_s,UE_m_s,Q_s_inv,beta_m_inv_s_inv,wvariance_m2_s2',comments='')
  save(out/'diagnostics.json',rows)
  fig,axs=plt.subplots(1,3,figsize=(12,4),layout='constrained')
  for target in [0,10,30,60,200,600]:
@@ -89,14 +89,19 @@ def main(root,out):
  for ax,title in zip(axs.flat,['Vertical rms in upper two Stokes depths (m/s)','Change from initial current profile: rms (m/s)','y-dependent / total eddy energy','R / (mean advection + wave term): rms norms']):ax.set(xlabel='Time (s)',title=title);ax.grid(alpha=.2)
  if count:axs[0,0].legend();fig.savefig(out/'comparison.png',dpi=150)
  plt.close(fig)
+ from PIL import Image
+ for png in out.rglob('*.png'):
+  with Image.open(png) as im:
+   im.thumbnail((1600,1600));im.save(png.with_suffix('.webp'),quality=76,method=6)
+  png.unlink()
  summary=dict(runs=runs,completed=count,total=4,source=read(root/'source-manifest.json')['version'],scope='Candidate screen, not a convergence or mechanism proof.');save(out/'summary.json',summary)
  sections=''
  for r in runs:
   sections+=f'<section><h2>{r["id"]}</h2>'
   if 'result'in r:
-   sections+=''.join(f'<img src="{r["id"]}/{name}.png" alt="{r["id"]}: {name}">' for name in ['evolution','time-depth','profiles'])+f'<p><a href="{r["id"]}/diagnostics.json">Diagnostics</a> · <a href="{r["id"]}/profiles.csv">Profiles</a></p>'
+   sections+=''.join(f'<img src="{r["id"]}/{name}.webp" alt="{r["id"]}: {name}">' for name in ['evolution','time-depth','profiles'])+f'<p><a href="{r["id"]}/diagnostics.json">Diagnostics</a> · <a href="{r["id"]}/profiles.csv.gz">Profiles</a></p>'
   else:sections+=f'<p>{r["status"]}</p>'
   sections+='</section>'
- comparison='<img src="comparison.png" alt="Matched wave and no-wave diagnostics">' if count else ''
- (out/'index.html').write_text(f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Langmuir turbulence to jets?</title><style>body{{font:17px/1.6 system-ui;max-width:1150px;margin:40px auto;padding:20px;color:#173047;background:#f6f8fa}}img{{width:100%;background:white;margin:12px 0}}section{{margin:50px 0}}a{{color:#135da8}}</style><a href="../../">Wave–current gallery</a><h1>Can deep-water Langmuir turbulence evolve into jets?</h1><p>{count}/4 runs completed. Two initial Eulerian shears, α=1 and2, each with steady waves and a matched wave-free control. Original12×0.8×0.4m periodic tank;1536×128×128 grid;600s;single seed. No sustained wind or imposed two-dimensionalization.</p><p>The initial smooth shear is already a current. A later mean profile or small3D energy fraction alone does not demonstrate newly formed jets. We test whether persistent new current extrema arise after the Langmuir phase, while following the evolving Eulerian shear and complete transverse Reynolds-stress curl.</p><p>R uses continuum derivatives of centered transverse moments. Temporal sampling, interpolation and implicit numerical dissipation contribute to its budget residual; this is not an exact native tendency split or a convergence demonstration.</p><p><a href="PROTOCOL.txt">Protocol</a> · <a href="summary.json">Status and summary</a> · <a href="source-manifest.json">Source provenance</a></p>{comparison}{sections}</html>''')
+ comparison='<img src="comparison.webp" alt="Matched wave and no-wave diagnostics">' if count else ''
+ (out/'index.html').write_text(f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Langmuir turbulence to jets?</title><style>body{{font:17px/1.6 system-ui;max-width:1150px;margin:40px auto;padding:20px;color:#173047;background:#f6f8fa}}img{{width:100%;background:white;margin:12px 0}}section{{margin:50px 0}}a{{color:#135da8}}</style><a href="../../">Wave–current gallery</a><h1>Can deep-water Langmuir turbulence evolve into jets?</h1><p>{count}/4 runs completed. Two initial Eulerian shears, α = 1 and 2, each with steady waves and a matched wave-free control. Original 12 × 0.8 × 0.4 m periodic tank; 1536 × 128 × 128 grid; 600 s; one turbulent realization. No sustained wind or imposed two-dimensionalization.</p><p>The initial smooth shear is already a current. A later mean profile or small 3D energy fraction alone does not demonstrate newly formed jets. We test whether persistent new current extrema arise after the Langmuir phase, while following the evolving Eulerian shear and complete transverse Reynolds-stress curl.</p><p>The wave and wave-free runs share the turbulent initial condition and prescribed Eulerian shear. The upstream transport convention adds a depth-uniform offset to the wave case, so profile changes and shear are more useful comparisons than absolute velocity offsets.</p><p>R uses continuum derivatives of centered transverse moments. Temporal sampling, interpolation and implicit numerical dissipation contribute to its budget residual; this is not an exact native tendency split or a convergence demonstration.</p><p><a href="PROTOCOL.txt">Protocol</a> · <a href="summary.json">Status and summary</a> · <a href="source-manifest.json">Source provenance</a></p>{comparison}{sections}</html>''')
 if __name__=='__main__':main(Path(sys.argv[1]),Path(sys.argv[2]))

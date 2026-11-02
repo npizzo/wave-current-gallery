@@ -48,7 +48,9 @@ function campaign_run!(sim,dir,case,member)
             for name in (:u,:v,:w);d[string(name)]=binary(joinpath(out,@sprintf("native_%010.3f_%s.bin",t,name)),getproperty(state,name));end
             write_json_atomic(joinpath(out,@sprintf("native_%010.3f.json",t)),(;time=t,iteration=iteration(s),arrays=d,metrics=state.metrics))
         end
-        write_json_atomic(joinpath(out,"status.json"),(;time=t,iteration=iteration(s),cfl,wall_seconds=(time_ns()-started)/1e9))
+        status_tmp=joinpath(out,"status-next.json")
+        write_json_atomic(status_tmp,(;time=t,iteration=iteration(s),cfl,wall_seconds=(time_ns()-started)/1e9))
+        mv(status_tmp,joinpath(out,"status.json");force=true)
         @printf("SAMPLE t=%.3f CFL=%.4f wall=%.1fs\n",t,cfl,(time_ns()-started)/1e9);flush(stdout)
     end
     sim.callbacks[:campaign]=Callback(sample,SpecifiedTimes(times));sample(sim)

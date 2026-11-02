@@ -11,6 +11,12 @@ def main():
   fcntl.flock(lock,fcntl.LOCK_EX)
   with tempfile.TemporaryDirectory(prefix='langmuir-render-',dir=ROOT/'runtime') as tmp:
    page=Path(tmp)/'page';render(ROOT,page)
+   # Fit this campaign within the existing gallery allowance; never alter other pages.
+   if sum(p.stat().st_size for p in page.rglob('*') if p.is_file())>3*1024**2:
+    from PIL import Image
+    for p in page.rglob('*.webp'):
+     with Image.open(p) as im:
+      copy=im.copy();copy.thumbnail((1300,1300));copy.save(p,quality=62,method=6)
    for n in ['PROTOCOL.txt','campaign.json','source-manifest.json']:shutil.copy2(ROOT/n,page/n)
    backup=Path(paths['backup']);backup.mkdir(parents=True,exist_ok=True)
    shutil.copytree(page,backup/'gallery',dirs_exist_ok=True)
