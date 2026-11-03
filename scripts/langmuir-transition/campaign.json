@@ -25,5 +25,26 @@
       "alpha": 2,
       "member": "sheared_control"
     }
-  ]
+  ],
+  "retry": {
+    "authorized": "2026-11-03",
+    "reason": "Original wave run a1-waves (dt=0.01) stopped at the CFL<0.9 guard during Langmuir spin-up near t=5 s; a2-waves and a2-nowaves failed before integration on node uri-gpu003 (CUDA runtime/GPU not found). Failed attempts preserved under data/failed.",
+    "runs": [
+      "a1-waves",
+      "a2-waves",
+      "a2-nowaves"
+    ],
+    "dt": {
+      "a1-waves": 0.005,
+      "a2-waves": 0.005,
+      "a2-nowaves": 0.01
+    },
+    "exclude_nodes": "uri-gpu003",
+    "prior_sources": [
+      "a0f37e5bdc238f55"
+    ],
+    "constraint": "a100-40g",
+    "placement_note": "CUDA 13 runtime only in the shared depot; 80 GB A100 nodes (uri-gpu001-008) failed CUDA runtime selection (66492824_2,_3 on uri-gpu003; validation 66591601 on uri-gpu006). Both successful jobs ran on uri-gpu016 (a100-40g, driver 580/CUDA 13.2).",
+    "partition": "gpu-highvram"
+  }
 }

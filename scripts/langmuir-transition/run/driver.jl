@@ -66,6 +66,7 @@ function integrate(out,icroot;member="steady_sheared_turbulence",alpha=2.,level=
     return LAST[]
 end
 if abspath(PROGRAM_FILE)==@__FILE__
-    length(ARGS)==5||error("out icroot member alpha tag")
-    integrate(ARGS[1],ARGS[2];member=ARGS[3],alpha=parse(Float64,ARGS[4]),tag=ARGS[5],level="M2",stop=600.,dt=.01)
+    length(ARGS) in (5,6)||error("out icroot member alpha tag [dt]")
+    dt=length(ARGS)==6 ? parse(Float64,ARGS[6]) : .01
+    integrate(ARGS[1],ARGS[2];member=ARGS[3],alpha=parse(Float64,ARGS[4]),tag=ARGS[5],level="M2",stop=600.,dt)
 end
