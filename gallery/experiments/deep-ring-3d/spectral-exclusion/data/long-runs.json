@@ -1,0 +1,92 @@
+{
+ "s2d-deep-rb1-s1-t1000": {
+  "final_jet_frac": 0.6638502904309225,
+  "jet_frac_last20pct": 0.6530459310797152,
+  "KE_final_over_KE0": 1.010870179392533,
+  "umax_final_over_u0": 4.787219953057474
+ },
+ "s2d-deep-rb1-s1-lx4-t1000": {
+  "final_jet_frac": 0.6336003270368004,
+  "jet_frac_last20pct": 0.6201506596761438,
+  "KE_final_over_KE0": 1.0129026321100856,
+  "umax_final_over_u0": 5.151354348982389,
+  "spectrum": {
+   "layer": 0.5,
+   "beta": 0.491,
+   "utilde_over_u0": 1.185,
+   "rhines_cycles": 8.19,
+   "k_centroid": 3.65,
+   "kx0_share": 0.504,
+   "anisotropy": 0.874,
+   "inside_over_outside": {
+    "1-3": null,
+    "3-6": 0.315,
+    "6-10": 0.303,
+    "10-15": null
+   }
+  }
+ },
+ "s2d-deep-k27-lx4": {
+  "final_jet_frac": 0.6824035707303933,
+  "jet_frac_last20pct": 0.6539452376253523,
+  "KE_final_over_KE0": 0.9941326259701118,
+  "umax_final_over_u0": 4.945431922398321,
+  "spectrum": {
+   "layer": 0.5,
+   "beta": 0.491,
+   "utilde_over_u0": 1.166,
+   "rhines_cycles": 8.26,
+   "k_centroid": 4.77,
+   "kx0_share": 0.593,
+   "anisotropy": 0.918,
+   "inside_over_outside": {
+    "1-3": null,
+    "3-6": 0.644,
+    "6-10": 0.367,
+    "10-15": null
+   }
+  }
+ },
+ "s2d-ubeta-k27-lx4": {
+  "final_jet_frac": 0.057255906566342156,
+  "jet_frac_last20pct": 0.06350691089713272,
+  "KE_final_over_KE0": 0.9942402897813698,
+  "umax_final_over_u0": 2.9154862722760844,
+  "spectrum": {
+   "layer": 1.0,
+   "beta": 0.5,
+   "utilde_over_u0": 0.999,
+   "rhines_cycles": 9.01,
+   "k_centroid": 3.9,
+   "kx0_share": 0.064,
+   "anisotropy": 0.942,
+   "inside_over_outside": {
+    "1-3": null,
+    "3-6": 0.056,
+    "6-10": 0.048,
+    "10-15": null
+   }
+  }
+ },
+ "s2d-none-k27-lx4": {
+  "final_jet_frac": 0.04906838441506968,
+  "jet_frac_last20pct": 0.045840861778749395,
+  "KE_final_over_KE0": 0.988835463081479,
+  "umax_final_over_u0": 4.271000480290236,
+  "spectrum": {
+   "layer": 1.0,
+   "beta": 0.25,
+   "utilde_over_u0": 0.996,
+   "rhines_cycles": 6.38,
+   "k_centroid": 3.55,
+   "kx0_share": 0.046,
+   "anisotropy": 0.022,
+   "inside_over_outside": {
+    "1-3": 3.104,
+    "3-6": 1.267,
+    "6-10": 2.085,
+    "10-15": null
+   }
+  }
+ }
+}

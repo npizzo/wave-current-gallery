@@ -13,6 +13,7 @@ include("regime_initial_conditions.jl")   # verbatim copy from the regime-map ca
 
 envf(k,d)=parse(Float64,get(ENV,k,string(d))); envi(k,d)=parse(Int,get(ENV,k,string(d)))
 @inline deep_shear(z,t)=0.25*exp(8z)
+@inline ubeta_shear(z,t)=0.5*(z+1)        # uniform β_eff = ∂zz uˢ = 1/2 (= β_ref), for the textbook β-plane comparison
 
 "y-invariant Vallis ring on the C-grid from a corner streamfunction ψ = Σ 2Re[A e^{i2πmx}] sin(nπ(z+1))."
 function vallis_ring(nx,nz;k0cycles=9.0,width_modes=1.0,seed=1,lx=1.0)
@@ -31,9 +32,9 @@ end
 
 ringrms(u,w)=sqrt(mean(abs2,(u.+circshift(u,(-1,0)))./2)+mean(abs2,(w[:,1:end-1].+w[:,2:end])./2))
 
-function initial_condition(;nx,ny,nz,ly,rb,seed,eps3d,lx=1.0)
-    K0=2π*9; u0=0.5/(rb*K0^2)
-    u2,w2=vallis_ring(nx,nz;seed,lx); s=u0/ringrms(u2,w2); u2.*=s; w2.*=s
+function initial_condition(;nx,ny,nz,ly,rb,seed,eps3d,lx=1.0,k0=9.0)
+    K0=2π*k0; u0=0.5/(rb*K0^2)
+    u2,w2=vallis_ring(nx,nz;seed,lx,k0cycles=k0); s=u0/ringrms(u2,w2); u2.*=s; w2.*=s
     u=repeat(reshape(u2,nx,1,nz),1,ny,1); w=repeat(reshape(w2,nx,1,nz+1),1,ny,1); v=zeros(nx,ny,nz)
     seedE=0.0; ymean_seed=0.0
     if eps3d>0
@@ -52,20 +53,22 @@ end
 layer(z)=z .> -0.3            # upper layer where β_eff/β_eff(0) ≥ e^{-2.4}≈0.09
 
 function run_case(; name, out, nx=256, ny=1, nz=256, ly=0.5, waves=1, rb=1.0, seed=1, eps3d=0.0,
-                  stopTe=200.0, sampleTe=1.0, snapTe=(0.,25.,50.,100.,150.,200.), maxdt=1.0, cfl=0.5, sliceTe=0.0, slicez=-0.05, lx=1.0)
+                  stopTe=200.0, sampleTe=1.0, snapTe=(0.,25.,50.,100.,150.,200.), maxdt=1.0, cfl=0.5, sliceTe=0.0, slicez=-0.05, lx=1.0, k0=9.0, shear="deep", gam=8.0)
     mkpath(out); isfile(joinpath(out,"completed.txt")) && error("Refusing to overwrite completed run $out")
     arch=ARCHNAME=="GPU" ? GPU() : CPU()
-    ic=initial_condition(;nx,ny,nz,ly,rb,seed,eps3d,lx)
+    ic=initial_condition(;nx,ny,nz,ly,rb,seed,eps3d,lx,k0)
     grid=ny==1 ? RectilinearGrid(arch,Float64;size=(nx,nz),halo=(5,5),x=(0,lx),z=(-1,0),topology=(Periodic,Flat,Bounded)) :
                  RectilinearGrid(arch,Float64;size=(nx,ny,nz),halo=(5,5,5),x=(0,lx),y=(0,ly),z=(-1,0),topology=(Periodic,Periodic,Bounded))
-    sd=waves==1 ? UniformStokesDrift(∂z_uˢ=deep_shear) : nothing
+    cexp=0.5*exp(0.17*gam)/gam                     # β_eff = ∂zz uˢ = c γ e^{γz} equals β_ref=1/2 at z=-0.17, as in the deep profile
+    prof=shear=="deep" ? deep_shear : shear=="ubeta" ? ubeta_shear : shear=="exp" ? ((z,t)->cexp*exp(gam*z)) : error("unknown shear $shear")
+    sd=waves==1 ? UniformStokesDrift(∂z_uˢ=prof) : nothing
     model=NonhydrostaticModel(grid;advection=WENO(order=9),timestepper=:RungeKutta3,stokes_drift=sd)
     set!(model;u=ic.u,v=ic.v,w=ic.w)
     Te=ic.Te; sim=Simulation(model;Δt=min(maxdt,0.25),stop_time=stopTe*Te)
     conjure_time_step_wizard!(sim,IterationInterval(10);cfl,max_Δt=maxdt)
     zc=collect(znodes(grid,Center())); up=layer(zc)
     meta=open(joinpath(out,"meta.txt"),"w")
-    for (k,v) in pairs((;name,nx,ny,nz,lx,ly,waves,rb,seed,eps3d,stopTe,maxdt,cfl,u0=ic.u0,Te,
+    for (k,v) in pairs((;name,nx,ny,nz,lx,k0,shear,gam,ly,waves,rb,seed,eps3d,stopTe,maxdt,cfl,u0=ic.u0,Te,
             seed_energy_ratio=ic.seed_energy_ratio,ic_seed_ymean=ic.ymean_seed,ic_max_divergence=ic.max_divergence,ic_wall_w=ic.wall_w,arch=ARCHNAME))
         println(meta,k,"=",v)
     end; close(meta)
@@ -129,5 +132,5 @@ if abspath(PROGRAM_FILE)==@__FILE__
     g(k,d)=haskey(a,k) ? a[k] : d
     run_case(;name=a["name"],out=a["out"],nx=parse(Int,g("nx","256")),ny=parse(Int,g("ny","1")),nz=parse(Int,g("nz","256")),
         ly=parse(Float64,g("ly","0.5")),waves=parse(Int,g("waves","1")),rb=parse(Float64,g("rb","1")),seed=parse(Int,g("seed","1")),
-        eps3d=parse(Float64,g("eps3d","0")),stopTe=parse(Float64,g("stopTe","200")),maxdt=parse(Float64,g("maxdt","1.0")),sliceTe=parse(Float64,g("sliceTe","0")),lx=parse(Float64,g("lx","1")))
+        eps3d=parse(Float64,g("eps3d","0")),stopTe=parse(Float64,g("stopTe","200")),maxdt=parse(Float64,g("maxdt","1.0")),sliceTe=parse(Float64,g("sliceTe","0")),lx=parse(Float64,g("lx","1")),k0=parse(Float64,g("k0","9")),shear=String(g("shear","deep")),gam=parse(Float64,g("gam","8")),sampleTe=parse(Float64,g("sampleTe","1")))
 end

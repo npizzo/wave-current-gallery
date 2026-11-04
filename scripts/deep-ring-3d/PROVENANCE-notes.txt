@@ -1,2 +1,4 @@
 2026-11-04T04:18:47Z ring3d.jl gained opt-in sliceTe movie output (default off); production runs used ring3d.production.jl sha a4845133aa60511b4af7fced532268677615882a3bc95bf393c41a7610f95911
 2026-11-04T12:51:12Z ring3d.jl gained lx (default 1, bit-identical ring for lx=1); summarize.py reads lx from meta (default 1)
+2026-11-04T13:33:52Z ring3d.jl gained k0 (ring cycles, default 9), shear=deep|ubeta (default deep), sampleTe on the CLI; defaults reproduce earlier runs
+2026-11-04T15:41:44Z ring3d.jl gained shear=exp with gam (β_eff=cγe^{γz}, =1/2 at z=-0.17); defaults unchanged

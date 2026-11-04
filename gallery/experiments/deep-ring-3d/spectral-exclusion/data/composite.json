@@ -1,0 +1,262 @@
+{
+ "s2d-exp2-k27-lx4": {
+  "global_inside_over_outside": 1.821,
+  "composite_inside_over_outside": 1.799,
+  "kb_layer_cycles": 8.05,
+  "windows": [
+   {
+    "zc": 0.0,
+    "kb_cycles": 8.76,
+    "window": 0.342
+   },
+   {
+    "zc": -0.05,
+    "kb_cycles": 10.58,
+    "window": 0.284
+   },
+   {
+    "zc": -0.1,
+    "kb_cycles": 9.01,
+    "window": 0.333
+   },
+   {
+    "zc": -0.15,
+    "kb_cycles": 8.16,
+    "window": 0.368
+   },
+   {
+    "zc": -0.2,
+    "kb_cycles": 7.95,
+    "window": 0.377
+   },
+   {
+    "zc": -0.25,
+    "kb_cycles": 8.72,
+    "window": 0.344
+   },
+   {
+    "zc": -0.3,
+    "kb_cycles": 7.67,
+    "window": 0.391
+   },
+   {
+    "zc": -0.35,
+    "kb_cycles": 7.4,
+    "window": 0.405
+   },
+   {
+    "zc": -0.4,
+    "kb_cycles": 6.97,
+    "window": 0.43
+   }
+  ]
+ },
+ "s2d-exp4-k27-lx4": {
+  "global_inside_over_outside": 6.142,
+  "composite_inside_over_outside": 4.725,
+  "kb_layer_cycles": 7.61,
+  "windows": [
+   {
+    "zc": 0.0,
+    "kb_cycles": 10.06,
+    "window": 0.298
+   },
+   {
+    "zc": -0.05,
+    "kb_cycles": 8.86,
+    "window": 0.339
+   },
+   {
+    "zc": -0.1,
+    "kb_cycles": 9.78,
+    "window": 0.307
+   },
+   {
+    "zc": -0.15,
+    "kb_cycles": 7.21,
+    "window": 0.416
+   },
+   {
+    "zc": -0.2,
+    "kb_cycles": 8.06,
+    "window": 0.372
+   },
+   {
+    "zc": -0.25,
+    "kb_cycles": 7.72,
+    "window": 0.389
+   },
+   {
+    "zc": -0.3,
+    "kb_cycles": 6.96,
+    "window": 0.431
+   },
+   {
+    "zc": -0.35,
+    "kb_cycles": 6.53,
+    "window": 0.459
+   },
+   {
+    "zc": -0.4,
+    "kb_cycles": 5.77,
+    "window": 0.52
+   }
+  ]
+ },
+ "s2d-deep-k27-lx4": {
+  "global_inside_over_outside": 4.994,
+  "composite_inside_over_outside": 12.769,
+  "kb_layer_cycles": 8.26,
+  "windows": [
+   {
+    "zc": 0.0,
+    "kb_cycles": 14.97,
+    "window": 0.2
+   },
+   {
+    "zc": -0.05,
+    "kb_cycles": 9.11,
+    "window": 0.329
+   },
+   {
+    "zc": -0.1,
+    "kb_cycles": 12.84,
+    "window": 0.234
+   },
+   {
+    "zc": -0.15,
+    "kb_cycles": 7.81,
+    "window": 0.384
+   },
+   {
+    "zc": -0.2,
+    "kb_cycles": 6.11,
+    "window": 0.491
+   },
+   {
+    "zc": -0.25,
+    "kb_cycles": 7.66,
+    "window": 0.392
+   },
+   {
+    "zc": -0.3,
+    "kb_cycles": 5.87,
+    "window": 0.511
+   },
+   {
+    "zc": -0.35,
+    "kb_cycles": 5.4,
+    "window": 0.555
+   },
+   {
+    "zc": -0.4,
+    "kb_cycles": 5.19,
+    "window": 0.578
+   }
+  ]
+ },
+ "s2d-ubeta-k27-lx4": {
+  "global_inside_over_outside": 2.073,
+  "composite_inside_over_outside": 1.437,
+  "kb_layer_cycles": 8.9,
+  "windows": [
+   {
+    "zc": 0.0,
+    "kb_cycles": 7.72,
+    "window": 0.389
+   },
+   {
+    "zc": -0.05,
+    "kb_cycles": 10.03,
+    "window": 0.299
+   },
+   {
+    "zc": -0.1,
+    "kb_cycles": 10.61,
+    "window": 0.283
+   },
+   {
+    "zc": -0.15,
+    "kb_cycles": 7.87,
+    "window": 0.381
+   },
+   {
+    "zc": -0.2,
+    "kb_cycles": 8.65,
+    "window": 0.347
+   },
+   {
+    "zc": -0.25,
+    "kb_cycles": 9.31,
+    "window": 0.322
+   },
+   {
+    "zc": -0.3,
+    "kb_cycles": 9.05,
+    "window": 0.332
+   },
+   {
+    "zc": -0.35,
+    "kb_cycles": 8.72,
+    "window": 0.344
+   },
+   {
+    "zc": -0.4,
+    "kb_cycles": 8.94,
+    "window": 0.336
+   }
+  ]
+ },
+ "s2d-none-k27-lx4": {
+  "global_inside_over_outside": 0.969,
+  "composite_inside_over_outside": 0.755,
+  "kb_layer_cycles": 8.59,
+  "windows": [
+   {
+    "zc": 0.0,
+    "kb_cycles": 17.48,
+    "window": 0.172
+   },
+   {
+    "zc": -0.05,
+    "kb_cycles": 15.01,
+    "window": 0.2
+   },
+   {
+    "zc": -0.1,
+    "kb_cycles": 12.12,
+    "window": 0.247
+   },
+   {
+    "zc": -0.15,
+    "kb_cycles": 9.69,
+    "window": 0.31
+   },
+   {
+    "zc": -0.2,
+    "kb_cycles": 7.76,
+    "window": 0.386
+   },
+   {
+    "zc": -0.25,
+    "kb_cycles": 6.14,
+    "window": 0.488
+   },
+   {
+    "zc": -0.3,
+    "kb_cycles": 4.99,
+    "window": 0.601
+   },
+   {
+    "zc": -0.35,
+    "kb_cycles": 4.1,
+    "window": 0.732
+   },
+   {
+    "zc": -0.4,
+    "kb_cycles": 3.41,
+    "window": 0.8
+   }
+  ]
+ }
+}

@@ -1,0 +1,5 @@
+name=s2d-deep-rb1-s1-lx4-t1000 nx=1024 ny=1 nz=256 lx=4 waves=1 rb=1 seed=1 stopTe=1000 sampleTe=1
+name=s2d-deep-rb1-s1-t1000 nx=256 ny=1 nz=256 lx=1 waves=1 rb=1 seed=1 stopTe=1000 sampleTe=1
+name=s2d-deep-k27-lx4 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=deep waves=1 seed=1 stopTe=3000 sampleTe=5
+name=s2d-ubeta-k27-lx4 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=ubeta waves=1 seed=1 stopTe=3000 sampleTe=5
+name=s2d-none-k27-lx4 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 waves=0 seed=1 stopTe=3000 sampleTe=5

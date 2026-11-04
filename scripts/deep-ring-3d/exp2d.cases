@@ -1,0 +1,2 @@
+name=s2d-exp2-k27-lx4 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=exp gam=2 waves=1 seed=1 stopTe=3000 sampleTe=5
+name=s2d-exp4-k27-lx4 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=exp gam=4 waves=1 seed=1 stopTe=3000 sampleTe=5

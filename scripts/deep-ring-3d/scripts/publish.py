@@ -6,7 +6,7 @@ PUBLISHER=Path('/scratch3/workspace/nicholas_pizzo_uri_edu-regime-map-20261026/p
 SOURCE=['README.txt','PROVENANCE.sha256','PROVENANCE-notes.txt','GATE.txt','screen.cases','prod3d.cases','prod3d-rb1.cases','prod3d-rb1-none.cases','movie.cases',
  'run/ring3d.jl','run/ring3d.production.jl','run/regime_initial_conditions.jl','run/test_ring.jl','analysis/summarize.py','analysis/extract_movie.py',
  'analysis/figs34.py','analysis/diag.py','analysis/render_movie.py','analysis/build_page.py','analysis/page_body.html','scripts/case.sbatch','scripts/test.sbatch','scripts/publish.py','scripts/compress_regime_map.py',
- 'environment/Project.toml','environment/Manifest.toml']
+ 'analysis/long2d.py','analysis/rhines_composite.py','analysis/kx_collapse.py','analysis/vallis_style.py','analysis/ens_vallis.py','analysis/vallis_fig.py','analysis/none_check.py','analysis/snap35.py','analysis/build_spectral_page.py','long2d.cases','exp2d.cases','ens8.cases','lx4.cases','scripts/analysis.sbatch','environment/Project.toml','environment/Manifest.toml']
 def main():
  page=ROOT/'gallery-page'; assert (page/'index.html').is_file()
  manifest={n:hashlib.sha256((ROOT/n).read_bytes()).hexdigest() for n in SOURCE}
@@ -42,7 +42,7 @@ def main():
     if not all(any(n==p or n.startswith(p+'/') for p in allowed) for n in changed):raise RuntimeError('Unrelated publication path')
     if changed or rm_changed:
      if changed:
-      subprocess.run(['git','-c','user.name=Wave-current gallery','-c','user.email=7075590+npizzo@users.noreply.github.com','commit','-m','Add deep-water Vallis-ring jets in 3D CL'],check=True,cwd=repo,stdout=subprocess.DEVNULL)
+      subprocess.run(['git','-c','user.name=Wave-current gallery','-c','user.email=7075590+npizzo@users.noreply.github.com','commit','-m','Deep-water jets in 3D CL: add 2D spectral-exclusion study'],check=True,cwd=repo,stdout=subprocess.DEVNULL)
      pushed=subprocess.run(['git','push','git@github.com:npizzo/wave-current-gallery.git','HEAD:main'],cwd=repo,env=env)
      if pushed.returncode:
       time.sleep(3);continue

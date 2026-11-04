@@ -1,0 +1,24 @@
+name=ens-ubeta-k27-s1 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=ubeta waves=1 seed=1 stopTe=100 sampleTe=1
+name=ens-deep-k27-s1 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=deep waves=1 seed=1 stopTe=100 sampleTe=1
+name=ens-none-k27-s1 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 waves=0 seed=1 stopTe=100 sampleTe=1
+name=ens-ubeta-k27-s2 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=ubeta waves=1 seed=2 stopTe=100 sampleTe=1
+name=ens-deep-k27-s2 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=deep waves=1 seed=2 stopTe=100 sampleTe=1
+name=ens-none-k27-s2 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 waves=0 seed=2 stopTe=100 sampleTe=1
+name=ens-ubeta-k27-s3 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=ubeta waves=1 seed=3 stopTe=100 sampleTe=1
+name=ens-deep-k27-s3 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=deep waves=1 seed=3 stopTe=100 sampleTe=1
+name=ens-none-k27-s3 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 waves=0 seed=3 stopTe=100 sampleTe=1
+name=ens-ubeta-k27-s4 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=ubeta waves=1 seed=4 stopTe=100 sampleTe=1
+name=ens-deep-k27-s4 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=deep waves=1 seed=4 stopTe=100 sampleTe=1
+name=ens-none-k27-s4 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 waves=0 seed=4 stopTe=100 sampleTe=1
+name=ens-ubeta-k27-s5 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=ubeta waves=1 seed=5 stopTe=100 sampleTe=1
+name=ens-deep-k27-s5 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=deep waves=1 seed=5 stopTe=100 sampleTe=1
+name=ens-none-k27-s5 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 waves=0 seed=5 stopTe=100 sampleTe=1
+name=ens-ubeta-k27-s6 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=ubeta waves=1 seed=6 stopTe=100 sampleTe=1
+name=ens-deep-k27-s6 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=deep waves=1 seed=6 stopTe=100 sampleTe=1
+name=ens-none-k27-s6 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 waves=0 seed=6 stopTe=100 sampleTe=1
+name=ens-ubeta-k27-s7 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=ubeta waves=1 seed=7 stopTe=100 sampleTe=1
+name=ens-deep-k27-s7 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=deep waves=1 seed=7 stopTe=100 sampleTe=1
+name=ens-none-k27-s7 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 waves=0 seed=7 stopTe=100 sampleTe=1
+name=ens-ubeta-k27-s8 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=ubeta waves=1 seed=8 stopTe=100 sampleTe=1
+name=ens-deep-k27-s8 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 shear=deep waves=1 seed=8 stopTe=100 sampleTe=1
+name=ens-none-k27-s8 nx=2048 ny=1 nz=512 lx=4 k0=27 rb=0.1111111111111111 waves=0 seed=8 stopTe=100 sampleTe=1
