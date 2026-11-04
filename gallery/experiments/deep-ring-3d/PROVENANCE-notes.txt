@@ -1,0 +1,1 @@
+2026-11-04T04:18:47Z ring3d.jl gained opt-in sliceTe movie output (default off); production runs used ring3d.production.jl sha a4845133aa60511b4af7fced532268677615882a3bc95bf393c41a7610f95911

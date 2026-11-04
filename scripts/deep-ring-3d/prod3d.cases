@@ -1,0 +1,8 @@
+name=d3-deep-rb0.5-e1e-2-s1 nx=256 ny=128 nz=256 ly=0.5 waves=1 rb=0.5 seed=1 eps3d=1e-2 stopTe=200
+name=d3-deep-rb0.5-e1e-2-s2 nx=256 ny=128 nz=256 ly=0.5 waves=1 rb=0.5 seed=2 eps3d=1e-2 stopTe=200
+name=d3-deep-rb0.5-e1e-2-s3 nx=256 ny=128 nz=256 ly=0.5 waves=1 rb=0.5 seed=3 eps3d=1e-2 stopTe=200
+name=d3-deep-rb0.5-e1e-6-s1 nx=256 ny=128 nz=256 ly=0.5 waves=1 rb=0.5 seed=1 eps3d=1e-6 stopTe=200
+name=d3-deep-rb0.5-e1e-1-s1 nx=256 ny=128 nz=256 ly=0.5 waves=1 rb=0.5 seed=1 eps3d=1e-1 stopTe=200
+name=d3-deep-rb0.5-e1e-1-s2 nx=256 ny=128 nz=256 ly=0.5 waves=1 rb=0.5 seed=2 eps3d=1e-1 stopTe=200
+name=d3-none-rb0.5-e1e-2-s1 nx=256 ny=128 nz=256 ly=0.5 waves=0 rb=0.5 seed=1 eps3d=1e-2 stopTe=200
+name=d3-none-rb0.5-e1e-2-s2 nx=256 ny=128 nz=256 ly=0.5 waves=0 rb=0.5 seed=2 eps3d=1e-2 stopTe=200

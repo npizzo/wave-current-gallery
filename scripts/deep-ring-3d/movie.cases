@@ -1,0 +1,2 @@
+name=mv-deep-rb1-e1e-2-s1 nx=256 ny=128 nz=256 ly=0.5 waves=1 rb=1 seed=1 eps3d=1e-2 stopTe=200 sliceTe=0.5
+name=mv-none-rb1-e1e-2-s1 nx=256 ny=128 nz=256 ly=0.5 waves=0 rb=1 seed=1 eps3d=1e-2 stopTe=200 sliceTe=0.5

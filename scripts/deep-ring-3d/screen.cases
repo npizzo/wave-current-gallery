@@ -1,0 +1,12 @@
+name=s2d-deep-rb1-s1 nx=256 ny=1 nz=256 waves=1 rb=1 seed=1 eps3d=0 stopTe=200
+name=s2d-none-rb1-s1 nx=256 ny=1 nz=256 waves=0 rb=1 seed=1 eps3d=0 stopTe=200
+name=s2d-deep-rb1-s2 nx=256 ny=1 nz=256 waves=1 rb=1 seed=2 eps3d=0 stopTe=200
+name=s2d-none-rb1-s2 nx=256 ny=1 nz=256 waves=0 rb=1 seed=2 eps3d=0 stopTe=200
+name=s2d-deep-rb1-s3 nx=256 ny=1 nz=256 waves=1 rb=1 seed=3 eps3d=0 stopTe=200
+name=s2d-none-rb1-s3 nx=256 ny=1 nz=256 waves=0 rb=1 seed=3 eps3d=0 stopTe=200
+name=s2d-deep-rb0.5-s1 nx=256 ny=1 nz=256 waves=1 rb=0.5 seed=1 eps3d=0 stopTe=200
+name=s2d-none-rb0.5-s1 nx=256 ny=1 nz=256 waves=0 rb=0.5 seed=1 eps3d=0 stopTe=200
+name=s2d-deep-rb0.5-s2 nx=256 ny=1 nz=256 waves=1 rb=0.5 seed=2 eps3d=0 stopTe=200
+name=s2d-none-rb0.5-s2 nx=256 ny=1 nz=256 waves=0 rb=0.5 seed=2 eps3d=0 stopTe=200
+name=s2d-deep-rb0.5-s3 nx=256 ny=1 nz=256 waves=1 rb=0.5 seed=3 eps3d=0 stopTe=200
+name=s2d-none-rb0.5-s3 nx=256 ny=1 nz=256 waves=0 rb=0.5 seed=3 eps3d=0 stopTe=200

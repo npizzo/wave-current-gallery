@@ -1,0 +1,14 @@
+Gate for submitting prod3d.cases (written before the full 2D screen finished; s2d-deep-rb1-s1 already done: jet_frac 0.424, aniso 0.63).
+PASS if, at 200 Te for rb=1:
+  (a) s2d-deep-rb1-s1 jet_frac in [0.30,0.55]   (WC25 deep seed 1: ~0.38-0.45)
+  (b) mean jet_frac over deep s1-s3 >= 2 x mean over none s1-s3, and every none run <= 0.25
+  (c) all 6 rb=1 runs completed, finite, div < 1e-10
+max|U_L|/u0 is informational (normalization of u0 may differ from WC25).
+If rb=1 fails but rb=0.5 passes, switch prod3d.cases to rb=0.5. If both fail, do not submit; report.
+Submit: sbatch --array=0-7%4 --job-name=dr-prod3d scripts/case.sbatch prod3d.cases ; record in submitted.txt.
+
+DECISION 2026-11-04T02:35Z (12/12 screen runs complete, div < 3e-16):
+ rb=1   FAIL: (a) deep-s1 0.424 ok; (b) deep mean 0.353 vs none mean 0.185 = 1.91x < 2x, and none-s1 0.287 > 0.25.
+ rb=0.5 PASS: deep-s1 0.334; deep mean 0.276 vs none mean 0.131 = 2.11x; max none 0.244; all complete.
+ Anisotropy (informational): rb=1 deep 0.42-0.63 / none ~0; rb=0.5 deep 0.32-0.38 / none ~-0.02.
+ Per the fallback rule, prod3d.cases switched to rb=0.5 (names carry rb0.5). Submitted below.
