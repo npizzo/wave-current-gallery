@@ -43,7 +43,7 @@
       600.0
     ]
   },
-  "profiles_csv": "mean-profiles-final.csv",
+  "profiles_csv": "mean-profiles-final.csv.gz",
   "groups": [
     {
       "name": "low-a05",
@@ -126,7 +126,7 @@
         "png": "low-a05-s1-fields.png",
         "pdf": "low-a05-s1-fields.pdf"
       },
-      "profiles_csv": "low-a05-s1-profiles.csv"
+      "profiles_csv": "low-a05-s1-profiles.csv.gz"
     },
     {
       "name": "low-a1",
@@ -209,7 +209,7 @@
         "png": "low-a1-s1-fields.png",
         "pdf": "low-a1-s1-fields.pdf"
       },
-      "profiles_csv": "low-a1-s1-profiles.csv"
+      "profiles_csv": "low-a1-s1-profiles.csv.gz"
     },
     {
       "name": "mid-a05",
@@ -292,7 +292,7 @@
         "png": "mid-a05-s1-fields.png",
         "pdf": "mid-a05-s1-fields.pdf"
       },
-      "profiles_csv": "mid-a05-s1-profiles.csv"
+      "profiles_csv": "mid-a05-s1-profiles.csv.gz"
     },
     {
       "name": "mid-a1",
@@ -375,7 +375,7 @@
         "png": "mid-a1-s1-fields.png",
         "pdf": "mid-a1-s1-fields.pdf"
       },
-      "profiles_csv": "mid-a1-s1-profiles.csv"
+      "profiles_csv": "mid-a1-s1-profiles.csv.gz"
     },
     {
       "name": "high-a05",
@@ -458,7 +458,7 @@
         "png": "high-a05-s1-fields.png",
         "pdf": "high-a05-s1-fields.pdf"
       },
-      "profiles_csv": "high-a05-s1-profiles.csv"
+      "profiles_csv": "high-a05-s1-profiles.csv.gz"
     },
     {
       "name": "high-a1",
@@ -541,7 +541,7 @@
         "png": "high-a1-s1-fields.png",
         "pdf": "high-a1-s1-fields.pdf"
       },
-      "profiles_csv": "high-a1-s1-profiles.csv"
+      "profiles_csv": "high-a1-s1-profiles.csv.gz"
     },
     {
       "name": "anchor",
@@ -624,7 +624,7 @@
         "png": "anchor-s1-fields.png",
         "pdf": "anchor-s1-fields.pdf"
       },
-      "profiles_csv": "anchor-s1-profiles.csv"
+      "profiles_csv": "anchor-s1-profiles.csv.gz"
     },
     {
       "name": "low-a1",
@@ -707,7 +707,7 @@
         "png": "low-a1-s2-fields.png",
         "pdf": "low-a1-s2-fields.pdf"
       },
-      "profiles_csv": "low-a1-s2-profiles.csv"
+      "profiles_csv": "low-a1-s2-profiles.csv.gz"
     },
     {
       "name": "high-a05",
@@ -790,7 +790,7 @@
         "png": "high-a05-s2-fields.png",
         "pdf": "high-a05-s2-fields.pdf"
       },
-      "profiles_csv": "high-a05-s2-profiles.csv"
+      "profiles_csv": "high-a05-s2-profiles.csv.gz"
     },
     {
       "name": "anchor-wide",
@@ -873,7 +873,7 @@
         "png": "anchor-wide-s1-fields.png",
         "pdf": "anchor-wide-s1-fields.pdf"
       },
-      "profiles_csv": "anchor-wide-s1-profiles.csv"
+      "profiles_csv": "anchor-wide-s1-profiles.csv.gz"
     },
     {
       "name": "anchor-fine",
@@ -956,7 +956,7 @@
         "png": "anchor-fine-s1-fields.png",
         "pdf": "anchor-fine-s1-fields.pdf"
       },
-      "profiles_csv": "anchor-fine-s1-profiles.csv"
+      "profiles_csv": "anchor-fine-s1-profiles.csv.gz"
     },
     {
       "name": "anchor-halfdt",
@@ -1039,7 +1039,7 @@
         "png": "anchor-halfdt-s1-fields.png",
         "pdf": "anchor-halfdt-s1-fields.pdf"
       },
-      "profiles_csv": "anchor-halfdt-s1-profiles.csv"
+      "profiles_csv": "anchor-halfdt-s1-profiles.csv.gz"
     },
     {
       "name": "anchor-nowaves",
@@ -1122,7 +1122,7 @@
         "png": "anchor-nowaves-s1-fields.png",
         "pdf": "anchor-nowaves-s1-fields.pdf"
       },
-      "profiles_csv": "anchor-nowaves-s1-profiles.csv"
+      "profiles_csv": "anchor-nowaves-s1-profiles.csv.gz"
     },
     {
       "name": "anchor-re300",
@@ -1205,7 +1205,7 @@
         "png": "anchor-re300-s1-fields.png",
         "pdf": "anchor-re300-s1-fields.pdf"
       },
-      "profiles_csv": "anchor-re300-s1-profiles.csv"
+      "profiles_csv": "anchor-re300-s1-profiles.csv.gz"
     }
   ],
   "sources": {
