@@ -1,0 +1,20 @@
+{
+  "final": {
+    "time": 600.0,
+    "Eeddy": 5.7365082397070785e-06,
+    "E3d": 1.0959142564425199e-06,
+    "fraction3d": 0.19104204346065407,
+    "w_rms": 0.0009005027236395726,
+    "w_rms_active": 0.0010551401748922253,
+    "R_active": 0.00920448867848333,
+    "adv_active": 0.025763468701287838,
+    "wave_active": 0.0052187334028412375,
+    "R_ratio_active": 0.29708955637006274,
+    "continuity_rms": 4.2882541848176975e-07,
+    "mean_current_change_rms": 0.030469873958477132,
+    "direct_R_current_work": -5.413603477620129e-10,
+    "cfl": 0.0712500029692045
+  },
+  "complete": true,
+  "scope": "Single realization; initial shear already present. New jets require persistent new extrema and separation from inherited shear. R is a continuum postprocessing diagnostic, not an exact native tendency split."
+}
