@@ -1,0 +1,47 @@
+{
+  "velocity-spectra-10-15": {
+    "velocity_time_Te": 12,
+    "spectrum_window_Te": [
+      10,
+      15
+    ],
+    "seeds": 3,
+    "Emax": 2.4593502147979285e-12
+  },
+  "velocity-spectra-15-20": {
+    "velocity_time_Te": 17,
+    "spectrum_window_Te": [
+      15,
+      20
+    ],
+    "seeds": 3,
+    "Emax": 1.5576341215114975e-12
+  },
+  "velocity-spectra-20-25": {
+    "velocity_time_Te": 22,
+    "spectrum_window_Te": [
+      20,
+      25
+    ],
+    "seeds": 3,
+    "Emax": 1.9682849100588484e-12
+  },
+  "velocity-spectra-25-30": {
+    "velocity_time_Te": 27,
+    "spectrum_window_Te": [
+      25,
+      30
+    ],
+    "seeds": 3,
+    "Emax": 2.5912750677842267e-12
+  },
+  "deep-water-velocity-spectra": {
+    "velocity_time_Te": 17,
+    "spectrum_window_Te": [
+      15,
+      20
+    ],
+    "seeds": 8,
+    "Emax": 3.5480958488338064e-12
+  }
+}
