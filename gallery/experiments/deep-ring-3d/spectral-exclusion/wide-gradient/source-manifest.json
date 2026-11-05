@@ -1,0 +1,12 @@
+{
+  "ensemble.py": "f9db5e1181aabdfc2192143218ea0ca69fae8415947495c58ac2988e322e8257",
+  "cases.json": "d11b114862b29d0b5a3255b34e9f63f815d602196a12ae688e43d344b0c20a79",
+  "campaign.cases": "1221fda9b85e0142c09ab723b36e8b7fbcb3065da99b90ce74793a0a8cacd668",
+  "README.txt": "071e7abc5b2035bfaee585c874e6a853a11f0811a5814fbbfca90c0dafddb89e",
+  "analyze.py": "6dfab94aa48bc3a653f3f9597c3d868d6b3dc330c72ee01164d79f5d00b57feb",
+  "environment/Manifest.toml": "984acaf9bdafbbd60a912a3f07597b70e00d489e02e1e97feda8dd118e4c9b3e",
+  "environment/Project.toml": "261d53fc40d8c39b25dc73219742be57e256b526eb65588da89125ae8d68618e",
+  "run/ring3d.jl": "51389c430735589d8cf0b3c8c7ed92d1ba0ade314b579ba9945954778ddc0c4a",
+  "run/regime_initial_conditions.jl": "3a8f83da2f569bd311b9765baef9b8cd32ce70871da929bf7a38496882e526fc",
+  "run/mechanism_diagnostics.jl": "0fc775c109b4890f40a670798c0d11c301164a4e510cc4967087922cef1a874d"
+}

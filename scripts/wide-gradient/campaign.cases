@@ -1,0 +1,6 @@
+name=beta-h2-lx4-s1 nx=2048 ny=1 nz=1024 lx=4 h=2 k0=27 rb=0.1111111111111111 beta=0.5 waves=1 seed=1 stopTe=100 sampleTe=1 transferTe=5 maxdt=1
+name=beta-h2-lx4-s2 nx=2048 ny=1 nz=1024 lx=4 h=2 k0=27 rb=0.1111111111111111 beta=0.5 waves=1 seed=2 stopTe=100 sampleTe=1 transferTe=5 maxdt=1
+name=beta-h2-lx4-s3 nx=2048 ny=1 nz=1024 lx=4 h=2 k0=27 rb=0.1111111111111111 beta=0.5 waves=1 seed=3 stopTe=100 sampleTe=1 transferTe=5 maxdt=1
+name=nowave-h2-lx4-s1 nx=2048 ny=1 nz=1024 lx=4 h=2 k0=27 rb=0.1111111111111111 beta=0.5 waves=0 seed=1 stopTe=100 sampleTe=1 transferTe=5 maxdt=1
+name=nowave-h2-lx4-s2 nx=2048 ny=1 nz=1024 lx=4 h=2 k0=27 rb=0.1111111111111111 beta=0.5 waves=0 seed=2 stopTe=100 sampleTe=1 transferTe=5 maxdt=1
+name=nowave-h2-lx4-s3 nx=2048 ny=1 nz=1024 lx=4 h=2 k0=27 rb=0.1111111111111111 beta=0.5 waves=0 seed=3 stopTe=100 sampleTe=1 transferTe=5 maxdt=1

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Larger-domain constant-gradient spectra | Wave–current gallery</title>
+<style>
+body{font:17px/1.6 system-ui;max-width:1050px;margin:32px auto;padding:20px;color:#173047;background:#f6f8fa}a{color:#135da8}h1{line-height:1.2}figure{margin:28px 0}img{display:block;width:100%;height:auto;background:#fff}figcaption,.small{font-size:15px;color:#3b5368}section{margin:36px 0}table{border-collapse:collapse;width:100%;background:#fff;font-size:15px}td,th{border-bottom:1px solid #d8dee4;padding:9px 12px;text-align:left;vertical-align:top}th{width:32%}nav{font-size:15px}.downloads{display:flex;flex-wrap:wrap;gap:8px 22px}code{overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<nav><a href="../">← Spectral-exclusion study</a> · <a href="../../">Deep-water jets</a> · <a href="../../../../">Gallery home</a></nav>
+<h1>Larger-domain constant-gradient spectra</h1>
+<p>Six completed two-dimensional Craik–Leibovich simulations compare a constant Stokes-drift curvature with matched no-wave controls. A deeper domain resolves the low-wavenumber structure using full-depth native modes. The initial eddy size, velocity and grid spacing are held fixed.</p>
+<p>The constant-gradient spectra show two depleted lobes on either side of <i>K</i> = 0 over 10–30 <i>T</i><sub>e</sub>; the controls do not show the same pronounced two-lobed pattern. This is a qualitative comparison of spectral depletion. It does not by itself establish a sharp exclusion boundary, a resolved dispersion relation, or cascade arrest.</p>
+<figure>
+<a href="spectra-time-windows.png"><img src="spectra-time-windows.png" width="1540" height="2339" alt="Four time-window comparisons: constant-gradient spectra on the left and matched no-wave controls on the right. The left panels show two pale, depleted lobes near the origin." ></a>
+<figcaption>Native kinetic-energy spectra averaged over three seeds and six snapshots per panel. Rows cover 10–15, 15–20, 20–25 and 25–30 <i>T</i><sub>e</sub>, including both endpoints, so adjacent windows share a snapshot. Black denotes higher energy and white lower energy. Each row uses a common maximum for the wave and no-wave cases; maxima can differ between rows. The logarithmic scale spans three decades. Positive vertical modes are mirrored with their energy divided equally between ±ℓ; the ℓ = 0 mode is counted once. The pale ℓ = 0 line in both columns follows the two-dimensional incompressibility and wall constraints and is not evidence for wave-induced exclusion. Axes are cycles per original unit length. The displayed region is a crop of the native spectrum; there is no taper, zero padding, smoothing or fitted boundary.</figcaption>
+</figure>
+<div class="downloads"><a href="spectra-time-windows.png">PNG figure</a><a href="spectra-time-windows.pdf">PDF figure</a><a href="window-mean-spectra.csv.gz">Plotted data (CSV, gzip)</a><a href="data-notes.txt">Data notes</a><a href="normalization.json">Colour-scale maxima</a></div>
+<section>
+<h2>Experiment</h2>
+<table>
+<tr><th scope="row">Domain and grid</th><td><i>L</i><sub>x</sub> = 4, <i>H</i> = 2; 2048 × 1024 cells; exactly two-dimensional. Δ<i>x</i> = Δ<i>z</i> = 1/512.</td></tr>
+<tr><th scope="row">Boundaries and numerics</th><td>Periodic in <i>x</i>; impermeable, free-slip top and bottom. WENO9 advection, third-order Runge–Kutta time stepping, no explicit viscosity.</td></tr>
+<tr><th scope="row">Initial turbulence</th><td>Narrow Gaussian ring centred at 27 cycles per original unit length, width 1 cycle per unit length; initial <i>K</i> = 0 modes removed. Three random seeds, each matched between the two profiles. Initially zero horizontally averaged Lagrangian velocity.</td></tr>
+<tr><th scope="row">Fixed scales</th><td><i>r</i><sub>b</sub> = 1/9; <i>u</i><sub>0</sub> = 0.0001563598513; <i>T</i><sub>e</sub> = 37.69911184. Approximately 19 cells per initial eddy wavelength. These scales are not renormalized to the new depth.</td></tr>
+<tr><th scope="row">Constant-gradient case</th><td>∂<sub>z</sub><i>u</i><sup>s</sup> = 0.5(<i>z</i> + <i>H</i>), hence ∂<sub>zz</sub><i>u</i><sup>s</sup> = +0.5. With <i>s</i> = −∂<sub>z</sub><i>u</i><sup>s</sup>, <i>s</i><sub>z</sub> = −0.5. This is an idealized mechanism control, not a monochromatic deep-water Stokes profile.</td></tr>
+<tr><th scope="row">No-wave control</th><td>Identical initial fields for each matched seed, with the prescribed Stokes-drift forcing switched off.</td></tr>
+<tr><th scope="row">Duration and output</th><td>All six runs reached 100 <i>T</i><sub>e</sub>. Velocity output every <i>T</i><sub>e</sub> (101 samples); native transfer diagnostics every 5 <i>T</i><sub>e</sub> (21 samples).</td></tr>
+<tr><th scope="row">Spectral basis</th><td>Fourier modes in <i>x</i>, native full-depth cosine/sine modes in <i>z</i>. Δ(<i>K</i>/2π) = Δ(ℓ/2π) = 0.25. The vertical spacing is twice as fine as the previous full-depth <i>H</i> = 1 basis and four times as fine as the previous half-depth window.</td></tr>
+</table>
+</section>
+<section>
+<h2>Checks and provenance</h2>
+<p>All six production tasks and their analyses completed successfully on Unity. The maximum absolute native Parseval discrepancy was 6.62 × 10<sup>−24</sup> in the stored energy units. This checks the spectral energy accounting; it is not a spatial-convergence test. The campaign completed on 4 November 2026 (US Eastern), with about 31 minutes from the first production start to the final ensemble figure.</p>
+<p>These results belong to the larger-domain constant-gradient campaign, separate from the earlier depth-dependent Stokes-profile and long-time runs on the parent page. Raw fields and full time-resolved spectral arrays remain archived on Unity. The downloads here contain the displayed window means, case parameters, and numerical-check summaries.</p>
+<div class="downloads"><a href="cases.json">Six-run configuration</a><a href="summary.json">Per-run checks</a><a href="source-manifest.json">Source checksums</a><a href="https://github.com/npizzo/wave-current-gallery/tree/main/scripts/wide-gradient">Simulation and analysis source</a></div>
+</section>
+</body>
+</html>

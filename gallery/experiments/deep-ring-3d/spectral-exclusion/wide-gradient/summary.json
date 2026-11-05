@@ -1,0 +1,72 @@
+{
+  "runs": {
+    "beta-h2-lx4-s1": {
+      "name": "beta-h2-lx4-s1",
+      "spectral_samples": 101,
+      "transfer_samples": 21,
+      "native_parseval_max_error": 3.308722450212111e-24,
+      "spectrum_parseval_max_error": 3.308722450212111e-24,
+      "cycles_x_spacing": 0.25,
+      "cycles_z_spacing": 0.25,
+      "analysis_wall_s": 31.52998730703257,
+      "interpretation": "Full-depth native modes. No padding, taper, coarsening or fitted exclusion boundary."
+    },
+    "beta-h2-lx4-s2": {
+      "name": "beta-h2-lx4-s2",
+      "spectral_samples": 101,
+      "transfer_samples": 21,
+      "native_parseval_max_error": 3.308722450212111e-24,
+      "spectrum_parseval_max_error": 3.308722450212111e-24,
+      "cycles_x_spacing": 0.25,
+      "cycles_z_spacing": 0.25,
+      "analysis_wall_s": 31.01724342396483,
+      "interpretation": "Full-depth native modes. No padding, taper, coarsening or fitted exclusion boundary."
+    },
+    "beta-h2-lx4-s3": {
+      "name": "beta-h2-lx4-s3",
+      "spectral_samples": 101,
+      "transfer_samples": 21,
+      "native_parseval_max_error": 3.308722450212111e-24,
+      "spectrum_parseval_max_error": 3.308722450212111e-24,
+      "cycles_x_spacing": 0.25,
+      "cycles_z_spacing": 0.25,
+      "analysis_wall_s": 31.23495445190929,
+      "interpretation": "Full-depth native modes. No padding, taper, coarsening or fitted exclusion boundary."
+    },
+    "nowave-h2-lx4-s1": {
+      "name": "nowave-h2-lx4-s1",
+      "spectral_samples": 101,
+      "transfer_samples": 21,
+      "native_parseval_max_error": 3.308722450212111e-24,
+      "spectrum_parseval_max_error": 3.308722450212111e-24,
+      "cycles_x_spacing": 0.25,
+      "cycles_z_spacing": 0.25,
+      "analysis_wall_s": 32.529446434928104,
+      "interpretation": "Full-depth native modes. No padding, taper, coarsening or fitted exclusion boundary."
+    },
+    "nowave-h2-lx4-s2": {
+      "name": "nowave-h2-lx4-s2",
+      "spectral_samples": 101,
+      "transfer_samples": 21,
+      "native_parseval_max_error": 6.617444900424222e-24,
+      "spectrum_parseval_max_error": 3.308722450212111e-24,
+      "cycles_x_spacing": 0.25,
+      "cycles_z_spacing": 0.25,
+      "analysis_wall_s": 30.931495076045394,
+      "interpretation": "Full-depth native modes. No padding, taper, coarsening or fitted exclusion boundary."
+    },
+    "nowave-h2-lx4-s3": {
+      "name": "nowave-h2-lx4-s3",
+      "spectral_samples": 101,
+      "transfer_samples": 21,
+      "native_parseval_max_error": 3.308722450212111e-24,
+      "spectrum_parseval_max_error": 3.308722450212111e-24,
+      "cycles_x_spacing": 0.25,
+      "cycles_z_spacing": 0.25,
+      "analysis_wall_s": 33.67715642508119,
+      "interpretation": "Full-depth native modes. No padding, taper, coarsening or fitted exclusion boundary."
+    }
+  },
+  "wavenumber_units": "cycles per original unit length, not renormalized to new depth",
+  "processing": "native full-depth cosine/sine modes; no padding or taper; common colour normalization within each row; 3 seeds"
+}
