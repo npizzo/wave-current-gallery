@@ -1,0 +1,295 @@
+{
+  "independent_spectral_checks": [
+    {
+      "case": "deep",
+      "t_Te": 100,
+      "window": "top0.5_hann",
+      "relative_L2_error": 4.0583087209158644e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 100,
+      "window": "top0.5_reflect",
+      "relative_L2_error": 4.4181495231969674e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 100,
+      "window": "top0.25_hann",
+      "relative_L2_error": 4.878861567499648e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 100,
+      "window": "top0.25_reflect",
+      "relative_L2_error": 4.555892028549254e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 100,
+      "window": "top0.125_hann",
+      "relative_L2_error": 5.245076244272405e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 100,
+      "window": "top0.125_reflect",
+      "relative_L2_error": 4.985844389999805e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 300,
+      "window": "top0.5_hann",
+      "relative_L2_error": 2.633413515519291e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 300,
+      "window": "top0.5_reflect",
+      "relative_L2_error": 2.554692005800105e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 300,
+      "window": "top0.25_hann",
+      "relative_L2_error": 3.5787693687524487e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 300,
+      "window": "top0.25_reflect",
+      "relative_L2_error": 2.3804746161297193e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 300,
+      "window": "top0.125_hann",
+      "relative_L2_error": 2.0845917943893915e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 300,
+      "window": "top0.125_reflect",
+      "relative_L2_error": 2.0171798458262415e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 600,
+      "window": "top0.5_hann",
+      "relative_L2_error": 2.659262791102846e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 600,
+      "window": "top0.5_reflect",
+      "relative_L2_error": 1.8816556050919871e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 600,
+      "window": "top0.25_hann",
+      "relative_L2_error": 2.347821601965295e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 600,
+      "window": "top0.25_reflect",
+      "relative_L2_error": 1.5300140015790446e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 600,
+      "window": "top0.125_hann",
+      "relative_L2_error": 1.6349934755255455e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 600,
+      "window": "top0.125_reflect",
+      "relative_L2_error": 1.5062513445280474e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 900,
+      "window": "top0.5_hann",
+      "relative_L2_error": 1.750356104483855e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 900,
+      "window": "top0.5_reflect",
+      "relative_L2_error": 1.9657495356176804e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 900,
+      "window": "top0.25_hann",
+      "relative_L2_error": 2.850403403852471e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 900,
+      "window": "top0.25_reflect",
+      "relative_L2_error": 2.3999000085487024e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 900,
+      "window": "top0.125_hann",
+      "relative_L2_error": 1.8470323301725276e-10
+    },
+    {
+      "case": "deep",
+      "t_Te": 900,
+      "window": "top0.125_reflect",
+      "relative_L2_error": 1.8868504538185645e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 100,
+      "window": "top0.5_hann",
+      "relative_L2_error": 3.607820120923137e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 100,
+      "window": "top0.5_reflect",
+      "relative_L2_error": 3.7235040964813575e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 100,
+      "window": "top0.25_hann",
+      "relative_L2_error": 4.4528753852482933e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 100,
+      "window": "top0.25_reflect",
+      "relative_L2_error": 3.844002212559629e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 100,
+      "window": "top0.125_hann",
+      "relative_L2_error": 5.172389722921014e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 100,
+      "window": "top0.125_reflect",
+      "relative_L2_error": 4.523924325559086e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 300,
+      "window": "top0.5_hann",
+      "relative_L2_error": 2.4762556834892647e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 300,
+      "window": "top0.5_reflect",
+      "relative_L2_error": 2.360004730535426e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 300,
+      "window": "top0.25_hann",
+      "relative_L2_error": 2.9996436840058274e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 300,
+      "window": "top0.25_reflect",
+      "relative_L2_error": 2.2028536557456092e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 300,
+      "window": "top0.125_hann",
+      "relative_L2_error": 3.794025287395492e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 300,
+      "window": "top0.125_reflect",
+      "relative_L2_error": 2.993650841315943e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 600,
+      "window": "top0.5_hann",
+      "relative_L2_error": 2.1452237335659303e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 600,
+      "window": "top0.5_reflect",
+      "relative_L2_error": 1.9692932400804775e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 600,
+      "window": "top0.25_hann",
+      "relative_L2_error": 2.268871986172373e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 600,
+      "window": "top0.25_reflect",
+      "relative_L2_error": 2.5438465136662204e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 600,
+      "window": "top0.125_hann",
+      "relative_L2_error": 2.3461487404511426e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 600,
+      "window": "top0.125_reflect",
+      "relative_L2_error": 2.696543837136489e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 900,
+      "window": "top0.5_hann",
+      "relative_L2_error": 1.6942762990173846e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 900,
+      "window": "top0.5_reflect",
+      "relative_L2_error": 1.7248736779468146e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 900,
+      "window": "top0.25_hann",
+      "relative_L2_error": 2.2344984966875055e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 900,
+      "window": "top0.25_reflect",
+      "relative_L2_error": 2.1382106634718215e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 900,
+      "window": "top0.125_hann",
+      "relative_L2_error": 2.330366496254263e-10
+    },
+    {
+      "case": "nowave",
+      "t_Te": 900,
+      "window": "top0.125_reflect",
+      "relative_L2_error": 2.4330799779694097e-10
+    }
+  ],
+  "max_relative_L2_error": 5.245076244272405e-10,
+  "matched_initial_velocity_sha256": "ae50869bd9f4d601fa4abef5d0e35bcc501931eb4ceaab2c8114f451bd871b15",
+  "note": "Independent SciPy FFT of Float32 archived velocities vs Float64 Julia online spectra; difference includes archive rounding. No time integration."
+}

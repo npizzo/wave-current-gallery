@@ -1,0 +1,930 @@
+{
+  "physical_target": "Deep-water waves with Stokes shear 0.25 exp(8z), us=0.03125 exp(8z), wave k=4, depth=2; kH=8",
+  "grid": [
+    4096,
+    2048
+  ],
+  "Lx": 4,
+  "H": 2,
+  "seed_pairs": 1,
+  "seed": 1,
+  "duration_Te": 1000,
+  "initial_ring_cycles": 27,
+  "u0": 0.000156359851299904,
+  "Te": 37.69911184307751,
+  "jobs": {
+    "deep": "66766564_0",
+    "control": "66766564_1"
+  },
+  "stage_windows_Te": [
+    [
+      80,
+      120
+    ],
+    [
+      280,
+      320
+    ],
+    [
+      580,
+      620
+    ],
+    [
+      880,
+      920
+    ]
+  ],
+  "final": {
+    "deep": {
+      "native_energy_ratio": 0.9964174241600797,
+      "horizontal_mean_energy_fraction_full_native": 0.2122588668608924,
+      "horizontal_mean_energy_fraction_upper025_native": 0.5273939760145838
+    },
+    "control": {
+      "native_energy_ratio": 0.9958721644008659,
+      "horizontal_mean_energy_fraction_full_native": 0.05909568350252872,
+      "horizontal_mean_energy_fraction_upper025_native": 0.03537537068844422
+    }
+  },
+  "angular_ratios": [
+    {
+      "stage_Te": 100,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.7460562558343363
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 1.005137499229118
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.7320229268101768
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.8249496367894398
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.7331985633929117
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 1.0028947277639308
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.6735889913222433
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.6360526299084599
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.7073551525446616
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.6564801395046357
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.4533637749089488
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.47931281328998165
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.589329526321221
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.4492019110555064
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 1.170469825581105
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.3428630635648911
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.6089905282002357
+    },
+    {
+      "stage_Te": 100,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.3452927710445043
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.6464579087749092
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.5665763527504365
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.39715646792040127
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.5617805634331067
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.8708728900974532
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.448702098940052
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.3462847588691051
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.408537325481817
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.9422219075731411
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.4011495639994052
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.2110510937324028
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.6248289465963257
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.29834369151848533
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.24952262652049573
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.9706980661308175
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.1509805179640602
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.36966372774550554
+    },
+    {
+      "stage_Te": 300,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.2105823047509495
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.5870113494869023
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.6484673655017738
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.21086431130906466
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.4329905582934159
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.8383346839400261
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.5658294692895115
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.18488713477495325
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.29102765925626284
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 1.5807043582171525
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.19013222566247207
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.1294254404272969
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.59214898184784
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.151443847247237
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.1317114196995618
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.43935779374891865
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.09756482051887448
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.22600904984915102
+    },
+    {
+      "stage_Te": 600,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.1331658491033673
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.4937662387586238
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.3600732711855429
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.33843571581468984
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.5,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.433217416569847
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.8579408098246466
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.4556676614446019
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.28244287792104666
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.5,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.260143927978416
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 1.1493517802754947
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.2204840533268158
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.25,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.09461918583585502
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.674538380247764
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.2203674074016939
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.25,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.08524726735622662
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.39225029632222486
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.125,
+      "method": "hann",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.08961273596259497
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 1,
+      "band_hi": 4,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 4,
+      "band_hi": 8,
+      "resolvable": false,
+      "horizontal_fraction_ratio": null
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 8,
+      "band_hi": 16,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.24846304037430716
+    },
+    {
+      "stage_Te": 900,
+      "depth": 0.125,
+      "method": "reflect",
+      "band_lo": 16,
+      "band_hi": 24,
+      "resolvable": true,
+      "horizontal_fraction_ratio": 0.060525230205161394
+    }
+  ],
+  "interpretation": "Strong local anisotropy and mean-current growth. The full-depth conservative directional input is not uniformly suppressed across stages and bands; a resolved curved spectral bottleneck is not established by this one pair.",
+  "finite_time_budget_closure": {
+    "full_native": {
+      "median_relative_residual": 0.0017921815392715223,
+      "max_relative_residual": 0.14496830770704716
+    },
+    "top0.25_hann": {
+      "median_relative_residual": 0.0012898519931747957,
+      "max_relative_residual": 0.05219833457908372
+    },
+    "top0.25_reflect": {
+      "median_relative_residual": 0.0010000612418449646,
+      "max_relative_residual": 0.029896917260736882
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "cases": 2,
+  "seed": 1,
+  "stages_Te": [
+    100,
+    300,
+    600,
+    900
+  ],
+  "averaging_windows": [
+    [
+      80,
+      120
+    ],
+    [
+      280,
+      320
+    ],
+    [
+      580,
+      620
+    ],
+    [
+      880,
+      920
+    ]
+  ],
+  "samples_per_stage": 41,
+  "weighting": "Trapezoidal time average of integer-Te outputs; one matched seed, not an ensemble",
+  "diagnostic_files_checked": 2002,
+  "max_errors": {
+    "centered_conservation": 1.0757922532101743e-17,
+    "pressure_projection": 1.0432010580677858e-13,
+    "numerical_pressure_projection": 2.801989988214896e-14,
+    "retained_x_parseval": 6.786776010207913e-16
+  },
+  "runtime_seconds": 70.99371600151062,
+  "notes": [
+    "K>0 stored with multiplicity2; K=0 retained once. ell signed. All retained |K|,|ell| <=40 cycles per original unit length.",
+    "Full native T_centered is conservative advection evaluated on WENO-evolved fields. Local-window T includes transport. Eddy/meaneddy are advecting-interaction splits, not separate receiving modes.",
+    "Independent pressure-work/vertical-flux closure was validated before production; energy closure here additionally checks sampled finite-time budgets.",
+    "Velocity panels are 4x4 spatial block averages for display only. Spectra use original native resolution."
+  ]
+}
