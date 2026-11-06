@@ -1,0 +1,1352 @@
+[
+  {
+    "path": "data/deep-full-s1-evolution.csv.gz",
+    "bytes": 56974,
+    "sha256": "83255d6c6d0acc0cbf2ff46dcfab7c9fbe2883f3bc5d1170f49385124d19ecfc"
+  },
+  {
+    "path": "data/deep-full-s1-profiles.csv.gz",
+    "bytes": 163294,
+    "sha256": "2985e95564f4de04ada22fe27e38ed7588b26f291379e19eed71432d10c181aa"
+  },
+  {
+    "path": "data/deep-full-s1-radial-flux.csv",
+    "bytes": 56947,
+    "sha256": "2964e35bcbd642de6a08c38c48a88db9dc967adfb19126384823eeb8f304e275"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_hann_E_0.csv.gz",
+    "bytes": 30560,
+    "sha256": "f64d0779fab884f8aab42692f8983d36cf69de700afc21e027c0c1576239d14d"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_hann_E_10.csv.gz",
+    "bytes": 30081,
+    "sha256": "a26f8cc3214bbd64cb0d46ab81a99c989329f228c498cf0746a8158a97f47b22"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_hann_E_100.csv.gz",
+    "bytes": 30009,
+    "sha256": "119561116097c3dec2814e64bdd1e7f546b26f95a0c2b18a75ad0b042d4f989c"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_hann_E_25.csv.gz",
+    "bytes": 30004,
+    "sha256": "95c3419627e4c6043a83943f8725cc1674452b168a4ef5e1dedd568541a8b3ae"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_hann_E_50.csv.gz",
+    "bytes": 30089,
+    "sha256": "851ea1cb6b657251df684ab696df0c7efaad1e76f68a36c4e488af25d22c22be"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_hann_avg10_25.csv.gz",
+    "bytes": 29919,
+    "sha256": "9c5b4b88ab369676512d84bedb9053a8c18e0c8422655f4e8626c2bf0c2c0acf"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_hann_avg50_100.csv.gz",
+    "bytes": 29598,
+    "sha256": "43a3789e04b75788b9daa00bb90afc4e0df80cc6d9244b8575e8c5e40b6afe37"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_reflect_E_0.csv.gz",
+    "bytes": 39406,
+    "sha256": "b7f3bcd9d0902a448de4b2e910c68bb5750cf7d286d051b8ba1bfb2829f1f14b"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_reflect_E_10.csv.gz",
+    "bytes": 39137,
+    "sha256": "521049be5259f38df770c1359345d7fca6f7b6c124b24476fbc6d7b72a3ace6c"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_reflect_E_100.csv.gz",
+    "bytes": 39107,
+    "sha256": "6313f67e8aeb5577f30bd5ea562320830517862a721f3a47b204941312ac916f"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_reflect_E_25.csv.gz",
+    "bytes": 39018,
+    "sha256": "00fa198642fe3de98ec7560edb9c0b6f940a6c76e21672a3cde58d9f10c34f78"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_reflect_E_50.csv.gz",
+    "bytes": 39240,
+    "sha256": "a7b6866ef2f8f8324ff74c8d7eff4cdce9687e8a59988820c4b851b5272a9c90"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_reflect_avg10_25.csv.gz",
+    "bytes": 39059,
+    "sha256": "f1e2676de0d033c61354780122ee677bafd39106f0a042e8c72f91ac0416ba63"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top0125_reflect_avg50_100.csv.gz",
+    "bytes": 39270,
+    "sha256": "10aadf0bbe17a4661c8459192b8c908ae8652ed5cae1d31140e9b6a3cf460cc8"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_hann_E_0.csv.gz",
+    "bytes": 59378,
+    "sha256": "d2b4ddabf9e63ff4b9c161ee52c1a8cb0c9d57061b201ba0a84c00344b5aba4b"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_hann_E_10.csv.gz",
+    "bytes": 58543,
+    "sha256": "0ffa22a70092d3a4bff61cdddbdee689a5bd9bcfaf2a8c00c524afa5aaff2682"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_hann_E_100.csv.gz",
+    "bytes": 58490,
+    "sha256": "757229db6bd787c80ce7c144a174d6f0a873f1162d4a3edbf22331cac50a66aa"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_hann_E_25.csv.gz",
+    "bytes": 58510,
+    "sha256": "3c6d64f0c40ead2952f19f2468d364a78bf00d68c3088cdc01df0d6812e5060f"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_hann_E_50.csv.gz",
+    "bytes": 58675,
+    "sha256": "64e49c48b6f4b2c68ee91fb95bd2bda4e4313798e932c4be63628ecd131e0b13"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_hann_avg10_25.csv.gz",
+    "bytes": 58037,
+    "sha256": "f9b6eaf44ec2b8b42c5d6d90b985d5d38c2fb028ee277ac98f5e81d6f66fef37"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_hann_avg50_100.csv.gz",
+    "bytes": 57992,
+    "sha256": "82fe94cdbc5a6b138ea2dfed2d8a2aa19c862c04c9982cdfcf2eb2c51001a124"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_reflect_E_0.csv.gz",
+    "bytes": 77430,
+    "sha256": "c8457ab07c7679f19a758e50e93a7fd3e050461a050c69cadfe441153c2f935e"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_reflect_E_10.csv.gz",
+    "bytes": 77095,
+    "sha256": "e6547bc7232fe3717f874727d3e96c10c251e4495f4c839d31b58b5fdc964634"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_reflect_E_100.csv.gz",
+    "bytes": 77287,
+    "sha256": "5ee421108f081618b437fa1be1973b79e0b21c5ac935938fe8784b5495698b92"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_reflect_E_25.csv.gz",
+    "bytes": 77109,
+    "sha256": "2496e147fb1adf8fb0369267d2a2f976e0ebba0fabbc9cacc1ae7beeb1573bc7"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_reflect_E_50.csv.gz",
+    "bytes": 77220,
+    "sha256": "3d9b91824dcda9b101d6559e2870a8861167b2270d5efabe2f32dc3398ce67d3"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_reflect_avg10_25.csv.gz",
+    "bytes": 76229,
+    "sha256": "0621f6af0c61c7392dc6808f85ffda3dc5694c39fee7d0e466bd1a28046293ec"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top025_reflect_avg50_100.csv.gz",
+    "bytes": 76346,
+    "sha256": "67378695518e3175b6ea4f44132d22335ac847e15b6e1c5fe77bb95c97aceb5f"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_hann_E_0.csv.gz",
+    "bytes": 116754,
+    "sha256": "57db2e713067f4928f91fd336e07d1d2571cdaec989f8595e0516565fc3308b3"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_hann_E_10.csv.gz",
+    "bytes": 114695,
+    "sha256": "b95bdf23360a71a71ccd6e20c244e4816769f123840456a81f6254efb261b111"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_hann_E_100.csv.gz",
+    "bytes": 115481,
+    "sha256": "65bf9670803c20ef0534234c1ed3fd7f95b3323c2fdfc1e6668010a0ba144601"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_hann_E_25.csv.gz",
+    "bytes": 114714,
+    "sha256": "c292633d4c72ac375b57c6e9f3dff20c6605703379ddf7f85568130563c19997"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_hann_E_50.csv.gz",
+    "bytes": 114832,
+    "sha256": "32b05fb3cf4281bf2a83ac2881a29bce578c91c3b428042d3e5135e73f622f0a"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_hann_avg10_25.csv.gz",
+    "bytes": 113546,
+    "sha256": "cc512280b5ef2c29e79a8b304bbce87fa1844155e8b9408e8da2dcfbbab9d5b2"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_hann_avg50_100.csv.gz",
+    "bytes": 113317,
+    "sha256": "0aadef1818e441ec5603eacc5c0bfb5d04357c196f7d46e45a58505fa6115ce9"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_reflect_E_0.csv.gz",
+    "bytes": 153402,
+    "sha256": "a0dd2e818007c48c74d7b6d168233229cd4e1d7a309c4222b1f8e07e6bb49457"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_reflect_E_10.csv.gz",
+    "bytes": 153063,
+    "sha256": "995fea3e0f307a2f4b923c766c1b381407c0956dcdabd749d8fc69fdf8c1f3dd"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_reflect_E_100.csv.gz",
+    "bytes": 153225,
+    "sha256": "f82b6253623d58d5963bd979b4624ca62b2b930b1c939b50f744c72dbedfb1f2"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_reflect_E_25.csv.gz",
+    "bytes": 153140,
+    "sha256": "dd0e38fe3778116530373f2d386247c92b1b2062012117b901ca8ffd5053e003"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_reflect_E_50.csv.gz",
+    "bytes": 153394,
+    "sha256": "02a2c262f6c1754b88397a97c05525ce57e1eba39a0083ba91dd3acd92d354c1"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_reflect_avg10_25.csv.gz",
+    "bytes": 151513,
+    "sha256": "fa41efd7f973c39f98aedcad9bd327ab490346b9472e6f46520edbb7603b85ac"
+  },
+  {
+    "path": "data/deep-full-s1-spectra/top05_reflect_avg50_100.csv.gz",
+    "bytes": 150216,
+    "sha256": "af08dac0a0ab899838630b3059591f6cacc6e044b02f117b741143fe4ed634ec"
+  },
+  {
+    "path": "data/deep-linear-s1-evolution.csv.gz",
+    "bytes": 41873,
+    "sha256": "f826e41f14cea1ff09ad6799d2a3ff56c66b9889f42be8ab7c9467c328e36786"
+  },
+  {
+    "path": "data/deep-linear-s1-profiles.csv.gz",
+    "bytes": 163631,
+    "sha256": "1eb9b2c7e26f903d578c7e283618cb601a04de1ffe46cf6f0a87d9d707158e3c"
+  },
+  {
+    "path": "data/deep-linear-s1-radial-flux.csv",
+    "bytes": 57365,
+    "sha256": "3a764791745b674729168ff8c336a7e6522baec8f97f06d469aef54e1e0911dc"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_hann_E_0.csv.gz",
+    "bytes": 30560,
+    "sha256": "f64d0779fab884f8aab42692f8983d36cf69de700afc21e027c0c1576239d14d"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_hann_E_10.csv.gz",
+    "bytes": 30631,
+    "sha256": "1db6b5ffe627b63e5e37b91463f0e64a432ef1e4752181abfdaa80dc04d17cfc"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_hann_E_100.csv.gz",
+    "bytes": 30518,
+    "sha256": "c62c43ccef0e22037a4da180d26ee7c3eb4366cac322674e438ee09c2adf0262"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_hann_E_25.csv.gz",
+    "bytes": 30728,
+    "sha256": "a78f63404e1e7b129744554e56c33d2f43772cb69444772c87721b14f7012136"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_hann_E_50.csv.gz",
+    "bytes": 30635,
+    "sha256": "efd208a1ce334d38dc09368944bc525c90353bc91479f698bce175f260210606"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_hann_avg10_25.csv.gz",
+    "bytes": 30842,
+    "sha256": "cb34af0b18e574a4658d23733da9fdc917f021d16f8bd14ae63a4cd40a8ba3e8"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_hann_avg50_100.csv.gz",
+    "bytes": 30694,
+    "sha256": "c3f33f2846f2c8224f550b7d031639941c7c12262f90f2bbc0f2b68e483da5ae"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_reflect_E_0.csv.gz",
+    "bytes": 39406,
+    "sha256": "b7f3bcd9d0902a448de4b2e910c68bb5750cf7d286d051b8ba1bfb2829f1f14b"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_reflect_E_10.csv.gz",
+    "bytes": 39487,
+    "sha256": "f55a0566be7f66231c0d8ea9283b6eb461d384c7c43d493433078da887434137"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_reflect_E_100.csv.gz",
+    "bytes": 39370,
+    "sha256": "53cb37306122f423c833b5a8ede95eef0689eec5cf0910e395b63ca6bca0d141"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_reflect_E_25.csv.gz",
+    "bytes": 39469,
+    "sha256": "a2ac84acec89ddc4b08f1d1fc5ef49011cce0e7f9b99c7f2582ec05b242eae37"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_reflect_E_50.csv.gz",
+    "bytes": 39523,
+    "sha256": "599f2d3747491259e8aa91e4d49ed9ec6dfe875c9779613b62f17bd640b4f8ab"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_reflect_avg10_25.csv.gz",
+    "bytes": 39690,
+    "sha256": "0b25ada630095d75ade1fffbf21fb395107316f601fdfa41e774f0ce231eb4d7"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top0125_reflect_avg50_100.csv.gz",
+    "bytes": 39826,
+    "sha256": "8738b35677bbaeefe0cf8856ddf4b327bc53d30107d6db13007acf1614a94f37"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_hann_E_0.csv.gz",
+    "bytes": 59378,
+    "sha256": "d2b4ddabf9e63ff4b9c161ee52c1a8cb0c9d57061b201ba0a84c00344b5aba4b"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_hann_E_10.csv.gz",
+    "bytes": 59615,
+    "sha256": "57f11dfa29b215dca559645d28c990d176076c7868d471969a3c4abfb0e22cae"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_hann_E_100.csv.gz",
+    "bytes": 59507,
+    "sha256": "002321523957604e95010d5824712fbd26097df13b016c05d955a54aae26cfe8"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_hann_E_25.csv.gz",
+    "bytes": 59547,
+    "sha256": "46373f69f94c874a08d7325a86a50ad6d70a3e7223a52abde45b735344a6f04c"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_hann_E_50.csv.gz",
+    "bytes": 59380,
+    "sha256": "2734072a18af138bb322e59c2f9a98f1f243b49ae026742d89834165328527f5"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_hann_avg10_25.csv.gz",
+    "bytes": 59680,
+    "sha256": "57f5eea4d8daf6ef9b5463fc3a2e95d5d5a310f001e92b4cc3291a4fba68cf5d"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_hann_avg50_100.csv.gz",
+    "bytes": 59654,
+    "sha256": "59e2afdde4238bd8cbf23722203954f9748a6e21c651a6186327c0103219f686"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_reflect_E_0.csv.gz",
+    "bytes": 77430,
+    "sha256": "c8457ab07c7679f19a758e50e93a7fd3e050461a050c69cadfe441153c2f935e"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_reflect_E_10.csv.gz",
+    "bytes": 77458,
+    "sha256": "b6b9ec63fe28833da5578d3dc92894a16a4d28cbad0264764d8cdd25416d65f2"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_reflect_E_100.csv.gz",
+    "bytes": 77525,
+    "sha256": "099c10f4efd00cce7714eba197eff59d9b47b57bb6082aa76ba1bc9b1ac18f37"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_reflect_E_25.csv.gz",
+    "bytes": 77520,
+    "sha256": "da7ee09a2c07aed8717cf3254f938e035b6b82946cfd9c9c2f2faa5e4a2345d9"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_reflect_E_50.csv.gz",
+    "bytes": 77523,
+    "sha256": "94167907e45f8742f58d81a0f249b58d0cb9e728f8e44363d91bcf428be7d93f"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_reflect_avg10_25.csv.gz",
+    "bytes": 77199,
+    "sha256": "4c9ac7a958fae51bb9df4ce12ea30a63090b99921ce7b949075f0b2e228ce1d9"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top025_reflect_avg50_100.csv.gz",
+    "bytes": 77329,
+    "sha256": "1932d30382bf929b76bc5c76a3d0dc56cf65388067592070cf91c1f8ace9d827"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_hann_E_0.csv.gz",
+    "bytes": 116754,
+    "sha256": "57db2e713067f4928f91fd336e07d1d2571cdaec989f8595e0516565fc3308b3"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_hann_E_10.csv.gz",
+    "bytes": 116850,
+    "sha256": "316c5658f19a81a6ed4c1590eb2418108daea640ef33ee5fa8bb8102bfddb6af"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_hann_E_100.csv.gz",
+    "bytes": 116619,
+    "sha256": "763b7a15e8f98e18b0097827d73f7222439f31b090ce82aa72343391ea580658"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_hann_E_25.csv.gz",
+    "bytes": 116830,
+    "sha256": "fca0427aba289359068dc5cf1eb25ce6cde6c255e4e99d5edd174a8bc5a24ac4"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_hann_E_50.csv.gz",
+    "bytes": 116665,
+    "sha256": "716cc0af277244a3e845a5d7833570e9376ffdb9a2942c52091a85e8073e52da"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_hann_avg10_25.csv.gz",
+    "bytes": 116835,
+    "sha256": "0a15cc3dbb1be3f9e16c52947107dc1feab93cce767f58d8e6c97a6835491354"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_hann_avg50_100.csv.gz",
+    "bytes": 117034,
+    "sha256": "4473c9f6d8875c74a7e7e888677107ccec8fd6a50f57eab501c2e1fabb740765"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_reflect_E_0.csv.gz",
+    "bytes": 153402,
+    "sha256": "a0dd2e818007c48c74d7b6d168233229cd4e1d7a309c4222b1f8e07e6bb49457"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_reflect_E_10.csv.gz",
+    "bytes": 153714,
+    "sha256": "2092f0cbb49d1fbec182f66d9f69fc6f01f64d961753c1cb42c9dd9aa0ae80dc"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_reflect_E_100.csv.gz",
+    "bytes": 153620,
+    "sha256": "14f4eb00418a877bcf3c1e2e7c6b5c32d6ca0db8cc458a1e4f4da23a522ce81d"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_reflect_E_25.csv.gz",
+    "bytes": 153707,
+    "sha256": "bf392cce733d68a4efeaf9dffe0448f937fa902c5dd2172a9e048dc48fc4322f"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_reflect_E_50.csv.gz",
+    "bytes": 153935,
+    "sha256": "1dcca2bca719cc45f8e492c14596d52dce13cd752444bd513f5edca6d4f528a6"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_reflect_avg10_25.csv.gz",
+    "bytes": 152782,
+    "sha256": "7cdd5fee60c37e6868dbef2d44204f3fc3c3c9773fcff706783725ed1b899f2f"
+  },
+  {
+    "path": "data/deep-linear-s1-spectra/top05_reflect_avg50_100.csv.gz",
+    "bytes": 152594,
+    "sha256": "17cdcf564560b9fa68d77c4da1e657a884c263cc114b3d39b6b260aa2641e430"
+  },
+  {
+    "path": "data/deep-ql-s1-evolution.csv.gz",
+    "bytes": 56911,
+    "sha256": "b756d89e0e7a14209c14167efd4c29d050b0f24723b05337b960b60d119f0272"
+  },
+  {
+    "path": "data/deep-ql-s1-profiles.csv.gz",
+    "bytes": 162980,
+    "sha256": "831efb3ec60a84e59ce61f2659fc976a258d801c986a360defa7c7011110d2e8"
+  },
+  {
+    "path": "data/deep-ql-s1-radial-flux.csv",
+    "bytes": 57029,
+    "sha256": "2b1eeb073ef05f0cf7c73765f94edb8adb5f4838414893b31ebffcc9c5fa97b7"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_hann_E_0.csv.gz",
+    "bytes": 30560,
+    "sha256": "f64d0779fab884f8aab42692f8983d36cf69de700afc21e027c0c1576239d14d"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_hann_E_10.csv.gz",
+    "bytes": 30592,
+    "sha256": "c45fa9577407fcffb8391c816e66d21deb0ffc5d2a3c1a7e69558fcd6fdebf7c"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_hann_E_100.csv.gz",
+    "bytes": 30279,
+    "sha256": "2c2cae11db32e2c34aef7417994e27b93eecb76225a6f105b95459fbf31531cd"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_hann_E_25.csv.gz",
+    "bytes": 30377,
+    "sha256": "0b0f2d509f024f4a81a721bf940d7ce4f9752e35ef8448d150dbba248696b4e9"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_hann_E_50.csv.gz",
+    "bytes": 30440,
+    "sha256": "5ba276525848e16d5fe1e760d58b2fe7623685afbbfbd1bd8c138163a87a4f7d"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_hann_avg10_25.csv.gz",
+    "bytes": 30597,
+    "sha256": "91792f515339d583ef509409f5939ae759b3c03d5f1e0400d8eac0728dafdcf0"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_hann_avg50_100.csv.gz",
+    "bytes": 30352,
+    "sha256": "6054bd8972401daa745d12cf107fc1e45ef2fa85f2bf6b2a843797bde6619114"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_reflect_E_0.csv.gz",
+    "bytes": 39406,
+    "sha256": "b7f3bcd9d0902a448de4b2e910c68bb5750cf7d286d051b8ba1bfb2829f1f14b"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_reflect_E_10.csv.gz",
+    "bytes": 39398,
+    "sha256": "932381d8fdbea687878bca1828c74a7dec4ca85cbfea50512441ec94927ee0a1"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_reflect_E_100.csv.gz",
+    "bytes": 39368,
+    "sha256": "a300b908d57c64f36ca67eaf0125970addf40d991e4707abf373740905788514"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_reflect_E_25.csv.gz",
+    "bytes": 39515,
+    "sha256": "67a12673d2cbf9522352695525b402b4359253a00727abc08c869a1f69c60b4a"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_reflect_E_50.csv.gz",
+    "bytes": 39282,
+    "sha256": "964a4ed0027486acc7c25dcb88df7c77959c556173507e445bf74cd9bfb063d4"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_reflect_avg10_25.csv.gz",
+    "bytes": 39750,
+    "sha256": "756c2b504278aec08da1662c77a35c4bea0e822a3934c7d10c0dd6d1e47fceab"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top0125_reflect_avg50_100.csv.gz",
+    "bytes": 39720,
+    "sha256": "27b98d90ca9d5771625a6018cdadc36e97acc3102977d41ba6b634134c7c055c"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_hann_E_0.csv.gz",
+    "bytes": 59378,
+    "sha256": "d2b4ddabf9e63ff4b9c161ee52c1a8cb0c9d57061b201ba0a84c00344b5aba4b"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_hann_E_10.csv.gz",
+    "bytes": 59382,
+    "sha256": "8b33b20a5e41f76b0381d0e2d852fac7fbc7c05f95ef7363d754dde668c79ea1"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_hann_E_100.csv.gz",
+    "bytes": 59053,
+    "sha256": "d71f68f5d46a89855789850ed1e23958021365370f60bce4f70396f74bd91139"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_hann_E_25.csv.gz",
+    "bytes": 59042,
+    "sha256": "0e393281910c45330efa6e5136f1945becdabe01b2652d45d23ec4b7aaf88a31"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_hann_E_50.csv.gz",
+    "bytes": 58989,
+    "sha256": "a421adebc6c21a1b62cd111fd9983913f56ff1a1afd881de1c7c42a50520343b"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_hann_avg10_25.csv.gz",
+    "bytes": 59232,
+    "sha256": "550b98541b5e799bbf9823d0cf443073a330d1b13e80d86c8c05caee55490f92"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_hann_avg50_100.csv.gz",
+    "bytes": 58579,
+    "sha256": "ae9120208809a34494ae505443371383170558b1c0ecfc88f70598e6ca4ff5b8"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_reflect_E_0.csv.gz",
+    "bytes": 77430,
+    "sha256": "c8457ab07c7679f19a758e50e93a7fd3e050461a050c69cadfe441153c2f935e"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_reflect_E_10.csv.gz",
+    "bytes": 77422,
+    "sha256": "19af558072eadbb6ef98c710971c1cd663beb69881aca8d44020d90961d90ae7"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_reflect_E_100.csv.gz",
+    "bytes": 77499,
+    "sha256": "5a70a5283e573a24869bca7aa91bcd3608b307a588b49e55a3bd362ba6f99d0f"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_reflect_E_25.csv.gz",
+    "bytes": 77606,
+    "sha256": "898db78f099d1f7d1b3de0d9db929cc582eedc85118bb9ebdab00c95ac1c025f"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_reflect_E_50.csv.gz",
+    "bytes": 77597,
+    "sha256": "8e23c5df329929c06526b31b72deb82a30347f97324f637ec5d724c5a4295836"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_reflect_avg10_25.csv.gz",
+    "bytes": 77238,
+    "sha256": "bf33e6f96b8b9f65340be438344f0854a90db9d95d48cafdfc47d0516444306b"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top025_reflect_avg50_100.csv.gz",
+    "bytes": 77072,
+    "sha256": "521effbccab20b5e0939df217d299a6749943649165a5f8b3bb07663b1076f9f"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_hann_E_0.csv.gz",
+    "bytes": 116754,
+    "sha256": "57db2e713067f4928f91fd336e07d1d2571cdaec989f8595e0516565fc3308b3"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_hann_E_10.csv.gz",
+    "bytes": 116497,
+    "sha256": "ab0b6be595d661a9c1c9e1c17da81ee49b53673c7c320bd8b45804ca483763ec"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_hann_E_100.csv.gz",
+    "bytes": 116180,
+    "sha256": "9b0a828694282f867604ccd095a187c6c959a6834ad247b14b064d6870844def"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_hann_E_25.csv.gz",
+    "bytes": 116083,
+    "sha256": "554ad0d4feaabac793b8bb79ca19aefd0fb66911ef5bd1c86ee99000d42afc8c"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_hann_E_50.csv.gz",
+    "bytes": 115589,
+    "sha256": "57db831082d4f5026f24ba440b9ab0a3f6e2093cfad877289238b2a60df0722c"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_hann_avg10_25.csv.gz",
+    "bytes": 116113,
+    "sha256": "7e7cf29d2cc1bff1903667dc04b7f37b442905eec829225d34ffd0cf6e422691"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_hann_avg50_100.csv.gz",
+    "bytes": 115181,
+    "sha256": "47d84b16f03bc58cfe4e6cab9cbe7daa6e2698e843de4867d5f6febf6144690a"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_reflect_E_0.csv.gz",
+    "bytes": 153402,
+    "sha256": "a0dd2e818007c48c74d7b6d168233229cd4e1d7a309c4222b1f8e07e6bb49457"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_reflect_E_10.csv.gz",
+    "bytes": 153833,
+    "sha256": "dee69be5ad20baf91a7b7e07f883ee3f483a9cb094ff3fd67060af872d860cf5"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_reflect_E_100.csv.gz",
+    "bytes": 153819,
+    "sha256": "eb93299b65445ac62a9e3070c0bf124fe46d4b102cd4b6ce4df8ee90a5cec18f"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_reflect_E_25.csv.gz",
+    "bytes": 153822,
+    "sha256": "a632eb363d08f5314ea2e7f6fe3300ed00f6706eac4326d843f54b4e8bc63b2d"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_reflect_E_50.csv.gz",
+    "bytes": 153914,
+    "sha256": "df0b681fcbefae83443b8f482bb9182fe9fa5b3e764983f7fb51439a8362b62d"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_reflect_avg10_25.csv.gz",
+    "bytes": 152935,
+    "sha256": "b1712d3575540a8f87989d0773294812cec29edc3ecf3fa325c36f93e5b33065"
+  },
+  {
+    "path": "data/deep-ql-s1-spectra/top05_reflect_avg50_100.csv.gz",
+    "bytes": 152404,
+    "sha256": "2feef4f8c2e6d0624b3105cee426c870bb25e25d61c36bd9c8905cf4b5ffe7a2"
+  },
+  {
+    "path": "data/nowave-full-s1-evolution.csv.gz",
+    "bytes": 49733,
+    "sha256": "d603a0c0c968cdef4e387fe4d683a33f774976f82ffd3e71d2049fc8808750ca"
+  },
+  {
+    "path": "data/nowave-full-s1-profiles.csv.gz",
+    "bytes": 157187,
+    "sha256": "eecb289f7cb4a19b1cc4ff63fb5a5eddfd5207ff270e536b554d4b0486633be9"
+  },
+  {
+    "path": "data/nowave-full-s1-radial-flux.csv",
+    "bytes": 57062,
+    "sha256": "332a920a7ae3b21844f5bb7d3f5234e06a9e9c158c067a5d77cb232da3763957"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_hann_E_0.csv.gz",
+    "bytes": 30560,
+    "sha256": "f64d0779fab884f8aab42692f8983d36cf69de700afc21e027c0c1576239d14d"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_hann_E_10.csv.gz",
+    "bytes": 30131,
+    "sha256": "eb3035889b1619bb96716e8ea21ee4c66708a53ae5e8e635cb3a78fd2ab355eb"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_hann_E_100.csv.gz",
+    "bytes": 29957,
+    "sha256": "95ef280c75fcd07f5a8a57fcccada1b1f47d55dee9fa24842c5f3dba00630bcb"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_hann_E_25.csv.gz",
+    "bytes": 30114,
+    "sha256": "73a790c58cf1e9ad0756b9a88392130bb1b6fdbb2bc6ddb5c7abfa34e06fd008"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_hann_E_50.csv.gz",
+    "bytes": 30130,
+    "sha256": "5c24ee02296434db1a5ba2abd38abf4983a3e55d3ee9212b25f03a719fdd2417"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_hann_avg10_25.csv.gz",
+    "bytes": 30008,
+    "sha256": "62958a8404afa8b4e602bc061042aeec1a7b374e3c684782b10054da58986a79"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_hann_avg50_100.csv.gz",
+    "bytes": 29650,
+    "sha256": "1fec6f1f48402d896b60dcfdaf432c93b9155de9c4cd2bb902128dc6a29eaa6c"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_reflect_E_0.csv.gz",
+    "bytes": 39406,
+    "sha256": "b7f3bcd9d0902a448de4b2e910c68bb5750cf7d286d051b8ba1bfb2829f1f14b"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_reflect_E_10.csv.gz",
+    "bytes": 39089,
+    "sha256": "a43921d54871005fbca745066b7866bbcc69d34215884771b02046f00f5084e9"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_reflect_E_100.csv.gz",
+    "bytes": 38941,
+    "sha256": "0387c9bcb50060fdcd2751ac07a01e8399746141145ea73836e2145aa85124d1"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_reflect_E_25.csv.gz",
+    "bytes": 39044,
+    "sha256": "e4054cd5d829be47e30e3b14ea789eb3e995dee896a1fd8a104211307eb9fcf5"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_reflect_E_50.csv.gz",
+    "bytes": 39072,
+    "sha256": "1635b4f4b137360ff65aead9e002c126ef1b08dd5e8b7b8ecc0eedfdeb65bc7d"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_reflect_avg10_25.csv.gz",
+    "bytes": 38993,
+    "sha256": "bc78a4dd179caf054324ce1ee49877c0978843e234731f90bbeb6501532129c3"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top0125_reflect_avg50_100.csv.gz",
+    "bytes": 39193,
+    "sha256": "a4bed078122863adeb030bbb585094b05198e6fa9176521e63d8c028576412fe"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_hann_E_0.csv.gz",
+    "bytes": 59378,
+    "sha256": "d2b4ddabf9e63ff4b9c161ee52c1a8cb0c9d57061b201ba0a84c00344b5aba4b"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_hann_E_10.csv.gz",
+    "bytes": 58344,
+    "sha256": "c7329d0368af9a0006055b359e4930162062ec711e184ae1adbbbcc8f79c960f"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_hann_E_100.csv.gz",
+    "bytes": 58365,
+    "sha256": "48c486b9eb79eaec5506a9be977174f8b761fe1b2dce20e147fb52258259d5da"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_hann_E_25.csv.gz",
+    "bytes": 58542,
+    "sha256": "f018c49448637ea9d95de29af8912a77b546e3c26d43249e6f6175cb1d8beb55"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_hann_E_50.csv.gz",
+    "bytes": 58528,
+    "sha256": "33d54407db865396ac5ed81e595da2eb2ab8909e3fb4f37172906d5aa9ffd79c"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_hann_avg10_25.csv.gz",
+    "bytes": 57976,
+    "sha256": "0c778b47433f1bc9b8a32502a2333abc738cf389c9b87ec3be7e8a3059cd02e2"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_hann_avg50_100.csv.gz",
+    "bytes": 57649,
+    "sha256": "f99db88678b4b0a494b51cdc675bd73c05f2e309367419a1331c4fd49c3d6248"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_reflect_E_0.csv.gz",
+    "bytes": 77430,
+    "sha256": "c8457ab07c7679f19a758e50e93a7fd3e050461a050c69cadfe441153c2f935e"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_reflect_E_10.csv.gz",
+    "bytes": 77032,
+    "sha256": "06844a4c85101829b9db99fd26a1727e0267ab6c7887d7447171abb12201a05f"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_reflect_E_100.csv.gz",
+    "bytes": 77092,
+    "sha256": "642c41b6f6ec5e5557eea9cf39f26bfac49e8ae71ed4cbc5f6d4fd5969c91c50"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_reflect_E_25.csv.gz",
+    "bytes": 77116,
+    "sha256": "1d26daecb3acee498249e74b9dbb33c8e11a11ddf099777df0b737d175a4516c"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_reflect_E_50.csv.gz",
+    "bytes": 77170,
+    "sha256": "e92a4ac23a5f4688e48e2417678c66265093b8d9da4f75089d766bdda4da8a34"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_reflect_avg10_25.csv.gz",
+    "bytes": 76367,
+    "sha256": "a68b6b0a9e9fbf1f9e949ad140ec758250ded1186488b0d388ab94c8c882e777"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top025_reflect_avg50_100.csv.gz",
+    "bytes": 76300,
+    "sha256": "5605667008a01bd51a77feee43de0c12f88c48ecfe69a34b4701742f8f44287d"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_hann_E_0.csv.gz",
+    "bytes": 116754,
+    "sha256": "57db2e713067f4928f91fd336e07d1d2571cdaec989f8595e0516565fc3308b3"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_hann_E_10.csv.gz",
+    "bytes": 114703,
+    "sha256": "fb6be0421aecbf61b81b59f13de653e715a6a2bfef6f483c4925748e0ce09a26"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_hann_E_100.csv.gz",
+    "bytes": 115543,
+    "sha256": "24ce772bf68c776c77bf7227912d281323ccbc36bc90abfc87872e938077bb87"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_hann_E_25.csv.gz",
+    "bytes": 114541,
+    "sha256": "ab98dad29b13c0a51589021233b5e6b076a79d675c6d05788433cfc76180bfba"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_hann_E_50.csv.gz",
+    "bytes": 114615,
+    "sha256": "480902c188e5f3d715296a9c837a821a32508d316aad392e8ef5812a89d42506"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_hann_avg10_25.csv.gz",
+    "bytes": 113655,
+    "sha256": "e5074eb73575c77f12bedbb8f90152bf08b795807647610527c2cf6e569d59f9"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_hann_avg50_100.csv.gz",
+    "bytes": 113146,
+    "sha256": "68ad3ce3088323ea945d55b49ced89ff32dac77f932fb1411d8f1e7e43b16d28"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_reflect_E_0.csv.gz",
+    "bytes": 153402,
+    "sha256": "a0dd2e818007c48c74d7b6d168233229cd4e1d7a309c4222b1f8e07e6bb49457"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_reflect_E_10.csv.gz",
+    "bytes": 153169,
+    "sha256": "8fd9ca15956ffe2906eb2ca8dd64c2de292d90ef200d3dc31cdf493faa3a7351"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_reflect_E_100.csv.gz",
+    "bytes": 153074,
+    "sha256": "cba349395f9ffa78105c1ebb0f6f307cc4713f682eee515a1af9a3c39a5b1256"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_reflect_E_25.csv.gz",
+    "bytes": 153122,
+    "sha256": "11329efbdf44965697126b474adf845611ea5559151247edeb600ce62443f4fc"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_reflect_E_50.csv.gz",
+    "bytes": 153159,
+    "sha256": "ccc237842026aef9f14bfcd2e831292dea199c09d54172157e2d8889ceb050b9"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_reflect_avg10_25.csv.gz",
+    "bytes": 151367,
+    "sha256": "820b6d43590cef0b36fe44637e00c23edf045418f0061e185834f69c48cd483b"
+  },
+  {
+    "path": "data/nowave-full-s1-spectra/top05_reflect_avg50_100.csv.gz",
+    "bytes": 150250,
+    "sha256": "ae0caa1a632164ca7558848b7a99230eda0fa3c25da7f0c261fa591da21236e8"
+  },
+  {
+    "path": "data/nowave-linear-s1-evolution.csv.gz",
+    "bytes": 48933,
+    "sha256": "8821202e25c89774986e62f97660bee1a381eb48fab65600db33e575c230afe9"
+  },
+  {
+    "path": "data/nowave-linear-s1-profiles.csv.gz",
+    "bytes": 146986,
+    "sha256": "4233dfc6cbc799bb9b5e090a964a0b2fee008602f48c2684f1a9980df3f2a89c"
+  },
+  {
+    "path": "data/nowave-linear-s1-radial-flux.csv",
+    "bytes": 57556,
+    "sha256": "06499026c5a2f20f622370967f7e51db557a3f1e99c22d5b1ec37a501cd49889"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_hann_E_0.csv.gz",
+    "bytes": 30560,
+    "sha256": "f64d0779fab884f8aab42692f8983d36cf69de700afc21e027c0c1576239d14d"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_hann_E_10.csv.gz",
+    "bytes": 30698,
+    "sha256": "87804337b09cf03464a71a2ff18b1d4e1fd79f0507659f86e843587c3e4d69d5"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_hann_E_100.csv.gz",
+    "bytes": 30543,
+    "sha256": "4e6916515e6b968b6277e624f508637aa559156e554fccd8f8afdb495b96177e"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_hann_E_25.csv.gz",
+    "bytes": 30603,
+    "sha256": "ecacf4496b82f337cca0dde53433a729acab852bcde90209984b6e73bf82eb40"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_hann_E_50.csv.gz",
+    "bytes": 30640,
+    "sha256": "2a0e60427f7f94791eb6b108f6c720d78baa942824b01b729b28ad2288db41c4"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_hann_avg10_25.csv.gz",
+    "bytes": 30862,
+    "sha256": "1e1a61d75bb8604018ad87b87f0c3d81e1603ca44635476dc0d2d8ea4ca1e208"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_hann_avg50_100.csv.gz",
+    "bytes": 30933,
+    "sha256": "2c22989e6d2b52e83faf7d15590724b00304dd3318e75b74e2b3bfb857f28a31"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_reflect_E_0.csv.gz",
+    "bytes": 39406,
+    "sha256": "b7f3bcd9d0902a448de4b2e910c68bb5750cf7d286d051b8ba1bfb2829f1f14b"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_reflect_E_10.csv.gz",
+    "bytes": 39300,
+    "sha256": "c7c752bb5ad952eea356b9f215264d0b12f26eb836cc9b99284a7af984cb00c4"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_reflect_E_100.csv.gz",
+    "bytes": 39315,
+    "sha256": "6aab801ad1e9328003704695eaf0ff30bc7ebff291936028778a52e55554b179"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_reflect_E_25.csv.gz",
+    "bytes": 39364,
+    "sha256": "369af668a4598c0306b601cecae7d28489e72cddc0cbb0c80762aafc1a6eeb69"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_reflect_E_50.csv.gz",
+    "bytes": 39282,
+    "sha256": "0b4e3b0501ba8fa086fad6af2d1348fa76edc65f98366a6875ba1ef040253dca"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_reflect_avg10_25.csv.gz",
+    "bytes": 39581,
+    "sha256": "d4094b54080c8aeb9d41d2c565f13d5fc572a27cb6c4794393496074e6bad0e3"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top0125_reflect_avg50_100.csv.gz",
+    "bytes": 39817,
+    "sha256": "15d39e18a85a6e223b7e4dc04639b46bc33132dcc9d5953c604ab4f6ee5f71f6"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_hann_E_0.csv.gz",
+    "bytes": 59378,
+    "sha256": "d2b4ddabf9e63ff4b9c161ee52c1a8cb0c9d57061b201ba0a84c00344b5aba4b"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_hann_E_10.csv.gz",
+    "bytes": 59473,
+    "sha256": "9aea0228c3f53c4a96cac76d7c1fb6fe36f4204a84842ba866498e4a61830672"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_hann_E_100.csv.gz",
+    "bytes": 59612,
+    "sha256": "14de5e431e611aaa1d9a1be6b32b053bd4e07f57c9ed2ea775614a21d497fc96"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_hann_E_25.csv.gz",
+    "bytes": 59518,
+    "sha256": "cfc1f602686c68cdedbec67041b3df4ad3d0441c3b50f4b342ddad583748d61d"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_hann_E_50.csv.gz",
+    "bytes": 59416,
+    "sha256": "3b8b4ac800f8139a5fc2b5e3e13cb5a979662d6e4ce431839058fc6787574008"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_hann_avg10_25.csv.gz",
+    "bytes": 59560,
+    "sha256": "e96c465523f7da2db5cca7f6a146044d42d1bb9b423cbbba6e0b7ea68f9e6106"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_hann_avg50_100.csv.gz",
+    "bytes": 59760,
+    "sha256": "f39c2044a3fec720d14c13276687ce7b8454049ae9529b196431dc515c3e42f7"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_reflect_E_0.csv.gz",
+    "bytes": 77430,
+    "sha256": "c8457ab07c7679f19a758e50e93a7fd3e050461a050c69cadfe441153c2f935e"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_reflect_E_10.csv.gz",
+    "bytes": 77141,
+    "sha256": "e2351fc9e56166acd5884bc108d754f87a7ef845df04ebb576fb17070be4df65"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_reflect_E_100.csv.gz",
+    "bytes": 77141,
+    "sha256": "b264d836b850ea36ce8d446505aa2207499f51994f236fb9e5f4cd057746b2c4"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_reflect_E_25.csv.gz",
+    "bytes": 77292,
+    "sha256": "bfa99554fa25092f29098a7a38626973b9a36536a1175146964b7353fd5208e1"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_reflect_E_50.csv.gz",
+    "bytes": 77206,
+    "sha256": "77ef044a63a4828960452405fb99b7801936a361b61d2e3ee716dd9bca8d3cc3"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_reflect_avg10_25.csv.gz",
+    "bytes": 77226,
+    "sha256": "7bcf63cf3159ca07e5d70b05ef52b8e071a54109cfc6cbb928cef4481f5c244a"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top025_reflect_avg50_100.csv.gz",
+    "bytes": 77568,
+    "sha256": "63e135304443de90c4f89b083bed39139021bd1922324bfcc7076d9322115ce9"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_hann_E_0.csv.gz",
+    "bytes": 116754,
+    "sha256": "57db2e713067f4928f91fd336e07d1d2571cdaec989f8595e0516565fc3308b3"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_hann_E_10.csv.gz",
+    "bytes": 116533,
+    "sha256": "e9fe9080d0b0178e8610afe259cb43dca6dd1ad03d2c46de871fc5596f9665d8"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_hann_E_100.csv.gz",
+    "bytes": 116901,
+    "sha256": "5e9814761c22b3cad45ff340e81578cc3e5498acc98b546b989eb81e1f1836af"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_hann_E_25.csv.gz",
+    "bytes": 116536,
+    "sha256": "49f80b6ba154665c062adf02685892e9a4c79f24f2be41c5184c607181678dcc"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_hann_E_50.csv.gz",
+    "bytes": 116620,
+    "sha256": "0cc15a75d5f15b55ee6aac2f88c24042000d3c77f1640255c3516fbc90a266fe"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_hann_avg10_25.csv.gz",
+    "bytes": 116958,
+    "sha256": "f3bf91949abfd398bb3816f82c89f457a86edf887b2b24d6366b215f920c6e3f"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_hann_avg50_100.csv.gz",
+    "bytes": 117303,
+    "sha256": "1a6f44f0dcecb007b454e29814d60f77c07b3257c6a2653035c2d4694d341f0d"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_reflect_E_0.csv.gz",
+    "bytes": 153402,
+    "sha256": "a0dd2e818007c48c74d7b6d168233229cd4e1d7a309c4222b1f8e07e6bb49457"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_reflect_E_10.csv.gz",
+    "bytes": 153357,
+    "sha256": "10be132f3eb8322341bfaba89c9bf9e03230f006a78be354f453ccc45c974f12"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_reflect_E_100.csv.gz",
+    "bytes": 153098,
+    "sha256": "e2393e32518585e534b7e9556354e0e85f63088566f3e31ac184653470f4386c"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_reflect_E_25.csv.gz",
+    "bytes": 153160,
+    "sha256": "50af1c9fe741fe9803ec8853c310581135d7857c488a4f2dc33a4e10ccaa2689"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_reflect_E_50.csv.gz",
+    "bytes": 153010,
+    "sha256": "03830ad511ec9ee3bb1cd8da2a7ec110127e62a8aaff3640474db469dd5123e3"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_reflect_avg10_25.csv.gz",
+    "bytes": 152596,
+    "sha256": "435b1483f9d15d9a7003ce33a63e2812ed5f8ab9c056084b5cc651b8731d7aab"
+  },
+  {
+    "path": "data/nowave-linear-s1-spectra/top05_reflect_avg50_100.csv.gz",
+    "bytes": 153087,
+    "sha256": "dcd7dd3d5d0a540281b43c2476a74722da5782b2c17c7a803137988870f0731e"
+  },
+  {
+    "path": "data/nowave-ql-s1-evolution.csv.gz",
+    "bytes": 48876,
+    "sha256": "6c73b77959e0e318af5cb49f34ae430d17381d85c7dada133a85ebe1d67d03c9"
+  },
+  {
+    "path": "data/nowave-ql-s1-profiles.csv.gz",
+    "bytes": 156655,
+    "sha256": "e42e40dd1f939702148bf7fe177cad9f2cd3d8cbc8d70ce5361d5eebbde77486"
+  },
+  {
+    "path": "data/nowave-ql-s1-radial-flux.csv",
+    "bytes": 57135,
+    "sha256": "342539b4cdc1460ee4e600ea4e77893d36431c9fe1d6ab4d37d12021990d64eb"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_hann_E_0.csv.gz",
+    "bytes": 30560,
+    "sha256": "f64d0779fab884f8aab42692f8983d36cf69de700afc21e027c0c1576239d14d"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_hann_E_10.csv.gz",
+    "bytes": 30649,
+    "sha256": "f6472ffde76d176447cbb4e5ef6eb4723d790405ddda0ed06e1a8b9e2d67747a"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_hann_E_100.csv.gz",
+    "bytes": 30467,
+    "sha256": "5a4fd3b81bb84eb614fb89698f34b09e75b154262c9185761b2858288c836418"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_hann_E_25.csv.gz",
+    "bytes": 30391,
+    "sha256": "2f690e5dad49db8d48636b63195883345833c3a69b97a6b172f628e27ef1044d"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_hann_E_50.csv.gz",
+    "bytes": 30383,
+    "sha256": "0eb7304317eef0bdc469ccf0a16a4169d27717c6262d232894b2cd924ab605ed"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_hann_avg10_25.csv.gz",
+    "bytes": 30619,
+    "sha256": "e574702cc1d0dea4dbcbb8ae709a10b2de5fe2782808a9b8e47243bb59ff53ba"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_hann_avg50_100.csv.gz",
+    "bytes": 30511,
+    "sha256": "2b8ed83c35740935928df950c10fd27cf1cebf2672095f453056258dbc1f313a"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_reflect_E_0.csv.gz",
+    "bytes": 39406,
+    "sha256": "b7f3bcd9d0902a448de4b2e910c68bb5750cf7d286d051b8ba1bfb2829f1f14b"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_reflect_E_10.csv.gz",
+    "bytes": 39278,
+    "sha256": "32fed50f89691d90af806eaadcf453090952c2ad1005f676604f21627dadef91"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_reflect_E_100.csv.gz",
+    "bytes": 39287,
+    "sha256": "086aecd851f306b1b224691b66e530da2f03e41b44adfea108fceab465567ae1"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_reflect_E_25.csv.gz",
+    "bytes": 39370,
+    "sha256": "bc187647320e9b1bcab6e82333a6ce235dda81eff246cccda7c9e4edef133bcd"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_reflect_E_50.csv.gz",
+    "bytes": 39342,
+    "sha256": "be52999879cb84683ba85728032cb83e0632cc97e99f0433b1a67490b3448996"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_reflect_avg10_25.csv.gz",
+    "bytes": 39593,
+    "sha256": "99a7715ae49068ec50f8a64269036b1ffc4b72e289c6c964c0febc63155966b6"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top0125_reflect_avg50_100.csv.gz",
+    "bytes": 39608,
+    "sha256": "077fbf35fa892ec3c5472e2336329edd10bb504860111dfc7589d906ca886799"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_hann_E_0.csv.gz",
+    "bytes": 59378,
+    "sha256": "d2b4ddabf9e63ff4b9c161ee52c1a8cb0c9d57061b201ba0a84c00344b5aba4b"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_hann_E_10.csv.gz",
+    "bytes": 59265,
+    "sha256": "99ad3cfe680d64ea33e54588a4b9cb23bba7511fbc1f368edede2dc4e6fb9614"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_hann_E_100.csv.gz",
+    "bytes": 58956,
+    "sha256": "3f08997f8f528eccf3ce38789cac51d072e0d7890607fbb49cbdda87b5dbff12"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_hann_E_25.csv.gz",
+    "bytes": 59022,
+    "sha256": "dfe64e48287490b3fe9f05a45950058b722462854d9578d258d666612f2608fd"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_hann_E_50.csv.gz",
+    "bytes": 58983,
+    "sha256": "54c9fd3c8fd59f31b4856aa8900ed5a1618dc5e97604204fcb270e65bc123d51"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_hann_avg10_25.csv.gz",
+    "bytes": 59251,
+    "sha256": "533d40c2d09cf6dd46b2e3e4d59fa5272829634d1e133269da9d4eb0fcd2373b"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_hann_avg50_100.csv.gz",
+    "bytes": 58894,
+    "sha256": "e54019d62849ceb07b17ce7e164527d6ba01ad58008f9e7a447ec1685e6da9ee"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_reflect_E_0.csv.gz",
+    "bytes": 77430,
+    "sha256": "c8457ab07c7679f19a758e50e93a7fd3e050461a050c69cadfe441153c2f935e"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_reflect_E_10.csv.gz",
+    "bytes": 77250,
+    "sha256": "2ec9e1fb1411a5939c1ee4e2de38ff9f7f138ba97d113404190a66e32d7a8c4b"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_reflect_E_100.csv.gz",
+    "bytes": 77313,
+    "sha256": "9b576778c01486b3e8bb47542f71af697bb101eea464c2ae4106ef089e68eca7"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_reflect_E_25.csv.gz",
+    "bytes": 77628,
+    "sha256": "2c0dcc8d45f99b6ec8e6fb55b542741c9057228d7b05bbd6d73e9b2475f0869a"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_reflect_E_50.csv.gz",
+    "bytes": 77288,
+    "sha256": "057943f66e739274482378102e1ac0dd3814524fb01836304be196371d32e4d4"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_reflect_avg10_25.csv.gz",
+    "bytes": 77220,
+    "sha256": "db0f79cc828c391499ae1ef5cfcb45ca0c6618fec5bbc50897d8833dd894a73f"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top025_reflect_avg50_100.csv.gz",
+    "bytes": 77307,
+    "sha256": "210a2835afd3c00e2721e8f14ec4ce07ee59e57614630831269801937dbc4b40"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_hann_E_0.csv.gz",
+    "bytes": 116754,
+    "sha256": "57db2e713067f4928f91fd336e07d1d2571cdaec989f8595e0516565fc3308b3"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_hann_E_10.csv.gz",
+    "bytes": 116204,
+    "sha256": "5d1196cbe0caffb698c6f3c5b1ee9cf952bb633dcbd4c848fda02503938c34a7"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_hann_E_100.csv.gz",
+    "bytes": 115783,
+    "sha256": "7c2766b6470518e88d22797fc5b3ac1391cfe576706083dc942464408973cd7c"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_hann_E_25.csv.gz",
+    "bytes": 115789,
+    "sha256": "5473efa99554f3b83b0ae04a8e8a65c500fc79fac7db574c54815201eae2a87c"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_hann_E_50.csv.gz",
+    "bytes": 115440,
+    "sha256": "acbafb40b69e404d77bad89f3b095bd0495bb1c39107f1bdb15214fc5bbb6545"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_hann_avg10_25.csv.gz",
+    "bytes": 116211,
+    "sha256": "dfab39a95b7595bb4af3faca4c9cc8425a7287d6d1a616b98de24a87d0a9684d"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_hann_avg50_100.csv.gz",
+    "bytes": 115762,
+    "sha256": "f69055eaf680e2378a503c892ae2e408c9a1081b1e5cdf807b280cbc9d4af8ce"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_reflect_E_0.csv.gz",
+    "bytes": 153402,
+    "sha256": "a0dd2e818007c48c74d7b6d168233229cd4e1d7a309c4222b1f8e07e6bb49457"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_reflect_E_10.csv.gz",
+    "bytes": 153625,
+    "sha256": "5da93734d6b5f8e453b36e0c74e6046a433fa292965cc9430d609b74b8be9686"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_reflect_E_100.csv.gz",
+    "bytes": 153807,
+    "sha256": "401e18f74d821b9466d1aa05f59ad7057a2f0646cb9cab6becb78df38860bff1"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_reflect_E_25.csv.gz",
+    "bytes": 153625,
+    "sha256": "0803e1908490a6f5ba464c65561398d5c3514bb9d1fe582dc91f4108ffb8c1cd"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_reflect_E_50.csv.gz",
+    "bytes": 153902,
+    "sha256": "4ce7ffaebf16ae260be31dba630666032a0d1ff07cc28ca26c2a5c0b3201a5a5"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_reflect_avg10_25.csv.gz",
+    "bytes": 153248,
+    "sha256": "1ddf244f27acd459d5c19527999b28cf8fd37958c11a43425d677869f66b185c"
+  },
+  {
+    "path": "data/nowave-ql-s1-spectra/top05_reflect_avg50_100.csv.gz",
+    "bytes": 152451,
+    "sha256": "49692d65e96b8cf428276831eebd27d050f10de0d7b1289a9e55a5028ed79248"
+  }
+]

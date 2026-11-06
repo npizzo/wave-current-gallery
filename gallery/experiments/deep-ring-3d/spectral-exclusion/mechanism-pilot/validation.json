@@ -1,0 +1,992 @@
+{
+  "nowave-linear-s1": {
+    "case": "nowave-linear-s1",
+    "meta": {
+      "name": "nowave-linear-s1",
+      "task_id": "3",
+      "nx": "2048",
+      "nz": "1024",
+      "lx": "4.0",
+      "h": "2.0",
+      "seed": "1",
+      "arm": "linear",
+      "waves": "false",
+      "nu": "1.0e-10",
+      "stop_Te": "100.0",
+      "sample_Te": "0.1",
+      "field_Te": "1.0",
+      "max_dt": "1.0",
+      "cfl": "0.5",
+      "u0": "0.000156359851299904",
+      "Te": "37.69911184307751",
+      "k0_cycles": "27",
+      "initial_UL": "0",
+      "initial_sha256": "327c8ae07d435a54038dc9bbdfffbd28b156cccabebeb5fbc0ef94de4e74c460",
+      "source_digest": "e7419d08c7abc3009699811beb4f44356ae9869145dc33884e51e2c7899afa6e",
+      "Stokes_shear": "0.25exp(8z) in deep cases; zero in controls",
+      "Stokes_stencil": "archived production receiving-node shear; discrete wave work retained",
+      "component_checkpoint_Te": "0,10,25,50,100",
+      "wall_limit_seconds": "3600",
+      "resolution_quality": "One-Te benchmark does not establish long-run grid-scale resolution; native full fields are retained for2D grid-tail and convergence assessment before mechanism claims",
+      "local_PV_identity_gate": "update and component-sum residuals only; total-qRMS/half_q2 normalization; tolerance1e-9; physical-flux remainders are not error gates",
+      "automatic_continuation": "false"
+    },
+    "completed": {
+      "status": "PASS",
+      "stop_Te": "100.0",
+      "iterations": "5000",
+      "wall_seconds": "414.949523626",
+      "source_digest": "e7419d08c7abc3009699811beb4f44356ae9869145dc33884e51e2c7899afa6e",
+      "online_E_residual": "-6.713035959962381e-21",
+      "online_PVvariance_residual": "-1.92239209577047e-16",
+      "online_mean_residual": "5.71747375105972e-19",
+      "maximum_local_PV_identity_relative_residual": "1.4492941530653365e-16",
+      "snapshot_quadrature_energy_residual": "2.981597246693891e-13",
+      "automatic_continuation": "false"
+    },
+    "checks": {
+      "stress_relative": 4.289893454944526e-17,
+      "component_reconstruction_relative": 1.6897418368199563e-16,
+      "q_curl_relative": 3.556040998504055e-16,
+      "pressure_flux_relative": 3.59561211482948e-27,
+      "local_PV_identity_maximum_so_far": 1.4492941530653365e-16,
+      "energy_closure_relative": 5.453382270134871e-13,
+      "mean_closure_over_u0": 3.6566125210334216e-15,
+      "parseval_relative": 4.1064869317212844e-16
+    },
+    "native_checks": [
+      {
+        "t": 0,
+        "advection_relative": 0.0,
+        "total_work": -7.05181134292384e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": 3.571633537016325e-45
+      },
+      {
+        "t": 10,
+        "advection_relative": 0.0,
+        "total_work": -7.036517454828173e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": 2.9220510328365053e-41
+      },
+      {
+        "t": 25,
+        "advection_relative": 0.0,
+        "total_work": -7.01363911986512e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": 1.604392287690387e-40
+      },
+      {
+        "t": 50,
+        "advection_relative": 0.0,
+        "total_work": -6.975674612610467e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": 6.0345698760753494e-40
+      },
+      {
+        "t": 100,
+        "advection_relative": 0.0,
+        "total_work": -6.900364207085435e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": 2.290981668080939e-39
+      }
+    ],
+    "runtime_seconds": 74.15429425239563,
+    "operation": "Read-only existing-output analysis; no simulation",
+    "pv_layer_columns": [
+      "mean_q",
+      "total_variance",
+      "mean_profile_variance",
+      "eddy_variance",
+      "rms_gradient_over_initial",
+      "flat_depth_fraction_20pct"
+    ],
+    "pv_budget_columns": [
+      "advection",
+      "wave",
+      "viscosity",
+      "pressure",
+      "constraint",
+      "total",
+      "physical_transport_reference",
+      "advection_wave_remainder",
+      "observed"
+    ],
+    "field_metric_columns": [
+      "t_Te",
+      "energy",
+      "full_depth_jet_fraction",
+      "upper20pct_grid_energy_fraction",
+      "eddy_energy_below16_over_E"
+    ],
+    "radial_flux_columns": [
+      "t_Te",
+      "radius_cycles",
+      "advection",
+      "eddy_eddy",
+      "mean_related",
+      "stokes",
+      "viscosity",
+      "pressure",
+      "rhs"
+    ],
+    "layers": {
+      "top0125": [
+        -0.125,
+        0
+      ],
+      "top025": [
+        -0.25,
+        0
+      ],
+      "top05": [
+        -0.5,
+        0
+      ],
+      "interior": [
+        -0.125,
+        -0.0625
+      ],
+      "lower": [
+        -2,
+        -0.5
+      ],
+      "full": [
+        -2,
+        0
+      ]
+    },
+    "limitations": [
+      "Single seed, 100Te, no convergence study.",
+      "Local spectra use collocated velocities; native energies and transfer use exact C-grid norm.",
+      "Full-domain cumulative flux is not a near-surface cascade flux.",
+      "PV physical-transport remainder is not automatically mixing or diffusion.",
+      "Signed momentum stress does not independently identify propagating vortex waves."
+    ]
+  },
+  "nowave-ql-s1": {
+    "case": "nowave-ql-s1",
+    "meta": {
+      "name": "nowave-ql-s1",
+      "task_id": "4",
+      "nx": "2048",
+      "nz": "1024",
+      "lx": "4.0",
+      "h": "2.0",
+      "seed": "1",
+      "arm": "ql",
+      "waves": "false",
+      "nu": "1.0e-10",
+      "stop_Te": "100.0",
+      "sample_Te": "0.1",
+      "field_Te": "1.0",
+      "max_dt": "1.0",
+      "cfl": "0.5",
+      "u0": "0.000156359851299904",
+      "Te": "37.69911184307751",
+      "k0_cycles": "27",
+      "initial_UL": "0",
+      "initial_sha256": "327c8ae07d435a54038dc9bbdfffbd28b156cccabebeb5fbc0ef94de4e74c460",
+      "source_digest": "7acb2f5276e6139d4fae36a13fd98f6ed61722986b6b1b300d0650408bbf9a7d",
+      "Stokes_shear": "0.25exp(8z) in deep cases; zero in controls",
+      "Stokes_stencil": "archived production receiving-node shear; discrete wave work retained",
+      "component_checkpoint_Te": "0,10,25,50,100",
+      "wall_limit_seconds": "3600",
+      "resolution_quality": "One-Te benchmark does not establish long-run grid-scale resolution; native full fields are retained for2D grid-tail and convergence assessment before mechanism claims",
+      "local_PV_identity_gate": "update and component-sum residuals only; total-qRMS/half_q2 normalization; tolerance1e-9; physical-flux remainders are not error gates",
+      "automatic_continuation": "false"
+    },
+    "completed": {
+      "status": "PASS",
+      "stop_Te": "100.0",
+      "iterations": "4963",
+      "wall_seconds": "788.13760786",
+      "source_digest": "7acb2f5276e6139d4fae36a13fd98f6ed61722986b6b1b300d0650408bbf9a7d",
+      "online_E_residual": "-7.178376753311743e-21",
+      "online_PVvariance_residual": "-2.0540548970916783e-16",
+      "online_mean_residual": "8.236548379100816e-18",
+      "maximum_local_PV_identity_relative_residual": "1.603078161068897e-16",
+      "snapshot_quadrature_energy_residual": "1.1108019086986785e-8",
+      "automatic_continuation": "false"
+    },
+    "checks": {
+      "stress_relative": 1.0264330451902058e-16,
+      "component_reconstruction_relative": 3.9410224798421505e-14,
+      "q_curl_relative": 3.886963727584532e-16,
+      "pressure_flux_relative": 7.389344892719174e-15,
+      "local_PV_identity_maximum_so_far": 1.603078161068897e-16,
+      "energy_closure_relative": 5.831405156822362e-13,
+      "mean_closure_over_u0": 5.267687523763892e-14,
+      "parseval_relative": 4.1152769482397227e-16
+    },
+    "native_checks": [
+      {
+        "t": 0,
+        "advection_relative": 8.730190177612789e-16,
+        "total_work": -7.05181134292384e-14,
+        "advection_net_work": -1.1742954793187724e-29,
+        "pressure_net_work": -1.9036255915200413e-30
+      },
+      {
+        "t": 10,
+        "advection_relative": 3.6667657739878514e-15,
+        "total_work": -7.036537403683971e-14,
+        "advection_net_work": -3.1201314064642156e-27,
+        "pressure_net_work": -1.2141110401766704e-26
+      },
+      {
+        "t": 25,
+        "advection_relative": 2.726108640171022e-15,
+        "total_work": -7.015872529143586e-14,
+        "advection_net_work": -1.2917387300333633e-26,
+        "pressure_net_work": -4.195631077016114e-26
+      },
+      {
+        "t": 50,
+        "advection_relative": 2.3348986988239413e-15,
+        "total_work": -6.975264683809851e-14,
+        "advection_net_work": -3.047011607973508e-26,
+        "pressure_net_work": -7.465991692570665e-26
+      },
+      {
+        "t": 100,
+        "advection_relative": 2.098801298974791e-15,
+        "total_work": -6.862671530010794e-14,
+        "advection_net_work": -2.5396489375072101e-26,
+        "pressure_net_work": -1.1894140880626021e-25
+      }
+    ],
+    "runtime_seconds": 70.0152850151062,
+    "operation": "Read-only existing-output analysis; no simulation",
+    "pv_layer_columns": [
+      "mean_q",
+      "total_variance",
+      "mean_profile_variance",
+      "eddy_variance",
+      "rms_gradient_over_initial",
+      "flat_depth_fraction_20pct"
+    ],
+    "pv_budget_columns": [
+      "advection",
+      "wave",
+      "viscosity",
+      "pressure",
+      "constraint",
+      "total",
+      "physical_transport_reference",
+      "advection_wave_remainder",
+      "observed"
+    ],
+    "field_metric_columns": [
+      "t_Te",
+      "energy",
+      "full_depth_jet_fraction",
+      "upper20pct_grid_energy_fraction",
+      "eddy_energy_below16_over_E"
+    ],
+    "radial_flux_columns": [
+      "t_Te",
+      "radius_cycles",
+      "advection",
+      "eddy_eddy",
+      "mean_related",
+      "stokes",
+      "viscosity",
+      "pressure",
+      "rhs"
+    ],
+    "layers": {
+      "top0125": [
+        -0.125,
+        0
+      ],
+      "top025": [
+        -0.25,
+        0
+      ],
+      "top05": [
+        -0.5,
+        0
+      ],
+      "interior": [
+        -0.125,
+        -0.0625
+      ],
+      "lower": [
+        -2,
+        -0.5
+      ],
+      "full": [
+        -2,
+        0
+      ]
+    },
+    "limitations": [
+      "Single seed, 100Te, no convergence study.",
+      "Local spectra use collocated velocities; native energies and transfer use exact C-grid norm.",
+      "Full-domain cumulative flux is not a near-surface cascade flux.",
+      "PV physical-transport remainder is not automatically mixing or diffusion.",
+      "Signed momentum stress does not independently identify propagating vortex waves."
+    ]
+  },
+  "deep-linear-s1": {
+    "case": "deep-linear-s1",
+    "meta": {
+      "name": "deep-linear-s1",
+      "task_id": "0",
+      "nx": "2048",
+      "nz": "1024",
+      "lx": "4.0",
+      "h": "2.0",
+      "seed": "1",
+      "arm": "linear",
+      "waves": "true",
+      "nu": "1.0e-10",
+      "stop_Te": "100.0",
+      "sample_Te": "0.1",
+      "field_Te": "1.0",
+      "max_dt": "1.0",
+      "cfl": "0.5",
+      "u0": "0.000156359851299904",
+      "Te": "37.69911184307751",
+      "k0_cycles": "27",
+      "initial_UL": "0",
+      "initial_sha256": "327c8ae07d435a54038dc9bbdfffbd28b156cccabebeb5fbc0ef94de4e74c460",
+      "source_digest": "e7419d08c7abc3009699811beb4f44356ae9869145dc33884e51e2c7899afa6e",
+      "Stokes_shear": "0.25exp(8z) in deep cases; zero in controls",
+      "Stokes_stencil": "archived production receiving-node shear; discrete wave work retained",
+      "component_checkpoint_Te": "0,10,25,50,100",
+      "wall_limit_seconds": "3600",
+      "resolution_quality": "One-Te benchmark does not establish long-run grid-scale resolution; native full fields are retained for2D grid-tail and convergence assessment before mechanism claims",
+      "local_PV_identity_gate": "update and component-sum residuals only; total-qRMS/half_q2 normalization; tolerance1e-9; physical-flux remainders are not error gates",
+      "automatic_continuation": "false"
+    },
+    "completed": {
+      "status": "PASS",
+      "stop_Te": "100.0",
+      "iterations": "5000",
+      "wall_seconds": "647.683916764",
+      "source_digest": "e7419d08c7abc3009699811beb4f44356ae9869145dc33884e51e2c7899afa6e",
+      "online_E_residual": "-7.23033403553773e-21",
+      "online_PVvariance_residual": "-2.071444483498809e-16",
+      "online_mean_residual": "3.81800180946439e-19",
+      "maximum_local_PV_identity_relative_residual": "1.4940499928062743e-17",
+      "snapshot_quadrature_energy_residual": "1.8764448579083814e-8",
+      "automatic_continuation": "false"
+    },
+    "checks": {
+      "stress_relative": 1.0294061425030673e-16,
+      "component_reconstruction_relative": 8.179022404403788e-14,
+      "q_curl_relative": 1.2243977477137447e-16,
+      "pressure_flux_relative": 5.927679020159614e-11,
+      "local_PV_identity_maximum_so_far": 1.4940499928062743e-17,
+      "energy_closure_relative": 5.873613022739586e-13,
+      "mean_closure_over_u0": 2.443158566133266e-15,
+      "parseval_relative": 4.0843186371780306e-16
+    },
+    "native_checks": [
+      {
+        "t": 0,
+        "advection_relative": 0.0,
+        "total_work": -7.083663578074198e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": 4.977556329127153e-29
+      },
+      {
+        "t": 10,
+        "advection_relative": 0.0,
+        "total_work": -7.059198170690066e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": -4.4769673821594646e-24
+      },
+      {
+        "t": 25,
+        "advection_relative": 0.0,
+        "total_work": -7.012484432315156e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": -3.406113309321785e-24
+      },
+      {
+        "t": 50,
+        "advection_relative": 0.0,
+        "total_work": -6.939752152922983e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": -2.314845684720857e-24
+      },
+      {
+        "t": 100,
+        "advection_relative": 0.0,
+        "total_work": -6.879013306400826e-14,
+        "advection_net_work": 0.0,
+        "pressure_net_work": -2.3486826552398158e-24
+      }
+    ],
+    "runtime_seconds": 74.6584107875824,
+    "operation": "Read-only existing-output analysis; no simulation",
+    "pv_layer_columns": [
+      "mean_q",
+      "total_variance",
+      "mean_profile_variance",
+      "eddy_variance",
+      "rms_gradient_over_initial",
+      "flat_depth_fraction_20pct"
+    ],
+    "pv_budget_columns": [
+      "advection",
+      "wave",
+      "viscosity",
+      "pressure",
+      "constraint",
+      "total",
+      "physical_transport_reference",
+      "advection_wave_remainder",
+      "observed"
+    ],
+    "field_metric_columns": [
+      "t_Te",
+      "energy",
+      "full_depth_jet_fraction",
+      "upper20pct_grid_energy_fraction",
+      "eddy_energy_below16_over_E"
+    ],
+    "radial_flux_columns": [
+      "t_Te",
+      "radius_cycles",
+      "advection",
+      "eddy_eddy",
+      "mean_related",
+      "stokes",
+      "viscosity",
+      "pressure",
+      "rhs"
+    ],
+    "layers": {
+      "top0125": [
+        -0.125,
+        0
+      ],
+      "top025": [
+        -0.25,
+        0
+      ],
+      "top05": [
+        -0.5,
+        0
+      ],
+      "interior": [
+        -0.125,
+        -0.0625
+      ],
+      "lower": [
+        -2,
+        -0.5
+      ],
+      "full": [
+        -2,
+        0
+      ]
+    },
+    "limitations": [
+      "Single seed, 100Te, no convergence study.",
+      "Local spectra use collocated velocities; native energies and transfer use exact C-grid norm.",
+      "Full-domain cumulative flux is not a near-surface cascade flux.",
+      "PV physical-transport remainder is not automatically mixing or diffusion.",
+      "Signed momentum stress does not independently identify propagating vortex waves."
+    ]
+  },
+  "deep-ql-s1": {
+    "case": "deep-ql-s1",
+    "meta": {
+      "name": "deep-ql-s1",
+      "task_id": "1",
+      "nx": "2048",
+      "nz": "1024",
+      "lx": "4.0",
+      "h": "2.0",
+      "seed": "1",
+      "arm": "ql",
+      "waves": "true",
+      "nu": "1.0e-10",
+      "stop_Te": "100.0",
+      "sample_Te": "0.1",
+      "field_Te": "1.0",
+      "max_dt": "1.0",
+      "cfl": "0.5",
+      "u0": "0.000156359851299904",
+      "Te": "37.69911184307751",
+      "k0_cycles": "27",
+      "initial_UL": "0",
+      "initial_sha256": "327c8ae07d435a54038dc9bbdfffbd28b156cccabebeb5fbc0ef94de4e74c460",
+      "source_digest": "7acb2f5276e6139d4fae36a13fd98f6ed61722986b6b1b300d0650408bbf9a7d",
+      "Stokes_shear": "0.25exp(8z) in deep cases; zero in controls",
+      "Stokes_stencil": "archived production receiving-node shear; discrete wave work retained",
+      "component_checkpoint_Te": "0,10,25,50,100",
+      "wall_limit_seconds": "3600",
+      "resolution_quality": "One-Te benchmark does not establish long-run grid-scale resolution; native full fields are retained for2D grid-tail and convergence assessment before mechanism claims",
+      "local_PV_identity_gate": "update and component-sum residuals only; total-qRMS/half_q2 normalization; tolerance1e-9; physical-flux remainders are not error gates",
+      "automatic_continuation": "false"
+    },
+    "completed": {
+      "status": "PASS",
+      "stop_Te": "100.0",
+      "iterations": "4972",
+      "wall_seconds": "840.472456458",
+      "source_digest": "7acb2f5276e6139d4fae36a13fd98f6ed61722986b6b1b300d0650408bbf9a7d",
+      "online_E_residual": "-7.187941029144388e-21",
+      "online_PVvariance_residual": "-2.05732444426808e-16",
+      "online_mean_residual": "3.087265686152474e-17",
+      "maximum_local_PV_identity_relative_residual": "2.0795361564073852e-17",
+      "snapshot_quadrature_energy_residual": "8.329707979690058e-8",
+      "automatic_continuation": "false"
+    },
+    "checks": {
+      "stress_relative": 1.0273457680087818e-16,
+      "component_reconstruction_relative": 1.8015269858239672e-13,
+      "q_curl_relative": 1.311790675062596e-16,
+      "pressure_flux_relative": 1.536626922876009e-13,
+      "local_PV_identity_maximum_so_far": 2.0795361564073852e-17,
+      "energy_closure_relative": 5.839174763981254e-13,
+      "mean_closure_over_u0": 1.974461897019193e-13,
+      "parseval_relative": 5.463435478209354e-16
+    },
+    "native_checks": [
+      {
+        "t": 0,
+        "advection_relative": 8.730190177612789e-16,
+        "total_work": -7.08366357807418e-14,
+        "advection_net_work": -1.1742954793187724e-29,
+        "pressure_net_work": 4.177716619320837e-28
+      },
+      {
+        "t": 10,
+        "advection_relative": 4.043951962386282e-15,
+        "total_work": -7.060165771842629e-14,
+        "advection_net_work": 4.222393402635021e-28,
+        "pressure_net_work": -4.898956629938939e-24
+      },
+      {
+        "t": 25,
+        "advection_relative": 2.2496410937597996e-15,
+        "total_work": -7.027529814900085e-14,
+        "advection_net_work": 5.749353862718819e-27,
+        "pressure_net_work": -5.897952324796139e-24
+      },
+      {
+        "t": 50,
+        "advection_relative": 1.875372726048986e-15,
+        "total_work": -6.951983660794311e-14,
+        "advection_net_work": -3.5766953442720675e-27,
+        "pressure_net_work": -1.6684996041986978e-23
+      },
+      {
+        "t": 100,
+        "advection_relative": 1.737392850254104e-15,
+        "total_work": -6.826510421278234e-14,
+        "advection_net_work": 1.187803642209382e-25,
+        "pressure_net_work": -4.415973008952478e-23
+      }
+    ],
+    "runtime_seconds": 70.47922563552856,
+    "operation": "Read-only existing-output analysis; no simulation",
+    "pv_layer_columns": [
+      "mean_q",
+      "total_variance",
+      "mean_profile_variance",
+      "eddy_variance",
+      "rms_gradient_over_initial",
+      "flat_depth_fraction_20pct"
+    ],
+    "pv_budget_columns": [
+      "advection",
+      "wave",
+      "viscosity",
+      "pressure",
+      "constraint",
+      "total",
+      "physical_transport_reference",
+      "advection_wave_remainder",
+      "observed"
+    ],
+    "field_metric_columns": [
+      "t_Te",
+      "energy",
+      "full_depth_jet_fraction",
+      "upper20pct_grid_energy_fraction",
+      "eddy_energy_below16_over_E"
+    ],
+    "radial_flux_columns": [
+      "t_Te",
+      "radius_cycles",
+      "advection",
+      "eddy_eddy",
+      "mean_related",
+      "stokes",
+      "viscosity",
+      "pressure",
+      "rhs"
+    ],
+    "layers": {
+      "top0125": [
+        -0.125,
+        0
+      ],
+      "top025": [
+        -0.25,
+        0
+      ],
+      "top05": [
+        -0.5,
+        0
+      ],
+      "interior": [
+        -0.125,
+        -0.0625
+      ],
+      "lower": [
+        -2,
+        -0.5
+      ],
+      "full": [
+        -2,
+        0
+      ]
+    },
+    "limitations": [
+      "Single seed, 100Te, no convergence study.",
+      "Local spectra use collocated velocities; native energies and transfer use exact C-grid norm.",
+      "Full-domain cumulative flux is not a near-surface cascade flux.",
+      "PV physical-transport remainder is not automatically mixing or diffusion.",
+      "Signed momentum stress does not independently identify propagating vortex waves."
+    ]
+  },
+  "deep-full-s1": {
+    "case": "deep-full-s1",
+    "meta": {
+      "name": "deep-full-s1",
+      "task_id": "2",
+      "nx": "2048",
+      "nz": "1024",
+      "lx": "4.0",
+      "h": "2.0",
+      "seed": "1",
+      "arm": "full",
+      "waves": "true",
+      "nu": "1.0e-10",
+      "stop_Te": "100.0",
+      "sample_Te": "0.1",
+      "field_Te": "1.0",
+      "max_dt": "1.0",
+      "cfl": "0.5",
+      "u0": "0.000156359851299904",
+      "Te": "37.69911184307751",
+      "k0_cycles": "27",
+      "initial_UL": "0",
+      "initial_sha256": "327c8ae07d435a54038dc9bbdfffbd28b156cccabebeb5fbc0ef94de4e74c460",
+      "source_digest": "e7419d08c7abc3009699811beb4f44356ae9869145dc33884e51e2c7899afa6e",
+      "Stokes_shear": "0.25exp(8z) in deep cases; zero in controls",
+      "Stokes_stencil": "archived production receiving-node shear; discrete wave work retained",
+      "component_checkpoint_Te": "0,10,25,50,100",
+      "wall_limit_seconds": "3600",
+      "resolution_quality": "One-Te benchmark does not establish long-run grid-scale resolution; native full fields are retained for2D grid-tail and convergence assessment before mechanism claims",
+      "local_PV_identity_gate": "update and component-sum residuals only; total-qRMS/half_q2 normalization; tolerance1e-9; physical-flux remainders are not error gates",
+      "automatic_continuation": "false"
+    },
+    "completed": {
+      "status": "PASS",
+      "stop_Te": "100.0",
+      "iterations": "5115",
+      "wall_seconds": "546.510824",
+      "source_digest": "e7419d08c7abc3009699811beb4f44356ae9869145dc33884e51e2c7899afa6e",
+      "online_E_residual": "-7.31879066229262e-21",
+      "online_PVvariance_residual": "-7.029966886396011e-16",
+      "online_mean_residual": "1.2766480581016815e-17",
+      "maximum_local_PV_identity_relative_residual": "3.544639537486383e-17",
+      "snapshot_quadrature_energy_residual": "0.0004051550802480459",
+      "automatic_continuation": "false"
+    },
+    "checks": {
+      "stress_relative": 7.118148445249611e-17,
+      "component_reconstruction_relative": 4.4988684025142035e-14,
+      "q_curl_relative": 1.341393257508617e-16,
+      "pressure_flux_relative": 5.551728543175631e-10,
+      "local_PV_identity_maximum_so_far": 3.544639537486383e-17,
+      "energy_closure_relative": 5.945471389490202e-13,
+      "mean_closure_over_u0": 8.164807317787883e-14,
+      "parseval_relative": 4.1673280546757734e-16
+    },
+    "native_checks": [
+      {
+        "t": 0,
+        "advection_relative": 0.0,
+        "total_work": -7.083663578074186e-14,
+        "advection_net_work": -4.086145386678727e-28,
+        "pressure_net_work": 5.941277078533558e-28
+      },
+      {
+        "t": 10,
+        "advection_relative": 0.0,
+        "total_work": -7.046575598711969e-14,
+        "advection_net_work": -4.4363012954733e-25,
+        "pressure_net_work": -6.064866356921719e-24
+      },
+      {
+        "t": 25,
+        "advection_relative": 0.0,
+        "total_work": -7.633144390157824e-14,
+        "advection_net_work": -2.069213708830923e-25,
+        "pressure_net_work": -6.5075918939576605e-24
+      },
+      {
+        "t": 50,
+        "advection_relative": 0.0,
+        "total_work": -1.579150771226261e-13,
+        "advection_net_work": -2.6980305136006957e-25,
+        "pressure_net_work": -6.320950529410702e-24
+      },
+      {
+        "t": 100,
+        "advection_relative": 0.0,
+        "total_work": -6.388732905398066e-13,
+        "advection_net_work": -4.0187729955579225e-26,
+        "pressure_net_work": -1.2313932133671334e-23
+      }
+    ],
+    "runtime_seconds": 75.0913155078888,
+    "operation": "Read-only existing-output analysis; no simulation",
+    "pv_layer_columns": [
+      "mean_q",
+      "total_variance",
+      "mean_profile_variance",
+      "eddy_variance",
+      "rms_gradient_over_initial",
+      "flat_depth_fraction_20pct"
+    ],
+    "pv_budget_columns": [
+      "advection",
+      "wave",
+      "viscosity",
+      "pressure",
+      "constraint",
+      "total",
+      "physical_transport_reference",
+      "advection_wave_remainder",
+      "observed"
+    ],
+    "field_metric_columns": [
+      "t_Te",
+      "energy",
+      "full_depth_jet_fraction",
+      "upper20pct_grid_energy_fraction",
+      "eddy_energy_below16_over_E"
+    ],
+    "radial_flux_columns": [
+      "t_Te",
+      "radius_cycles",
+      "advection",
+      "eddy_eddy",
+      "mean_related",
+      "stokes",
+      "viscosity",
+      "pressure",
+      "rhs"
+    ],
+    "layers": {
+      "top0125": [
+        -0.125,
+        0
+      ],
+      "top025": [
+        -0.25,
+        0
+      ],
+      "top05": [
+        -0.5,
+        0
+      ],
+      "interior": [
+        -0.125,
+        -0.0625
+      ],
+      "lower": [
+        -2,
+        -0.5
+      ],
+      "full": [
+        -2,
+        0
+      ]
+    },
+    "limitations": [
+      "Single seed, 100Te, no convergence study.",
+      "Local spectra use collocated velocities; native energies and transfer use exact C-grid norm.",
+      "Full-domain cumulative flux is not a near-surface cascade flux.",
+      "PV physical-transport remainder is not automatically mixing or diffusion.",
+      "Signed momentum stress does not independently identify propagating vortex waves."
+    ]
+  },
+  "nowave-full-s1": {
+    "case": "nowave-full-s1",
+    "meta": {
+      "name": "nowave-full-s1",
+      "task_id": "5",
+      "nx": "2048",
+      "nz": "1024",
+      "lx": "4.0",
+      "h": "2.0",
+      "seed": "1",
+      "arm": "full",
+      "waves": "false",
+      "nu": "1.0e-10",
+      "stop_Te": "100.0",
+      "sample_Te": "0.1",
+      "field_Te": "1.0",
+      "max_dt": "1.0",
+      "cfl": "0.5",
+      "u0": "0.000156359851299904",
+      "Te": "37.69911184307751",
+      "k0_cycles": "27",
+      "initial_UL": "0",
+      "initial_sha256": "327c8ae07d435a54038dc9bbdfffbd28b156cccabebeb5fbc0ef94de4e74c460",
+      "source_digest": "e7419d08c7abc3009699811beb4f44356ae9869145dc33884e51e2c7899afa6e",
+      "Stokes_shear": "0.25exp(8z) in deep cases; zero in controls",
+      "Stokes_stencil": "archived production receiving-node shear; discrete wave work retained",
+      "component_checkpoint_Te": "0,10,25,50,100",
+      "wall_limit_seconds": "3600",
+      "resolution_quality": "One-Te benchmark does not establish long-run grid-scale resolution; native full fields are retained for2D grid-tail and convergence assessment before mechanism claims",
+      "local_PV_identity_gate": "update and component-sum residuals only; total-qRMS/half_q2 normalization; tolerance1e-9; physical-flux remainders are not error gates",
+      "automatic_continuation": "false"
+    },
+    "completed": {
+      "status": "PASS",
+      "stop_Te": "100.0",
+      "iterations": "5146",
+      "wall_seconds": "531.247515013",
+      "source_digest": "e7419d08c7abc3009699811beb4f44356ae9869145dc33884e51e2c7899afa6e",
+      "online_E_residual": "-7.371833619072583e-21",
+      "online_PVvariance_residual": "-6.843484112728504e-16",
+      "online_mean_residual": "4.7959005473538485e-18",
+      "maximum_local_PV_identity_relative_residual": "2.1139927044268241e-16",
+      "snapshot_quadrature_energy_residual": "0.00039132133272189656",
+      "automatic_continuation": "false"
+    },
+    "checks": {
+      "stress_relative": 8.872426413677959e-17,
+      "component_reconstruction_relative": 3.2382323842627804e-14,
+      "q_curl_relative": 5.947620335789057e-16,
+      "pressure_flux_relative": 9.245604035764768e-13,
+      "local_PV_identity_maximum_so_far": 2.1139927044268241e-16,
+      "energy_closure_relative": 5.98856121081465e-13,
+      "mean_closure_over_u0": 3.110218989793286e-14,
+      "parseval_relative": 4.250362528160685e-16
+    },
+    "native_checks": [
+      {
+        "t": 0,
+        "advection_relative": 0.0,
+        "total_work": -7.051811342923836e-14,
+        "advection_net_work": -4.086145386678727e-28,
+        "pressure_net_work": 1.5303714004829988e-28
+      },
+      {
+        "t": 10,
+        "advection_relative": 0.0,
+        "total_work": -7.013883452435858e-14,
+        "advection_net_work": -4.272344444932165e-25,
+        "pressure_net_work": -1.1680766754981681e-24
+      },
+      {
+        "t": 25,
+        "advection_relative": 0.0,
+        "total_work": -7.64066484161655e-14,
+        "advection_net_work": -2.424642878287302e-25,
+        "pressure_net_work": -5.04301162236843e-25
+      },
+      {
+        "t": 50,
+        "advection_relative": 0.0,
+        "total_work": -1.56070618000629e-13,
+        "advection_net_work": -2.0533102729816672e-25,
+        "pressure_net_work": -5.586370925129251e-25
+      },
+      {
+        "t": 100,
+        "advection_relative": 0.0,
+        "total_work": -6.160261237859135e-13,
+        "advection_net_work": -1.3692100959740058e-25,
+        "pressure_net_work": -3.497492951198002e-25
+      }
+    ],
+    "runtime_seconds": 74.11828136444092,
+    "operation": "Read-only existing-output analysis; no simulation",
+    "pv_layer_columns": [
+      "mean_q",
+      "total_variance",
+      "mean_profile_variance",
+      "eddy_variance",
+      "rms_gradient_over_initial",
+      "flat_depth_fraction_20pct"
+    ],
+    "pv_budget_columns": [
+      "advection",
+      "wave",
+      "viscosity",
+      "pressure",
+      "constraint",
+      "total",
+      "physical_transport_reference",
+      "advection_wave_remainder",
+      "observed"
+    ],
+    "field_metric_columns": [
+      "t_Te",
+      "energy",
+      "full_depth_jet_fraction",
+      "upper20pct_grid_energy_fraction",
+      "eddy_energy_below16_over_E"
+    ],
+    "radial_flux_columns": [
+      "t_Te",
+      "radius_cycles",
+      "advection",
+      "eddy_eddy",
+      "mean_related",
+      "stokes",
+      "viscosity",
+      "pressure",
+      "rhs"
+    ],
+    "layers": {
+      "top0125": [
+        -0.125,
+        0
+      ],
+      "top025": [
+        -0.25,
+        0
+      ],
+      "top05": [
+        -0.5,
+        0
+      ],
+      "interior": [
+        -0.125,
+        -0.0625
+      ],
+      "lower": [
+        -2,
+        -0.5
+      ],
+      "full": [
+        -2,
+        0
+      ]
+    },
+    "limitations": [
+      "Single seed, 100Te, no convergence study.",
+      "Local spectra use collocated velocities; native energies and transfer use exact C-grid norm.",
+      "Full-domain cumulative flux is not a near-surface cascade flux.",
+      "PV physical-transport remainder is not automatically mixing or diffusion.",
+      "Signed momentum stress does not independently identify propagating vortex waves."
+    ]
+  }
+}
