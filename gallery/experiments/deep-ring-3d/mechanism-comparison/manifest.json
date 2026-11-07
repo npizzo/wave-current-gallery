@@ -1,10 +1,6 @@
 {
   "date": "2026-11-07",
   "files": {
-    "analysis-source.zip": {
-      "bytes": 29014,
-      "sha256": "73a5acdab1deb411772db4e514cd54b9d20ff819c87c115f4ad4a7118ea7367d"
-    },
     "assessment.json": {
       "bytes": 2270,
       "sha256": "094ec7f5e1eddc483d71c913518b439cdbf1d05347bb94bce06951198717a38d"
@@ -22,8 +18,8 @@
       "sha256": "96971665b9f5025f973efda7302a442e20aadca27c4f8b2888d86b520abd872c"
     },
     "index.html": {
-      "bytes": 28927,
-      "sha256": "6c4531cda9bda89f9a0fb931ed199afe80befd20860284d0ce8dc8da6641c3f1"
+      "bytes": 29013,
+      "sha256": "efb21feb16fe4818ae9f2db471bd42f407e6ff157d080057b36a336f145fad57"
     },
     "jets-monochromatic.webp": {
       "bytes": 101180,
