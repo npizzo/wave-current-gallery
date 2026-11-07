@@ -1,0 +1,190 @@
+{
+  "packet-turbulence_control": {
+    "snapshot_time": 22.399999499320984,
+    "full_3D_Eulerian_energy_above_80pct_horizontal_Nyquist_fraction": 0.0010473263710801014,
+    "components": {
+      "u": {
+        "horizontal_tail_fraction": 0.0009054324637208407
+      },
+      "v": {
+        "horizontal_tail_fraction": 0.000808377396048009
+      },
+      "w": {
+        "horizontal_tail_fraction": 0.0018328609031640732
+      }
+    },
+    "vertical_tail": "Not assigned a uniform-grid Fourier Nyquist measure on the stretched vertical grid."
+  },
+  "fine-none-s1": {
+    "full_3D_energy_above_80pct_coordinate_Nyquist_fraction": 0.0034797902151565063,
+    "components": {
+      "u": {
+        "energy_norm": 0.01880985617622591,
+        "tail_fraction": 0.0032422383904410186
+      },
+      "v": {
+        "energy_norm": 0.011545155344257074,
+        "tail_fraction": 0.00502575391277851
+      },
+      "w": {
+        "energy_norm": 0.021509514297596767,
+        "tail_fraction": 0.0028577364019830172
+      }
+    },
+    "early_phase_10_50_Te": [
+      {
+        "z": -0.029296875,
+        "negative_intrinsic_frequency_power_fraction": 0.8261358784968865,
+        "resolved_power_fraction": 0.039559158800861034
+      },
+      {
+        "z": -0.0703125,
+        "negative_intrinsic_frequency_power_fraction": 0.7490223880402342,
+        "resolved_power_fraction": 0.02505979232135378
+      },
+      {
+        "z": -0.150390625,
+        "negative_intrinsic_frequency_power_fraction": 0.29754182250754685,
+        "resolved_power_fraction": 0.03372786768893947
+      },
+      {
+        "z": -0.30078125,
+        "negative_intrinsic_frequency_power_fraction": 0.6706075804619671,
+        "resolved_power_fraction": 0.03102808043319951
+      }
+    ]
+  },
+  "fine-deep-s1": {
+    "full_3D_energy_above_80pct_coordinate_Nyquist_fraction": 4.4195158752313486e-05,
+    "components": {
+      "u": {
+        "energy_norm": 0.6227319215347182,
+        "tail_fraction": 2.13042427539896e-05
+      },
+      "v": {
+        "energy_norm": 0.005686512919747568,
+        "tail_fraction": 0.0021032250172507583
+      },
+      "w": {
+        "energy_norm": 0.1860593817715448,
+        "tail_fraction": 5.78800597155717e-05
+      }
+    },
+    "early_phase_10_50_Te": [
+      {
+        "z": -0.029296875,
+        "negative_intrinsic_frequency_power_fraction": 0.9986112734477098,
+        "resolved_power_fraction": 0.9651500282034567
+      },
+      {
+        "z": -0.0703125,
+        "negative_intrinsic_frequency_power_fraction": 0.9943525553691227,
+        "resolved_power_fraction": 0.9241049498854286
+      },
+      {
+        "z": -0.150390625,
+        "negative_intrinsic_frequency_power_fraction": 0.9970140501143617,
+        "resolved_power_fraction": 0.9544637822967442
+      },
+      {
+        "z": -0.30078125,
+        "negative_intrinsic_frequency_power_fraction": 0.9943497878088775,
+        "resolved_power_fraction": 0.86083605516236
+      }
+    ]
+  },
+  "coarse-deep-s1": {
+    "full_3D_energy_above_80pct_coordinate_Nyquist_fraction": 8.307177050081649e-05,
+    "components": {
+      "u": {
+        "energy_norm": 0.08384156339054284,
+        "tail_fraction": 3.902831371198737e-05
+      },
+      "v": {
+        "energy_norm": 0.0005655576174607029,
+        "tail_fraction": 0.005055750195417348
+      },
+      "w": {
+        "energy_norm": 0.01840832744110813,
+        "tail_fraction": 0.000130894480886732
+      }
+    },
+    "early_phase_10_50_Te": [
+      {
+        "z": -0.03125,
+        "negative_intrinsic_frequency_power_fraction": 0.9988196523787517,
+        "resolved_power_fraction": 0.9716279523249041
+      },
+      {
+        "z": -0.0703125,
+        "negative_intrinsic_frequency_power_fraction": 0.9955905230889333,
+        "resolved_power_fraction": 0.9256322896788235
+      },
+      {
+        "z": -0.1484375,
+        "negative_intrinsic_frequency_power_fraction": 0.9971810812410941,
+        "resolved_power_fraction": 0.9551862344887587
+      },
+      {
+        "z": -0.30078125,
+        "negative_intrinsic_frequency_power_fraction": 0.9937490331013585,
+        "resolved_power_fraction": 0.857517011772844
+      }
+    ]
+  },
+  "coarse-none-s1": {
+    "full_3D_energy_above_80pct_coordinate_Nyquist_fraction": 0.005799539898818504,
+    "components": {
+      "u": {
+        "energy_norm": 0.0027857000694334736,
+        "tail_fraction": 0.005137814665187183
+      },
+      "v": {
+        "energy_norm": 0.0012872332388906128,
+        "tail_fraction": 0.010156157191404213
+      },
+      "w": {
+        "energy_norm": 0.0031164802164512576,
+        "tail_fraction": 0.004591569914283811
+      }
+    },
+    "early_phase_10_50_Te": [
+      {
+        "z": -0.03125,
+        "negative_intrinsic_frequency_power_fraction": 0.905841383541384,
+        "resolved_power_fraction": 0.03626499839657415
+      },
+      {
+        "z": -0.0703125,
+        "negative_intrinsic_frequency_power_fraction": 0.8081069463301299,
+        "resolved_power_fraction": 0.030272217938517712
+      },
+      {
+        "z": -0.1484375,
+        "negative_intrinsic_frequency_power_fraction": 0.3094567335906049,
+        "resolved_power_fraction": 0.03903081980279637
+      },
+      {
+        "z": -0.30078125,
+        "negative_intrinsic_frequency_power_fraction": 0.6392345393623362,
+        "resolved_power_fraction": 0.038089325098821035
+      }
+    ]
+  },
+  "packet-packet_turbulence": {
+    "snapshot_time": 22.399999499320984,
+    "full_3D_Eulerian_energy_above_80pct_horizontal_Nyquist_fraction": 0.0010488940689034642,
+    "components": {
+      "u": {
+        "horizontal_tail_fraction": 0.0009177245347645609
+      },
+      "v": {
+        "horizontal_tail_fraction": 0.0008225574007034523
+      },
+      "w": {
+        "horizontal_tail_fraction": 0.001755234434299532
+      }
+    },
+    "vertical_tail": "Not assigned a uniform-grid Fourier Nyquist measure on the stretched vertical grid."
+  }
+}

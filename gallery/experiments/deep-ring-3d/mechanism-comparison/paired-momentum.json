@@ -1,0 +1,13 @@
+{
+  "projection_fractions": {
+    "threeD": 1.0211311530036935,
+    "numerical": 0.00013397189137336966,
+    "roundoff": -8.132992716028064e-09,
+    "vortex": -0.012298990670292222,
+    "pressure": -1.4959840794720558e-18,
+    "resolved2D": -0.008966125457240572,
+    "dt_stokes": 0.0
+  },
+  "peak_wave_induced_current_mm_s": -8.83745197722384,
+  "definition": "Difference of final-minus-initial Eulerian mean profiles: turbulent packet minus no-wave turbulence minus packet-only. Component fractions are projections onto this observed response, not fractions of the total stress norm."
+}

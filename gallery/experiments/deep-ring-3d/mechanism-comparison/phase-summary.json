@@ -1,0 +1,54 @@
+{
+  "fine-deep-s1": [
+    {
+      "z": -0.029296875,
+      "negative_fraction": 0.9988108182903743,
+      "Qz": -2.066159237400311,
+      "Qz_negative_time_fraction": 1.0
+    },
+    {
+      "z": -0.0703125,
+      "negative_fraction": 0.995051985413245,
+      "Qz": -1.0671500437774852,
+      "Qz_negative_time_fraction": 1.0
+    },
+    {
+      "z": -0.150390625,
+      "negative_fraction": 0.9950082891465657,
+      "Qz": -0.6836581775935335,
+      "Qz_negative_time_fraction": 1.0
+    },
+    {
+      "z": -0.30078125,
+      "negative_fraction": 0.9961891416069798,
+      "Qz": -0.17089147432976054,
+      "Qz_negative_time_fraction": 0.988011988011988
+    }
+  ],
+  "fine-none-s1": [
+    {
+      "z": -0.029296875,
+      "negative_fraction": 0.5969425143117224,
+      "Qz": 0.001488748532316238,
+      "Qz_negative_time_fraction": 0.4485514485514486
+    },
+    {
+      "z": -0.0703125,
+      "negative_fraction": 0.6946529712514312,
+      "Qz": -0.005509564436933964,
+      "Qz_negative_time_fraction": 0.6613386613386614
+    },
+    {
+      "z": -0.150390625,
+      "negative_fraction": 0.5341262175248636,
+      "Qz": -0.0010452745780034853,
+      "Qz_negative_time_fraction": 0.48951048951048953
+    },
+    {
+      "z": -0.30078125,
+      "negative_fraction": 0.33188254452460797,
+      "Qz": 0.0038079011827889414,
+      "Qz_negative_time_fraction": 0.41358641358641357
+    }
+  ]
+}

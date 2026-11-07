@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-07",
+  "scope": "Completed 3D monochromatic and original travelling-packet deep-water scenarios; one seed; no new simulations.",
+  "monochromatic": {
+    "current": "Banded jets at both resolutions; quantitatively different amplitudes.",
+    "PV": "Broad upper-layer homogenization not demonstrated; small PV changes sensitive to resolution and spatial remainder.",
+    "spectral": "Inverse horizontal transfer supported at low cutoffs; sharp barrier and constant radial-flux range unestablished.",
+    "momentum": "Resolved eddy stress drives mean-current growth; 3D stress predominantly opposes mean-energy growth.",
+    "wave_carrier": "Negative intrinsic phase propagation supported early and late; source, group-velocity and absorption link not established."
+  },
+  "packet": {
+    "current": "Wave-induced surface countercurrent; strong transverse dependence remains.",
+    "PV": "Upper-layer mean-PV gradient grows; substantial 3D sources and spatial removal.",
+    "spectral": "No clean difference in angular exclusion from control; reduced self-transfer is not the full 3D budget.",
+    "momentum": "3D stress supplies the paired countercurrent and reduces Lagrangian mean energy.",
+    "wave_carrier": "2D vortex-wave radiation not established as driver."
+  },
+  "limits": [
+    "One seed in each scenario",
+    "Monochromatic refinement is evidence of robust jet formation, not full quantitative convergence",
+    "Packet has one resolution and short local exposure",
+    "A reference operator separates physical transport from the spatial remainder; exact closure is not convergence",
+    "Current formation is not alone a spectral-barrier or PV-staircase test"
+  ],
+  "definitions": {
+    "q": "d_z mean_y(u_E) - d_x mean_y(w_E)",
+    "Q": "mean_x(q)",
+    "profile_contribution": "integral(delta_U_i * delta_U dz) / integral(delta_U**2 dz)",
+    "negative_Pi": "Transfer into lower retained wavenumbers",
+    "packet_response": "delta_U_packet_turbulence - delta_U_turbulence_control - delta_U_packet_null"
+  },
+  "provenance": {
+    "monochromatic_archive": "jet3d-mechanisms-20261107-relaunch",
+    "packet_archive": "case1d-periodic-mechanisms-20261107",
+    "packet_source_commit": "9ff503ca9bf4672a30f32c5dcfcc336f0be6faed"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-07",
+  "files": {
+    "analysis-source.zip": {
+      "bytes": 29014,
+      "sha256": "73a5acdab1deb411772db4e514cd54b9d20ff819c87c115f4ad4a7118ea7367d"
+    },
+    "assessment.json": {
+      "bytes": 2270,
+      "sha256": "094ec7f5e1eddc483d71c913518b439cdbf1d05347bb94bce06951198717a38d"
+    },
+    "energy-transfer.webp": {
+      "bytes": 81040,
+      "sha256": "702f613a003f74a5b822f94fe81a7da4f008dcb68178c2786d32d330b2ea2199"
+    },
+    "formation-history.csv.gz": {
+      "bytes": 90694,
+      "sha256": "aa794c5d7bc1d3c1f341b46960769f22c77bdd6adf22b529030a6ed83a37efa7"
+    },
+    "formation-history.webp": {
+      "bytes": 106222,
+      "sha256": "96971665b9f5025f973efda7302a442e20aadca27c4f8b2888d86b520abd872c"
+    },
+    "index.html": {
+      "bytes": 28927,
+      "sha256": "6c4531cda9bda89f9a0fb931ed199afe80befd20860284d0ce8dc8da6641c3f1"
+    },
+    "jets-monochromatic.webp": {
+      "bytes": 101180,
+      "sha256": "ff5b7387cde810755414865c69c2d9b6a7101e8e1b54cfe739481b7a471584eb"
+    },
+    "jets-packet.webp": {
+      "bytes": 131666,
+      "sha256": "2120d5e3b2f540e77997ef650d72f75bf69d4d2604bdec730319992fdea2ab69"
+    },
+    "momentum-budget.webp": {
+      "bytes": 63084,
+      "sha256": "d5bd1f11911423f9cfdc5f52059cfcb54f18c990e5e4ddecb19777b632ff669b"
+    },
+    "momentum-contributions.csv": {
+      "bytes": 3098,
+      "sha256": "71194a3945bcedbe2ef4d927e4449b6b5c58ea63843f3751cf3121f87ea6722b"
+    },
+    "paired-momentum.json": {
+      "bytes": 589,
+      "sha256": "8e41f4f5ab6cdb88f078e6cf0a50e8e0d1a1ceabc2b121f395716a04b4673cd4"
+    },
+    "phase-summary.json": {
+      "bytes": 1385,
+      "sha256": "451c0d479b711955f1e2a34bdc7283e96af2f45c95b11493876e90c6a687ecf7"
+    },
+    "pv-budget.webp": {
+      "bytes": 33574,
+      "sha256": "e881d7d43e8d9536045a8657b750586bb538a1df355962c9806617d97f3b05fe"
+    },
+    "pv-budgets.csv": {
+      "bytes": 11688,
+      "sha256": "9391c693ea17859461e1c1124981389e993a5f800b1d079fc286ecc3315cfebc"
+    },
+    "pv-profiles.webp": {
+      "bytes": 95820,
+      "sha256": "200cb1ae44c16a93ba5ba0a8284dd72dfc86f06f12883ecc488d8a0821c34c11"
+    },
+    "pv-summary.csv": {
+      "bytes": 2512,
+      "sha256": "c21c487b8e12945c19c06cb7cda1fb8a3fb681732a6f554593521814e8e358ed"
+    },
+    "resolution-and-phase-checks.json": {
+      "bytes": 5888,
+      "sha256": "1634e9c049280ff05f8696a9cbc8208c2dd5b28b85da34713cf656a2c9fa0e65"
+    },
+    "spectra-monochromatic.webp": {
+      "bytes": 137160,
+      "sha256": "df8f9ba028830b1b156326b49a14988b9599c7b465535ce166cb4c9813497184"
+    },
+    "spectra-packet.webp": {
+      "bytes": 180492,
+      "sha256": "941970f7a32ec630856f5b3cbe5b73f5a40f6a67772ea015864cfccf8c901d5b"
+    },
+    "spectral-summary.csv": {
+      "bytes": 1953,
+      "sha256": "1597441b8d8df5e7d8448da7477cdb5dc31d70b87749d029915960c24971a1e8"
+    },
+    "transfer-summary.json": {
+      "bytes": 1931,
+      "sha256": "83960ff0c24b5f936f1ec9618818b3de5a76da4243fe0fe8536fcc3674871ee5"
+    },
+    "wave-phase.webp": {
+      "bytes": 57200,
+      "sha256": "c0ab44c5e15af0121fb349e3cb0feb1b9791c59c7a7484e69836d2138d2ae2bc"
+    },
+    "window-sensitivity.webp": {
+      "bytes": 54780,
+      "sha256": "930f4457f05634187ee7289c0e653618871d3384ab2c1d6e7e84609836723046"
+    }
+  }
+}

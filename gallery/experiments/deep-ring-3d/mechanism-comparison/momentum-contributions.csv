@@ -1,0 +1,44 @@
+case,component,projected_final_profile_fraction,mean_energy_increment_m2_s2
+coarse-deep-s1,eddy,0.9953142425179914,2.132231280199383e-09
+coarse-deep-s1,mean,-5.772706812600857e-17,-1.2367821421047523e-25
+coarse-deep-s1,threeD,-0.015352815283143256,-2.2770763986252066e-10
+coarse-deep-s1,wave,-3.7997463940450206e-16,-7.748430322420787e-25
+coarse-deep-s1,numerical,0.020038572765152047,5.6777525216431745e-11
+coarse-none-s1,eddy,2.0276924824238423,1.040028276756092e-09
+coarse-none-s1,mean,3.352679907879571e-19,-3.9188204799424597e-28
+coarse-none-s1,threeD,-1.0238615227182437,-9.999888057479122e-10
+coarse-none-s1,wave,0.0,0.0
+coarse-none-s1,numerical,-0.0038309597055983737,-6.120261121413781e-13
+fine-deep-s1,eddy,1.0020818055559846,1.8089408604183225e-09
+fine-deep-s1,mean,-2.0673919283621282e-17,-4.487774769808934e-26
+fine-deep-s1,threeD,-0.009756319106997617,-2.0809233046272376e-10
+fine-deep-s1,wave,4.863554848243201e-15,1.3766909373976804e-23
+fine-deep-s1,numerical,0.007674513551007481,1.867590936564973e-11
+fine-none-s1,eddy,3.1844804813852363,1.0416262393005829e-09
+fine-none-s1,mean,-3.3079940024226166e-20,4.6003943707229854e-29
+fine-none-s1,threeD,-2.182970462397929,-1.020229594976739e-09
+fine-none-s1,wave,0.0,0.0
+fine-none-s1,numerical,-0.001510018987309061,-8.545527778791927e-13
+packet-packet_turbulence,threeD,1.093160684819113,6.790303235041165e-07
+packet-packet_turbulence,numerical,0.0003089629375794421,-4.719060187120962e-09
+packet-packet_turbulence,roundoff,7.3981032739029605e-09,2.3869797177996242e-14
+packet-packet_turbulence,vortex,-0.011507011607839573,-2.9304124332002255e-08
+packet-packet_turbulence,pressure,-1.8164040365178787e-18,3.974268490005099e-24
+packet-packet_turbulence,resolved2D,-0.08196264302838789,2.1745380241094654e-07
+packet-packet_turbulence,dt_stokes,5.842200457268838e-18,3.678795683774593e-23
+packet-packet_turbulence,stokes_subtraction,4.3670565758928873e-11,8.475758397719316e-16
+packet-turbulence_control,threeD,1.4343749319125314,-7.652714932424001e-07
+packet-turbulence_control,numerical,-0.002411845229323869,-4.251197040123006e-09
+packet-turbulence_control,roundoff,2.7981446468146994e-08,-1.7637540539462576e-14
+packet-turbulence_control,vortex,0.0,0.0
+packet-turbulence_control,pressure,1.0615677492057882e-19,-9.350607562533858e-26
+packet-turbulence_control,resolved2D,-0.4319631153526409,2.3045877033726644e-07
+packet-turbulence_control,dt_stokes,0.0,0.0
+packet-turbulence_control,stokes_subtraction,-0.0,0.0
+packet_wave_induced_difference,threeD,1.0211311530036935,not an energy fraction
+packet_wave_induced_difference,numerical,0.00013397189137336966,not an energy fraction
+packet_wave_induced_difference,roundoff,-8.132992716028064e-09,not an energy fraction
+packet_wave_induced_difference,vortex,-0.012298990670292222,not an energy fraction
+packet_wave_induced_difference,pressure,-1.4959840794720558e-18,not an energy fraction
+packet_wave_induced_difference,resolved2D,-0.008966125457240572,not an energy fraction
+packet_wave_induced_difference,dt_stokes,0.0,not an energy fraction
