@@ -1,0 +1,973 @@
+{
+  "completed": true,
+  "records": {
+    "stable-coarse": {
+      "available": true,
+      "case": "stable-coarse",
+      "completed": true,
+      "actual_end_time": 240.0,
+      "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+      "data_validation": {
+        "validated": true,
+        "sample_count": 481,
+        "expected_sample_count": 481,
+        "diagnostic_interval_s": 0.5,
+        "time_grid_is_complete": true,
+        "signed_profile_integrity_verified": true,
+        "profile_source_jld2_sha256": "b5936a4fe69ff2974d0cbcd3d7c6c330f39c303cbea4f692e1748eaf56ca01c8",
+        "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+        "artifact_sha256": {
+          "timeseries.csv": "26ed529582e08f80a067e2642b70479c19caa20de4d52b577780c80b8921cfd1",
+          "profiles.npz": "3e611a918f352a9f3c12652f5d6a0628f6a668d46f7d3c1e4485a8132e9d01d4",
+          "preflight.toml": "65fe09100d5bdc94fc2a711c8672f39813e13488c6fd265830e466afd7dae840",
+          "completed.toml": "6c682ffa4187ad5050236960e99db04a08e6522f0fed191f81654197328d4642"
+        },
+        "meaning": "Artifact integrity and approved setup consistency only; no scientific pass assertion."
+      },
+      "modal_reference_relative_error": 0.037826039147827034,
+      "energy_reference_relative_error": 0.0038774070018148823,
+      "energy_ratio_final_to_initial": 1.000437320788,
+      "max_field_relative_error": 0.0658138829524,
+      "max_normalized_divergence": 3.2053248736406247e-15,
+      "max_relative_x_leakage": 0.0,
+      "stress_norm_reference_relative_error": 0.07411374366550302,
+      "signed_stress": {
+        "available": true,
+        "used_times": [
+          0.5,
+          240.0
+        ],
+        "all_time_signed_relative_l2_error": 0.0763355978443288,
+        "all_time_interval_s": [
+          0.0,
+          240.0
+        ],
+        "all_time_weighting": "Trapezoidal physical-depth and time integrals; every saved time retained, including reference stress zeros.",
+        "mean_relative_profile_error": 0.13448832565633373,
+        "max_relative_profile_error": 1.970124291015554,
+        "min_signed_correlation": -0.9962008671759365,
+        "mean_signed_correlation": 0.982912119478923,
+        "max_wrong_sign_depth_fraction": 1.0,
+        "mean_shape_error_after_amplitude_projection": 0.01567444049621032,
+        "amplitude_projection_range": [
+          -0.6792746327131727,
+          2.9694771559471986
+        ],
+        "note": "Direct profile error retains independently predicted phase and amplitude; projected shape error is supplemental only."
+      },
+      "mean_flow_drift": {
+        "full_interval": {
+          "available": true,
+          "window_s": [
+            0.0,
+            240.0
+          ],
+          "max_absolute_rms": 2.08209486605e-16,
+          "time_rms_absolute": 1.2716748864951733e-16,
+          "max_over_initial_perturbation_rms": 2.08209486605e-07,
+          "max_over_current_perturbation_rms": 2.081582770086231e-07,
+          "time_rms_over_current_perturbation_rms": 1.2714318124146642e-07
+        },
+        "linear_comparison_interval": {
+          "available": true,
+          "window_s": [
+            20.0,
+            80.0
+          ],
+          "max_absolute_rms": 2.06804637981e-16,
+          "time_rms_absolute": 1.1715295586463893e-16,
+          "max_over_initial_perturbation_rms": 2.0680463798099998e-07,
+          "max_over_current_perturbation_rms": 2.067587312939304e-07,
+          "time_rms_over_current_perturbation_rms": 1.1713154575613728e-07
+        },
+        "note": "Horizontal-mean along-wave velocity departure from the prescribed base. Fluctuation field errors subtract this evolving mean, so this check is independent and necessary."
+      },
+      "oscillation": {
+        "converged": true,
+        "omega": 0.08542532831359988,
+        "damping_or_growth_rate": -5.1490298475039335e-06,
+        "phase_radians": 0.000920873457125315,
+        "amplitude": 1.0023586426667408,
+        "offset": 0.00019287204102645154,
+        "relative_frequency_error": -0.003194799910284263,
+        "relative_rms_fit_residual": 0.001982951350325425
+      },
+      "energy_max_fractional_change": 0.0004920860819999096,
+      "actual_perturbation_energy": {
+        "window_s": [
+          0.0,
+          240.0
+        ],
+        "min_ratio_to_initial": 0.9999384368859999,
+        "max_ratio_to_initial": 1.000492086082,
+        "final_fractional_change": 0.0004373207879999619,
+        "peak_to_peak_fraction_of_initial": 0.0005536491959999834,
+        "note": "Native total perturbation kinetic energy, relative to its actual initial value. This is distinct from error against the independent reference energy and from the fitted w-mode envelope."
+      },
+      "independent_phase_error_rms": 0.026652456865746438
+    },
+    "aligned-coarse": {
+      "available": true,
+      "case": "aligned-coarse",
+      "completed": true,
+      "actual_end_time": 120.0,
+      "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+      "data_validation": {
+        "validated": true,
+        "sample_count": 241,
+        "expected_sample_count": 241,
+        "diagnostic_interval_s": 0.5,
+        "time_grid_is_complete": true,
+        "signed_profile_integrity_verified": true,
+        "profile_source_jld2_sha256": "782846ba52492199784de264854aaa247ef928008abc08863be3f33cd8ae1797",
+        "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+        "artifact_sha256": {
+          "timeseries.csv": "2b434d737554aedd7090f03c3118c1d7e419c70565a6b850bc4f95814d5498a4",
+          "profiles.npz": "b233eb4749f435e58856f0a14e18bc019a867fa90b4d941597f376346a430110",
+          "preflight.toml": "ba18016d77f2c6be5fa00827abd91150d417e10d94b3b9a7ac956d8f981611de",
+          "completed.toml": "bbeb8eb86a2f3aa0ad39be0d13ed300fdcce6d76b0ab17f64e89378075ed8e0e"
+        },
+        "meaning": "Artifact integrity and approved setup consistency only; no scientific pass assertion."
+      },
+      "modal_reference_relative_error": 0.014339456571348197,
+      "energy_reference_relative_error": 0.029552269406366315,
+      "energy_ratio_final_to_initial": 78695693.90164262,
+      "max_field_relative_error": 0.0172070521049,
+      "max_normalized_divergence": 1.385322417724067e-09,
+      "max_relative_x_leakage": 0.0,
+      "stress_norm_reference_relative_error": 0.02981842990657229,
+      "signed_stress": {
+        "available": true,
+        "used_times": [
+          20.0,
+          80.0
+        ],
+        "all_time_signed_relative_l2_error": 0.02995380823516097,
+        "all_time_interval_s": [
+          0.0,
+          120.0
+        ],
+        "all_time_weighting": "Trapezoidal physical-depth and time integrals; every saved time retained, including reference stress zeros.",
+        "mean_relative_profile_error": 0.013721375517415712,
+        "max_relative_profile_error": 0.021088473864541542,
+        "min_signed_correlation": 0.9999959671709526,
+        "mean_signed_correlation": 0.9999966819472665,
+        "max_wrong_sign_depth_fraction": 0.0,
+        "mean_shape_error_after_amplitude_projection": 0.002562447184998662,
+        "amplitude_projection_range": [
+          0.9790956532015375,
+          0.9941385099856955
+        ],
+        "note": "Direct profile error retains independently predicted phase and amplitude; projected shape error is supplemental only."
+      },
+      "mean_flow_drift": {
+        "full_interval": {
+          "available": true,
+          "window_s": [
+            0.0,
+            120.0
+          ],
+          "max_absolute_rms": 3.869680826e-08,
+          "time_rms_absolute": 8.896146383550027e-09,
+          "max_over_initial_perturbation_rms": 38.69680826,
+          "max_over_current_perturbation_rms": 0.004362140614241941,
+          "time_rms_over_current_perturbation_rms": 0.0038463540718786356
+        },
+        "linear_comparison_interval": {
+          "available": true,
+          "window_s": [
+            20.0,
+            80.0
+          ],
+          "max_absolute_rms": 1.79777270217e-09,
+          "time_rms_absolute": 5.950401892311865e-10,
+          "max_over_initial_perturbation_rms": 1.79777270217,
+          "max_over_current_perturbation_rms": 0.004195849726217898,
+          "time_rms_over_current_perturbation_rms": 0.004006937272987944
+        },
+        "note": "Horizontal-mean along-wave velocity departure from the prescribed base. Fluctuation field errors subtract this evolving mean, so this check is independent and necessary."
+      },
+      "growth": [
+        {
+          "available": true,
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "rate": 0.07576450026181501,
+          "relative_rms_fit_residual": 1.6660455155369056e-05,
+          "max_log_residual": 2.9790576073773778e-05,
+          "relative_error_vs_independent_eigenvalue": -0.0015605490808956457
+        },
+        {
+          "available": true,
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "rate": 0.07576094498062455,
+          "relative_rms_fit_residual": 7.527900220949696e-06,
+          "max_log_residual": 1.8221285556396793e-05,
+          "relative_error_vs_independent_eigenvalue": -0.001607401274038911
+        }
+      ],
+      "stress_growth": [
+        {
+          "available": true,
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "rate": 0.1515105259414777,
+          "relative_rms_fit_residual": 2.626597711550184e-05,
+          "max_log_residual": 6.267586770292155e-05,
+          "relative_error_vs_twice_eigenvalue": -0.0016822799152335088
+        },
+        {
+          "available": true,
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "rate": 0.15151465557237284,
+          "relative_rms_fit_residual": 7.683813089525692e-06,
+          "max_log_residual": 1.6367352948520875e-05,
+          "relative_error_vs_twice_eigenvalue": -0.0016550693721084642
+        }
+      ]
+    },
+    "aligned-nowave-coarse": {
+      "available": true,
+      "case": "aligned-nowave-coarse",
+      "completed": true,
+      "actual_end_time": 120.0,
+      "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+      "data_validation": {
+        "validated": true,
+        "sample_count": 241,
+        "expected_sample_count": 241,
+        "diagnostic_interval_s": 0.5,
+        "time_grid_is_complete": true,
+        "signed_profile_integrity_verified": true,
+        "profile_source_jld2_sha256": "e2d853324ecb2ca84f18899c8f644b054f629b33404fe25c513b7241d887bc8b",
+        "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+        "artifact_sha256": {
+          "timeseries.csv": "e7dbf6ce05a346bb1af722942855cc04dad133ec6ce6487a95fae96d1db5847f",
+          "profiles.npz": "4838090d8e6d5da813bbd2e0134c7f5d9973246e969b7547ee85f4aece5d4128",
+          "preflight.toml": "231f8ddc0e5f02781f2bb0a47ee7a2b5db144879cb7f57b5cc86d7f4314a1f48",
+          "completed.toml": "f476f3aa60b85a715e98d56bcd7a16e056ddd70447566e5489aa6966889e4138"
+        },
+        "meaning": "Artifact integrity and approved setup consistency only; no scientific pass assertion."
+      },
+      "modal_reference_relative_error": 8.12660307848803e-12,
+      "energy_reference_relative_error": 0.000654684757853735,
+      "energy_ratio_final_to_initial": 192.43236885201514,
+      "max_field_relative_error": 0.0025734449287,
+      "max_normalized_divergence": 1.7577588016701175e-15,
+      "max_relative_x_leakage": 0.0,
+      "stress_norm_reference_relative_error": 0.00013027103775352754,
+      "signed_stress": {
+        "available": true,
+        "used_times": [
+          20.0,
+          80.0
+        ],
+        "all_time_signed_relative_l2_error": 0.0007507803115728119,
+        "all_time_interval_s": [
+          0.0,
+          120.0
+        ],
+        "all_time_weighting": "Trapezoidal physical-depth and time integrals; every saved time retained, including reference stress zeros.",
+        "mean_relative_profile_error": 0.0007083751455077112,
+        "max_relative_profile_error": 0.0007514839823616227,
+        "min_signed_correlation": 0.9999997261609481,
+        "mean_signed_correlation": 0.99999975568554,
+        "max_wrong_sign_depth_fraction": 0.0,
+        "mean_shape_error_after_amplitude_projection": 0.0006981036850663826,
+        "amplitude_projection_range": [
+          1.0000978159111202,
+          1.00013002849969
+        ],
+        "note": "Direct profile error retains independently predicted phase and amplitude; projected shape error is supplemental only."
+      },
+      "mean_flow_drift": {
+        "full_interval": {
+          "available": true,
+          "window_s": [
+            0.0,
+            120.0
+          ],
+          "max_absolute_rms": 3.77634311847e-11,
+          "time_rms_absolute": 2.1802989061657418e-11,
+          "max_over_initial_perturbation_rms": 0.0377634311847,
+          "max_over_current_perturbation_rms": 0.002722277441681249,
+          "time_rms_over_current_perturbation_rms": 0.0024351731551416306
+        },
+        "linear_comparison_interval": {
+          "available": true,
+          "window_s": [
+            20.0,
+            80.0
+          ],
+          "max_absolute_rms": 2.51758884297e-11,
+          "time_rms_absolute": 1.6652489198107564e-11,
+          "max_over_initial_perturbation_rms": 0.025175888429699998,
+          "max_over_current_perturbation_rms": 0.002652028787488969,
+          "time_rms_over_current_perturbation_rms": 0.002492622838421218
+        },
+        "note": "Horizontal-mean along-wave velocity departure from the prescribed base. Fluctuation field errors subtract this evolving mean, so this check is independent and necessary."
+      },
+      "no_wave": {
+        "max_w_departure_from_constant": 1.000000082740371e-11,
+        "field_error_vs_algebraic_reference": 0.0025734449287,
+        "note": "No-wave w is constant to linear order; u grows algebraically. Exponential growth is not its reference."
+      }
+    },
+    "stable-fine": {
+      "available": true,
+      "case": "stable-fine",
+      "completed": true,
+      "actual_end_time": 240.0,
+      "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+      "data_validation": {
+        "validated": true,
+        "sample_count": 481,
+        "expected_sample_count": 481,
+        "diagnostic_interval_s": 0.5,
+        "time_grid_is_complete": true,
+        "signed_profile_integrity_verified": true,
+        "profile_source_jld2_sha256": "5be1def329cbd0e1a953bacea6ec3dd0c00a4f31a3dfd179662c00b361d36d6b",
+        "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+        "artifact_sha256": {
+          "timeseries.csv": "8dedeb83870e6f72c57bfca59359bd59c6513d1b5792e84078935153ea451e41",
+          "profiles.npz": "3511c2a69af07563b0f99bc25a2c6ef28fe5e588d79d5f012a835af0660cbc23",
+          "preflight.toml": "859cec802656fcb188daab6e6efe26a9c4a453a803f825d31070a0a281e4d3be",
+          "completed.toml": "436f84aed0c427138b2ad097e6ad65afa25d400f9829f32474b9e7a31719f8fb"
+        },
+        "meaning": "Artifact integrity and approved setup consistency only; no scientific pass assertion."
+      },
+      "modal_reference_relative_error": 0.009484296056828817,
+      "energy_reference_relative_error": 0.0009723603881197138,
+      "energy_ratio_final_to_initial": 1.0001172073959999,
+      "max_field_relative_error": 0.016473257102,
+      "max_normalized_divergence": 4.1876018510546874e-15,
+      "max_relative_x_leakage": 0.0,
+      "stress_norm_reference_relative_error": 0.018863473487160692,
+      "signed_stress": {
+        "available": true,
+        "used_times": [
+          0.5,
+          240.0
+        ],
+        "all_time_signed_relative_l2_error": 0.019128411412208987,
+        "all_time_interval_s": [
+          0.0,
+          240.0
+        ],
+        "all_time_weighting": "Trapezoidal physical-depth and time integrals; every saved time retained, including reference stress zeros.",
+        "mean_relative_profile_error": 0.03367199973103413,
+        "max_relative_profile_error": 0.46964617842459044,
+        "min_signed_correlation": 0.9980555552456558,
+        "mean_signed_correlation": 0.9999837437319845,
+        "max_wrong_sign_depth_fraction": 0.0,
+        "mean_shape_error_after_amplitude_projection": 0.0029228305991063244,
+        "amplitude_projection_range": [
+          0.6028359880490982,
+          1.4695130222945754
+        ],
+        "note": "Direct profile error retains independently predicted phase and amplitude; projected shape error is supplemental only."
+      },
+      "mean_flow_drift": {
+        "full_interval": {
+          "available": true,
+          "window_s": [
+            0.0,
+            240.0
+          ],
+          "max_absolute_rms": 2.07599788996e-16,
+          "time_rms_absolute": 1.2758176551857914e-16,
+          "max_over_initial_perturbation_rms": 2.07599788996e-07,
+          "max_over_current_perturbation_rms": 2.0758710784021045e-07,
+          "time_rms_over_current_perturbation_rms": 1.275753641871598e-07
+        },
+        "linear_comparison_interval": {
+          "available": true,
+          "window_s": [
+            20.0,
+            80.0
+          ],
+          "max_absolute_rms": 2.07308889592e-16,
+          "time_rms_absolute": 1.1712082828584592e-16,
+          "max_over_initial_perturbation_rms": 2.0730888959199997e-07,
+          "max_over_current_perturbation_rms": 2.0729652723686388e-07,
+          "time_rms_over_current_perturbation_rms": 1.1711511899443707e-07
+        },
+        "note": "Horizontal-mean along-wave velocity departure from the prescribed base. Fluctuation field errors subtract this evolving mean, so this check is independent and necessary."
+      },
+      "oscillation": {
+        "converged": true,
+        "omega": 0.08558736478728848,
+        "damping_or_growth_rate": -1.3560087829623424e-06,
+        "phase_radians": 0.00023165154985997584,
+        "amplitude": 1.0006025862096892,
+        "offset": 4.6028077956935524e-05,
+        "relative_frequency_error": -0.0008012049187837711,
+        "relative_rms_fit_residual": 0.0005037596263359199
+      },
+      "energy_max_fractional_change": 0.00012223233799990574,
+      "actual_perturbation_energy": {
+        "window_s": [
+          0.0,
+          240.0
+        ],
+        "min_ratio_to_initial": 0.99999608267,
+        "max_ratio_to_initial": 1.000122232338,
+        "final_fractional_change": 0.00011720739599985208,
+        "peak_to_peak_fraction_of_initial": 0.00012614966799995297,
+        "note": "Native total perturbation kinetic energy, relative to its actual initial value. This is distinct from error against the independent reference energy and from the fitted w-mode envelope."
+      },
+      "independent_phase_error_rms": 0.006684305579532395
+    },
+    "aligned-fine": {
+      "available": true,
+      "case": "aligned-fine",
+      "completed": true,
+      "actual_end_time": 120.0,
+      "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+      "data_validation": {
+        "validated": true,
+        "sample_count": 241,
+        "expected_sample_count": 241,
+        "diagnostic_interval_s": 0.5,
+        "time_grid_is_complete": true,
+        "signed_profile_integrity_verified": true,
+        "profile_source_jld2_sha256": "bf634bc27bb3d5ad280bf2b2d4fe1e6ce0e9b227e90e96c9cc52591cd133c4c8",
+        "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+        "artifact_sha256": {
+          "timeseries.csv": "82f080b37dc1af25de39654af99b5828423543e87b10856669a03e178b361618",
+          "profiles.npz": "34a7a1bee78e3a83f09daee78eb6d54ae562bcf18dfc037bd7c3c403db4de5f1",
+          "preflight.toml": "cd0f565ef3d44ae6d5f12834b2a8e2bd34e95babf85f7e8c0d2dc0154d51f848",
+          "completed.toml": "72fb4cd21da1e554dee62cc8355ba63cf958275a778012ae616d7ef869835427"
+        },
+        "meaning": "Artifact integrity and approved setup consistency only; no scientific pass assertion."
+      },
+      "modal_reference_relative_error": 0.003607679343168865,
+      "energy_reference_relative_error": 0.007499327543801329,
+      "energy_ratio_final_to_initial": 79914396.8325188,
+      "max_field_relative_error": 0.00419716581216,
+      "max_normalized_divergence": 3.679985394435842e-09,
+      "max_relative_x_leakage": 0.0,
+      "stress_norm_reference_relative_error": 0.00756949861620507,
+      "signed_stress": {
+        "available": true,
+        "used_times": [
+          20.0,
+          80.0
+        ],
+        "all_time_signed_relative_l2_error": 0.007604847065436899,
+        "all_time_interval_s": [
+          0.0,
+          120.0
+        ],
+        "all_time_weighting": "Trapezoidal physical-depth and time integrals; every saved time retained, including reference stress zeros.",
+        "mean_relative_profile_error": 0.0034592998405550495,
+        "max_relative_profile_error": 0.005329717951788023,
+        "min_signed_correlation": 0.9999997429909449,
+        "mean_signed_correlation": 0.9999997902506289,
+        "max_wrong_sign_depth_fraction": 0.0,
+        "mean_shape_error_after_amplitude_projection": 0.0006439950191814136,
+        "amplitude_projection_range": [
+          0.9947182114138101,
+          0.9985276166476634
+        ],
+        "note": "Direct profile error retains independently predicted phase and amplitude; projected shape error is supplemental only."
+      },
+      "mean_flow_drift": {
+        "full_interval": {
+          "available": true,
+          "window_s": [
+            0.0,
+            120.0
+          ],
+          "max_absolute_rms": 1.23401495902e-08,
+          "time_rms_absolute": 2.048351401633828e-09,
+          "max_over_initial_perturbation_rms": 12.3401495902,
+          "max_over_current_perturbation_rms": 0.0013804094108565011,
+          "time_rms_over_current_perturbation_rms": 0.0003251453978917439
+        },
+        "linear_comparison_interval": {
+          "available": true,
+          "window_s": [
+            20.0,
+            80.0
+          ],
+          "max_absolute_rms": 3.22333364362e-11,
+          "time_rms_absolute": 8.28900472565445e-12,
+          "max_over_initial_perturbation_rms": 0.032233336436199994,
+          "max_over_current_perturbation_rms": 7.483644731377482e-05,
+          "time_rms_over_current_perturbation_rms": 3.900876359389055e-05
+        },
+        "note": "Horizontal-mean along-wave velocity departure from the prescribed base. Fluctuation field errors subtract this evolving mean, so this check is independent and necessary."
+      },
+      "growth": [
+        {
+          "available": true,
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "rate": 0.0758211711536592,
+          "relative_rms_fit_residual": 4.300258915654911e-06,
+          "max_log_residual": 7.803501438363725e-06,
+          "relative_error_vs_independent_eigenvalue": -0.0003909283576145617
+        },
+        {
+          "available": true,
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "rate": 0.07582025697309809,
+          "relative_rms_fit_residual": 1.9215705931056884e-06,
+          "max_log_residual": 4.65923775294641e-06,
+          "relative_error_vs_independent_eigenvalue": -0.0004029807061617374
+        }
+      ],
+      "stress_growth": [
+        {
+          "available": true,
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "rate": 0.1516376438946205,
+          "relative_rms_fit_residual": 6.498003007409727e-06,
+          "max_log_residual": 1.5561614972625648e-05,
+          "relative_error_vs_twice_eigenvalue": -0.0004218997596892038
+        },
+        {
+          "available": true,
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "rate": 0.151638661325945,
+          "relative_rms_fit_residual": 1.84806150270231e-06,
+          "max_log_residual": 3.998946297656403e-06,
+          "relative_error_vs_twice_eigenvalue": -0.0004151929681277533
+        }
+      ]
+    },
+    "aligned-nowave-fine": {
+      "available": true,
+      "case": "aligned-nowave-fine",
+      "completed": true,
+      "actual_end_time": 120.0,
+      "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+      "data_validation": {
+        "validated": true,
+        "sample_count": 241,
+        "expected_sample_count": 241,
+        "diagnostic_interval_s": 0.5,
+        "time_grid_is_complete": true,
+        "signed_profile_integrity_verified": true,
+        "profile_source_jld2_sha256": "d4780749fd3eedd806856975cc301e25d53ee440a02bc2e474488aa0071f809b",
+        "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+        "artifact_sha256": {
+          "timeseries.csv": "4148babb2f4defcea01208e3c5244c7ed4ccd4d03db077508fd2515380f86f26",
+          "profiles.npz": "25b26aaefef9dfbd0a0d6f215dac8badad72f49ab1b61c85fdcbd462f32bbec5",
+          "preflight.toml": "dd045e7915c28cd769a6132d48b106dd5ddd61c037e39597c9a69b45cee3bb43",
+          "completed.toml": "06052f282a174dcd1c3457f3856aea26db85a4fb3fc30f12325bea1240c300e2"
+        },
+        "meaning": "Artifact integrity and approved setup consistency only; no scientific pass assertion."
+      },
+      "modal_reference_relative_error": 0.0,
+      "energy_reference_relative_error": 0.00015625558673030922,
+      "energy_ratio_final_to_initial": 192.52357936309534,
+      "max_field_relative_error": 0.000396012771277,
+      "max_normalized_divergence": 2.1713491079683245e-15,
+      "max_relative_x_leakage": 0.0,
+      "stress_norm_reference_relative_error": 2.860857216989686e-05,
+      "signed_stress": {
+        "available": true,
+        "used_times": [
+          20.0,
+          80.0
+        ],
+        "all_time_signed_relative_l2_error": 0.0001786080379937489,
+        "all_time_interval_s": [
+          0.0,
+          120.0
+        ],
+        "all_time_weighting": "Trapezoidal physical-depth and time integrals; every saved time retained, including reference stress zeros.",
+        "mean_relative_profile_error": 0.00016850905404672975,
+        "max_relative_profile_error": 0.00017877574945397468,
+        "min_signed_correlation": 0.9999999844294126,
+        "mean_signed_correlation": 0.9999999861109764,
+        "max_wrong_sign_depth_fraction": 0.0,
+        "mean_shape_error_after_amplitude_projection": 0.00016644825047962885,
+        "amplitude_projection_range": [
+          1.0000212733559934,
+          1.000028597415418
+        ],
+        "note": "Direct profile error retains independently predicted phase and amplitude; projected shape error is supplemental only."
+      },
+      "mean_flow_drift": {
+        "full_interval": {
+          "available": true,
+          "window_s": [
+            0.0,
+            120.0
+          ],
+          "max_absolute_rms": 3.062201797e-13,
+          "time_rms_absolute": 1.7656099227976886e-13,
+          "max_over_initial_perturbation_rms": 0.00030622017969999995,
+          "max_over_current_perturbation_rms": 2.2069466932864466e-05,
+          "time_rms_over_current_perturbation_rms": 1.9700109881668913e-05
+        },
+        "linear_comparison_interval": {
+          "available": true,
+          "window_s": [
+            20.0,
+            80.0
+          ],
+          "max_absolute_rms": 2.03774209468e-13,
+          "time_rms_absolute": 1.3469609900392542e-13,
+          "max_over_initial_perturbation_rms": 0.00020377420946799998,
+          "max_over_current_perturbation_rms": 2.146008234043791e-05,
+          "time_rms_over_current_perturbation_rms": 2.0150976055574708e-05
+        },
+        "note": "Horizontal-mean along-wave velocity departure from the prescribed base. Fluctuation field errors subtract this evolving mean, so this check is independent and necessary."
+      },
+      "no_wave": {
+        "max_w_departure_from_constant": 0.0,
+        "field_error_vs_algebraic_reference": 0.000396012771277,
+        "note": "No-wave w is constant to linear order; u grows algebraically. Exponential growth is not its reference."
+      }
+    },
+    "aligned-fine-halfamp": {
+      "available": true,
+      "case": "aligned-fine-halfamp",
+      "completed": true,
+      "actual_end_time": 120.0,
+      "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+      "data_validation": {
+        "validated": true,
+        "sample_count": 241,
+        "expected_sample_count": 241,
+        "diagnostic_interval_s": 0.5,
+        "time_grid_is_complete": true,
+        "signed_profile_integrity_verified": true,
+        "profile_source_jld2_sha256": "f4c52eb85410b9d4dd33f7696763190a9cff16eddcde71604aef59d4102df831",
+        "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+        "artifact_sha256": {
+          "timeseries.csv": "1992afc4b79f2f4fc082aa6e1c2b5dc74be6d92bb98984684470fc623da046cf",
+          "profiles.npz": "ab91d769944e84ad1c85085f2e21f7a26782b76061204e0af1b043833a9d1c3e",
+          "preflight.toml": "f3886eee5820abe55c0b7989aefb91278bb0673b9f48fe0923b54426799aaae8",
+          "completed.toml": "4f35339ed1fce3c3ec337c613e5bee1a7f9af33cbe45548fff7a2dfc15d3514d"
+        },
+        "meaning": "Artifact integrity and approved setup consistency only; no scientific pass assertion."
+      },
+      "modal_reference_relative_error": 0.0036074529736551527,
+      "energy_reference_relative_error": 0.007497613408824728,
+      "energy_ratio_final_to_initial": 79914601.5260007,
+      "max_field_relative_error": 0.00410204165808,
+      "max_normalized_divergence": 5.212600526753912e-09,
+      "max_relative_x_leakage": 0.0,
+      "stress_norm_reference_relative_error": 0.007567484910468324,
+      "signed_stress": {
+        "available": true,
+        "used_times": [
+          20.0,
+          80.0
+        ],
+        "all_time_signed_relative_l2_error": 0.007602556872591185,
+        "all_time_interval_s": [
+          0.0,
+          120.0
+        ],
+        "all_time_weighting": "Trapezoidal physical-depth and time integrals; every saved time retained, including reference stress zeros.",
+        "mean_relative_profile_error": 0.0034592993009432563,
+        "max_relative_profile_error": 0.005329709476209533,
+        "min_signed_correlation": 0.9999997430018517,
+        "mean_signed_correlation": 0.9999997902522589,
+        "max_wrong_sign_depth_fraction": 0.0,
+        "mean_shape_error_after_amplitude_projection": 0.0006439926979930436,
+        "amplitude_projection_range": [
+          0.9947182179236669,
+          0.9985276162472906
+        ],
+        "note": "Direct profile error retains independently predicted phase and amplitude; projected shape error is supplemental only."
+      },
+      "mean_flow_drift": {
+        "full_interval": {
+          "available": true,
+          "window_s": [
+            0.0,
+            120.0
+          ],
+          "max_absolute_rms": 3.08886357774e-09,
+          "time_rms_absolute": 5.132306511851152e-10,
+          "max_over_initial_perturbation_rms": 6.1777271554799995,
+          "max_over_current_perturbation_rms": 0.0006910598383867249,
+          "time_rms_over_current_perturbation_rms": 0.00016483408579431383
+        },
+        "linear_comparison_interval": {
+          "available": true,
+          "window_s": [
+            20.0,
+            80.0
+          ],
+          "max_absolute_rms": 1.02262142609e-11,
+          "time_rms_absolute": 2.9335885706678756e-12,
+          "max_over_initial_perturbation_rms": 0.020452428521799997,
+          "max_over_current_perturbation_rms": 4.7484599940634804e-05,
+          "time_rms_over_current_perturbation_rms": 3.3917834375861e-05
+        },
+        "note": "Horizontal-mean along-wave velocity departure from the prescribed base. Fluctuation field errors subtract this evolving mean, so this check is independent and necessary."
+      },
+      "growth": [
+        {
+          "available": true,
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "rate": 0.0758211711521389,
+          "relative_rms_fit_residual": 4.300229031153371e-06,
+          "max_log_residual": 7.803440263520756e-06,
+          "relative_error_vs_independent_eigenvalue": -0.000390928377657751
+        },
+        {
+          "available": true,
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "rate": 0.07582025699410615,
+          "relative_rms_fit_residual": 1.921324899476009e-06,
+          "max_log_residual": 4.659020047093065e-06,
+          "relative_error_vs_independent_eigenvalue": -0.00040298042919639787
+        }
+      ],
+      "stress_growth": [
+        {
+          "available": true,
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "rate": 0.1516376438942648,
+          "relative_rms_fit_residual": 6.498127946388151e-06,
+          "max_log_residual": 1.556176114547725e-05,
+          "relative_error_vs_twice_eigenvalue": -0.0004218997620339948
+        },
+        {
+          "available": true,
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "rate": 0.15163866144848012,
+          "relative_rms_fit_residual": 1.8500365062694367e-06,
+          "max_log_residual": 4.000253809977039e-06,
+          "relative_error_vs_twice_eigenvalue": -0.0004151921603902098
+        }
+      ]
+    },
+    "aligned-fine-halfdt": {
+      "available": true,
+      "case": "aligned-fine-halfdt",
+      "completed": true,
+      "actual_end_time": 120.0,
+      "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+      "data_validation": {
+        "validated": true,
+        "sample_count": 241,
+        "expected_sample_count": 241,
+        "diagnostic_interval_s": 0.5,
+        "time_grid_is_complete": true,
+        "signed_profile_integrity_verified": true,
+        "profile_source_jld2_sha256": "8c4dd3f597b695e35509dea132a47e4b440d891edeff670786dfd526ec27591c",
+        "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+        "artifact_sha256": {
+          "timeseries.csv": "b53878b9ad1a302eeb4bbd9eabdf39f6e7bc7f69cd73d71b8aade2ba39adb17f",
+          "profiles.npz": "5841ed5f690eeb57ef1a48ac5b93a47ab9788fab21c00cf708ec381c325c7c6a",
+          "preflight.toml": "2bdd7292c629322b77d959a81e0cba4522ff790720514454fd75b61c294014c6",
+          "completed.toml": "eceb556448457a3ec44e747a7b679727c4b520344f4fd40a761b1f537fc1fa84"
+        },
+        "meaning": "Artifact integrity and approved setup consistency only; no scientific pass assertion."
+      },
+      "modal_reference_relative_error": 0.003607662032738171,
+      "energy_reference_relative_error": 0.007499292109384453,
+      "energy_ratio_final_to_initial": 79914399.76351881,
+      "max_field_relative_error": 0.0041971494842,
+      "max_normalized_divergence": 1.4505643785198586e-09,
+      "max_relative_x_leakage": 0.0,
+      "stress_norm_reference_relative_error": 0.007569463186719576,
+      "signed_stress": {
+        "available": true,
+        "used_times": [
+          20.0,
+          80.0
+        ],
+        "all_time_signed_relative_l2_error": 0.007604811801482836,
+        "all_time_interval_s": [
+          0.0,
+          120.0
+        ],
+        "all_time_weighting": "Trapezoidal physical-depth and time integrals; every saved time retained, including reference stress zeros.",
+        "mean_relative_profile_error": 0.0034592845067483976,
+        "max_relative_profile_error": 0.005329693640566217,
+        "min_signed_correlation": 0.9999997429909496,
+        "mean_signed_correlation": 0.9999997902506482,
+        "max_wrong_sign_depth_fraction": 0.0,
+        "mean_shape_error_after_amplitude_projection": 0.0006439949884279978,
+        "amplitude_projection_range": [
+          0.994718235947115,
+          0.9985276234735013
+        ],
+        "note": "Direct profile error retains independently predicted phase and amplitude; projected shape error is supplemental only."
+      },
+      "mean_flow_drift": {
+        "full_interval": {
+          "available": true,
+          "window_s": [
+            0.0,
+            120.0
+          ],
+          "max_absolute_rms": 1.23401500858e-08,
+          "time_rms_absolute": 2.0483514817429455e-09,
+          "max_over_initial_perturbation_rms": 12.3401500858,
+          "max_over_current_perturbation_rms": 0.001380409440981472,
+          "time_rms_over_current_perturbation_rms": 0.00032514541300896117
+        },
+        "linear_comparison_interval": {
+          "available": true,
+          "window_s": [
+            20.0,
+            80.0
+          ],
+          "max_absolute_rms": 3.22333402069e-11,
+          "time_rms_absolute": 8.289006215747214e-12,
+          "max_over_initial_perturbation_rms": 0.0322333402069,
+          "max_over_current_perturbation_rms": 7.483645514552278e-05,
+          "time_rms_over_current_perturbation_rms": 3.9008860340309855e-05
+        },
+        "note": "Horizontal-mean along-wave velocity departure from the prescribed base. Fluctuation field errors subtract this evolving mean, so this check is independent and necessary."
+      },
+      "growth": [
+        {
+          "available": true,
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "rate": 0.07582117130444717,
+          "relative_rms_fit_residual": 4.300251875996994e-06,
+          "max_log_residual": 7.803486329338583e-06,
+          "relative_error_vs_independent_eigenvalue": -0.000390926369660316
+        },
+        {
+          "available": true,
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "rate": 0.07582025712419266,
+          "relative_rms_fit_residual": 1.9215739926879467e-06,
+          "max_log_residual": 4.659247631266794e-06,
+          "relative_error_vs_independent_eigenvalue": -0.00040297871416539177
+        }
+      ],
+      "stress_growth": [
+        {
+          "available": true,
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "rate": 0.15163764419239312,
+          "relative_rms_fit_residual": 6.498022659496412e-06,
+          "max_log_residual": 1.5561726243618068e-05,
+          "relative_error_vs_twice_eigenvalue": -0.00042189779680601447
+        },
+        {
+          "available": true,
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "rate": 0.1516386616260056,
+          "relative_rms_fit_residual": 1.848062912387577e-06,
+          "max_log_residual": 3.998960032447485e-06,
+          "relative_error_vs_twice_eigenvalue": -0.00041519099016251726
+        }
+      ]
+    }
+  },
+  "crosschecks": [
+    {
+      "available": true,
+      "cases": [
+        "aligned-fine",
+        "aligned-fine-halfamp"
+      ],
+      "window_s": [
+        0.0,
+        80.0
+      ],
+      "w_modal_relative_difference": 4.372064388026303e-10,
+      "energy_relative_difference": 3.631460356244834e-09,
+      "stress_rms_relative_difference": 4.49357112715229e-09,
+      "mean_drift_amplitude_squared_scaled_relative_difference": 0.4334422835091603,
+      "mean_drift_amplitude_squared_scaled_relative_difference_20_80": 0.4334278643931449,
+      "mean_drift_note": "Quadratic amplitude scaling is expected for perturbation-driven mean response; small absolute drift near floating-point noise cannot be judged from this relative metric alone."
+    },
+    {
+      "available": true,
+      "cases": [
+        "aligned-fine",
+        "aligned-fine-halfdt"
+      ],
+      "window_s": [
+        0.0,
+        80.0
+      ],
+      "w_modal_relative_difference": 1.1378324523308292e-08,
+      "energy_relative_difference": 2.3693810282418595e-08,
+      "stress_rms_relative_difference": 2.369876467771804e-08,
+      "mean_drift_amplitude_squared_scaled_relative_difference": 4.2117706784432e-07,
+      "mean_drift_amplitude_squared_scaled_relative_difference_20_80": 4.1578728861320273e-07,
+      "mean_drift_note": "Quadratic amplitude scaling is expected for perturbation-driven mean response; small absolute drift near floating-point noise cannot be judged from this relative metric alone."
+    }
+  ],
+  "resolution": [
+    {
+      "branch": "stable",
+      "coarse_relative_error": 0.003194799910284263,
+      "fine_relative_error": 0.0008012049187837711,
+      "improvement_factor": 3.987494129634112
+    },
+    {
+      "branch": "aligned",
+      "coarse_relative_error": 0.001607401274038911,
+      "fine_relative_error": 0.0004029807061617374,
+      "improvement_factor": 3.988779734267913
+    }
+  ],
+  "analyzed_spec_sha256": "50f776335391156436ce65886dc4ab0f9fc29791c089436d6af3e9142ac47c6f",
+  "local_source_input_bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+  "bundle_hashes": [
+    "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd"
+  ],
+  "source_bundle_consistent": true,
+  "scope": "Validation of parallel-base roll dynamics and the solver; not a proof of turbulent jet mechanisms.",
+  "notes": [
+    "No fit is substituted for the independent trajectory in direct-reference errors.",
+    "Missing signed stress profiles remain unverified, even if stress norms agree.",
+    "Differences between growth windows flag transient or nonlinear contamination.",
+    "The half-amplitude check compares amplitude-normalized trajectories, not raw velocities.",
+    "The source/input hash must match the user-approved bundle separately; common hashes alone are not approval."
+  ]
+}

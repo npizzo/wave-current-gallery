@@ -1,0 +1,92 @@
+{
+  "bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+  "cases": [
+    "stable-coarse",
+    "aligned-coarse",
+    "aligned-nowave-coarse",
+    "stable-fine",
+    "aligned-fine",
+    "aligned-nowave-fine",
+    "aligned-fine-halfamp",
+    "aligned-fine-halfdt"
+  ],
+  "scope": "Completed deterministic parallel-base roll validation",
+  "files": {
+    "assessment.json": {
+      "bytes": 41559,
+      "sha256": "4883cc1bb092161f2cd2d1e336da47afa7caf2673911c17a8dcfecb424629871"
+    },
+    "base-drift.csv": {
+      "bytes": 529,
+      "sha256": "a6edb18e1d106cf525632a84cbc7c8044aee817d391ece6c93aea5a0ae9dc209"
+    },
+    "fitted-rates.csv": {
+      "bytes": 1952,
+      "sha256": "9cca43f21be6b5e06d8993bbdb8e64ee624c30e441e3eb07a072dad004e505f8"
+    },
+    "independent-final-mean-profiles.csv": {
+      "bytes": 171512,
+      "sha256": "067a0bea4a363f238dc0e6aa0a63441518e7b9147e5b6ef6e5e6d7ee403c7495"
+    },
+    "independent-mean-response.csv": {
+      "bytes": 259225,
+      "sha256": "2c0d6af8473ad3329d7434fcd4bd8a9586de961534f96fe356bb7196b47dd81a"
+    },
+    "independent-review.json": {
+      "bytes": 39311,
+      "sha256": "3ddca13242532b067ba128e6b2c52e630ba2bc7e2d188f79501e5c79243cbd6d"
+    },
+    "independent-review.txt": {
+      "bytes": 6819,
+      "sha256": "12a84a21d8ac70bff43b503dde84f9291fdc1cbbe03552d3fcf772bc39875a1f"
+    },
+    "index.html": {
+      "bytes": 17711,
+      "sha256": "f60263c612e471f4e9bc5dbacbc3f3dd4b78f0904da6946c9a2e043db2d588ed"
+    },
+    "modal-time-series.csv": {
+      "bytes": 491030,
+      "sha256": "4ae74641354108bed988337bc0e65391e14356ec60b8a62e3baeb4ba43a191a7"
+    },
+    "modal-trajectories.pdf": {
+      "bytes": 33411,
+      "sha256": "aa86915aa2aa9986a9da8fd70a20e6c3590a2ae4f5ba66d054ed9a162ffa1b39"
+    },
+    "modal-trajectories.png": {
+      "bytes": 332456,
+      "sha256": "890e8f0d0172ca06118a6cbac9fcabf21f76476e6eb8f36d7dcb5f8434609591"
+    },
+    "numerical-comparisons.pdf": {
+      "bytes": 21718,
+      "sha256": "1c640d527011db231df8e34d7ac70324672083bb2f38d588f03d2243a44dc79c"
+    },
+    "numerical-comparisons.png": {
+      "bytes": 137994,
+      "sha256": "7e3dc137b432e67abad8759e606f365b98670e499b3ed9cbdf21cd0eea311e08"
+    },
+    "signed-mean-response.pdf": {
+      "bytes": 21976,
+      "sha256": "c9c0c3a5aadc4ac068ecf7fffa5c63cacc05f5e0ec48b56f83897a03e2a1bcb4"
+    },
+    "signed-mean-response.png": {
+      "bytes": 155467,
+      "sha256": "5c925642820b7b6bd1e093d689d472ba94c6bece63a3b28efcfd1bf823a3ec97"
+    },
+    "signed-stress-snapshots.csv": {
+      "bytes": 89164,
+      "sha256": "bd79843d5269197b027daa320e75e359a7a6bdce16ede5036a890ecea0203524"
+    },
+    "signed-stress.pdf": {
+      "bytes": 23418,
+      "sha256": "74d88dba984a641e54a4ed2bd7c7db4a0b560f0eeb4dd107575e82d202f76396"
+    },
+    "signed-stress.png": {
+      "bytes": 122065,
+      "sha256": "1a2d7ac64e3fdb0b6573713a0e97fb3cd25ebb734e0c41035d6e62dfbd461f1d"
+    },
+    "specification.json": {
+      "bytes": 2251,
+      "sha256": "8f68a59b59b30332ad194fb87b27c822a654fe2473df24a549a91e2379daa286"
+    }
+  }
+}

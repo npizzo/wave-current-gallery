@@ -1,0 +1,107 @@
+Independent modal review
+========================
+
+Independent analysis of completed approved modal output; no new integration and no automatic scientific pass.
+All eight cases available: True
+
+Time-series mean-response comparisons are RMS magnitudes. Separately extracted final profiles, when available, test signed mean-profile agreement.
+Reference time integrals are analytic; measured-stress integrals use 0.5 s trapezoids.
+The physical centered stress is not the numerical WENO flux.
+
+stable-coarse
+  omega=0.08542532831; frequency error=-0.31948%; endpoint frequency phase drift=-0.06571 rad.
+  Signed stress space-time L2 error=7.6336%.
+  t=20: mean drift RMS=2.03705e-16; stress-predicted RMS=2.008628e-16; ratio=1.01415.
+  t=40: mean drift RMS=1.515416e-17; stress-predicted RMS=1.636029e-17; ratio=0.9262773.
+  t=80: mean drift RMS=5.618696e-17; stress-predicted RMS=6.021951e-17; ratio=0.9330359.
+  t=120: mean drift RMS=1.120878e-16; stress-predicted RMS=1.175793e-16; ratio=0.9532957.
+  Signed final mean: relative profile error=2.2148%; correlation=0.999956383.
+
+aligned-coarse
+  Growth [20.0, 60.0]: 0.07576450026; error=-0.15605%.
+  Growth [40.0, 80.0]: 0.07576094498; error=-0.16074%.
+  Signed stress space-time L2 error=2.9954%.
+  t=20: mean drift RMS=1.484325e-11; stress-predicted RMS=2.981853e-15; ratio=4977.86.
+  t=40: mean drift RMS=8.271018e-11; stress-predicted RMS=6.502696e-14; ratio=1271.937.
+  t=80: mean drift RMS=1.797773e-09; stress-predicted RMS=2.821877e-11; ratio=63.70841.
+  t=120: mean drift RMS=3.869681e-08; stress-predicted RMS=1.221752e-08; ratio=3.167322.
+  Signed final mean: relative profile error=303.46%; correlation=0.287783246.
+
+aligned-nowave-coarse
+  Signed stress space-time L2 error=0.075078%.
+  t=20: mean drift RMS=6.294076e-12; stress-predicted RMS=1.072646e-15; ratio=5867.806.
+  t=40: mean drift RMS=1.258807e-11; stress-predicted RMS=3.383578e-15; ratio=3720.344.
+  t=80: mean drift RMS=2.517589e-11; stress-predicted RMS=1.172671e-14; ratio=2146.884.
+  t=120: mean drift RMS=3.776343e-11; stress-predicted RMS=2.503269e-14; ratio=1508.565.
+  Signed final mean: relative profile error=1.5086e+05%; correlation=-0.0413293183.
+
+stable-fine
+  omega=0.08558736479; frequency error=-0.08012%; endpoint frequency phase drift=-0.016471 rad.
+  Signed stress space-time L2 error=1.9128%.
+  t=20: mean drift RMS=2.034091e-16; stress-predicted RMS=2.027268e-16; ratio=1.003365.
+  t=40: mean drift RMS=1.60042e-17; stress-predicted RMS=1.631512e-17; ratio=0.9809429.
+  t=80: mean drift RMS=5.908158e-17; stress-predicted RMS=6.01141e-17; ratio=0.9828239.
+  t=120: mean drift RMS=1.161738e-16; stress-predicted RMS=1.175811e-16; ratio=0.9880307.
+  Signed final mean: relative profile error=0.58115%; correlation=0.999997446.
+
+aligned-fine
+  Growth [20.0, 60.0]: 0.07582117115; error=-0.039093%.
+  Growth [40.0, 80.0]: 0.07582025697; error=-0.040298%.
+  Signed stress space-time L2 error=0.76048%.
+  t=20: mean drift RMS=1.192483e-13; stress-predicted RMS=3.036471e-15; ratio=39.272.
+  t=40: mean drift RMS=6.663275e-13; stress-predicted RMS=6.613699e-14; ratio=10.07496.
+  t=80: mean drift RMS=3.223334e-11; stress-predicted RMS=2.862704e-11; ratio=1.125975.
+  t=120: mean drift RMS=1.234015e-08; stress-predicted RMS=1.23625e-08; ratio=0.9981921.
+  Signed final mean: relative profile error=2.9702%; correlation=0.999559728.
+
+aligned-nowave-fine
+  Signed stress space-time L2 error=0.017861%.
+  t=20: mean drift RMS=5.08594e-14; stress-predicted RMS=1.087923e-15; ratio=46.74909.
+  t=40: mean drift RMS=1.017565e-13; stress-predicted RMS=3.427527e-15; ratio=29.68802.
+  t=80: mean drift RMS=2.037742e-13; stress-predicted RMS=1.186865e-14; ratio=17.16912.
+  t=120: mean drift RMS=3.062202e-13; stress-predicted RMS=2.532689e-14; ratio=12.09071.
+  Signed final mean: relative profile error=1204.5%; correlation=0.0867329237.
+
+aligned-fine-halfamp
+  Growth [20.0, 60.0]: 0.07582117115; error=-0.039093%.
+  Growth [40.0, 80.0]: 0.07582025699; error=-0.040298%.
+  Signed stress space-time L2 error=0.76026%.
+  t=20: mean drift RMS=5.959537e-14; stress-predicted RMS=7.591178e-16; ratio=78.50609.
+  t=40: mean drift RMS=3.316769e-13; stress-predicted RMS=1.653425e-14; ratio=20.06.
+  t=80: mean drift RMS=1.022621e-11; stress-predicted RMS=7.15676e-12; ratio=1.428889.
+  t=120: mean drift RMS=3.088864e-09; stress-predicted RMS=3.090625e-09; ratio=0.9994301.
+  Signed final mean: relative profile error=5.2836%; correlation=0.998603567.
+
+aligned-fine-halfdt
+  Growth [20.0, 60.0]: 0.0758211713; error=-0.039093%.
+  Growth [40.0, 80.0]: 0.07582025712; error=-0.040298%.
+  Signed stress space-time L2 error=0.76048%.
+  t=20: mean drift RMS=1.192501e-13; stress-predicted RMS=3.036471e-15; ratio=39.2726.
+  t=40: mean drift RMS=6.663313e-13; stress-predicted RMS=6.613699e-14; ratio=10.07502.
+  t=80: mean drift RMS=3.223334e-11; stress-predicted RMS=2.862704e-11; ratio=1.125975.
+  t=120: mean drift RMS=1.234015e-08; stress-predicted RMS=1.23625e-08; ratio=0.9981921.
+  Signed final mean: relative profile error=2.9702%; correlation=0.999559728.
+
+aligned-fine-halfamp
+  Quadratic-normalized mean-drift L2 difference through 80 s=43.3442%.
+  t=20: raw mean-drift ratio to base case=0.49975864.
+  t=40: raw mean-drift ratio to base case=0.49776867.
+  t=80: raw mean-drift ratio to base case=0.31725584.
+  t=120: raw mean-drift ratio to base case=0.25031006.
+  Halving amplitude predicts a raw ratio of 0.25 for a quadratic physical mean response; a ratio near 0.5 indicates a linear-amplitude contribution. Compare absolute errors and the signed final profiles. This is not an automatic pass rule.
+
+aligned-fine-halfdt
+  Quadratic-normalized mean-drift L2 difference through 80 s=4.21177e-05%.
+  t=20: raw mean-drift ratio to base case=1.0000153.
+  t=40: raw mean-drift ratio to base case=1.0000057.
+  t=80: raw mean-drift ratio to base case=1.0000001.
+  t=120: raw mean-drift ratio to base case=1.
+
+The physical stress is centered/collocated from velocities; it is not the WENO numerical momentum flux.
+Stress profiles include zero flux at impermeable top/bottom faces. Comparison uses the same center/face locations as the diagnostics.
+The inferred O(amplitude^2) mean response neglects feedback of that mean change on the linear mode.
+A ratio of mean-response RMS values does not verify the sign or depth shape of the observed mean.
+Near stress zero crossings, small frequency errors can reverse the instantaneous stress sign; all negative-correlation samples are listed without a masking threshold.
+Observed refinement is consistent with a leading spatial error but is not a full convergence theorem.
+Stable-branch half-timestep refinement was not part of this campaign.
+No claim about the nonlinear turbulent jet mechanism follows from these parallel-base modal comparisons.

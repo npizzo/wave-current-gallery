@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "nx": 16,
+  "Lx": 1.0,
+  "Ly": 0.5,
+  "H": 1.0,
+  "surface_wave_k": 4.0,
+  "stokes_surface": 0.03125,
+  "stokes_decay_rate": 8.0,
+  "stokes_surface_shear": 0.25,
+  "gate_width": 0.0625,
+  "ky": 12.566370614359172,
+  "oceananigans_version": "0.107.0",
+  "seed": "deterministic eigenmode; no random turbulence",
+  "advection": "WENO9",
+  "timestepper": "RK3",
+  "diagnostic_dt": 0.5,
+  "total_gpu_hour_cap": 1.0,
+  "automatic_retry": false,
+  "cases": {
+    "stable-coarse": {
+      "ny": 64,
+      "nz": 128,
+      "branch": "stable",
+      "waves": true,
+      "initial_rms": 1e-09,
+      "dt": 0.05,
+      "stop_time": 240.0,
+      "rate": 0.08569911985402094
+    },
+    "aligned-coarse": {
+      "ny": 64,
+      "nz": 128,
+      "branch": "aligned",
+      "waves": true,
+      "initial_rms": 1e-09,
+      "dt": 0.05,
+      "stop_time": 120.0,
+      "rate": 0.07588291928175583
+    },
+    "aligned-nowave-coarse": {
+      "ny": 64,
+      "nz": 128,
+      "branch": "aligned",
+      "waves": false,
+      "initial_rms": 1e-09,
+      "dt": 0.05,
+      "stop_time": 120.0,
+      "rate": 0.07588291928175583
+    },
+    "stable-fine": {
+      "ny": 128,
+      "nz": 256,
+      "branch": "stable",
+      "waves": true,
+      "initial_rms": 1e-09,
+      "dt": 0.05,
+      "stop_time": 240.0,
+      "rate": 0.08565599279003516
+    },
+    "aligned-fine": {
+      "ny": 128,
+      "nz": 256,
+      "branch": "aligned",
+      "waves": true,
+      "initial_rms": 1e-09,
+      "dt": 0.05,
+      "stop_time": 120.0,
+      "rate": 0.07585082339147134
+    },
+    "aligned-nowave-fine": {
+      "ny": 128,
+      "nz": 256,
+      "branch": "aligned",
+      "waves": false,
+      "initial_rms": 1e-09,
+      "dt": 0.05,
+      "stop_time": 120.0,
+      "rate": 0.07585082339147134
+    },
+    "aligned-fine-halfamp": {
+      "ny": 128,
+      "nz": 256,
+      "branch": "aligned",
+      "waves": true,
+      "initial_rms": 5e-10,
+      "dt": 0.05,
+      "stop_time": 120.0,
+      "rate": 0.07585082339147134
+    },
+    "aligned-fine-halfdt": {
+      "ny": 128,
+      "nz": 256,
+      "branch": "aligned",
+      "waves": true,
+      "initial_rms": 1e-09,
+      "dt": 0.025,
+      "stop_time": 120.0,
+      "rate": 0.07585082339147134
+    }
+  }
+}

@@ -1,0 +1,817 @@
+{
+  "scope": "Independent analysis of completed approved modal output; no new integration and no automatic scientific pass.",
+  "approved_source_bundle_sha256": "e42c92cc329d88d3961e8a43772cb8b6770b8683af9ec263299ca16b1ffc95fd",
+  "all_eight_cases_available": true,
+  "method": {
+    "inputs": "case/timeseries.csv and case/profiles.npz; the reference rate is taken from the approved spec.",
+    "mean_response": "Delta U(z,t) = -partial_z integral_0^t B(z,tprime) dtprime. Adjacent face differences yield center tendencies; depth RMS uses cell-width weights.",
+    "reference_time_integral": "Analytic at the precomputed rate: sin(2 omega t) for stable standing stress, exp(2 sigma t) for aligned stress, affine t for no-wave stress. Reconstruction errors are recorded.",
+    "measured_time_integral": "Trapezoidal integration of saved 0.5 s physical-stress profiles; not a native WENO/RK momentum-budget closure.",
+    "signed_stress_norm": "Trapezoidal depth and time quadrature of signed-profile squared error; no phase shifts or amplitude rescaling.",
+    "growth_fit": "Independent log-linear fits over 20-60 and 40-80 s.",
+    "stable_fit": "Independent damped sine/cosine least-squares fit; fitted rate is not substituted into the reference stress.",
+    "observed_mean": "CSV records RMS departure from the initial base. When separately extracted final-mean.npz is available, the final-minus-initial signed mean profile is also compared."
+  },
+  "limitations": [
+    "The physical stress is centered/collocated from velocities; it is not the WENO numerical momentum flux.",
+    "Stress profiles include zero flux at impermeable top/bottom faces. Comparison uses the same center/face locations as the diagnostics.",
+    "The inferred O(amplitude^2) mean response neglects feedback of that mean change on the linear mode.",
+    "A ratio of mean-response RMS values does not verify the sign or depth shape of the observed mean.",
+    "Near stress zero crossings, small frequency errors can reverse the instantaneous stress sign; all negative-correlation samples are listed without a masking threshold.",
+    "Observed refinement is consistent with a leading spatial error but is not a full convergence theorem.",
+    "Stable-branch half-timestep refinement was not part of this campaign.",
+    "No claim about the nonlinear turbulent jet mechanism follows from these parallel-base modal comparisons."
+  ],
+  "records": {
+    "stable-coarse": {
+      "available": true,
+      "t_end_s": 240.0,
+      "n_samples": 481,
+      "source_hashes": {
+        "completed.toml": "6c682ffa4187ad5050236960e99db04a08e6522f0fed191f81654197328d4642",
+        "timeseries.csv": "26ed529582e08f80a067e2642b70479c19caa20de4d52b577780c80b8921cfd1",
+        "profiles.npz": "3e611a918f352a9f3c12652f5d6a0628f6a668d46f7d3c1e4485a8132e9d01d4"
+      },
+      "reference_rate_s_inverse": 0.08569911985402094,
+      "direct_signed_stress_space_time_L2_relative_error": 0.0763355978443288,
+      "negative_stress_correlation_samples": [
+        {
+          "t_s": 55.0,
+          "reference_norm_fraction_of_peak": 0.0021252227729776692,
+          "actual_norm_fraction_of_reference_peak": 0.02752079362535789
+        },
+        {
+          "t_s": 73.5,
+          "reference_norm_fraction_of_peak": 0.03139486230152431,
+          "actual_norm_fraction_of_reference_peak": 0.009355334380502699
+        },
+        {
+          "t_s": 110.0,
+          "reference_norm_fraction_of_peak": 0.00425043594723402,
+          "actual_norm_fraction_of_reference_peak": 0.0565689490425579
+        },
+        {
+          "t_s": 128.5,
+          "reference_norm_fraction_of_peak": 0.03351896656940222,
+          "actual_norm_fraction_of_reference_peak": 0.0366788690460056
+        },
+        {
+          "t_s": 147.0,
+          "reference_norm_fraction_of_peak": 0.06275877305957682,
+          "actual_norm_fraction_of_reference_peak": 0.01830162409306513
+        },
+        {
+          "t_s": 165.0,
+          "reference_norm_fraction_of_peak": 0.006375629924087533,
+          "actual_norm_fraction_of_reference_peak": 0.08284475603258591
+        },
+        {
+          "t_s": 183.5,
+          "reference_norm_fraction_of_peak": 0.03564291944646154,
+          "actual_norm_fraction_of_reference_peak": 0.06337354091648086
+        },
+        {
+          "t_s": 202.0,
+          "reference_norm_fraction_of_peak": 0.0648796647120243,
+          "actual_norm_fraction_of_reference_peak": 0.04423918094224146
+        },
+        {
+          "t_s": 220.0,
+          "reference_norm_fraction_of_peak": 0.008500795104957605,
+          "actual_norm_fraction_of_reference_peak": 0.1104722242676492
+        },
+        {
+          "t_s": 220.5,
+          "reference_norm_fraction_of_peak": 0.0940608112451721,
+          "actual_norm_fraction_of_reference_peak": 0.025956940082620353
+        },
+        {
+          "t_s": 238.5,
+          "reference_norm_fraction_of_peak": 0.03776671133971125,
+          "actual_norm_fraction_of_reference_peak": 0.09096183695343898
+        },
+        {
+          "t_s": 239.0,
+          "reference_norm_fraction_of_peak": 0.12316135221572383,
+          "actual_norm_fraction_of_reference_peak": 0.0064501602449971145
+        }
+      ],
+      "min_stress_correlation_above_half_reference_peak": 0.9997795112701438,
+      "maximum_mean_drift_rms_m_s": 2.08209486605e-16,
+      "independent_sinusoid_fit": {
+        "omega_s_inverse": 0.08542532831362101,
+        "envelope_rate_s_inverse": -5.1490298176180344e-06,
+        "phase_radians": 0.0009208734538215392,
+        "relative_frequency_error": -0.0031947999100375712,
+        "frequency_phase_drift_by_endpoint_radians": -0.06570996969598286,
+        "modal_fit_residual_rms": 0.0014045029655143312,
+        "energy_ratio_min": 0.9999384368859999,
+        "energy_ratio_max": 1.000492086082,
+        "note": "The modal envelope fit is not total-energy damping."
+      },
+      "reference_stress_temporal_formula_relative_L2_error": 6.219769180920555e-16,
+      "reference_integral_trapezoid_relative_L2_error": 0.0006121031908004846,
+      "mean_response_comparisons": [
+        {
+          "t_s": 20.0,
+          "observed_mean_drift_rms_m_s": 2.03704982893e-16,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 2.008627912678044e-16,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 2.0252358649197244e-16,
+          "observed_to_reference_mean_rms_ratio": 1.0141499160061267
+        },
+        {
+          "t_s": 40.0,
+          "observed_mean_drift_rms_m_s": 1.51541646312e-17,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.6360289685896627e-17,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.5059359530060622e-17,
+          "observed_to_reference_mean_rms_ratio": 0.9262772800571883
+        },
+        {
+          "t_s": 80.0,
+          "observed_mean_drift_rms_m_s": 5.61869648333e-17,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 6.021950740928091e-17,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 5.586582643162971e-17,
+          "observed_to_reference_mean_rms_ratio": 0.9330359421810975
+        },
+        {
+          "t_s": 120.0,
+          "observed_mean_drift_rms_m_s": 1.12087816105e-16,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.175792737316559e-16,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.1144262828584515e-16,
+          "observed_to_reference_mean_rms_ratio": 0.9532957004038934
+        }
+      ],
+      "signed_final_mean_response": {
+        "available": true,
+        "artifact_sha256": "8a13de200417b6a60dd0aa43271dfaa6005b37c1ecfea6dec9b7329be33f678c",
+        "t_s": 240.0,
+        "reference_stress_analytic_integral": {
+          "relative_L2_error": 0.022148314021360388,
+          "signed_correlation": 0.9999563831445326,
+          "amplitude_projection": 1.0199946212807873,
+          "observed_to_predicted_rms_ratio": 1.0200391121793144,
+          "maximum_absolute_profile_error_m_s": 2.1425659937500057e-17
+        },
+        "measured_stress_trapezoid_integral": {
+          "relative_L2_error": 0.010303787510358691,
+          "signed_correlation": 0.9999635624440342,
+          "amplitude_projection": 1.00569703319457,
+          "observed_to_predicted_rms_ratio": 1.0057336796718097,
+          "maximum_absolute_profile_error_m_s": 1.8437123850264502e-17
+        },
+        "observed_depth_integrated_mean_change_m2_s": -3.5496738538175346e-26,
+        "note": "Observed final-minus-initial horizontal mean is compared without offset or amplitude fitting. The reported amplitude projection is supplementary."
+      }
+    },
+    "aligned-coarse": {
+      "available": true,
+      "t_end_s": 120.0,
+      "n_samples": 241,
+      "source_hashes": {
+        "completed.toml": "bbeb8eb86a2f3aa0ad39be0d13ed300fdcce6d76b0ab17f64e89378075ed8e0e",
+        "timeseries.csv": "2b434d737554aedd7090f03c3118c1d7e419c70565a6b850bc4f95814d5498a4",
+        "profiles.npz": "b233eb4749f435e58856f0a14e18bc019a867fa90b4d941597f376346a430110"
+      },
+      "reference_rate_s_inverse": 0.07588291928175583,
+      "direct_signed_stress_space_time_L2_relative_error": 0.02995380823516097,
+      "negative_stress_correlation_samples": [],
+      "min_stress_correlation_above_half_reference_peak": 0.9999958269222015,
+      "maximum_mean_drift_rms_m_s": 3.869680826e-08,
+      "independent_log_growth_fits": [
+        {
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "velocity_rate_s_inverse": 0.07576450026181501,
+          "relative_velocity_rate_error": -0.0015605490808956457,
+          "stress_rate_s_inverse": 0.15151052594149142,
+          "relative_stress_rate_error": -0.0016822799151431367
+        },
+        {
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "velocity_rate_s_inverse": 0.07576094498062455,
+          "relative_velocity_rate_error": -0.001607401274038911,
+          "stress_rate_s_inverse": 0.15151465557237437,
+          "relative_stress_rate_error": -0.0016550693720983611
+        }
+      ],
+      "reference_stress_temporal_formula_relative_L2_error": 1.429607843979973e-16,
+      "reference_integral_trapezoid_relative_L2_error": 0.00047980540805620686,
+      "mean_response_comparisons": [
+        {
+          "t_s": 20.0,
+          "observed_mean_drift_rms_m_s": 1.48432470057e-11,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 2.9818528524581004e-15,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 2.962202348155518e-15,
+          "observed_to_reference_mean_rms_ratio": 4977.860323813067
+        },
+        {
+          "t_s": 40.0,
+          "observed_mean_drift_rms_m_s": 8.2710180305e-11,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 6.502695913045547e-14,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 6.418207244625754e-14,
+          "observed_to_reference_mean_rms_ratio": 1271.9367691647537
+        },
+        {
+          "t_s": 80.0,
+          "observed_mean_drift_rms_m_s": 1.79777270217e-09,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 2.821876689941007e-11,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 2.7554245531011388e-11,
+          "observed_to_reference_mean_rms_ratio": 63.70840754943064
+        },
+        {
+          "t_s": 120.0,
+          "observed_mean_drift_rms_m_s": 3.869680826e-08,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.2217518147095476e-08,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.1810407963894205e-08,
+          "observed_to_reference_mean_rms_ratio": 3.1673215291437535
+        }
+      ],
+      "signed_final_mean_response": {
+        "available": true,
+        "artifact_sha256": "7c14707e5a7680e54d64306d21eabf2d79def7bb0f6effb0079b69df7ee45335",
+        "t_s": 120.0,
+        "reference_stress_analytic_integral": {
+          "relative_L2_error": 3.0346204916210273,
+          "signed_correlation": 0.28778324598381105,
+          "amplitude_projection": 0.9115020707639536,
+          "observed_to_predicted_rms_ratio": 3.1673215292568817,
+          "maximum_absolute_profile_error_m_s": 2.9661628363204633e-07
+        },
+        "measured_stress_trapezoid_integral": {
+          "relative_L2_error": 3.141862840756644,
+          "signed_correlation": 0.28447328972408015,
+          "amplitude_projection": 0.9320768919744955,
+          "observed_to_predicted_rms_ratio": 3.276500556092796,
+          "maximum_absolute_profile_error_m_s": 2.965001899701078e-07
+        },
+        "observed_depth_integrated_mean_change_m2_s": 1.5543054582116411e-19,
+        "note": "Observed final-minus-initial horizontal mean is compared without offset or amplitude fitting. The reported amplitude projection is supplementary."
+      }
+    },
+    "aligned-nowave-coarse": {
+      "available": true,
+      "t_end_s": 120.0,
+      "n_samples": 241,
+      "source_hashes": {
+        "completed.toml": "f476f3aa60b85a715e98d56bcd7a16e056ddd70447566e5489aa6966889e4138",
+        "timeseries.csv": "e7dbf6ce05a346bb1af722942855cc04dad133ec6ce6487a95fae96d1db5847f",
+        "profiles.npz": "4838090d8e6d5da813bbd2e0134c7f5d9973246e969b7547ee85f4aece5d4128"
+      },
+      "reference_rate_s_inverse": 0.07588291928175583,
+      "direct_signed_stress_space_time_L2_relative_error": 0.0007507803115728119,
+      "negative_stress_correlation_samples": [],
+      "min_stress_correlation_above_half_reference_peak": 0.9999997121853096,
+      "maximum_mean_drift_rms_m_s": 3.77634311847e-11,
+      "maximum_vertical_mode_departure_from_one": 1.000000082740371e-11,
+      "reference_stress_temporal_formula_relative_L2_error": 1.7513792737977831e-16,
+      "reference_integral_trapezoid_relative_L2_error": 1.3360630974186138e-16,
+      "mean_response_comparisons": [
+        {
+          "t_s": 20.0,
+          "observed_mean_drift_rms_m_s": 6.29407605996e-12,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.0726455798986761e-15,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.0718421569611578e-15,
+          "observed_to_reference_mean_rms_ratio": 5867.805897782704
+        },
+        {
+          "t_s": 40.0,
+          "observed_mean_drift_rms_m_s": 1.25880740023e-11,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 3.3835777357954637e-15,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 3.3805239967208894e-15,
+          "observed_to_reference_mean_rms_ratio": 3720.3442584246113
+        },
+        {
+          "t_s": 80.0,
+          "observed_mean_drift_rms_m_s": 2.51758884297e-11,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.1726708870203687e-14,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.1714968926125277e-14,
+          "observed_to_reference_mean_rms_ratio": 2146.884407923628
+        },
+        {
+          "t_s": 120.0,
+          "observed_mean_drift_rms_m_s": 3.77634311847e-11,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 2.5032686902497743e-14,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 2.5006708953674192e-14,
+          "observed_to_reference_mean_rms_ratio": 1508.5648349211763
+        }
+      ],
+      "signed_final_mean_response": {
+        "available": true,
+        "artifact_sha256": "bbb768e856484a3f1e6f4993eff87f277390f57f8b0608f9e073c21f01cef8d5",
+        "t_s": 120.0,
+        "reference_stress_analytic_integral": {
+          "relative_L2_error": 1508.6065664536904,
+          "signed_correlation": -0.04132931825163948,
+          "amplitude_projection": -62.34795911448135,
+          "observed_to_predicted_rms_ratio": 1508.564906269851,
+          "maximum_absolute_profile_error_m_s": 3.0262137148743446e-10
+        },
+        "measured_stress_trapezoid_integral": {
+          "relative_L2_error": 1510.1748536268592,
+          "signed_correlation": -0.042460548282472595,
+          "amplitude_projection": -64.12103535642639,
+          "observed_to_predicted_rms_ratio": 1510.132062587969,
+          "maximum_absolute_profile_error_m_s": 3.02621275371109e-10
+        },
+        "observed_depth_integrated_mean_change_m2_s": -1.450882735351891e-17,
+        "note": "Observed final-minus-initial horizontal mean is compared without offset or amplitude fitting. The reported amplitude projection is supplementary."
+      }
+    },
+    "stable-fine": {
+      "available": true,
+      "t_end_s": 240.0,
+      "n_samples": 481,
+      "source_hashes": {
+        "completed.toml": "436f84aed0c427138b2ad097e6ad65afa25d400f9829f32474b9e7a31719f8fb",
+        "timeseries.csv": "8dedeb83870e6f72c57bfca59359bd59c6513d1b5792e84078935153ea451e41",
+        "profiles.npz": "3511c2a69af07563b0f99bc25a2c6ef28fe5e588d79d5f012a835af0660cbc23"
+      },
+      "reference_rate_s_inverse": 0.08565599279003516,
+      "direct_signed_stress_space_time_L2_relative_error": 0.019128411412208987,
+      "negative_stress_correlation_samples": [
+        {
+          "t_s": 183.5,
+          "reference_norm_fraction_of_peak": 0.0198215368522192,
+          "actual_norm_fraction_of_reference_peak": 0.004972220901327367
+        },
+        {
+          "t_s": 238.5,
+          "reference_norm_fraction_of_peak": 0.01720323026323016,
+          "actual_norm_fraction_of_reference_peak": 0.015038636685525627
+        }
+      ],
+      "min_stress_correlation_above_half_reference_peak": 0.9999888295127958,
+      "maximum_mean_drift_rms_m_s": 2.07599788996e-16,
+      "independent_sinusoid_fit": {
+        "omega_s_inverse": 0.08558736478725529,
+        "envelope_rate_s_inverse": -1.3560087468416816e-06,
+        "phase_radians": 0.0002316515546308873,
+        "relative_frequency_error": -0.0008012049191712389,
+        "frequency_phase_drift_by_endpoint_radians": -0.016470720667169925,
+        "modal_fit_residual_rms": 0.0003560624234238398,
+        "energy_ratio_min": 0.99999608267,
+        "energy_ratio_max": 1.000122232338,
+        "note": "The modal envelope fit is not total-energy damping."
+      },
+      "reference_stress_temporal_formula_relative_L2_error": 4.92254418648108e-16,
+      "reference_integral_trapezoid_relative_L2_error": 0.0006114872031642253,
+      "mean_response_comparisons": [
+        {
+          "t_s": 20.0,
+          "observed_mean_drift_rms_m_s": 2.03409105208e-16,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 2.0272684774492156e-16,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 2.0305331734236687e-16,
+          "observed_to_reference_mean_rms_ratio": 1.0033654026127652
+        },
+        {
+          "t_s": 40.0,
+          "observed_mean_drift_rms_m_s": 1.60042035179e-17,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.6315122144909507e-17,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.597546285842685e-17,
+          "observed_to_reference_mean_rms_ratio": 0.9809429176044191
+        },
+        {
+          "t_s": 80.0,
+          "observed_mean_drift_rms_m_s": 5.90815771502e-17,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 6.011410136692534e-17,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 5.897817669851421e-17,
+          "observed_to_reference_mean_rms_ratio": 0.9828239266121104
+        },
+        {
+          "t_s": 120.0,
+          "observed_mean_drift_rms_m_s": 1.16173772153e-16,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.1758113508755574e-16,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.1597062626449741e-16,
+          "observed_to_reference_mean_rms_ratio": 0.9880307080425124
+        }
+      ],
+      "signed_final_mean_response": {
+        "available": true,
+        "artifact_sha256": "3d43bd5ff2c81e94a7d50cef6f56cdeddcfce390a273a04ad8a321ec48900c1c",
+        "t_s": 240.0,
+        "reference_stress_analytic_integral": {
+          "relative_L2_error": 0.005811484851329502,
+          "signed_correlation": 0.9999974457312746,
+          "amplitude_projection": 1.0053488319632804,
+          "observed_to_predicted_rms_ratio": 1.0053513999009194,
+          "maximum_absolute_profile_error_m_s": 5.178072187924821e-18
+        },
+        "measured_stress_trapezoid_integral": {
+          "relative_L2_error": 0.002691613615734149,
+          "signed_correlation": 0.9999979120023209,
+          "amplitude_projection": 1.0017476173880413,
+          "observed_to_predicted_rms_ratio": 1.0017497090391088,
+          "maximum_absolute_profile_error_m_s": 4.760733484544527e-18
+        },
+        "observed_depth_integrated_mean_change_m2_s": -2.3555249503687372e-26,
+        "note": "Observed final-minus-initial horizontal mean is compared without offset or amplitude fitting. The reported amplitude projection is supplementary."
+      }
+    },
+    "aligned-fine": {
+      "available": true,
+      "t_end_s": 120.0,
+      "n_samples": 241,
+      "source_hashes": {
+        "completed.toml": "72fb4cd21da1e554dee62cc8355ba63cf958275a778012ae616d7ef869835427",
+        "timeseries.csv": "82f080b37dc1af25de39654af99b5828423543e87b10856669a03e178b361618",
+        "profiles.npz": "34a7a1bee78e3a83f09daee78eb6d54ae562bcf18dfc037bd7c3c403db4de5f1"
+      },
+      "reference_rate_s_inverse": 0.07585082339147134,
+      "direct_signed_stress_space_time_L2_relative_error": 0.007604847065436899,
+      "negative_stress_correlation_samples": [],
+      "min_stress_correlation_above_half_reference_peak": 0.999999727905952,
+      "maximum_mean_drift_rms_m_s": 1.23401495902e-08,
+      "independent_log_growth_fits": [
+        {
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "velocity_rate_s_inverse": 0.0758211711536592,
+          "relative_velocity_rate_error": -0.0003909283576145617,
+          "stress_rate_s_inverse": 0.15163764389464332,
+          "relative_stress_rate_error": -0.00042189975953876857
+        },
+        {
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "velocity_rate_s_inverse": 0.07582025697309809,
+          "relative_velocity_rate_error": -0.0004029807061617374,
+          "stress_rate_s_inverse": 0.15163866132592588,
+          "relative_stress_rate_error": -0.0004151929682537636
+        }
+      ],
+      "reference_stress_temporal_formula_relative_L2_error": 1.7290656052625026e-16,
+      "reference_integral_trapezoid_relative_L2_error": 0.00047939965010725203,
+      "mean_response_comparisons": [
+        {
+          "t_s": 20.0,
+          "observed_mean_drift_rms_m_s": 1.19248297963e-13,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 3.0364712087655084e-15,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 3.0325367308568437e-15,
+          "observed_to_reference_mean_rms_ratio": 39.2720002148418
+        },
+        {
+          "t_s": 40.0,
+          "observed_mean_drift_rms_m_s": 6.66327474601e-13,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 6.613698993738043e-14,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 6.594392635226666e-14,
+          "observed_to_reference_mean_rms_ratio": 10.07495919049067
+        },
+        {
+          "t_s": 80.0,
+          "observed_mean_drift_rms_m_s": 3.22333364362e-11,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 2.8627040954237612e-11,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 2.8466438853416838e-11,
+          "observed_to_reference_mean_rms_ratio": 1.1259751396495121
+        },
+        {
+          "t_s": 120.0,
+          "observed_mean_drift_rms_m_s": 1.23401495902e-08,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.2362500052567294e-08,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.2261969382338737e-08,
+          "observed_to_reference_mean_rms_ratio": 0.9981920758525982
+        }
+      ],
+      "signed_final_mean_response": {
+        "available": true,
+        "artifact_sha256": "723d4f5624d272718ff446f8efc209cbab6fbd6b6babeb5d897dfc8837fbca66",
+        "t_s": 120.0,
+        "reference_stress_analytic_integral": {
+          "relative_L2_error": 0.029702193458095136,
+          "signed_correlation": 0.9995597281686357,
+          "amplitude_projection": 0.9977526000279123,
+          "observed_to_predicted_rms_ratio": 0.9981920758812138,
+          "maximum_absolute_profile_error_m_s": 3.0731279017268717e-09
+        },
+        "measured_stress_trapezoid_integral": {
+          "relative_L2_error": 0.03196538001449167,
+          "signed_correlation": 0.9995125407879756,
+          "amplitude_projection": 1.0058852608719846,
+          "observed_to_predicted_rms_ratio": 1.0063758280401214,
+          "maximum_absolute_profile_error_m_s": 2.983896004456388e-09
+        },
+        "observed_depth_integrated_mean_change_m2_s": -1.6453615000414784e-19,
+        "note": "Observed final-minus-initial horizontal mean is compared without offset or amplitude fitting. The reported amplitude projection is supplementary."
+      }
+    },
+    "aligned-nowave-fine": {
+      "available": true,
+      "t_end_s": 120.0,
+      "n_samples": 241,
+      "source_hashes": {
+        "completed.toml": "06052f282a174dcd1c3457f3856aea26db85a4fb3fc30f12325bea1240c300e2",
+        "timeseries.csv": "4148babb2f4defcea01208e3c5244c7ed4ccd4d03db077508fd2515380f86f26",
+        "profiles.npz": "25b26aaefef9dfbd0a0d6f215dac8badad72f49ab1b61c85fdcbd462f32bbec5"
+      },
+      "reference_rate_s_inverse": 0.07585082339147134,
+      "direct_signed_stress_space_time_L2_relative_error": 0.0001786080379937489,
+      "negative_stress_correlation_samples": [],
+      "min_stress_correlation_above_half_reference_peak": 0.9999999836330657,
+      "maximum_mean_drift_rms_m_s": 3.062201797e-13,
+      "maximum_vertical_mode_departure_from_one": 0.0,
+      "reference_stress_temporal_formula_relative_L2_error": 1.3755147749149543e-16,
+      "reference_integral_trapezoid_relative_L2_error": 9.767892464762528e-17,
+      "mean_response_comparisons": [
+        {
+          "t_s": 20.0,
+          "observed_mean_drift_rms_m_s": 5.08594041609e-14,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.087922822157205e-15,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.0877174117174645e-15,
+          "observed_to_reference_mean_rms_ratio": 46.74909205420714
+        },
+        {
+          "t_s": 40.0,
+          "observed_mean_drift_rms_m_s": 1.01756496822e-13,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 3.427527004400207e-15,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 3.4267440816676577e-15,
+          "observed_to_reference_mean_rms_ratio": 29.688021915324537
+        },
+        {
+          "t_s": 80.0,
+          "observed_mean_drift_rms_m_s": 2.03774209468e-13,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.1868645235176635e-14,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.1865628933163143e-14,
+          "observed_to_reference_mean_rms_ratio": 17.169121279659457
+        },
+        {
+          "t_s": 120.0,
+          "observed_mean_drift_rms_m_s": 3.062201797e-13,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 2.5326892601592595e-14,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 2.5320212269318794e-14,
+          "observed_to_reference_mean_rms_ratio": 12.09071260801826
+        }
+      ],
+      "signed_final_mean_response": {
+        "available": true,
+        "artifact_sha256": "c708fe78c5d8eaaad724e0b296a70fccd45b422f03d7b683a8e057da52aad136",
+        "t_s": 120.0,
+        "reference_stress_analytic_integral": {
+          "relative_L2_error": 12.045245235116637,
+          "signed_correlation": 0.08673292368434413,
+          "amplitude_projection": 1.0486625906008915,
+          "observed_to_predicted_rms_ratio": 12.090709572035125,
+          "maximum_absolute_profile_error_m_s": 2.68308383791071e-12
+        },
+        "measured_stress_trapezoid_integral": {
+          "relative_L2_error": 12.049170676503548,
+          "signed_correlation": 0.08598927968147711,
+          "amplitude_projection": 1.039945707578169,
+          "observed_to_predicted_rms_ratio": 12.093899512013042,
+          "maximum_absolute_profile_error_m_s": 2.6832447837235595e-12
+        },
+        "observed_depth_integrated_mean_change_m2_s": 7.880179118878271e-18,
+        "note": "Observed final-minus-initial horizontal mean is compared without offset or amplitude fitting. The reported amplitude projection is supplementary."
+      }
+    },
+    "aligned-fine-halfamp": {
+      "available": true,
+      "t_end_s": 120.0,
+      "n_samples": 241,
+      "source_hashes": {
+        "completed.toml": "4f35339ed1fce3c3ec337c613e5bee1a7f9af33cbe45548fff7a2dfc15d3514d",
+        "timeseries.csv": "1992afc4b79f2f4fc082aa6e1c2b5dc74be6d92bb98984684470fc623da046cf",
+        "profiles.npz": "ab91d769944e84ad1c85085f2e21f7a26782b76061204e0af1b043833a9d1c3e"
+      },
+      "reference_rate_s_inverse": 0.07585082339147134,
+      "direct_signed_stress_space_time_L2_relative_error": 0.007602556872591185,
+      "negative_stress_correlation_samples": [],
+      "min_stress_correlation_above_half_reference_peak": 0.9999997311755625,
+      "maximum_mean_drift_rms_m_s": 3.08886357774e-09,
+      "independent_log_growth_fits": [
+        {
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "velocity_rate_s_inverse": 0.0758211711521389,
+          "relative_velocity_rate_error": -0.000390928377657751,
+          "stress_rate_s_inverse": 0.15163764389427284,
+          "relative_stress_rate_error": -0.00042189976198092616
+        },
+        {
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "velocity_rate_s_inverse": 0.07582025699410615,
+          "relative_velocity_rate_error": -0.00040298042919639787,
+          "stress_rate_s_inverse": 0.15163866144847502,
+          "relative_stress_rate_error": -0.00041519216042384954
+        }
+      ],
+      "reference_stress_temporal_formula_relative_L2_error": 1.7290656052625026e-16,
+      "reference_integral_trapezoid_relative_L2_error": 0.00047939965010725203,
+      "mean_response_comparisons": [
+        {
+          "t_s": 20.0,
+          "observed_mean_drift_rms_m_s": 5.95953667645e-14,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 7.591178021913771e-16,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 7.581341827263563e-16,
+          "observed_to_reference_mean_rms_ratio": 78.50608507989612
+        },
+        {
+          "t_s": 40.0,
+          "observed_mean_drift_rms_m_s": 3.31676943122e-13,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.6534247484345108e-14,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.6485981585235678e-14,
+          "observed_to_reference_mean_rms_ratio": 20.059996285651167
+        },
+        {
+          "t_s": 80.0,
+          "observed_mean_drift_rms_m_s": 1.02262142609e-11,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 7.156760238559403e-12,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 7.1166098443957405e-12,
+          "observed_to_reference_mean_rms_ratio": 1.428888759721599
+        },
+        {
+          "t_s": 120.0,
+          "observed_mean_drift_rms_m_s": 3.08886357774e-09,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 3.0906250131418235e-09,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 3.065512530401465e-09,
+          "observed_to_reference_mean_rms_ratio": 0.9994300714598718
+        }
+      ],
+      "signed_final_mean_response": {
+        "available": true,
+        "artifact_sha256": "74d6e04d958111f34b2d015e7dcbee1469b3993c6f84eaf2a530ca6406e18050",
+        "t_s": 120.0,
+        "reference_stress_analytic_integral": {
+          "relative_L2_error": 0.05283558701760658,
+          "signed_correlation": 0.998603566913917,
+          "amplitude_projection": 0.9980344335935001,
+          "observed_to_predicted_rms_ratio": 0.9994300708116076,
+          "maximum_absolute_profile_error_m_s": 1.235978384749415e-09
+        },
+        "measured_stress_trapezoid_integral": {
+          "relative_L2_error": 0.05513662306815802,
+          "signed_correlation": 0.9985202599979062,
+          "amplitude_projection": 1.0061263263988376,
+          "observed_to_predicted_rms_ratio": 1.007617338080799,
+          "maximum_absolute_profile_error_m_s": 1.3580032447215056e-09
+        },
+        "observed_depth_integrated_mean_change_m2_s": -3.467011732230258e-19,
+        "note": "Observed final-minus-initial horizontal mean is compared without offset or amplitude fitting. The reported amplitude projection is supplementary."
+      }
+    },
+    "aligned-fine-halfdt": {
+      "available": true,
+      "t_end_s": 120.0,
+      "n_samples": 241,
+      "source_hashes": {
+        "completed.toml": "eceb556448457a3ec44e747a7b679727c4b520344f4fd40a761b1f537fc1fa84",
+        "timeseries.csv": "b53878b9ad1a302eeb4bbd9eabdf39f6e7bc7f69cd73d71b8aade2ba39adb17f",
+        "profiles.npz": "5841ed5f690eeb57ef1a48ac5b93a47ab9788fab21c00cf708ec381c325c7c6a"
+      },
+      "reference_rate_s_inverse": 0.07585082339147134,
+      "direct_signed_stress_space_time_L2_relative_error": 0.007604811801482836,
+      "negative_stress_correlation_samples": [],
+      "min_stress_correlation_above_half_reference_peak": 0.9999997279059567,
+      "maximum_mean_drift_rms_m_s": 1.23401500858e-08,
+      "independent_log_growth_fits": [
+        {
+          "window_s": [
+            20.0,
+            60.0
+          ],
+          "velocity_rate_s_inverse": 0.07582117130444717,
+          "relative_velocity_rate_error": -0.000390926369660316,
+          "stress_rate_s_inverse": 0.1516376441923829,
+          "relative_stress_rate_error": -0.000421897796873294
+        },
+        {
+          "window_s": [
+            40.0,
+            80.0
+          ],
+          "velocity_rate_s_inverse": 0.07582025712419266,
+          "relative_velocity_rate_error": -0.00040297871416539177,
+          "stress_rate_s_inverse": 0.15163866162600825,
+          "relative_stress_rate_error": -0.00041519099014497574
+        }
+      ],
+      "reference_stress_temporal_formula_relative_L2_error": 1.7290656052625026e-16,
+      "reference_integral_trapezoid_relative_L2_error": 0.00047939965010725203,
+      "mean_response_comparisons": [
+        {
+          "t_s": 20.0,
+          "observed_mean_drift_rms_m_s": 1.19250124133e-13,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 3.0364712087655084e-15,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 3.0325367460080143e-15,
+          "observed_to_reference_mean_rms_ratio": 39.2726016267685
+        },
+        {
+          "t_s": 40.0,
+          "observed_mean_drift_rms_m_s": 6.66331255871e-13,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 6.613698993738043e-14,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 6.594392706603504e-14,
+          "observed_to_reference_mean_rms_ratio": 10.075016363791173
+        },
+        {
+          "t_s": 80.0,
+          "observed_mean_drift_rms_m_s": 3.22333402069e-11,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 2.8627040954237612e-11,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 2.8466439499418886e-11,
+          "observed_to_reference_mean_rms_ratio": 1.1259752713676316
+        },
+        {
+          "t_s": 120.0,
+          "observed_mean_drift_rms_m_s": 1.23401500858e-08,
+          "predicted_mean_rms_from_reference_stress_analytic_time_integral_m_s": 1.2362500052567294e-08,
+          "predicted_mean_rms_from_measured_stress_trapezoid_m_s": 1.2261969808055794e-08,
+          "observed_to_reference_mean_rms_ratio": 0.9981921159415768
+        }
+      ],
+      "signed_final_mean_response": {
+        "available": true,
+        "artifact_sha256": "0c0ce18b75c3ed704aab8640dbbd368ca62e03a9a9b835f106d19629ef14b32c",
+        "t_s": 120.0,
+        "reference_stress_analytic_integral": {
+          "relative_L2_error": 0.02970219547188953,
+          "signed_correlation": 0.9995597280538338,
+          "amplitude_projection": 0.9977526399505522,
+          "observed_to_predicted_rms_ratio": 0.9981921159360831,
+          "maximum_absolute_profile_error_m_s": 3.073127023956793e-09
+        },
+        "measured_stress_trapezoid_integral": {
+          "relative_L2_error": 0.031965384975597845,
+          "signed_correlation": 0.9995125406675196,
+          "amplitude_projection": 1.0058852661915203,
+          "observed_to_predicted_rms_ratio": 1.0063758334835344,
+          "maximum_absolute_profile_error_m_s": 2.983897065918214e-09
+        },
+        "observed_depth_integrated_mean_change_m2_s": 3.241820082268822e-19,
+        "note": "Observed final-minus-initial horizontal mean is compared without offset or amplitude fitting. The reported amplitude projection is supplementary."
+      }
+    }
+  },
+  "crosschecks": [
+    {
+      "case": "aligned-fine-halfamp",
+      "available": true,
+      "window_s": [
+        0.0,
+        80.0
+      ],
+      "w_modal_normalized_relative_L2_difference": 4.372064388026303e-10,
+      "energy_normalized_relative_L2_difference": 3.6314603562448343e-09,
+      "stress_rms_normalized_relative_L2_difference": 4.493571127152291e-09,
+      "mean_u_drift_rms_normalized_relative_L2_difference": 0.4334422835091603,
+      "mean_drift_scaling_samples": [
+        {
+          "t_s": 20.0,
+          "raw_other_over_base": 0.4997586362447796
+        },
+        {
+          "t_s": 40.0,
+          "raw_other_over_base": 0.49776867345986253
+        },
+        {
+          "t_s": 80.0,
+          "raw_other_over_base": 0.31725584104955823
+        },
+        {
+          "t_s": 120.0,
+          "raw_other_over_base": 0.2503100594658138
+        }
+      ]
+    },
+    {
+      "case": "aligned-fine-halfdt",
+      "available": true,
+      "window_s": [
+        0.0,
+        80.0
+      ],
+      "w_modal_normalized_relative_L2_difference": 1.137832452330829e-08,
+      "energy_normalized_relative_L2_difference": 2.3693810282418598e-08,
+      "stress_rms_normalized_relative_L2_difference": 2.369876467771804e-08,
+      "mean_u_drift_rms_normalized_relative_L2_difference": 4.2117706784431997e-07,
+      "mean_drift_scaling_samples": [
+        {
+          "t_s": 20.0,
+          "raw_other_over_base": 1.000015314013124
+        },
+        {
+          "t_s": 40.0,
+          "raw_other_over_base": 1.0000056747922668
+        },
+        {
+          "t_s": 80.0,
+          "raw_other_over_base": 1.0000001169813746
+        },
+        {
+          "t_s": 120.0,
+          "raw_other_over_base": 1.0000000401615876
+        }
+      ]
+    }
+  ]
+}
